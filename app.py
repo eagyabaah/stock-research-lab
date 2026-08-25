@@ -10,6 +10,7 @@ import streamlit as st
 
 from stock_model import ModelConfig, analyze_ghana_long_term, analyze_us_swing
 from stock_model.data import MarketBundle, fetch_history, fetch_us_bundle
+from stock_model.ghana_data import GhanaResearchBundle, fetch_ghana_bundle
 from stock_model.indicators import add_indicators
 
 
@@ -24,6 +25,11 @@ def cached_bundle(ticker: str) -> MarketBundle:
 @st.cache_data(ttl=1_800, show_spinner=False)
 def cached_history(ticker: str) -> pd.DataFrame:
     return fetch_history(ticker)
+
+
+@st.cache_data(ttl=21_600, show_spinner=False)
+def cached_ghana_bundle(ticker: str) -> GhanaResearchBundle:
+    return fetch_ghana_bundle(ticker)
 
 
 def status_icon(status: str) -> str:
@@ -306,6 +312,16 @@ def load_latest_report() -> dict[str, Any] | None:
         return None
 
 
+def load_latest_ghana_report() -> dict[str, Any] | None:
+    path = Path("reports/ghana_latest.json")
+    if not path.exists():
+        return None
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+
+
 def optional_number(label: str, key: str, help_text: str = "") -> float | None:
     text = st.text_input(label, key=key, help=help_text, placeholder="Leave blank if unknown")
     if not text.strip():
@@ -320,6 +336,171 @@ def optional_number(label: str, key: str, help_text: str = "") -> float | None:
 def optional_bool(label: str, key: str) -> bool | None:
     answer = st.selectbox(label, ["Unknown", "No", "Yes"], key=key)
     return None if answer == "Unknown" else answer == "Yes"
+
+
+def ghana_rationale(bundle: GhanaResearchBundle) -> tuple[list[str], list[str], list[str]]:
+    data = bundle.inputs
+    thesis: list[str] = []
+    risks: list[str] = []
+    revenue = data.get("revenue_growth_pct")
+    earnings = data.get("earnings_growth_pct")
+    roe = data.get("roe_pct")
+    pe = data.get("pe_ratio")
+    dividend = data.get("dividend_yield_pct")
+    timing = data.get("price_vs_200d_pct")
+    liquidity = data.get("avg_daily_value_ghs")
+
+    if revenue is not None and earnings is not None:
+        thesis.append(
+            f"Reported revenue growth is {revenue:+.1f}% and net-income growth is "
+            f"{earnings:+.1f}%; the model rewards positive, earnings-backed expansion."
+        )
+    if roe is not None:
+        thesis.append(f"Reported return on equity is {roe:.1f}%, a direct profitability check.")
+    if pe is not None or dividend is not None:
+        parts = []
+        if pe is not None:
+            parts.append(f"P/E {pe:.1f}x")
+        if dividend is not None:
+            parts.append(f"dividend yield {dividend:.1f}%")
+        thesis.append("Valuation context: " + " and ".join(parts) + ".")
+    if timing is not None:
+        thesis.append(
+            f"The delayed close is {timing:+.1f}% versus the 200-day average; "
+            "this affects entry timing, not business quality."
+        )
+
+    if revenue is not None and revenue <= 0:
+        risks.append("Revenue is contracting, weakening the long-term compounding case.")
+    if earnings is not None and earnings <= 0:
+        risks.append("Net income is contracting or negative despite any top-line progress.")
+    if data.get("operating_cashflow_positive") is False:
+        risks.append("Operating cash flow is not positive; earnings may not be converting to cash.")
+    if data.get("governance_flag") is True or data.get("regulatory_flag") is True:
+        risks.append("The official-headline screen found language requiring governance or regulatory review.")
+    if liquidity is not None and liquidity < 250_000:
+        risks.append("Estimated daily traded value is low, so exits may be slow and limit orders are essential.")
+    if timing is not None and timing > 20:
+        risks.append("Price is more than 20% above its 200-day average, increasing entry-timing risk.")
+    if not risks:
+        risks.append(
+            "The strongest general risk is stale or incomplete Ghana market data; the IC Wealth "
+            "quote and official filing remain controlling evidence."
+        )
+
+    invalidation = [
+        "Revenue and earnings quality deteriorate materially in the next official filing.",
+        "Operating cash flow turns negative or leverage rises beyond the acceptable range.",
+        "A material unresolved governance or regulatory issue is confirmed.",
+        "Liquidity falls below a practical level for gradual accumulation and eventual exit.",
+    ]
+    return thesis, risks, invalidation
+
+
+def render_ghana_detail(bundle: GhanaResearchBundle, result: dict[str, Any]) -> None:
+    st.subheader(f"{bundle.ticker} — {status_icon(result['status'])} {result['status']}")
+    first, second, third, fourth = st.columns(4)
+    first.metric("Long-term score", f"{result['score']:.0f}/100")
+    second.metric("Data completeness", f"{result['completeness_pct']}%")
+    third.metric(
+        "Delayed close",
+        "Unknown" if bundle.price is None else f"GHS {bundle.price:,.2f}",
+    )
+    fourth.metric("Price date", bundle.price_as_of or "Unknown")
+    st.caption(f"{bundle.company_name} · Retrieved {bundle.fetched_at}")
+
+    gate_rows = [
+        {
+            "Gate": gate["gate"],
+            "Result": f"{status_icon(gate['status'])} {gate['status']}",
+            "Score": f"{gate['score']:.1f}/{gate['max_score']}",
+            "Evidence": " ".join(gate["evidence"]) or "Required evidence unavailable.",
+        }
+        for gate in result["gates"]
+    ]
+    st.markdown("#### Gate decision")
+    st.dataframe(pd.DataFrame(gate_rows), hide_index=True, use_container_width=True)
+
+    thesis, risks, invalidation = ghana_rationale(bundle)
+    left, right = st.columns(2)
+    with left:
+        st.markdown("#### Why it deserves consideration")
+        if bundle.business_summary:
+            st.write(bundle.business_summary)
+            if bundle.industry:
+                st.caption(f"Industry: {bundle.industry}")
+        for item in thesis:
+            st.write(f"- {item}")
+    with right:
+        st.markdown("#### Strongest bear case")
+        for item in risks:
+            st.write(f"- {item}")
+        st.markdown("#### What invalidates the thesis")
+        for item in invalidation:
+            st.write(f"- {item}")
+
+    if result["status"] == "ACCUMULATE GRADUALLY":
+        st.success(
+            "The evidence passes for gradual long-term accumulation. Confirm the live IC Wealth "
+            "quote, use limit orders, and divide the intended allocation into scheduled tranches. "
+            "Do not add merely because price falls."
+        )
+    elif result["status"] == "WATCH":
+        st.warning("Do not accumulate yet. Wait for the caution or failed gates to improve.")
+    elif result["status"] == "INSUFFICIENT DATA":
+        st.warning("NO BUY DECISION: too much required evidence is unavailable to justify accumulation.")
+    else:
+        st.error("Avoid for now; one or more material long-term gates failed.")
+
+    st.markdown("#### Data used and source trail")
+    evidence_rows = [
+        {
+            "Metric": item.label,
+            "Value": item.display,
+            "As of": item.as_of or "Unknown",
+            "Provider": item.source,
+            "Source": item.url,
+        }
+        for item in bundle.metrics
+    ]
+    st.dataframe(
+        pd.DataFrame(evidence_rows),
+        hide_index=True,
+        use_container_width=True,
+        column_config={"Source": st.column_config.LinkColumn("Source")},
+    )
+
+    with st.expander(f"Official issuer/regulatory results reviewed ({len(bundle.headlines)})"):
+        if bundle.headlines:
+            st.dataframe(
+                pd.DataFrame(bundle.headlines),
+                hide_index=True,
+                use_container_width=True,
+                column_config={"link": st.column_config.LinkColumn("Source")},
+            )
+        else:
+            st.write("No matching results were returned. Check the review-completeness rows above.")
+
+    for warning in bundle.warnings + result["warnings"]:
+        st.caption(f"• {warning}")
+    export = {
+        "analysis": result,
+        "company_name": bundle.company_name,
+        "industry": bundle.industry,
+        "business_summary": bundle.business_summary,
+        "price": bundle.price,
+        "price_as_of": bundle.price_as_of,
+        "fetched_at": bundle.fetched_at,
+        "metrics": [item.to_dict() for item in bundle.metrics],
+        "headlines": bundle.headlines,
+        "rationale": {"thesis": thesis, "risks": risks, "invalidation": invalidation},
+    }
+    st.download_button(
+        "Download Ghana research as JSON",
+        json.dumps(export, default=str, indent=2),
+        file_name=f"{bundle.ticker.lower()}-ghana-long-term.json",
+        mime="application/json",
+    )
 
 
 st.title("Stock Research Lab")
@@ -544,68 +725,63 @@ with report_tab:
         st.caption(latest_report.get("source_note", ""))
 
 with ghana_tab:
-    st.subheader("Ghana long-term evidence form")
+    st.subheader("Automated Ghana long-term research")
     st.write(
-        "Enter values from the latest official GSE filing and the current IC Wealth quote. "
-        "Unknown fields stay blank; the model will report data completeness instead of inventing a pass."
+        "Enter a GSE ticker. The app retrieves delayed market and financial data, reviews matching "
+        "GSE/SEC evidence, and applies the long-term accumulation gates automatically."
     )
-    with st.form("ghana_form"):
-        ticker = st.text_input("Ticker", value="MTNGH").strip().upper()
-        first, second, third = st.columns(3)
-        with first:
-            revenue = optional_number("Revenue growth (%)", "gh_revenue")
-            earnings = optional_number("Earnings growth (%)", "gh_earnings")
-            roe = optional_number("Return on equity (%)", "gh_roe")
-            pe = optional_number("P/E ratio", "gh_pe")
-        with second:
-            dividend = optional_number("Dividend yield (%)", "gh_dividend")
-            debt_equity = optional_number("Debt/equity", "gh_de")
-            liquidity = optional_number("Average daily traded value (GHS)", "gh_liquidity")
-            timing = optional_number("Price vs 200-day average (%)", "gh_timing")
-        with third:
-            cashflow = optional_bool("Is operating cash flow positive?", "gh_cashflow")
-            governance = optional_bool("Unresolved governance concern?", "gh_governance")
-            regulatory = optional_bool("Unresolved regulatory concern?", "gh_regulatory")
-        submitted = st.form_submit_button("Score Ghana candidate", type="primary")
-    if submitted:
-        ghana_result = analyze_ghana_long_term(
-            {
-                "ticker": ticker,
-                "revenue_growth_pct": revenue,
-                "earnings_growth_pct": earnings,
-                "roe_pct": roe,
-                "pe_ratio": pe,
-                "dividend_yield_pct": dividend,
-                "operating_cashflow_positive": cashflow,
-                "debt_to_equity": debt_equity,
-                "governance_flag": governance,
-                "regulatory_flag": regulatory,
-                "avg_daily_value_ghs": liquidity,
-                "price_vs_200d_pct": timing,
-            }
-        )
-        st.subheader(f"{ticker} — {status_icon(ghana_result['status'])} {ghana_result['status']}")
-        score_col, completeness_col = st.columns(2)
-        score_col.metric("Long-term score", f"{ghana_result['score']:.0f}/100")
-        completeness_col.metric("Data completeness", f"{ghana_result['completeness_pct']}%")
-        gate_rows = []
-        for gate in ghana_result["gates"]:
-            gate_rows.append(
+    scheduled_ghana = load_latest_ghana_report()
+    if scheduled_ghana:
+        with st.expander("Latest scheduled Ghana watchlist", expanded=True):
+            st.caption(f"Generated {scheduled_ghana.get('generated_at', 'time unavailable')}")
+            scheduled_rows = [
                 {
-                    "Gate": gate["gate"],
-                    "Result": f"{status_icon(gate['status'])} {gate['status']}",
-                    "Score": f"{gate['score']:.1f}/{gate['max_score']}",
-                    "Evidence": " ".join(gate["evidence"]),
+                    "Ticker": report["ticker"],
+                    "Decision": f"{status_icon(report['status'])} {report['status']}",
+                    "Score": report["score"],
+                    "Completeness": f"{report['completeness_pct']}%",
+                    "Delayed close": report.get("price"),
+                    "Price date": report.get("price_as_of"),
                 }
-            )
-        st.dataframe(pd.DataFrame(gate_rows), hide_index=True, use_container_width=True)
-        for warning in ghana_result["warnings"]:
-            st.caption(f"• {warning}")
-        st.download_button(
-            "Download Ghana score as JSON",
-            json.dumps(ghana_result, indent=2),
-            file_name=f"{ticker.lower()}-ghana-long-term.json",
-            mime="application/json",
+                for report in scheduled_ghana.get("reports", [])
+            ]
+            if scheduled_rows:
+                st.dataframe(pd.DataFrame(scheduled_rows), hide_index=True, use_container_width=True)
+            if scheduled_ghana.get("errors"):
+                for symbol, message in scheduled_ghana["errors"].items():
+                    st.caption(f"• {symbol}: {message}")
+            st.caption(scheduled_ghana.get("source_note", ""))
+    else:
+        st.info(
+            "The scheduled Ghana watchlist will appear here after the updated GitHub workflow "
+            "completes once. You can run an individual ticker immediately below."
+        )
+    ticker = st.text_input(
+        "GSE ticker",
+        value="MTNGH",
+        key="ghana_ticker",
+        help="Examples: MTNGH, GCB, EGH, SCB, GOIL, or UNIL.",
+    ).strip().upper()
+    if st.button("Run Ghana long-term analysis", type="primary", disabled=not ticker):
+        with st.spinner(f"Retrieving financial, market, GSE, and SEC evidence for {ticker}..."):
+            try:
+                ghana_bundle = cached_ghana_bundle(ticker)
+                ghana_result = analyze_ghana_long_term(ghana_bundle.inputs)
+                st.session_state["ghana_bundle"] = ghana_bundle
+                st.session_state["ghana_result"] = ghana_result
+                st.session_state.pop("ghana_error", None)
+            except Exception as exc:
+                st.session_state["ghana_error"] = str(exc)
+                st.session_state.pop("ghana_bundle", None)
+                st.session_state.pop("ghana_result", None)
+    if st.session_state.get("ghana_error"):
+        st.error(
+            "The Ghana sources could not complete this ticker. No result was manufactured. "
+            f"Details: {st.session_state['ghana_error']}"
+        )
+    if st.session_state.get("ghana_result"):
+        render_ghana_detail(
+            st.session_state["ghana_bundle"], st.session_state["ghana_result"]
         )
 
 with methodology_tab:

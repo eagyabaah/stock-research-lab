@@ -138,14 +138,23 @@ def analyze_ghana_long_term(inputs: dict[str, Any]) -> dict[str, Any]:
             "max_score": maximum,
             "evidence": evidence[name],
         })
+    automated = bool(inputs.get("_automated"))
+    warnings = [
+        "This is a long-term accumulation model, not a Ghana swing-trading signal.",
+    ]
+    if automated:
+        warnings.append(
+            "Use the current IC Wealth quote as the final executable price and open every linked source before buying."
+        )
+    else:
+        warnings.append(
+            "Use official GSE filings and the actual IC Wealth quote to update every field."
+        )
     return {
         "ticker": str(inputs.get("ticker", "")).upper(),
         "status": status,
         "score": score,
         "completeness_pct": round(completeness * 100),
         "gates": gates,
-        "warnings": [
-            "Use official GSE filings and the actual IC Wealth quote to update every field.",
-            "This is a long-term accumulation model, not a Ghana swing-trading signal.",
-        ],
+        "warnings": warnings,
     }

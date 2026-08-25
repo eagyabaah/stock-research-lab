@@ -8,6 +8,7 @@ import pandas as pd
 
 from stock_model.engine import ModelConfig, analyze_us_swing, assess_market_regime
 from stock_model.ghana import analyze_ghana_long_term
+from stock_model.ghana_data import _parse_profile, headline_risk, parse_stockanalysis_pages
 from stock_model.indicators import add_indicators
 from stock_model.data import _normalize_news
 from scripts.generate_closing_report import compare_reports, json_safe
@@ -177,6 +178,60 @@ class GhanaTests(unittest.TestCase):
     def test_missing_data_does_not_pass(self) -> None:
         result = analyze_ghana_long_term({"ticker": "EMPTY"})
         self.assertEqual(result["status"], "INSUFFICIENT DATA")
+
+    def test_automated_pages_extract_auditable_metrics(self) -> None:
+        statistics = """
+        <html><head><title>Scancom Statistics & Valuation Metrics</title></head><body>
+        Ghana · Delayed Price · Currency is GHS 7.00 At close: Aug 24, 2026
+        <table>
+          <tr><td>PE Ratio</td><td>11.05</td></tr>
+          <tr><td>Debt / Equity</td><td>0.30</td></tr>
+          <tr><td>Return on Equity (ROE)</td><td>82.76%</td></tr>
+          <tr><td>200-Day Moving Average</td><td>5.58</td></tr>
+          <tr><td>Average Volume (20 Days)</td><td>1,659,223</td></tr>
+          <tr><td>Operating Cash Flow</td><td>12.21B</td></tr>
+          <tr><td>Dividend Yield</td><td>6.86%</td></tr>
+        </table>
+        Data Source: S&amp;P Global Last updated: Aug 24, 2026
+        </body></html>
+        """
+        income = """
+        <html><body><table>
+          <tr><td>Revenue Growth</td><td>49.96%</td><td>36.17%</td></tr>
+          <tr><td>Net Income Growth</td><td>36.78%</td><td>55.89%</td></tr>
+        </table>Data Source: S&amp;P Global Last updated: Jun 30, 2026</body></html>
+        """
+        company, price, price_date, inputs, metrics = parse_stockanalysis_pages(
+            "MTNGH", statistics, income
+        )
+        self.assertEqual(company, "Scancom")
+        self.assertEqual(price, 7.0)
+        self.assertEqual(price_date, "2026-08-24")
+        self.assertAlmostEqual(inputs["revenue_growth_pct"], 49.96)
+        self.assertAlmostEqual(inputs["earnings_growth_pct"], 36.78)
+        self.assertTrue(inputs["operating_cashflow_positive"])
+        self.assertGreater(inputs["avg_daily_value_ghs"], 10_000_000)
+        self.assertGreater(inputs["price_vs_200d_pct"], 20)
+        self.assertTrue(all(item.url.startswith("https://") for item in metrics))
+
+    def test_governance_keyword_screen_is_explicit(self) -> None:
+        headlines = [{"title": "Issuer announces regulatory investigation"}]
+        self.assertTrue(headline_risk(headlines, ("investigation",)))
+        self.assertFalse(headline_risk(headlines, ("dividend",)))
+
+    def test_business_profile_parser_keeps_source_description(self) -> None:
+        html = """
+        <html><body><h1>Scancom Company Description</h1>
+        <p>Scancom Plc provides telecommunications and mobile-money services in Ghana.</p>
+        <table><tr><td>Country</td><td>Ghana</td></tr>
+        <tr><td>Industry</td><td>Radiotelephone Communications</td></tr></table>
+        Data Source: S&amp;P Global Last updated: Aug 7, 2026
+        </body></html>
+        """
+        industry, description, as_of = _parse_profile(html)
+        self.assertEqual(industry, "Radiotelephone Communications")
+        self.assertIn("mobile-money services", description)
+        self.assertEqual(as_of, "2026-08-07")
 
 
 class DataAdapterTests(unittest.TestCase):

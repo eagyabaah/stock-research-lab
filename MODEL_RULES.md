@@ -128,6 +128,8 @@ only possible result is `INSUFFICIENT DATA`.
   exchange-grade feed.
 - Headline keyword classification is a triage tool, not semantic due diligence.
 - Adjusted daily data can differ from the prices and order types shown by a broker.
-- Ghana inputs are manual until a licensed GSE/IC data integration is available.
+- Ghana market and financial fields are retrieved from delayed public research
+  pages and attributed in the result. GSE/SEC search checks are limited headline
+  screens, not a legal or governance opinion. IC Wealth remains the executable quote.
 - Backtesting, transaction costs, taxes, FX changes, portfolio correlation, and
   slippage are not yet modeled.

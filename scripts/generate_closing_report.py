@@ -16,8 +16,9 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from stock_model import ModelConfig, analyze_us_swing  # noqa: E402
+from stock_model import ModelConfig, analyze_ghana_long_term, analyze_us_swing  # noqa: E402
 from stock_model.data import fetch_history, fetch_us_bundle  # noqa: E402
+from stock_model.ghana_data import fetch_ghana_bundle  # noqa: E402
 
 
 def read_watchlist() -> list[str]:
@@ -30,6 +31,19 @@ def read_watchlist() -> list[str]:
         if symbol and symbol not in symbols:
             symbols.append(symbol)
     return symbols[:20]
+
+
+def read_ghana_watchlist() -> list[str]:
+    path = PROJECT_ROOT / "ghana_watchlist.txt"
+    defaults = ["MTNGH", "GCB", "EGH", "SCB", "GOIL", "UNIL"]
+    if not path.exists():
+        return defaults
+    symbols = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        symbol = line.split("#", 1)[0].strip().upper()
+        if symbol and symbol not in symbols:
+            symbols.append(symbol)
+    return symbols[:12]
 
 
 def json_safe(value: Any) -> Any:
@@ -121,6 +135,60 @@ def compare_reports(
     return changes
 
 
+def generate_ghana_report(now_et: datetime) -> dict[str, Any]:
+    tickers = read_ghana_watchlist()
+    reports: list[dict[str, Any]] = []
+    errors: dict[str, str] = {}
+    for ticker in tickers:
+        try:
+            bundle = fetch_ghana_bundle(ticker)
+            result = analyze_ghana_long_term(bundle.inputs)
+            reports.append(
+                {
+                    **result,
+                    "company_name": bundle.company_name,
+                    "industry": bundle.industry,
+                    "business_summary": bundle.business_summary,
+                    "price": bundle.price,
+                    "price_as_of": bundle.price_as_of,
+                    "fetched_at": bundle.fetched_at,
+                    "metrics": [item.to_dict() for item in bundle.metrics],
+                    "headlines": bundle.headlines,
+                    "source_warnings": bundle.warnings,
+                }
+            )
+        except Exception as exc:
+            errors[ticker] = str(exc)
+
+    priority = {
+        "ACCUMULATE GRADUALLY": 0,
+        "WATCH": 1,
+        "INSUFFICIENT DATA": 2,
+        "AVOID FOR NOW": 3,
+    }
+    reports.sort(key=lambda item: (priority.get(item["status"], 9), -item["score"]))
+    summary = {
+        "accumulate": sum(item["status"] == "ACCUMULATE GRADUALLY" for item in reports),
+        "watch": sum(item["status"] == "WATCH" for item in reports),
+        "insufficient": sum(item["status"] == "INSUFFICIENT DATA" for item in reports),
+        "avoid": sum(item["status"] == "AVOID FOR NOW" for item in reports),
+    }
+    return json_safe(
+        {
+            "generated_at": now_et.isoformat(),
+            "watchlist": tickers,
+            "summary": summary,
+            "reports": reports,
+            "errors": errors,
+            "source_note": (
+                "Ghana reports use delayed attributed financial and price research plus automated "
+                "GSE/SEC search checks. Confirm official filings and the executable IC Wealth quote. "
+                "Ghana output is long-term accumulation only."
+            ),
+        }
+    )
+
+
 def main() -> int:
     now_et = datetime.now(ZoneInfo("America/New_York"))
     tickers = read_watchlist()
@@ -178,9 +246,19 @@ def main() -> int:
     output = json.dumps(payload, indent=2, ensure_ascii=False, allow_nan=False) + "\n"
     (reports_dir / "latest.json").write_text(output, encoding="utf-8")
     (reports_dir / f"{market_date.isoformat()}.json").write_text(output, encoding="utf-8")
+
+    ghana_payload = generate_ghana_report(now_et)
+    ghana_output = json.dumps(
+        ghana_payload, indent=2, ensure_ascii=False, allow_nan=False
+    ) + "\n"
+    (reports_dir / "ghana_latest.json").write_text(ghana_output, encoding="utf-8")
+    (reports_dir / f"ghana-{market_date.isoformat()}.json").write_text(
+        ghana_output, encoding="utf-8"
+    )
     print(
         f"Generated {len(reports)} report(s) for {market_date}; "
-        f"{len(errors)} ticker error(s)."
+        f"{len(errors)} US error(s); {len(ghana_payload['reports'])} Ghana report(s); "
+        f"{len(ghana_payload['errors'])} Ghana error(s)."
     )
     return 0 if reports else 1
 
