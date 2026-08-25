@@ -50,6 +50,7 @@ def add_indicators(frame: pd.DataFrame) -> pd.DataFrame:
     data["AVG_VOLUME20"] = data["Volume"].rolling(20).mean()
     data["VOLUME_RATIO"] = data["Volume"] / data["AVG_VOLUME20"].replace(0, np.nan)
     data["PRIOR_HIGH20"] = data["High"].shift(1).rolling(20).max()
+    data["PRIOR_LOW20"] = data["Low"].shift(1).rolling(20).min()
     data["LOW10"] = data["Low"].rolling(10).min()
     data["RETURN63"] = close.pct_change(63)
     data["SMA50_SLOPE20"] = data["SMA50"] - data["SMA50"].shift(20)

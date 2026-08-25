@@ -1,0 +1,9 @@
+# One US ticker per line. This list is used by the scheduled closing report.
+MSFT
+AMZN
+GOOGL
+EOG
+NVDA
+JPM
+V
+RDW

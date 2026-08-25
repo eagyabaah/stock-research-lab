@@ -139,6 +139,7 @@ def fetch_us_bundle(ticker: str, period: str = "2y") -> MarketBundle:
         "earnings_date": _first_earnings_date(calendar),
         "currency": info.get("currency", "USD"),
         "website": info.get("website"),
+        "business_summary": info.get("longBusinessSummary"),
     }
     return MarketBundle(
         ticker=symbol,

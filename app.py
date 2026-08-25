@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from pathlib import Path
 from typing import Any
 
 import pandas as pd
@@ -36,6 +37,10 @@ def status_icon(status: str) -> str:
         "ACCUMULATE GRADUALLY": "✅",
         "INSUFFICIENT DATA": "⚠️",
         "AVOID FOR NOW": "❌",
+        "LONG CANDIDATE": "✅",
+        "BULLISH WATCH": "⚠️",
+        "MIXED / WAIT": "⚠️",
+        "BEARISH / AVOID LONG": "🔻",
     }.get(status, "•")
 
 
@@ -86,6 +91,35 @@ def price_chart(bundle: MarketBundle, result: Any) -> go.Figure:
     return figure
 
 
+def render_directional_view(result: Any) -> None:
+    view = result.directional_view
+    st.markdown("#### Directional conclusion")
+    st.info(f"{status_icon(view.bias)} **{view.bias}**")
+    for item in view.evidence:
+        st.write(f"- {item}")
+    if view.bearish_trigger is not None:
+        st.markdown("##### Short-side research scenario")
+        st.dataframe(
+            pd.DataFrame(
+                [
+                    {
+                        "Strategy": view.bearish_strategy,
+                        "Bearish trigger": f"${view.bearish_trigger:.2f}",
+                        "Invalidation": f"${view.bearish_invalidation:.2f}",
+                        "Downside objective 1": f"${view.bearish_target_1:.2f}",
+                        "Downside objective 2": f"${view.bearish_target_2:.2f}",
+                    }
+                ]
+            ),
+            hide_index=True,
+            use_container_width=True,
+        )
+        st.warning(
+            "Short-sale execution and position sizing are disabled. Your active mandate prohibits "
+            "shorting; these levels explain the bearish thesis and when it would be wrong."
+        )
+
+
 def render_us_detail(bundle: MarketBundle, result: Any) -> None:
     st.subheader(f"{result.ticker} — {status_icon(result.status)} {result.status}")
     left, middle, right, fourth = st.columns(4)
@@ -95,6 +129,7 @@ def render_us_detail(bundle: MarketBundle, result: Any) -> None:
     fourth.metric("Data through", pd.Timestamp(result.as_of).date().isoformat())
 
     st.dataframe(gate_frame(result), hide_index=True, use_container_width=True)
+    render_directional_view(result)
     st.plotly_chart(price_chart(bundle, result), use_container_width=True)
 
     if result.trade_plan:
@@ -131,6 +166,18 @@ def render_us_detail(bundle: MarketBundle, result: Any) -> None:
         st.markdown("#### What invalidates it")
         for line in result.invalidation:
             st.write(f"- {line}")
+
+    with st.expander("Business model and company profile"):
+        fundamentals = bundle.fundamentals
+        st.write(
+            f"**{fundamentals.get('company_name') or result.ticker}** · "
+            f"{fundamentals.get('sector') or 'Sector unavailable'} · "
+            f"{fundamentals.get('industry') or 'Industry unavailable'}"
+        )
+        st.write(
+            fundamentals.get("business_summary")
+            or "A detailed business description was not returned by the current data source."
+        )
 
     with st.expander("Full gate evidence"):
         for gate in result.gates:
@@ -178,6 +225,87 @@ def render_us_detail(bundle: MarketBundle, result: Any) -> None:
     )
 
 
+def saved_gate_frame(report: dict[str, Any]) -> pd.DataFrame:
+    return pd.DataFrame(
+        [
+            {
+                "Gate": gate["name"],
+                "Result": f"{status_icon(gate['status'])} {gate['status']}",
+                "Score": "—" if gate["max_score"] == 0 else f"{gate['score']:.1f}/{gate['max_score']:.0f}",
+                "Evidence": " ".join(gate.get("evidence", [])[:3]),
+            }
+            for gate in report.get("gates", [])
+        ]
+    )
+
+
+def render_saved_report(report: dict[str, Any]) -> None:
+    st.subheader(
+        f"{report['ticker']} — {status_icon(report['status'])} {report['status']}"
+    )
+    first, second, third, fourth = st.columns(4)
+    first.metric("Model score", f"{report['score']:.0f}/100")
+    second.metric("Closing price", f"${report['price']:,.2f}")
+    third.metric("Strategy", report["strategy"])
+    direction = report.get("directional_view", {})
+    fourth.metric("Directional view", direction.get("bias", "Unavailable"))
+    st.dataframe(saved_gate_frame(report), hide_index=True, use_container_width=True)
+
+    plan = report.get("trade_plan")
+    if plan:
+        st.markdown("#### Conditional long plan")
+        st.dataframe(
+            pd.DataFrame(
+                [
+                    {
+                        "Entry": plan["entry_trigger"],
+                        "Stop": plan["stop"],
+                        "Target 1": plan["target_1"],
+                        "Target 2": plan["target_2"],
+                        "Shares": plan["shares"],
+                        "Notional": plan["notional"],
+                        "Planned risk": plan["planned_risk"],
+                    }
+                ]
+            ),
+            hide_index=True,
+            use_container_width=True,
+        )
+
+    if direction:
+        st.markdown(f"#### {status_icon(direction.get('bias', ''))} {direction.get('bias')}")
+        for item in direction.get("evidence", []):
+            st.write(f"- {item}")
+        if direction.get("bearish_trigger") is not None:
+            st.write(
+                f"Bearish research levels: trigger **${direction['bearish_trigger']:.2f}**, "
+                f"invalidation **${direction['bearish_invalidation']:.2f}**, objectives "
+                f"**${direction['bearish_target_1']:.2f}** and **${direction['bearish_target_2']:.2f}**."
+            )
+
+    left, right = st.columns(2)
+    with left:
+        st.markdown("#### Why consider it")
+        for item in report.get("thesis", []):
+            st.write(f"- {item}")
+    with right:
+        st.markdown("#### Bear case and invalidation")
+        for item in report.get("bear_case", []):
+            st.write(f"- {item}")
+        for item in report.get("invalidation", []):
+            st.write(f"- {item}")
+
+
+def load_latest_report() -> dict[str, Any] | None:
+    path = Path("reports/latest.json")
+    if not path.exists():
+        return None
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+
+
 def optional_number(label: str, key: str, help_text: str = "") -> float | None:
     text = st.text_input(label, key=key, help=help_text, placeholder="Leave blank if unknown")
     if not text.strip():
@@ -200,7 +328,15 @@ st.caption(
     "This tool supports research; it does not place trades."
 )
 
-us_tab, ghana_tab, methodology_tab = st.tabs(["US swing screen", "Ghana long-term", "Methodology"])
+search_tab, us_tab, report_tab, ghana_tab, methodology_tab = st.tabs(
+    [
+        "Analyze a stock",
+        "US watchlist",
+        "Closing reports",
+        "Ghana long-term",
+        "Methodology",
+    ]
+)
 
 with us_tab:
     with st.sidebar:
@@ -216,7 +352,7 @@ with us_tab:
 
     watchlist_text = st.text_input(
         "US watchlist",
-        value="MSFT, AMZN, GOOGL, EOG, NVDA",
+        value="MSFT, AMZN, GOOGL, EOG, NVDA, JPM, V, RDW",
         help="Up to eight liquid US tickers. The model does not scan penny stocks.",
     )
     tickers = list(dict.fromkeys(item.strip().upper() for item in watchlist_text.split(",") if item.strip()))[:8]
@@ -288,6 +424,124 @@ with us_tab:
         render_us_detail(bundles[selected], reports[selected])
     else:
         st.info("Run the screen to retrieve current data and apply all strategy gates.")
+
+with search_tab:
+    st.subheader("Research any US-listed stock")
+    st.write(
+        "Enter a ticker such as RDW. The report applies the same technical, fundamental, "
+        "valuation, news, liquidity, and portfolio-risk gates as the watchlist screen."
+    )
+    searched_ticker = st.text_input(
+        "Ticker symbol",
+        value="RDW",
+        key="single_ticker",
+        help="Use the exchange ticker, for example RDW, MSFT, or JPM.",
+    ).strip().upper()
+    if st.button("Run full stock analysis", type="primary", disabled=not searched_ticker):
+        config = ModelConfig(
+            portfolio_value=portfolio,
+            risk_per_trade_pct=risk_pct,
+            risk_dollar_cap=risk_cap,
+            max_position=max_position,
+            current_open_risk=current_open_risk,
+            current_drawdown_pct=current_drawdown,
+            min_reward_risk=minimum_rr,
+        )
+        with st.spinner(f"Building the evidence report for {searched_ticker}..."):
+            try:
+                single_benchmark = cached_history("SPY")
+                single_bundle = cached_bundle(searched_ticker)
+                single_report = analyze_us_swing(
+                    searched_ticker,
+                    single_bundle.history,
+                    single_bundle.fundamentals,
+                    single_bundle.news,
+                    single_benchmark,
+                    config,
+                )
+                st.session_state["single_bundle"] = single_bundle
+                st.session_state["single_report"] = single_report
+                st.session_state.pop("single_error", None)
+            except Exception as exc:
+                st.session_state["single_error"] = str(exc)
+                st.session_state.pop("single_bundle", None)
+                st.session_state.pop("single_report", None)
+
+    if st.session_state.get("single_error"):
+        st.error(
+            f"The data source could not complete this ticker: {st.session_state['single_error']}"
+        )
+    if st.session_state.get("single_report"):
+        render_us_detail(
+            st.session_state["single_bundle"], st.session_state["single_report"]
+        )
+
+with report_tab:
+    st.subheader("Latest scheduled closing report")
+    latest_report = load_latest_report()
+    if latest_report is None:
+        st.info(
+            "No scheduled report has been generated yet. After the GitHub workflow is installed, "
+            "run it once manually from GitHub Actions or wait for the next weekday close."
+        )
+    else:
+        st.caption(
+            f"Generated {latest_report.get('generated_at', 'time unavailable')} · "
+            f"Market date {latest_report.get('market_date', 'unavailable')}"
+        )
+        if latest_report.get("market_was_closed"):
+            st.warning(
+                "The market was closed on the workflow run date; this report uses the latest "
+                "available completed session."
+            )
+        action = latest_report.get("action", "REVIEW REPORT")
+        if action == "NO TRADE":
+            st.warning("**Closing decision: NO TRADE** — no stock passed every hard gate.")
+        else:
+            st.success(f"**Closing decision: {action}**")
+        summary = latest_report.get("summary", {})
+        first, second, third, fourth = st.columns(4)
+        first.metric("Qualified", summary.get("qualified", 0))
+        second.metric("Watch", summary.get("watch", 0))
+        third.metric("Rejected", summary.get("rejected", 0))
+        fourth.metric("Data errors", len(latest_report.get("errors", {})))
+
+        scheduled_reports = latest_report.get("reports", [])
+        if scheduled_reports:
+            ranking = pd.DataFrame(
+                [
+                    {
+                        "Ticker": report["ticker"],
+                        "Decision": report["status"],
+                        "Directional view": report.get("directional_view", {}).get("bias"),
+                        "Score": report["score"],
+                        "Close": report["price"],
+                        "Strategy": report["strategy"],
+                    }
+                    for report in scheduled_reports
+                ]
+            )
+            st.dataframe(ranking, hide_index=True, use_container_width=True)
+            selected_ticker = st.selectbox(
+                "Open a scheduled report",
+                ranking["Ticker"].tolist(),
+                key="scheduled_selected",
+            )
+            selected_report = next(
+                report for report in scheduled_reports if report["ticker"] == selected_ticker
+            )
+            render_saved_report(selected_report)
+        changes = latest_report.get("changes_from_previous_close", [])
+        with st.expander(f"Changes from previous closing report ({len(changes)})"):
+            if changes:
+                st.dataframe(pd.DataFrame(changes), hide_index=True, use_container_width=True)
+            else:
+                st.write("No tracked decision, score, level, or earnings-date changes.")
+        if latest_report.get("errors"):
+            with st.expander("Scheduled data errors"):
+                for symbol, message in latest_report["errors"].items():
+                    st.write(f"- **{symbol}:** {message}")
+        st.caption(latest_report.get("source_note", ""))
 
 with ghana_tab:
     st.subheader("Ghana long-term evidence form")
@@ -368,6 +622,14 @@ be in a failed state. Valuation affects the score but is not a standalone hard g
 The engine tests three distinct setups—trend pullback, confirmed breakout, and
 recovery/reclaim—and reports only the highest-scoring applicable setup. It sizes
 the position using the smaller of the risk budget and the maximum-position cap.
+
+The directional layer can classify a stock as long candidate, bullish watch,
+mixed/wait, or bearish/avoid long. Bearish breakdown levels are research only:
+short-sale execution remains disabled under the active no-shorting mandate.
+
+Scheduled U.S. reports are generated by GitHub Actions after the market close and
+saved into the repository for this site to display. They use the same deterministic
+engine and do not replace primary-source review.
 
 **Ghana score (100 points):** fundamentals 35, valuation 20, balance sheet and
 cash flow 15, news/governance 15, liquidity 10, and technical entry timing 5.

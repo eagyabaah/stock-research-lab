@@ -10,6 +10,7 @@ from stock_model.engine import ModelConfig, analyze_us_swing, assess_market_regi
 from stock_model.ghana import analyze_ghana_long_term
 from stock_model.indicators import add_indicators
 from stock_model.data import _normalize_news
+from scripts.generate_closing_report import compare_reports, json_safe
 
 
 def synthetic_history(
@@ -124,6 +125,33 @@ class EngineTests(unittest.TestCase):
         self.assertEqual(portfolio_gate.status, "FAIL")
         self.assertIsNone(result.trade_plan)
 
+    def test_bearish_view_does_not_enable_short_execution(self) -> None:
+        falling_stock = synthetic_history(start=180, end=80, volume=3_000_000)
+        result = analyze_us_swing(
+            "BEAR",
+            falling_stock,
+            self.fundamentals,
+            self.news,
+            self.spy,
+            ModelConfig(),
+        )
+        self.assertEqual(result.directional_view.bias, "BEARISH / AVOID LONG")
+        self.assertIsNotNone(result.directional_view.bearish_trigger)
+        self.assertFalse(result.directional_view.short_execution_allowed)
+
+    def test_result_json_includes_directional_view(self) -> None:
+        result = analyze_us_swing(
+            "TEST",
+            self.stock,
+            self.fundamentals,
+            self.news,
+            self.spy,
+            ModelConfig(),
+        )
+        payload = result.to_dict()
+        self.assertIn("directional_view", payload)
+        self.assertIn("bias", payload["directional_view"])
+
 
 class GhanaTests(unittest.TestCase):
     def test_complete_strong_candidate_accumulates(self) -> None:
@@ -167,6 +195,40 @@ class DataAdapterTests(unittest.TestCase):
         )
         self.assertEqual(normalized[0]["publisher"], "Example Wire")
         self.assertEqual(normalized[0]["link"], "https://example.com/filing")
+
+
+class ScheduledReportTests(unittest.TestCase):
+    def test_comparison_records_score_and_entry_changes(self) -> None:
+        previous = {
+            "reports": [
+                {
+                    "ticker": "RDW",
+                    "status": "WATCH",
+                    "score": 70,
+                    "directional_view": {"bias": "MIXED / WAIT"},
+                    "trade_plan": {"entry_trigger": 50, "stop": 45, "target_1": 60},
+                    "facts": {"earnings_date": "2026-09-01"},
+                }
+            ]
+        }
+        current = [
+            {
+                "ticker": "RDW",
+                "status": "WATCH",
+                "score": 76,
+                "directional_view": {"bias": "BULLISH WATCH"},
+                "trade_plan": {"entry_trigger": 52, "stop": 47, "target_1": 62},
+                "facts": {"earnings_date": "2026-09-01"},
+            }
+        ]
+        fields = {item["field"] for item in compare_reports(previous, current)}
+        self.assertIn("Score", fields)
+        self.assertIn("Entry", fields)
+        self.assertIn("Directional view", fields)
+        self.assertNotIn("Decision", fields)
+
+    def test_json_safe_replaces_non_finite_values(self) -> None:
+        self.assertIsNone(json_safe(float("nan")))
 
 
 if __name__ == "__main__":

@@ -32,6 +32,21 @@ class TradePlan:
         return asdict(self)
 
 
+@dataclass(frozen=True)
+class DirectionalView:
+    bias: str
+    evidence: list[str] = field(default_factory=list)
+    bearish_strategy: str | None = None
+    bearish_trigger: float | None = None
+    bearish_invalidation: float | None = None
+    bearish_target_1: float | None = None
+    bearish_target_2: float | None = None
+    short_execution_allowed: bool = False
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)
+
+
 @dataclass
 class AnalysisResult:
     ticker: str
@@ -48,10 +63,12 @@ class AnalysisResult:
     facts: dict[str, Any]
     news: list[dict[str, Any]]
     warnings: list[str]
+    directional_view: DirectionalView
 
     def to_dict(self) -> dict[str, Any]:
         return {
             **asdict(self),
             "gates": [gate.to_dict() for gate in self.gates],
             "trade_plan": self.trade_plan.to_dict() if self.trade_plan else None,
+            "directional_view": self.directional_view.to_dict(),
         }

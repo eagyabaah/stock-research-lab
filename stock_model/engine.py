@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 
 from .indicators import add_indicators, relative_strength_63
-from .types import AnalysisResult, GateResult, TradePlan
+from .types import AnalysisResult, DirectionalView, GateResult, TradePlan
 
 
 @dataclass(frozen=True)
@@ -157,10 +157,13 @@ def _technical_gate(
         "sma50": sma50,
         "sma200": sma200,
         "prior_high20": prior_high,
+        "prior_low20": float(row["PRIOR_LOW20"]),
         "low10": float(row["LOW10"]),
         "volume_ratio": volume_ratio,
         "rs63": rs63 if rs63 is not None else np.nan,
         "latest_high": float(row["High"]),
+        "latest_low": float(row["Low"]),
+        "sma50_slope20": float(row["SMA50_SLOPE20"]),
     }
     return GateResult("Technical", status, round(score, 1), 30, evidence), strategy, facts
 
@@ -408,6 +411,75 @@ def _make_rationale(
     return thesis, bear_case, invalidation
 
 
+def _directional_view(facts: dict[str, float], long_status: str) -> DirectionalView:
+    """Describe both sides of the chart without authorizing short-sale execution."""
+    close = facts["close"]
+    sma20 = facts["sma20"]
+    sma50 = facts["sma50"]
+    sma200 = facts["sma200"]
+    rsi = facts["rsi14"]
+    atr = facts["atr14"]
+    rs63 = facts.get("rs63", np.nan)
+    slope = facts.get("sma50_slope20", 0.0)
+    volume_ratio = facts.get("volume_ratio", 0.0)
+
+    bullish = [
+        close > sma20,
+        close > sma50 > sma200,
+        slope > 0,
+        50 <= rsi <= 72,
+        bool(isfinite(rs63) and rs63 > 0),
+    ]
+    bearish = [
+        close < sma20,
+        close < sma50,
+        close < sma200,
+        slope < 0,
+        rsi < 50,
+        bool(isfinite(rs63) and rs63 < 0),
+    ]
+
+    if long_status == "QUALIFIED":
+        bias = "LONG CANDIDATE"
+    elif sum(bullish) >= 4:
+        bias = "BULLISH WATCH"
+    elif sum(bearish) >= 4:
+        bias = "BEARISH / AVOID LONG"
+    else:
+        bias = "MIXED / WAIT"
+
+    evidence = [
+        f"Price {close:.2f} versus SMA20 {sma20:.2f}, SMA50 {sma50:.2f}, and SMA200 {sma200:.2f}.",
+        f"RSI14 {rsi:.1f}; 20-session SMA50 slope {slope:+.2f}; volume ratio {volume_ratio:.2f}x.",
+        f"63-day relative strength versus SPY: {'unavailable' if not isfinite(rs63) else f'{rs63 * 100:+.1f}%'}.",
+    ]
+
+    if bias != "BEARISH / AVOID LONG" or not isfinite(atr) or atr <= 0:
+        return DirectionalView(bias=bias, evidence=evidence)
+
+    prior_low = facts["prior_low20"]
+    trigger = min(close, prior_low - 0.05 * atr)
+    resistances = [value for value in [sma20, sma50, facts["latest_high"]] if value > trigger]
+    nearest_resistance = min(resistances) if resistances else trigger + atr
+    invalidation = max(trigger + 0.75 * atr, nearest_resistance + 0.25 * atr)
+    risk = invalidation - trigger
+    target_1 = max(0.01, trigger - 2 * risk)
+    target_2 = max(0.01, trigger - 3 * risk)
+    evidence.append(
+        "The bearish scenario is informational only: the active mandate prohibits short selling."
+    )
+    return DirectionalView(
+        bias=bias,
+        evidence=evidence,
+        bearish_strategy="Bearish breakdown",
+        bearish_trigger=round(trigger, 2),
+        bearish_invalidation=round(invalidation, 2),
+        bearish_target_1=round(target_1, 2),
+        bearish_target_2=round(target_2, 2),
+        short_execution_allowed=False,
+    )
+
+
 def analyze_us_swing(
     ticker: str,
     price_data: pd.DataFrame,
@@ -443,6 +515,7 @@ def analyze_us_swing(
     thesis, bear_case, invalidation = _make_rationale(
         strategy, technical, fundamental, valuation, news_result
     )
+    directional_view = _directional_view(facts, status)
     warnings = [
         "Research model only; broker quotes and order rules control actual execution.",
         "The rule-based headline screen cannot determine materiality as reliably as reading primary filings.",
@@ -463,4 +536,5 @@ def analyze_us_swing(
         facts={**facts, **fundamentals},
         news=news,
         warnings=warnings,
+        directional_view=directional_view,
     )

@@ -62,6 +62,21 @@ one. A stock does not pass merely because one attractive indicator exists.
 The stop is placed algorithmically below the nearest strategy-specific support
 with an ATR buffer. Target 1 is two risk units above entry and Target 2 is three.
 
+### Directional research
+
+The separate directional layer summarizes the chart as **LONG CANDIDATE**,
+**BULLISH WATCH**, **MIXED / WAIT**, or **BEARISH / AVOID LONG**. A bearish
+breakdown scenario can include a trigger, invalidation, and downside objectives,
+but it is not an executable short plan. Short-sale sizing remains disabled under
+the active no-shorting mandate.
+
+### Scheduled reports
+
+The GitHub Actions report uses the same engine, default $1,000 portfolio inputs,
+and symbols in `watchlist.txt`. It does not know the user's live Robinhood equity,
+drawdown, fills, or open risk. Before acting, the user must update those values in
+the website and re-run the ticker at the current broker price.
+
 ### Fundamental gate
 
 The current no-key data adapter uses reported revenue growth, earnings growth,
