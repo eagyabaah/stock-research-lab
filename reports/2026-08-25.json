@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T18:05:46.936422-04:00",
+  "generated_at": "2026-08-25T19:27:11.819310-04:00",
   "market_date": "2026-08-25",
   "market_was_closed": false,
   "watchlist": [
@@ -145,11 +145,11 @@
       ],
       "facts": {
         "close": 146.8300018310547,
-        "atr14": 3.735892341075968,
-        "rsi14": 54.321091272690566,
+        "atr14": 3.7358923422650205,
+        "rsi14": 54.321091269204636,
         "sma20": 144.69499969482422,
         "sma50": 139.0373257446289,
-        "sma200": 125.65902809143067,
+        "sma200": 125.65902786254883,
         "prior_high20": 153.6699981689453,
         "prior_low20": 133.4499969482422,
         "low10": 140.47999572753906,
@@ -393,11 +393,11 @@
       ],
       "facts": {
         "close": 356.69000244140625,
-        "atr14": 6.110863505922871,
-        "rsi14": 54.538054187131046,
+        "atr14": 6.110863505428181,
+        "rsi14": 54.538054188476714,
         "sma20": 357.060498046875,
         "sma50": 345.13331787109377,
-        "sma200": 314.3374769592285,
+        "sma200": 314.3374775695801,
         "prior_high20": 366.5,
         "prior_low20": 343.7799987792969,
         "low10": 350.3699951171875,
@@ -689,6 +689,13 @@
           "summary": "President Trump made over 1,000 new stock trades in June, totaling between $78 million and $263 million.  Yahoo Finance Washington Correspondent Ben Werschkul outlines the details in the video above."
         },
         {
+          "title": "Is Marvell (MRVL) Stock Poised for Another AI-Fueled Rally as Q2 Earnings Approach?",
+          "publisher": "Zacks",
+          "published": "2026-08-25T22:08:00Z",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/marvell-mrvl-stock-poised-another-220800295.html",
+          "summary": "Outside of Nvidia, Marvell Technology will provide the semiconductor market's most closely watched earnings report this week on Thursday, August 27."
+        },
+        {
           "title": "Amazon (AMZN) Stock Still Looks Undervalued On Cash Flow And Earnings",
           "publisher": "Simply Wall St.",
           "published": "2026-08-25T21:07:12Z",
@@ -696,11 +703,11 @@
           "summary": "Amazon.com has delivered a strong 96.8% share price gain over the past three years, yet current valuation work still points to the stock trading below an estimate of its intrinsic value. Over the past three years Amazon.com returned 96.8%, which puts fresh focus on whether the current price fully reflects its long term cash flow potential. Growth expectations around Amazon's cloud and AI related chip efforts can support the cash flow outlook, while large capital needs for areas such as drone..."
         },
         {
-          "title": "Zoom Reports Solid Earnings. The Stock Drops Anyway.",
-          "publisher": "Barrons.com",
-          "published": "2026-08-25T20:41:00Z",
-          "link": "https://www.barrons.com/articles/zoom-earnings-stock-price-ac38a544?siteid=yhoof2&yptr=yahoo",
-          "summary": "Zoom reported adjusted earnings of $1.55 a share for the quarter, up from $1.53 a year ago and above analysts’ expectations for $1.48, per FactSet."
+          "title": "Stock Picks That Billionaires Love",
+          "publisher": "Kiplinger",
+          "published": "2026-08-25T20:49:41Z",
+          "link": "https://www.kiplinger.com/investing/stocks/stocks-to-buy/604302/stock-picks-that-billionaires-love",
+          "summary": "Billionaire investors are scooping up tech stocks, whether they're on sale or riding the AI wave."
         },
         {
           "title": "The Questions That Defined WMT's Earnings Call",
@@ -736,13 +743,6 @@
           "published": "2026-08-25T19:47:08Z",
           "link": "https://finance.yahoo.com/technology/articles/sector-tech-stocks-rise-afternoon-194708780.html",
           "summary": "Tech stocks advanced late Tuesday afternoon, with the State Street Technology Select Sector SPDR ETF"
-        },
-        {
-          "title": "Microsoft Just Ripped 28% in a Month. What Would It Take to Get MSFT Stock Up to $600?",
-          "publisher": "24/7 Wall St.",
-          "published": "2026-08-25T19:41:01Z",
-          "link": "https://247wallst.com/investing/2026/08/25/microsoft-just-ripped-28-in-a-month-what-would-it-take-to-get-msft-stock-up-to-600/",
-          "summary": "Azure just crossed a historic revenue milestone, Microsoft's commercial backlog ballooned to a staggering figure, and yet free cash flow dropped sharply. Whether $600 is the next stop or a ceiling depends on what happens inside the next earnings report."
         }
       ],
       "warnings": [
@@ -891,11 +891,11 @@
       ],
       "facts": {
         "close": 384.1400146484375,
-        "atr14": 7.082449654385798,
-        "rsi14": 70.5755216996025,
+        "atr14": 7.082449623877607,
+        "rsi14": 70.57552192986378,
         "sma20": 366.84461822509763,
         "sma50": 354.74342651367186,
-        "sma200": 331.07217193603515,
+        "sma200": 331.0721716308594,
         "prior_high20": 383.42999267578125,
         "prior_low20": 354.82083449278736,
         "low10": 358.04998779296875,
@@ -1017,7 +1017,7 @@
       "ticker": "MSFT",
       "as_of": "2026-08-25T00:00:00-04:00",
       "status": "WATCH",
-      "score": 88.1,
+      "score": 81.1,
       "strategy": "Trend pullback",
       "price": 491.71,
       "gates": [
@@ -1074,13 +1074,13 @@
         },
         {
           "name": "News/catalyst",
-          "status": "PASS",
-          "score": 15,
+          "status": "CAUTION",
+          "score": 8,
           "max_score": 15,
           "evidence": [
             "Reviewed 10 headline(s) published in the last seven days.",
             "Next reported earnings date: 2026-10-28 (46 business day(s)).",
-            "No rule-based adverse headline or near-term earnings block was detected."
+            "Headline requiring review: Ro Khanna Urges AI CEOs to Follow Pope Leo XIV’s Warning: AI Must Not 'Diminishes Humanity' and Should Serve the Common Good"
           ]
         },
         {
@@ -1132,7 +1132,8 @@
         "Valuation is classified caution under the model's simple P/E/PEG guardrail."
       ],
       "bear_case": [
-        "The chart has not completed the required confirmation; an attractive company is not automatically a valid swing entry."
+        "The chart has not completed the required confirmation; an attractive company is not automatically a valid swing entry.",
+        "Current news or event risk has not cleared the hard gate."
       ],
       "invalidation": [
         "The setup is invalid if price reaches the model stop or the relevant moving-average structure breaks.",
@@ -1140,11 +1141,11 @@
       ],
       "facts": {
         "close": 491.7099914550781,
-        "atr14": 11.764741743059245,
-        "rsi14": 66.22011957144012,
+        "atr14": 11.764741742866885,
+        "rsi14": 66.2201195710199,
         "sma20": 482.1956817626953,
         "sma50": 423.08011352539063,
-        "sma200": 429.2619921875,
+        "sma200": 429.2619927978516,
         "prior_high20": 512.7647021753171,
         "prior_low20": 388.00954678983055,
         "low10": 476.2534434403709,
@@ -1180,6 +1181,34 @@
           "summary": "D.A. Davidson Head of Technology Research Gil Luria talks with Yahoo Finance Senior Reporter Brooke DiPalma about how traders should approach Nvidia (NVDA) ahead of its latest earnings report after enduring its longest losing streak since 2022."
         },
         {
+          "title": "Use This Zacks Tool to Find Strong Cloud Stocks",
+          "publisher": "Zacks",
+          "published": "2026-08-25T23:14:00Z",
+          "link": "https://finance.yahoo.com/technology/articles/zacks-tool-strong-cloud-stocks-231400702.html",
+          "summary": "Zacks Thematic Screens lets you dive into over 30 dynamic investment themes shaping the future. Whether you're interested in cutting-edge technology, renewable energy, or healthcare innovations, our themes help you invest in ideas that matter to you."
+        },
+        {
+          "title": "Is Marvell (MRVL) Stock Poised for Another AI-Fueled Rally as Q2 Earnings Approach?",
+          "publisher": "Zacks",
+          "published": "2026-08-25T22:08:00Z",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/marvell-mrvl-stock-poised-another-220800295.html",
+          "summary": "Outside of Nvidia, Marvell Technology will provide the semiconductor market's most closely watched earnings report this week on Thursday, August 27."
+        },
+        {
+          "title": "Ro Khanna Urges AI CEOs to Follow Pope Leo XIV’s Warning: AI Must Not 'Diminishes Humanity' and Should Serve the Common Good",
+          "publisher": "Benzinga",
+          "published": "2026-08-25T22:01:06Z",
+          "link": "https://www.yahoo.com/news/politics/articles/ro-khanna-urges-ai-ceos-220106165.html",
+          "summary": "Rep. Ro Khanna (D-Calif.) is urging AI executives to embrace Pope Leo XIV‘s human-centered approach to artificial intelligence after meeting with the pontiff and discussing his Magnifica Humanitas encyclical. Khanna Cites Pope Leo’s AI Ethics Vision On Saturday, Khanna said..."
+        },
+        {
+          "title": "AI Trade at Risk From US Voter Ire Over Buildout, Barclays Says",
+          "publisher": "Bloomberg",
+          "published": "2026-08-25T21:24:12Z",
+          "link": "https://finance.yahoo.com/technology/ai/articles/ai-trade-risk-us-voter-212412748.html",
+          "summary": "The relentless buildout of artificial intelligence infrastructure is drawing bipartisan backlash, which could introduce political risk to the market’s beloved trade ahead of the US midterm election."
+        },
+        {
           "title": "Why Is IREN (IREN) Drawing Attention After Its AI Cloud Milestones?",
           "publisher": "Simply Wall St.",
           "published": "2026-08-25T21:06:42Z",
@@ -1213,34 +1242,6 @@
           "published": "2026-08-25T19:53:21Z",
           "link": "https://finance.yahoo.com/markets/stocks/articles/p-100-quietly-sending-powerful-195321128.html",
           "summary": "The market rotation may be healthier than it first appears."
-        },
-        {
-          "title": "Microsoft Just Ripped 28% in a Month. What Would It Take to Get MSFT Stock Up to $600?",
-          "publisher": "24/7 Wall St.",
-          "published": "2026-08-25T19:41:01Z",
-          "link": "https://247wallst.com/investing/2026/08/25/microsoft-just-ripped-28-in-a-month-what-would-it-take-to-get-msft-stock-up-to-600/",
-          "summary": "Azure just crossed a historic revenue milestone, Microsoft's commercial backlog ballooned to a staggering figure, and yet free cash flow dropped sharply. Whether $600 is the next stop or a ceiling depends on what happens inside the next earnings report."
-        },
-        {
-          "title": "Microsoft Stalls as $678 Billion Backlog Meets Falling Yields",
-          "publisher": "GuruFocus.com",
-          "published": "2026-08-25T19:40:52Z",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/microsoft-stalls-678-billion-backlog-194052410.html",
-          "summary": "Cheaper financing helps the AI buildout, but Microsoft must convert contracted demand into cash faster than spending expands."
-        },
-        {
-          "title": "Rosenblatt Resets Marvell Stock Target Before Earnings",
-          "publisher": "GuruFocus.com",
-          "published": "2026-08-25T17:57:38Z",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/rosenblatt-resets-marvell-stock-target-175738750.html",
-          "summary": "The real upside case extends well beyond this quarter"
-        },
-        {
-          "title": "Oracle Stock Is Now An AI Infrastructure Play: Is The Price Of Admission Too High?",
-          "publisher": "Trefis",
-          "published": "2026-08-25T17:49:27Z",
-          "link": "https://www.trefis.com/articles/612791/oracle-stock-is-now-an-ai-infrastructure-play-is-the-price-of-admission-too-high/2026-08-25",
-          "summary": "The company has a backlog of contracted revenue that dwarfs its peers, but it comes with a striking capital investment plan and near-term pressure on its profits."
         }
       ],
       "warnings": [
@@ -1389,11 +1390,11 @@
       ],
       "facts": {
         "close": 346.9599914550781,
-        "atr14": 8.986342869949617,
-        "rsi14": 48.731014486546144,
+        "atr14": 8.986342869948148,
+        "rsi14": 48.73101448655452,
         "sma20": 350.1344985961914,
         "sma50": 351.3205993652344,
-        "sma200": 333.4388203430176,
+        "sma200": 333.43881927490236,
         "prior_high20": 384.4800109863281,
         "prior_low20": 324.44000244140625,
         "low10": 338.57000732421875,
@@ -1429,18 +1430,32 @@
           "summary": "Nvidia will report its Q2 earnings after the bell on Aug. 26."
         },
         {
+          "title": "Zoom Reports Solid Earnings. The Stock Drops Anyway.",
+          "publisher": "Barrons.com",
+          "published": "2026-08-25T22:26:00Z",
+          "link": "https://www.barrons.com/articles/zoom-earnings-stock-price-ac38a544?siteid=yhoof2&yptr=yahoo",
+          "summary": "Zoom reported adjusted earnings of $1.55 a share for the quarter, up from $1.53 a year ago and above analysts’ expectations for $1.48, per FactSet."
+        },
+        {
+          "title": "Alphabet Investors Are Still Underestimating Google Cloud",
+          "publisher": "Motley Fool",
+          "published": "2026-08-25T22:24:00Z",
+          "link": "https://www.fool.com/investing/2026/08/25/alphabet-investors-are-still-underestimating-googl/",
+          "summary": "Google Cloud's growth has been heating up, and its acceleration should continue."
+        },
+        {
+          "title": "Is Marvell (MRVL) Stock Poised for Another AI-Fueled Rally as Q2 Earnings Approach?",
+          "publisher": "Zacks",
+          "published": "2026-08-25T22:08:00Z",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/marvell-mrvl-stock-poised-another-220800295.html",
+          "summary": "Outside of Nvidia, Marvell Technology will provide the semiconductor market's most closely watched earnings report this week on Thursday, August 27."
+        },
+        {
           "title": "OpenAI’s Data-Center Chief Has Reportedly Left — Executive Exodus Grows Ahead Of Planned IPO",
           "publisher": "Stocktwits",
           "published": "2026-08-25T21:02:57Z",
           "link": "https://stocktwits.com/news-articles/markets/equity/open-ai-data-center-chief-has-reportedly-left-executive-exodus-grows-ahead-of-planned-ipo/cZYlG2zRJo0",
           "summary": "Chris Malone’s exit adds to a string of senior departures as OpenAI reshuffles its infrastructure team and prepares for a potential IPO."
-        },
-        {
-          "title": "Zoom Reports Solid Earnings. The Stock Drops Anyway.",
-          "publisher": "Barrons.com",
-          "published": "2026-08-25T20:41:00Z",
-          "link": "https://www.barrons.com/articles/zoom-earnings-stock-price-ac38a544?siteid=yhoof2&yptr=yahoo",
-          "summary": "Zoom reported adjusted earnings of $1.55 a share for the quarter, up from $1.53 a year ago and above analysts’ expectations for $1.48, per FactSet."
         },
         {
           "title": "Why Rezolve AI Stock Rocketed Higher Today",
@@ -1476,20 +1491,6 @@
           "published": "2026-08-25T19:53:21Z",
           "link": "https://finance.yahoo.com/markets/stocks/articles/p-100-quietly-sending-powerful-195321128.html",
           "summary": "The market rotation may be healthier than it first appears."
-        },
-        {
-          "title": "Sector Update: Tech Stocks Rise Late Afternoon",
-          "publisher": "MT Newswires",
-          "published": "2026-08-25T19:47:08Z",
-          "link": "https://finance.yahoo.com/technology/articles/sector-tech-stocks-rise-afternoon-194708780.html",
-          "summary": "Tech stocks advanced late Tuesday afternoon, with the State Street Technology Select Sector SPDR ETF"
-        },
-        {
-          "title": "OpenAI Data Center Executive Chris Malone Departs the AI Startup",
-          "publisher": "Bloomberg",
-          "published": "2026-08-25T19:43:42Z",
-          "link": "https://finance.yahoo.com/technology/ai/articles/openai-data-center-executive-chris-194342675.html",
-          "summary": "An OpenAI executive helping to oversee the AI developer’s data center buildout, Chris Malone, has left the company."
         }
       ],
       "warnings": [
@@ -1639,11 +1640,11 @@
       ],
       "facts": {
         "close": 213.0500030517578,
-        "atr14": 6.399987419124695,
-        "rsi14": 49.60928974743788,
+        "atr14": 6.399987418719602,
+        "rsi14": 49.60928974761814,
         "sma20": 214.57800064086913,
         "sma50": 207.80639923095703,
-        "sma200": 195.26190185546875,
+        "sma200": 195.26190132141113,
         "prior_high20": 227.9199981689453,
         "prior_low20": 190.00999450683594,
         "low10": 207.25,
@@ -1707,39 +1708,39 @@
           "summary": "Nvidia will have to get its stock price rerated to shake off the \"cheap valuation\" vibes."
         },
         {
+          "title": "Wall Street ends higher as tech rebounds before Nvidia results",
+          "publisher": "Reuters Videos",
+          "published": "2026-08-25T23:09:13Z",
+          "link": "https://finance.yahoo.com/video/wall-street-ends-higher-tech-230913221.html",
+          "summary": "<body><p>STORY: U.S. stocks closed higher on Tuesday, with the Dow and S&P 500 each adding nearly a third of a percent, and the Nasdaq climbing two-thirds of a percent.</p><p>The gains could ease investor concerns sparked by a recent bond market rout that lifted yields and pressured equities.&nbsp;</p><p>Keith Buchanan is senior portfolio manager at Globalt Investments.</p><p>\"The market, as we see it from our firm, is just grappling with, what does this newer framework of higher yields, particularly along the Treasury curve, really means for risk assets across the board? We're coming to, you know, a lot of our work is honed in on this, this one metric and this one price, if you will, across risk assets for some time. Seems like the market is finally starting to grapple with, what does that mean as far as discounted cash flows and how you price the risk of the risk landscape? And that process can be churning and frankly could introduce downside volatility. And that's one concern we have is how that really filters through, how folks like myself that sit in our seats look at the world and how we price risk going forward.\"</p><p>Longer-dated Treasury yields fell on Tuesday as oil prices dropped to a one-week low and traders continued to weigh the implications of Treasury Secretary Scott Bessent's decision to expand Treasury buybacks.</p><p>:: Nvidia</p><p>Meanwhile, investors are looking ahead to Nvidia's results on Wednesday as the next test for the earnings-driven rally. Shares of the AI chip giant closed more than 2% higher.</p><p>Elsewhere in the market, shares of Dick's Sporting Goods plunged 30% after the retailer cut its annual forecasts.&nbsp;</p><p>And shares of Target fell almost 4% after the retailer apologized for and pulled a Halloween costume criticized for evoking blackface, renewing concerns about brand missteps just as its financial turnaround effort had begun to gain traction.</p><p>On the economic data front, Wednesday brings updated inflation figures for July, just one day ahead of the start of the Federal Reserve's annual Jackson Hole symposium.</p></body>"
+        },
+        {
           "title": "Dow Jones Futures: Stocks Rise Cautiously Into Fed Inflation Data, Nvidia Earnings; Robinhood In Buy Area",
           "publisher": "Investor's Business Daily",
-          "published": "2026-08-25T21:56:20Z",
+          "published": "2026-08-25T22:42:52Z",
           "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-fed-inflation-data-nvidia-earning-srobinhood-oil-prices-yields/?src=A00220&yptr=yahoo",
           "summary": "The stock market rose Tuesday amid lower oil prices and yields, but cautiously heading into Fed inflation data and Nvidia earnings."
         },
         {
-          "title": "A 65-Year-Old Couple Can Make $146,000 This Year and Pay 0% on Their Gains. Here’s the Math",
-          "publisher": "24/7 Wall St.",
-          "published": "2026-08-25T21:55:52Z",
-          "link": "https://247wallst.com/investing/2026/08/25/a-65-year-old-couple-can-make-146000-this-year-and-pay-0-on-their-gains-heres-the-math/",
-          "summary": "A popular high-yield ETF beloved by retirees for its fat monthly checks contains a hidden tax trap that quietly destroys one of the most powerful zero-tax strategies available to couples over 65."
-        },
-        {
-          "title": "Louis Navellier has blunt message on Nvidia’s reign before earnings",
-          "publisher": "TheStreet",
-          "published": "2026-08-25T21:47:00Z",
-          "link": "https://www.thestreet.com/investing/louis-navellier-has-blunt-message-on-nvidias-reign-before-earnings",
-          "summary": "Wall Street veteran Louis Navellier laid out a 20-year blueprint for Nvidia."
-        },
-        {
-          "title": "The Most Famous Fund Manager’s Fund Charges You 0.74%. The 401(k) Version Charges 0.45%",
-          "publisher": "24/7 Wall St.",
-          "published": "2026-08-25T21:45:45Z",
-          "link": "https://247wallst.com/investing/2026/08/25/the-most-famous-fund-managers-fund-charges-you-0-74-the-401k-version-charges-0-45/",
-          "summary": "Will Danoff's flagship fund charges retail investors a fee that quietly bleeds returns year after year, but buried inside most workplace 401(k) menus is a lesser-known share class running the identical portfolio for significantly less."
-        },
-        {
-          "title": "If I Could Tell Everyone 1 Thing About the Stock Market, It's This: It Will Crash",
+          "title": "If You'd Invested $1,000 in Home Depot 15 Years Ago, Here's How Much You'd Have Today",
           "publisher": "Motley Fool",
-          "published": "2026-08-25T21:35:00Z",
-          "link": "https://www.fool.com/investing/2026/08/25/if-i-could-1-thing-about-the-stock-market-crash/",
-          "summary": "Stock investors simply need to expect occasional downturns, large and small."
+          "published": "2026-08-25T22:35:00Z",
+          "link": "https://www.fool.com/investing/2026/08/25/if-youd-invested-1000-in-home-depot-15-years-ago-h/",
+          "summary": "Since the period 15 years ago when it was trading sideways, this blue chip retailer has become a multibagger."
+        },
+        {
+          "title": "What You Actually Pay To Join The AMD Run",
+          "publisher": "Trefis",
+          "published": "2026-08-25T22:34:27Z",
+          "link": "https://www.trefis.com/articles/612797/what-you-actually-pay-to-join-the-amd-run-2/2026-08-25",
+          "summary": "The chipmaker's long-term surge is powered by real AI demand, but a recent pullback and a steep valuation force investors to ask what's left in the tank."
+        },
+        {
+          "title": "Alphabet Investors Are Still Underestimating Google Cloud",
+          "publisher": "Motley Fool",
+          "published": "2026-08-25T22:24:00Z",
+          "link": "https://www.fool.com/investing/2026/08/25/alphabet-investors-are-still-underestimating-googl/",
+          "summary": "Google Cloud's growth has been heating up, and its acceleration should continue."
         }
       ],
       "warnings": [
@@ -2013,52 +2014,10 @@
   "errors": {},
   "changes_from_previous_close": [
     {
-      "ticker": "EOG",
-      "field": "Baseline",
-      "previous": null,
-      "current": "QUALIFIED"
-    },
-    {
-      "ticker": "JPM",
-      "field": "Baseline",
-      "previous": null,
-      "current": "QUALIFIED"
-    },
-    {
-      "ticker": "AMZN",
-      "field": "Baseline",
-      "previous": null,
-      "current": "QUALIFIED"
-    },
-    {
-      "ticker": "V",
-      "field": "Baseline",
-      "previous": null,
-      "current": "QUALIFIED"
-    },
-    {
       "ticker": "MSFT",
-      "field": "Baseline",
-      "previous": null,
-      "current": "WATCH"
-    },
-    {
-      "ticker": "GOOGL",
-      "field": "Baseline",
-      "previous": null,
-      "current": "WATCH"
-    },
-    {
-      "ticker": "NVDA",
-      "field": "Baseline",
-      "previous": null,
-      "current": "REJECT FOR NOW"
-    },
-    {
-      "ticker": "RDW",
-      "field": "Baseline",
-      "previous": null,
-      "current": "REJECT FOR NOW"
+      "field": "Score",
+      "previous": 88.1,
+      "current": 81.1
     }
   ],
   "source_note": "Automated report generated from the community yfinance adapter. Prices may be delayed and headlines are screened by rules; verify primary filings, earnings dates, and the executable Robinhood quote before acting."
