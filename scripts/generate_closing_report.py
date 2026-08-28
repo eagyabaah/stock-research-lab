@@ -99,7 +99,10 @@ def compare_reports(
         report["ticker"]: report for report in previous.get("reports", [])
     }
     fields = [
-        ("Decision", ("status",)),
+        ("Recommendation", ("recommendation",)),
+        ("Confidence", ("confidence",)),
+        ("Long score", ("long_score",)),
+        ("Short score", ("short_score",)),
         ("Score", ("score",)),
         ("Directional view", ("directional_view", "bias")),
         ("Entry", ("trade_plan", "entry_trigger")),
@@ -214,11 +217,13 @@ def main() -> int:
         except Exception as exc:
             errors[ticker] = str(exc)
 
-    priority = {"QUALIFIED": 0, "WATCH": 1, "REJECT FOR NOW": 2}
-    reports.sort(key=lambda item: (priority.get(item["status"], 9), -item["score"]))
+    priority = {"QUALIFIED LONG": 0, "QUALIFIED SHORT": 0, "WATCH": 1, "NO TRADE": 2, "REJECT FOR NOW": 3}
+    reports.sort(key=lambda item: (priority.get(item["status"], 9), -item.get("score", 0)))
     summary = {
-        "qualified": sum(item["status"] == "QUALIFIED" for item in reports),
+        "qualified_long": sum(item.get("recommendation") in {"LONG", "STRONG LONG"} for item in reports),
+        "qualified_short": sum(item.get("recommendation") in {"SHORT", "STRONG SHORT"} for item in reports),
         "watch": sum(item["status"] == "WATCH" for item in reports),
+        "no_trade": sum(item.get("recommendation") == "NO TRADE" for item in reports),
         "rejected": sum(item["status"] == "REJECT FOR NOW" for item in reports),
     }
     changes = compare_reports(previous_report, reports)
@@ -229,7 +234,13 @@ def main() -> int:
             "market_was_closed": market_date != now_et.date(),
             "watchlist": tickers,
             "summary": summary,
-            "action": "NO TRADE" if summary["qualified"] == 0 else "REVIEW QUALIFIED SETUPS",
+            "action": (
+                "REVIEW LONG AND SHORT SETUPS"
+                if summary["qualified_long"] and summary["qualified_short"]
+                else "REVIEW LONG SETUPS" if summary["qualified_long"]
+                else "REVIEW SHORT SETUPS" if summary["qualified_short"]
+                else "NO TRADE"
+            ),
             "reports": reports,
             "errors": errors,
             "changes_from_previous_close": changes,

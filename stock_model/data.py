@@ -140,6 +140,15 @@ def fetch_us_bundle(ticker: str, period: str = "2y") -> MarketBundle:
         "currency": info.get("currency", "USD"),
         "website": info.get("website"),
         "business_summary": info.get("longBusinessSummary"),
+        "short_percent_of_float": info.get("shortPercentOfFloat"),
+        "short_ratio": info.get("shortRatio"),
+        "shares_short": info.get("sharesShort"),
+        "shares_short_prior_month": info.get("sharesShortPriorMonth"),
+        "float_shares": info.get("floatShares"),
+        "shares_outstanding": info.get("sharesOutstanding"),
+        "52_week_change": info.get("52WeekChange"),
+        "beta": info.get("beta"),
+        "average_volume": info.get("averageVolume"),
     }
     return MarketBundle(
         ticker=symbol,

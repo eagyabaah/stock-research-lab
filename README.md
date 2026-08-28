@@ -8,7 +8,7 @@ Ghana long-term stock scoring. It implements the mandate we defined:
 - $5 initial US risk per trade and $20 maximum concurrent open risk;
 - $200 maximum US position;
 - 2:1 minimum reward/risk;
-- no leverage, options, shorts, penny stocks, or averaging down;
+- no leverage or averaging down; US analysis now evaluates long, short, and no-trade outcomes. Option-contract analysis remains a later layer; Ghana remains long-term only;
 - no Ghana swing trading.
 
 The site shows the evidence behind every gate. It does **not** expose or depend
@@ -18,14 +18,15 @@ on hidden model reasoning, and it does not place orders.
 
 - Dedicated full-report search for any supported US-listed ticker, including RDW.
 - Batch screen of up to eight US tickers.
-- Directional conclusion: long candidate, bullish watch, mixed/wait, or bearish/avoid long.
-- Bearish breakdown research levels with short-sale execution disabled by the mandate.
+- Direction-neutral conclusion: STRONG LONG, LONG, STRONG SHORT, SHORT, or NO TRADE.
+- Separate Long and Short 100-point scores, each with independent hard gates.
+- Short-specific squeeze-risk check using short interest and days-to-cover when available.
 - SPY market-regime gate.
 - Trend-pullback, confirmed-breakout, and recovery/reclaim strategies.
 - SMA20/50/200, RSI14, ATR14, volume ratio, 20-day breakout level, and 63-day
   relative strength.
 - Fundamentals, valuation, news/event, liquidity, and risk gates.
-- Entry, stop, 2R/3R targets, fractional shares, notional, and planned loss.
+- Entry, stop/invalidation, 2R/3R/4R targets, risk per share, reward/risk, fractional shares, notional, and planned maximum loss for the selected direction.
 - Portfolio drawdown and existing-open-risk breakers.
 - Candlestick chart with model levels.
 - Evidence, bull thesis, bear case, and invalidation conditions.
@@ -141,9 +142,8 @@ It cannot independently browse and cross-check primary sources with the same
 depth as a human or research assistant. Treat its headline links as a research
 queue, not as proof that every material event was found.
 
-The directional layer may show a bearish scenario, but it does not size or
-recommend a short sale because this portfolio's active mandate prohibits
-shorting. It instead says **BEARISH / AVOID LONG** and shows what would confirm
-or invalidate that reading.
+The directional layer now evaluates both sides. A short plan may be generated
+when the short hard gates pass, but broker locate/borrow availability is not
+verified by the current adapter and must be confirmed at execution.
 
 See `MODEL_RULES.md` for the exact scoring rules and limitations.

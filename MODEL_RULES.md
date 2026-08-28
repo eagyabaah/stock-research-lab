@@ -14,97 +14,66 @@ deterministic: the same inputs produce the same gate decisions and position size
   the user must compare the planned risk with existing positions.
 - Maximum US position: $200.
 - Minimum reward/risk: 2:1.
-- No leverage, options, short selling, penny stocks, or averaging down.
+- No leverage or averaging down. US swing analysis now evaluates LONG, SHORT, and NO TRADE. Options are research-only until an option-chain/contract-quality module is added; Ghana remains long-term accumulation only.
 - Ghana analysis is long-term accumulation only.
 
-## US scoring
+## US scoring and direction
 
-| Gate | Points | Hard gate? |
+The engine calculates a separate 100-point score for **Long** and **Short**. The
+final decision is direction-neutral: `STRONG LONG`, `LONG`, `STRONG SHORT`,
+`SHORT`, or `NO TRADE`. A trade is not recommended merely because a ticker was
+searched.
+
+| Component | Points | Direction-specific? |
 |---|---:|---|
 | Technical | 30 | Yes |
 | Fundamentals | 25 | Yes |
 | News/catalyst | 15 | Yes |
-| Valuation | 10 | No |
-| Liquidity/execution | 10 | Yes |
+| Valuation | 10 | Yes |
+| Liquidity/execution | 10 | Shared |
 | Risk/setup | 10 | Yes |
+| Short squeeze risk | 10 | Short only |
 
-`QUALIFIED` requires at least 75 points, every hard gate at `PASS`, and a market
-regime and portfolio-risk state that are not `FAIL`. A valuation failure can therefore be outweighed only
-by exceptionally strong evidence elsewhere; it remains visible as a risk.
+The long side uses trend pullback, confirmed breakout, and recovery/reclaim. The
+short side uses bearish trend, confirmed breakdown, and failed reclaim. The model
+compares both sides and only selects a direction when its directional hard gates
+pass and its score is at least 75. If both sides qualify, the higher score must
+lead by at least five points; otherwise the result is `NO TRADE`.
+
+### Short-specific controls
+
+- A short setup is not automatically blocked because SPY is strong; market regime
+  is context rather than a universal short hard gate.
+- Short interest and days-to-cover are used as squeeze-risk modifiers. Elevated
+  readings reduce the short score; the model can block a short when the squeeze-risk gate fails.
+- The current data adapter does not confirm real-time stock borrow/locate
+  availability. Broker availability controls actual execution.
+- Short position sizing uses the same dollar-risk cap and maximum notional as the
+  long engine: planned risk is `(stop - entry) * shares` for a short.
+- Short targets are below entry; invalidation is above entry.
+
+### Trade-plan details
+
+Every selected US setup includes an entry trigger, stop/invalidation, three profit
+targets, risk per share, reward/risk to Target 1, position size, notional, planned
+maximum loss, thesis, and invalidation rules. The engine does not model option
+premiums, theta, or contract liquidity yet; those are separate contract-level
+concerns and must be verified before an options trade.
 
 ### Market regime
 
 - `PASS`: SPY is above SMA200, SMA50 is above SMA200, and SMA50 is rising over
   the last 20 sessions.
 - `CAUTION`: SPY is above SMA200 but intermediate confirmation is mixed.
-- `FAIL`: SPY is below SMA200; new long positions are blocked.
+- `FAIL`: SPY is below SMA200. This blocks new longs, but does **not** automatically
+  block shorts.
 
 ### Portfolio risk
 
-- New trades are blocked at a 10% portfolio drawdown.
+- New trades in either direction are blocked at a 10% portfolio drawdown.
 - New trades are also blocked when existing positions already use the $20
   total-open-risk allowance.
 - At a drawdown of 6% or more, the gate changes to `CAUTION`.
-
-### Technical strategies
-
-The engine separately scores three strategies and displays the highest-scoring
-one. A stock does not pass merely because one attractive indicator exists.
-
-1. **Trend pullback:** established trend, rising SMA50, price near SMA20, RSI in
-   a controlled range, improving close, and positive 63-day relative strength.
-2. **Confirmed breakout:** close above the prior 20-day high, volume of at least
-   1.3 times its 20-day average, aligned moving averages, confirming RSI, limited
-   ATR extension, and positive relative strength.
-3. **Recovery/reclaim:** price above SMA200 and back above SMA20/SMA50 after a
-   genuine correction, with momentum, volume, and relative-strength confirmation.
-
-The stop is placed algorithmically below the nearest strategy-specific support
-with an ATR buffer. Target 1 is two risk units above entry and Target 2 is three.
-
-### Directional research
-
-The separate directional layer summarizes the chart as **LONG CANDIDATE**,
-**BULLISH WATCH**, **MIXED / WAIT**, or **BEARISH / AVOID LONG**. A bearish
-breakdown scenario can include a trigger, invalidation, and downside objectives,
-but it is not an executable short plan. Short-sale sizing remains disabled under
-the active no-shorting mandate.
-
-### Scheduled reports
-
-The GitHub Actions report uses the same engine, default $1,000 portfolio inputs,
-and symbols in `watchlist.txt`. It does not know the user's live Robinhood equity,
-drawdown, fills, or open risk. Before acting, the user must update those values in
-the website and re-run the ticker at the current broker price.
-
-### Fundamental gate
-
-The current no-key data adapter uses reported revenue growth, earnings growth,
-profit margin, free cash flow, and debt relative to cash. At least three fields
-must be present. Missing data can only produce `CAUTION`, never `PASS`.
-
-This is a first-pass quality guardrail, not a full discounted-cash-flow model.
-Primary filings should replace or verify every provider field before money is
-committed.
-
-### News gate
-
-- Earnings or a comparable binary event within two trading sessions blocks a
-  new entry.
-- A small explicit keyword set identifies headlines requiring review.
-- Severe accounting, fraud, bankruptcy, or investigation language fails the gate.
-- No recent headlines means `CAUTION`, not an automatic pass.
-
-This rule is deliberately conservative and cannot replace reading the filing or
-article. It reports the titles that influenced the gate.
-
-### Liquidity and risk
-
-- Preferred 20-day average dollar volume: at least $50 million.
-- Position shares are the smaller of:
-  - risk budget divided by entry minus stop; and
-  - maximum position dollars divided by entry.
-- Robinhood-compatible fractional sizing is rounded down to 0.001 share.
 
 ## Ghana long-term scoring
 

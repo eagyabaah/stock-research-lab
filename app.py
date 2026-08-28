@@ -39,7 +39,6 @@ def status_icon(status: str) -> str:
         "FAIL": "❌",
         "QUALIFIED": "✅",
         "WATCH": "⚠️",
-        "REJECT FOR NOW": "❌",
         "ACCUMULATE GRADUALLY": "✅",
         "INSUFFICIENT DATA": "⚠️",
         "AVOID FOR NOW": "❌",
@@ -47,6 +46,12 @@ def status_icon(status: str) -> str:
         "BULLISH WATCH": "⚠️",
         "MIXED / WAIT": "⚠️",
         "BEARISH / AVOID LONG": "🔻",
+        "STRONG LONG": "🟢",
+        "LONG": "🟢",
+        "STRONG SHORT": "🔴",
+        "SHORT": "🔴",
+        "NO TRADE": "⚪",
+        "REJECT FOR NOW": "⛔",
     }.get(status, "•")
 
 
@@ -100,39 +105,24 @@ def price_chart(bundle: MarketBundle, result: Any) -> go.Figure:
 def render_directional_view(result: Any) -> None:
     view = result.directional_view
     st.markdown("#### Directional conclusion")
-    st.info(f"{status_icon(view.bias)} **{view.bias}**")
+    first, second, third = st.columns(3)
+    first.metric("Recommendation", result.recommendation)
+    second.metric("Long score", f"{result.long_score:.0f}/100")
+    third.metric("Short score", f"{result.short_score:.0f}/100")
+    st.info(f"{status_icon(result.recommendation)} **{result.recommendation}** · confidence {result.confidence}")
     for item in view.evidence:
         st.write(f"- {item}")
-    if view.bearish_trigger is not None:
-        st.markdown("##### Short-side research scenario")
-        st.dataframe(
-            pd.DataFrame(
-                [
-                    {
-                        "Strategy": view.bearish_strategy,
-                        "Bearish trigger": f"${view.bearish_trigger:.2f}",
-                        "Invalidation": f"${view.bearish_invalidation:.2f}",
-                        "Downside objective 1": f"${view.bearish_target_1:.2f}",
-                        "Downside objective 2": f"${view.bearish_target_2:.2f}",
-                    }
-                ]
-            ),
-            hide_index=True,
-            use_container_width=True,
-        )
-        st.warning(
-            "Short-sale execution and position sizing are disabled. Your active mandate prohibits "
-            "shorting; these levels explain the bearish thesis and when it would be wrong."
-        )
+    if view.short_risk_flags:
+        st.warning("**Short-specific risk flags:** " + ", ".join(view.short_risk_flags))
 
 
 def render_us_detail(bundle: MarketBundle, result: Any) -> None:
-    st.subheader(f"{result.ticker} — {status_icon(result.status)} {result.status}")
+    st.subheader(f"{result.ticker} — {status_icon(result.recommendation)} {result.recommendation}")
     left, middle, right, fourth = st.columns(4)
-    left.metric("Model score", f"{result.score:.0f}/100")
+    left.metric("Selected score", f"{result.score:.0f}/100")
     middle.metric("Latest close", f"${result.price:,.2f}")
-    right.metric("Strategy", result.strategy)
-    fourth.metric("Data through", pd.Timestamp(result.as_of).date().isoformat())
+    right.metric("Confidence", result.confidence)
+    fourth.metric("Strategy", result.strategy)
 
     st.dataframe(gate_frame(result), hide_index=True, use_container_width=True)
     render_directional_view(result)
@@ -140,36 +130,42 @@ def render_us_detail(bundle: MarketBundle, result: Any) -> None:
 
     if result.trade_plan:
         plan = result.trade_plan
-        st.markdown("#### Conditional trade plan")
+        st.markdown(f"#### Conditional {plan.direction.lower()} trade plan")
+        breakeven_note = "" if plan.direction == "LONG" else "Short sale: no option premium/breakeven is assumed."
         st.dataframe(
             pd.DataFrame(
                 [
                     {
+                        "Direction": plan.direction,
                         "Entry trigger": f"${plan.entry_trigger:.2f}",
-                        "Stop/invalidation": f"${plan.stop:.2f}",
+                        "Stop / invalidation": f"${plan.stop:.2f}",
                         "Target 1": f"${plan.target_1:.2f}",
                         "Target 2": f"${plan.target_2:.2f}",
+                        "Target 3": f"${plan.target_3:.2f}",
+                        "Risk/share": f"${plan.risk_per_share:.2f}",
+                        "R:R to T1": f"{plan.reward_risk_1:.1f}:1",
                         "Shares": f"{plan.shares:.3f}",
                         "Notional": f"${plan.notional:.2f}",
-                        "Planned risk": f"${plan.planned_risk:.2f}",
+                        "Planned max risk": f"${plan.planned_risk:.2f}",
                     }
                 ]
             ),
             hide_index=True,
             use_container_width=True,
         )
-        st.caption("Recalculate from the actual broker fill. A model trigger is not a market order.")
+        st.caption("Recalculate from the actual broker fill. " + breakeven_note)
+    else:
+        st.info("No executable setup was generated because the selected direction did not clear the model's hard gates.")
 
     thesis_column, risk_column = st.columns(2)
     with thesis_column:
-        st.markdown("#### Why it deserves consideration")
+        st.markdown("#### Trade thesis")
         for line in result.thesis:
             st.write(f"- {line}")
     with risk_column:
-        st.markdown("#### Strongest bear case")
+        st.markdown("#### Risks and invalidation")
         for line in result.bear_case:
             st.write(f"- {line}")
-        st.markdown("#### What invalidates it")
         for line in result.invalidation:
             st.write(f"- {line}")
 
@@ -192,7 +188,7 @@ def render_us_detail(bundle: MarketBundle, result: Any) -> None:
                 st.write(f"- {item}")
 
     fundamentals = bundle.fundamentals
-    with st.expander("Fundamental data used by the model"):
+    with st.expander("Fundamental and short-interest data used by the model"):
         rows = []
         for key, label in [
             ("revenue_growth", "Revenue growth"),
@@ -205,6 +201,11 @@ def render_us_detail(bundle: MarketBundle, result: Any) -> None:
             ("forward_pe", "Forward P/E"),
             ("peg_ratio", "PEG ratio"),
             ("earnings_date", "Next earnings date"),
+            ("short_percent_of_float", "Short % of float"),
+            ("short_ratio", "Short ratio / days to cover"),
+            ("shares_short", "Shares short"),
+            ("float_shares", "Float shares"),
+            ("beta", "Beta"),
         ]:
             rows.append({"Metric": label, "Value": fundamentals.get(key)})
         st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
@@ -246,56 +247,36 @@ def saved_gate_frame(report: dict[str, Any]) -> pd.DataFrame:
 
 
 def render_saved_report(report: dict[str, Any]) -> None:
-    st.subheader(
-        f"{report['ticker']} — {status_icon(report['status'])} {report['status']}"
-    )
+    recommendation = report.get("recommendation", report.get("status", "NO TRADE"))
+    st.subheader(f"{report['ticker']} — {status_icon(recommendation)} {recommendation}")
     first, second, third, fourth = st.columns(4)
-    first.metric("Model score", f"{report['score']:.0f}/100")
-    second.metric("Closing price", f"${report['price']:,.2f}")
-    third.metric("Strategy", report["strategy"])
-    direction = report.get("directional_view", {})
-    fourth.metric("Directional view", direction.get("bias", "Unavailable"))
+    first.metric("Selected score", f"{report.get('score', 0):.0f}/100")
+    second.metric("Long score", f"{report.get('long_score', 0):.0f}/100")
+    third.metric("Short score", f"{report.get('short_score', 0):.0f}/100")
+    fourth.metric("Confidence", report.get("confidence", "LOW"))
     st.dataframe(saved_gate_frame(report), hide_index=True, use_container_width=True)
 
     plan = report.get("trade_plan")
     if plan:
-        st.markdown("#### Conditional long plan")
-        st.dataframe(
-            pd.DataFrame(
-                [
-                    {
-                        "Entry": plan["entry_trigger"],
-                        "Stop": plan["stop"],
-                        "Target 1": plan["target_1"],
-                        "Target 2": plan["target_2"],
-                        "Shares": plan["shares"],
-                        "Notional": plan["notional"],
-                        "Planned risk": plan["planned_risk"],
-                    }
-                ]
-            ),
-            hide_index=True,
-            use_container_width=True,
-        )
+        st.markdown(f"#### Conditional {plan.get('direction', 'trade').lower()} plan")
+        st.dataframe(pd.DataFrame([plan]), hide_index=True, use_container_width=True)
 
+    direction = report.get("directional_view", {})
     if direction:
         st.markdown(f"#### {status_icon(direction.get('bias', ''))} {direction.get('bias')}")
         for item in direction.get("evidence", []):
             st.write(f"- {item}")
-        if direction.get("bearish_trigger") is not None:
-            st.write(
-                f"Bearish research levels: trigger **${direction['bearish_trigger']:.2f}**, "
-                f"invalidation **${direction['bearish_invalidation']:.2f}**, objectives "
-                f"**${direction['bearish_target_1']:.2f}** and **${direction['bearish_target_2']:.2f}**."
-            )
+        flags = direction.get("short_risk_flags") or []
+        if flags:
+            st.warning("**Short-specific risk flags:** " + ", ".join(flags))
 
     left, right = st.columns(2)
     with left:
-        st.markdown("#### Why consider it")
+        st.markdown("#### Trade thesis")
         for item in report.get("thesis", []):
             st.write(f"- {item}")
     with right:
-        st.markdown("#### Bear case and invalidation")
+        st.markdown("#### Risks and invalidation")
         for item in report.get("bear_case", []):
             st.write(f"- {item}")
         for item in report.get("invalidation", []):
@@ -529,6 +510,7 @@ with us_tab:
         current_open_risk = st.number_input("Current total open risk ($)", min_value=0.0, value=0.0, step=1.0)
         current_drawdown = st.number_input("Current portfolio drawdown (%)", min_value=0.0, value=0.0, step=0.5)
         minimum_rr = st.number_input("Minimum reward/risk", min_value=1.0, value=2.0, step=0.25)
+        allow_shorts = st.checkbox("Enable short-trade analysis", value=True, help="The model will score short setups and can generate a conditional short plan when all short hard gates pass.")
         st.caption("Portfolio halt threshold: 10% drawdown. Maximum total open risk: $20.")
 
     watchlist_text = st.text_input(
@@ -546,6 +528,7 @@ with us_tab:
             current_open_risk=current_open_risk,
             current_drawdown_pct=current_drawdown,
             min_reward_risk=minimum_rr,
+            allow_shorts=allow_shorts,
         )
         reports = {}
         bundles = {}
@@ -588,15 +571,17 @@ with us_tab:
             [
                 {
                     "Ticker": ticker,
-                    "Status": f"{status_icon(report.status)} {report.status}",
-                    "Score": report.score,
+                    "Recommendation": f"{status_icon(report.recommendation)} {report.recommendation}",
+                    "Confidence": report.confidence,
+                    "Long": report.long_score,
+                    "Short": report.short_score,
                     "Strategy": report.strategy,
                     "Close": report.price,
                     "Entry": report.trade_plan.entry_trigger if report.trade_plan else None,
                     "Stop": report.trade_plan.stop if report.trade_plan else None,
                     "Target": report.trade_plan.target_1 if report.trade_plan else None,
                 }
-                for ticker, report in sorted(reports.items(), key=lambda item: item[1].score, reverse=True)
+                for ticker, report in sorted(reports.items(), key=lambda item: max(item[1].long_score, item[1].short_score), reverse=True)
             ]
         )
         st.markdown("#### Ranked decision table")
@@ -609,8 +594,9 @@ with us_tab:
 with search_tab:
     st.subheader("Research any US-listed stock")
     st.write(
-        "Enter a ticker such as RDW. The report applies the same technical, fundamental, "
-        "valuation, news, liquidity, and portfolio-risk gates as the watchlist screen."
+        "Enter a ticker such as RDW. The report scores both a long and short thesis, then "
+        "selects LONG, SHORT, or NO TRADE using the same technical, fundamental, valuation, "
+        "news, liquidity, squeeze-risk, and portfolio-risk framework."
     )
     searched_ticker = st.text_input(
         "Ticker symbol",
@@ -627,6 +613,7 @@ with search_tab:
             current_open_risk=current_open_risk,
             current_drawdown_pct=current_drawdown,
             min_reward_risk=minimum_rr,
+            allow_shorts=allow_shorts,
         )
         with st.spinner(f"Building the evidence report for {searched_ticker}..."):
             try:
@@ -677,15 +664,16 @@ with report_tab:
             )
         action = latest_report.get("action", "REVIEW REPORT")
         if action == "NO TRADE":
-            st.warning("**Closing decision: NO TRADE** — no stock passed every hard gate.")
+            st.warning("**Closing decision: NO TRADE** — no stock passed the directional hard gates.")
         else:
             st.success(f"**Closing decision: {action}**")
         summary = latest_report.get("summary", {})
-        first, second, third, fourth = st.columns(4)
-        first.metric("Qualified", summary.get("qualified", 0))
-        second.metric("Watch", summary.get("watch", 0))
-        third.metric("Rejected", summary.get("rejected", 0))
-        fourth.metric("Data errors", len(latest_report.get("errors", {})))
+        first, second, third, fourth, fifth = st.columns(5)
+        first.metric("Long setups", summary.get("qualified_long", 0))
+        second.metric("Short setups", summary.get("qualified_short", 0))
+        third.metric("Watch", summary.get("watch", 0))
+        fourth.metric("No trade", summary.get("no_trade", 0))
+        fifth.metric("Data errors", len(latest_report.get("errors", {})))
 
         scheduled_reports = latest_report.get("reports", [])
         if scheduled_reports:
@@ -693,9 +681,10 @@ with report_tab:
                 [
                     {
                         "Ticker": report["ticker"],
-                        "Decision": report["status"],
-                        "Directional view": report.get("directional_view", {}).get("bias"),
-                        "Score": report["score"],
+                        "Recommendation": report.get("recommendation", report["status"]),
+                        "Confidence": report.get("confidence"),
+                        "Long": report.get("long_score"),
+                        "Short": report.get("short_score"),
                         "Close": report["price"],
                         "Strategy": report["strategy"],
                     }
@@ -788,24 +777,16 @@ with methodology_tab:
     st.subheader("Qualification logic")
     st.markdown(
         """
-**US score (100 points):** technical 30, fundamentals 25, news/catalysts 15,
-valuation 10, liquidity/execution 10, and risk/setup 10.
+**US direction-neutral scoring:** the model calculates separate Long and Short scores.
+Long: technical 30, fundamentals 25, news/catalysts 15, valuation 10, liquidity 10,
+and risk/setup 10. Short: technical 30, fundamentals 25, news/catalysts 15,
+valuation 10, liquidity 5, short-squeeze risk 5, and risk/setup 10.
 
-**Qualified** requires a score of at least 75 plus hard passes for technicals,
-fundamentals, news/catalysts, liquidity, and risk. The SPY market regime cannot
-be in a failed state. Valuation affects the score but is not a standalone hard gate.
-
-The engine tests three distinct setups—trend pullback, confirmed breakout, and
-recovery/reclaim—and reports only the highest-scoring applicable setup. It sizes
-the position using the smaller of the risk budget and the maximum-position cap.
-
-The directional layer can classify a stock as long candidate, bullish watch,
-mixed/wait, or bearish/avoid long. Bearish breakdown levels are research only:
-short-sale execution remains disabled under the active no-shorting mandate.
-
-Scheduled U.S. reports are generated by GitHub Actions after the market close and
-saved into the repository for this site to display. They use the same deterministic
-engine and do not replace primary-source review.
+**Trade selection:** a direction must reach at least 75 and pass its hard gates.
+When both directions qualify, the higher score must lead by at least five points;
+otherwise the result is NO TRADE. SPY market regime blocks new longs when it fails
+but does not automatically block shorts. Short borrow/locate availability is not
+verified by the current adapter and remains broker-controlled.
 
 **Ghana score (100 points):** fundamentals 35, valuation 20, balance sheet and
 cash flow 15, news/governance 15, liquidity 10, and technical entry timing 5.

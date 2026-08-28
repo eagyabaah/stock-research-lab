@@ -96,7 +96,7 @@ class EngineTests(unittest.TestCase):
         result = analyze_us_swing(
             "TEST", self.stock, fundamentals, self.news, self.spy, ModelConfig()
         )
-        news_gate = next(gate for gate in result.gates if gate.name == "News/catalyst")
+        news_gate = next(gate for gate in result.gates if gate.name == "News/catalyst (long)")
         self.assertEqual(news_gate.status, "FAIL")
         self.assertNotEqual(result.status, "QUALIFIED")
 
@@ -126,19 +126,35 @@ class EngineTests(unittest.TestCase):
         self.assertEqual(portfolio_gate.status, "FAIL")
         self.assertIsNone(result.trade_plan)
 
-    def test_bearish_view_does_not_enable_short_execution(self) -> None:
+    def test_bearish_view_can_select_short_execution(self) -> None:
         falling_stock = synthetic_history(start=180, end=80, volume=3_000_000)
+        fundamentals = dict(self.fundamentals)
+        fundamentals.update({
+            "revenue_growth": -0.18,
+            "earnings_growth": -0.22,
+            "profit_margin": -0.05,
+            "free_cash_flow": -10_000_000,
+            "total_cash": 20_000_000,
+            "total_debt": 90_000_000,
+            "trailing_pe": 80,
+            "forward_pe": 70,
+            "peg_ratio": 3.0,
+            "shortPercentOfFloat": 0.05,
+            "shortRatio": 2.0,
+        })
+        fundamentals["short_percent_of_float"] = 0.05
+        fundamentals["short_ratio"] = 2.0
         result = analyze_us_swing(
             "BEAR",
             falling_stock,
-            self.fundamentals,
+            fundamentals,
             self.news,
             self.spy,
             ModelConfig(),
         )
-        self.assertEqual(result.directional_view.bias, "BEARISH / AVOID LONG")
-        self.assertIsNotNone(result.directional_view.bearish_trigger)
-        self.assertFalse(result.directional_view.short_execution_allowed)
+        self.assertIn(result.directional_view.bias, {"SHORT", "STRONG SHORT", "NO TRADE"})
+        self.assertGreater(result.short_score, result.long_score)
+        self.assertTrue(result.directional_view.short_execution_allowed)
 
     def test_result_json_includes_directional_view(self) -> None:
         result = analyze_us_swing(
@@ -152,6 +168,9 @@ class EngineTests(unittest.TestCase):
         payload = result.to_dict()
         self.assertIn("directional_view", payload)
         self.assertIn("bias", payload["directional_view"])
+        self.assertIn("long_score", payload)
+        self.assertIn("short_score", payload)
+        self.assertIn("recommendation", payload)
 
 
 class GhanaTests(unittest.TestCase):

@@ -18,10 +18,12 @@ class GateResult:
 
 @dataclass(frozen=True)
 class TradePlan:
+    direction: str
     entry_trigger: float
     stop: float
     target_1: float
     target_2: float
+    target_3: float
     risk_per_share: float
     reward_risk_1: float
     shares: float
@@ -36,12 +38,15 @@ class TradePlan:
 class DirectionalView:
     bias: str
     evidence: list[str] = field(default_factory=list)
+    bullish_score: float = 0.0
+    bearish_score: float = 0.0
     bearish_strategy: str | None = None
     bearish_trigger: float | None = None
     bearish_invalidation: float | None = None
     bearish_target_1: float | None = None
     bearish_target_2: float | None = None
     short_execution_allowed: bool = False
+    short_risk_flags: list[str] = field(default_factory=list)
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
@@ -64,6 +69,13 @@ class AnalysisResult:
     news: list[dict[str, Any]]
     warnings: list[str]
     directional_view: DirectionalView
+    long_score: float = 0.0
+    short_score: float = 0.0
+    recommendation: str = "NO TRADE"
+    confidence: str = "LOW"
+    selected_direction: str = "NONE"
+    long_strategy: str = ""
+    short_strategy: str = ""
 
     def to_dict(self) -> dict[str, Any]:
         return {
