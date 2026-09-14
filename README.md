@@ -147,3 +147,6 @@ when the short hard gates pass, but broker locate/borrow availability is not
 verified by the current adapter and must be confirmed at execution.
 
 See `MODEL_RULES.md` for the exact scoring rules and limitations.
+
+## Model performance ledger (v4)
+The weekday GitHub Action now maintains `reports/prediction_ledger.json`. It timestamps every scheduled US watchlist decision and forward-grades signals at 1, 5, 10, and 20 trading-day horizons. The Streamlit **Model performance** tab reports overall/long/short win rates, average directional returns, SPY context, and score-band calibration. This creates a prospective audit trail rather than relying on retrospective anecdotes. Run the GitHub Action once after deployment to create the baseline ledger.

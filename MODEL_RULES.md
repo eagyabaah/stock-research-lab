@@ -102,3 +102,11 @@ only possible result is `INSUFFICIENT DATA`.
   screens, not a legal or governance opinion. IC Wealth remains the executable quote.
 - Backtesting, transaction costs, taxes, FX changes, portfolio correlation, and
   slippage are not yet modeled.
+
+## Forward prediction ledger and audit rules
+- The scheduled closing workflow records every US watchlist decision before future outcomes are known, including LONG, SHORT, WATCH/NO TRADE outputs.
+- Signals are graded after 1, 5, 10, and 20 completed trading sessions using directional stock returns and SPY context.
+- The official ledger is `reports/prediction_ledger.json`, committed by GitHub Actions. Manual Streamlit searches are excluded from the official track record to reduce cherry-picking and filesystem-persistence problems.
+- Model performance must be judged on forward, timestamped observations. Examples discussed after a move are not counted as wins.
+- Score-band calibration is used to test whether higher scores actually correspond to better forward outcomes. Thresholds should only be changed after a meaningful sample and documented review.
+- Reported research returns exclude slippage, commissions, taxes, short borrow fees, locate constraints, and options Greeks; they are not brokerage P&L.

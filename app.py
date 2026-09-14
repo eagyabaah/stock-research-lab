@@ -12,6 +12,7 @@ from stock_model import ModelConfig, analyze_ghana_long_term, analyze_us_swing
 from stock_model.data import MarketBundle, fetch_history, fetch_us_bundle
 from stock_model.ghana_data import GhanaResearchBundle, fetch_ghana_bundle
 from stock_model.indicators import add_indicators
+from stock_model.performance import load_ledger, performance_summary
 
 
 st.set_page_config(page_title="Stock Research Lab", page_icon="📈", layout="wide")
@@ -490,11 +491,12 @@ st.caption(
     "This tool supports research; it does not place trades."
 )
 
-search_tab, us_tab, report_tab, ghana_tab, methodology_tab = st.tabs(
+search_tab, us_tab, report_tab, performance_tab, ghana_tab, methodology_tab = st.tabs(
     [
         "Analyze a stock",
         "US watchlist",
         "Closing reports",
+        "Model performance",
         "Ghana long-term",
         "Methodology",
     ]
@@ -712,6 +714,55 @@ with report_tab:
                 for symbol, message in latest_report["errors"].items():
                     st.write(f"- **{symbol}:** {message}")
         st.caption(latest_report.get("source_note", ""))
+
+with performance_tab:
+    st.subheader("Prediction ledger & model performance")
+    st.write("Every scheduled US decision is timestamped before its outcome is known. The ledger keeps LONG, SHORT, and NO TRADE decisions so the model can be audited without cherry-picking winners.")
+    ledger_path = Path(__file__).resolve().parent / "reports" / "prediction_ledger.json"
+    ledger = load_ledger(ledger_path)
+    if not ledger:
+        st.info("No prediction ledger exists yet. Run the closing-report GitHub Action once after deploying this upgrade. The first run creates the baseline; forward performance appears as future sessions complete.")
+    else:
+        horizon = st.selectbox("Forward evaluation horizon", [1, 5, 10, 20], index=1, format_func=lambda x: f"{x} trading day{'s' if x != 1 else ''}")
+        summary = performance_summary(ledger, horizon)
+        if not summary.get("count"):
+            st.info(f"Signals are recorded, but no actionable trades have {horizon} completed trading days yet.")
+        else:
+            c1, c2, c3, c4, c5 = st.columns(5)
+            c1.metric("Graded signals", summary["count"])
+            c2.metric("Win rate", f"{summary['win_rate']}%")
+            c3.metric("Long win rate", "—" if summary.get("long_win_rate") is None else f"{summary['long_win_rate']}%")
+            c4.metric("Short win rate", "—" if summary.get("short_win_rate") is None else f"{summary['short_win_rate']}%")
+            c5.metric("Avg directional return", f"{summary['avg_return_pct']}%")
+            st.caption(f"Average winner {summary['avg_winner_pct']}% · Average loser {summary['avg_loser_pct']}%. Returns are research diagnostics, not brokerage P&L and do not include slippage, borrow fees, commissions, taxes, or options effects.")
+
+        key = f"d{horizon}"
+        rows = []
+        for item in reversed(ledger):
+            outcome = item.get("outcomes", {}).get(key, {})
+            rows.append({
+                "Signal date": item.get("signal_date"), "Ticker": item.get("ticker"),
+                "Decision": item.get("recommendation"), "Confidence": item.get("confidence"),
+                "Long": item.get("long_score"), "Short": item.get("short_score"),
+                "Signal price": item.get("signal_price"), "Strategy": item.get("strategy"),
+                f"{horizon}d directional %": outcome.get("directional_return_pct"),
+                f"{horizon}d SPY %": outcome.get("spy_return_pct"), "Win": outcome.get("win"),
+            })
+        frame = pd.DataFrame(rows)
+        st.dataframe(frame, hide_index=True, use_container_width=True)
+
+        graded = frame[frame[f"{horizon}d directional %"].notna()].copy()
+        if not graded.empty:
+            st.markdown("#### Score calibration")
+            graded["Selected score"] = graded[["Long", "Short"]].max(axis=1)
+            graded["Score band"] = pd.cut(graded["Selected score"], bins=[0, 64, 69, 74, 79, 84, 100], labels=["<65", "65–69", "70–74", "75–79", "80–84", "85+"])
+            calibration = graded.groupby("Score band", observed=True).agg(Signals=("Ticker", "count"), Avg_return=(f"{horizon}d directional %", "mean"), Win_rate=("Win", "mean")).reset_index()
+            calibration["Win_rate"] = (calibration["Win_rate"] * 100).round(1)
+            calibration["Avg_return"] = calibration["Avg_return"].round(2)
+            st.dataframe(calibration, hide_index=True, use_container_width=True)
+
+        st.download_button("Download prediction ledger", data=json.dumps(ledger, indent=2), file_name="prediction_ledger.json", mime="application/json")
+        st.caption("The GitHub closing workflow is the durable system of record because Streamlit's local filesystem can reset on redeploy. Manual ticker searches are intentionally not written into the official ledger, preventing accidental or retrospective signal selection.")
 
 with ghana_tab:
     st.subheader("Automated Ghana long-term research")

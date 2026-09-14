@@ -19,6 +19,7 @@ if str(PROJECT_ROOT) not in sys.path:
 from stock_model import ModelConfig, analyze_ghana_long_term, analyze_us_swing  # noqa: E402
 from stock_model.data import fetch_history, fetch_us_bundle  # noqa: E402
 from stock_model.ghana_data import fetch_ghana_bundle  # noqa: E402
+from stock_model.performance import append_signals, grade_ledger, load_ledger, save_ledger  # noqa: E402
 
 
 def read_watchlist() -> list[str]:
@@ -257,6 +258,14 @@ def main() -> int:
     output = json.dumps(payload, indent=2, ensure_ascii=False, allow_nan=False) + "\n"
     (reports_dir / "latest.json").write_text(output, encoding="utf-8")
     (reports_dir / f"{market_date.isoformat()}.json").write_text(output, encoding="utf-8")
+
+    # Maintain a timestamped, forward-graded prediction ledger. All decisions, including NO TRADE,
+    # are retained so thresholds can be audited without survivorship bias.
+    ledger_path = reports_dir / "prediction_ledger.json"
+    ledger = load_ledger(ledger_path)
+    ledger = append_signals(ledger, reports, market_date.isoformat())
+    ledger = grade_ledger(ledger, fetch_history, benchmark)
+    save_ledger(ledger_path, ledger)
 
     ghana_payload = generate_ghana_report(now_et)
     ghana_output = json.dumps(
