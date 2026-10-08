@@ -1736,6 +1736,14 @@
         "spy_return_pct": -1.187,
         "alpha_pct": null,
         "win": null
+      },
+      "d10": {
+        "close": 10.62,
+        "stock_return_pct": -9.694,
+        "directional_return_pct": null,
+        "spy_return_pct": 0.738,
+        "alpha_pct": null,
+        "win": null
       }
     }
   },
@@ -2808,6 +2816,14 @@
         "spy_return_pct": -0.205,
         "alpha_pct": 2.703,
         "win": true
+      },
+      "d5": {
+        "close": 10.62,
+        "stock_return_pct": -1.025,
+        "directional_return_pct": 1.025,
+        "spy_return_pct": 1.948,
+        "alpha_pct": 1.025,
+        "win": true
       }
     }
   },
@@ -3718,7 +3734,16 @@
     "target_3": null,
     "planned_risk": null,
     "rr_1": null,
-    "outcomes": {}
+    "outcomes": {
+      "d1": {
+        "close": 10.62,
+        "stock_return_pct": 1.822,
+        "directional_return_pct": null,
+        "spy_return_pct": 0.55,
+        "alpha_pct": null,
+        "win": null
+      }
+    }
   },
   {
     "signal_id": "JPM-20261005",
