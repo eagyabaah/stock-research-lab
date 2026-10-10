@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-08T21:44:21.144142-04:00",
+  "generated_at": "2026-10-09T21:31:02.938203-04:00",
   "market_date": "2026-10-08",
-  "market_was_closed": false,
+  "market_was_closed": true,
   "watchlist": [
     "MSFT",
     "AMZN",
@@ -88,7 +88,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-11-05 (19 business day(s))."
+            "Next reported earnings date: 2026-11-05 (18 business day(s))."
           ]
         },
         {
@@ -97,8 +97,8 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "Trailing P/E: 11.6x.",
-            "Forward P/E: 9.7x.",
+            "Trailing P/E: 11.5x.",
+            "Forward P/E: 9.6x.",
             "PEG ratio: 1.35."
           ]
         },
@@ -160,7 +160,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-11-05 (19 business day(s))."
+            "Next reported earnings date: 2026-11-05 (18 business day(s))."
           ]
         },
         {
@@ -169,8 +169,8 @@
           "score": 2,
           "max_score": 10,
           "evidence": [
-            "Trailing P/E: 11.6x.",
-            "Forward P/E: 9.7x.",
+            "Trailing P/E: 11.5x.",
+            "Forward P/E: 9.6x.",
             "PEG ratio: 1.35."
           ]
         },
@@ -219,8 +219,8 @@
       ],
       "facts": {
         "close": 148.50999450683594,
-        "atr14": 3.642639190437502,
-        "rsi14": 59.64383534022635,
+        "atr14": 3.6426391904375066,
+        "rsi14": 59.64383534022632,
         "sma20": 143.60200042724608,
         "sma50": 144.51880065917967,
         "sma200": 131.75231262207032,
@@ -235,15 +235,15 @@
         "company_name": "EOG Resources, Inc.",
         "sector": "Energy",
         "industry": "Oil & Gas E&P",
-        "market_cap": 79100665856,
+        "market_cap": 77714243584,
         "revenue_growth": 0.587,
         "earnings_growth": 1.094,
         "profit_margin": 0.25733,
         "free_cash_flow": 4478750208,
         "total_cash": 4906999808,
         "total_debt": 8249999872,
-        "trailing_pe": 11.557198,
-        "forward_pe": 9.683333,
+        "trailing_pe": 11.529961,
+        "forward_pe": 9.612278,
         "peg_ratio": 1.3513,
         "earnings_date": "2026-11-05T00:00:00",
         "currency": "USD",
@@ -254,10 +254,10 @@
         "shares_short": 15498618,
         "shares_short_prior_month": 14576767,
         "float_shares": 522703814,
-        "shares_outstanding": 532628530,
-        "52_week_change": 0.2885096,
+        "shares_outstanding": 524529176,
+        "52_week_change": 0.3742019,
         "beta": 0.371,
-        "average_volume": 3039264,
+        "average_volume": 3031723,
         "short_risk_flags": [
           "days-to-cover 5.3"
         ],
@@ -369,7 +369,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-10-27 (12 business day(s))."
+            "Next reported earnings date: 2026-10-27 (11 business day(s))."
           ]
         },
         {
@@ -379,7 +379,7 @@
           "max_score": 10,
           "evidence": [
             "Trailing P/E: 31.9x.",
-            "Forward P/E: 25.0x.",
+            "Forward P/E: 25.7x.",
             "PEG ratio: 1.64."
           ]
         },
@@ -441,7 +441,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-10-27 (12 business day(s))."
+            "Next reported earnings date: 2026-10-27 (11 business day(s))."
           ]
         },
         {
@@ -451,7 +451,7 @@
           "max_score": 10,
           "evidence": [
             "Trailing P/E: 31.9x.",
-            "Forward P/E: 25.0x.",
+            "Forward P/E: 25.7x.",
             "PEG ratio: 1.64."
           ]
         },
@@ -500,11 +500,11 @@
       ],
       "facts": {
         "close": 375.1000061035156,
-        "atr14": 6.146218249497818,
-        "rsi14": 58.88124450102936,
+        "atr14": 6.1462182464307125,
+        "rsi14": 58.88124451447297,
         "sma20": 368.01900177001954,
         "sma50": 369.2377233886719,
-        "sma200": 337.06601425170896,
+        "sma200": 337.06601470947265,
         "prior_high20": 377.1700134277344,
         "prior_low20": 356.75,
         "low10": 356.75,
@@ -516,15 +516,15 @@
         "company_name": "Visa Inc.",
         "sector": "Financial Services",
         "industry": "Credit Services",
-        "market_cap": 704195985408,
+        "market_cap": 723626622976,
         "revenue_growth": 0.144,
         "earnings_growth": 0.102,
         "profit_margin": 0.50782,
         "free_cash_flow": 20404000768,
         "total_cash": 13792000000,
         "total_debt": 23857999872,
-        "trailing_pe": 31.923405,
-        "forward_pe": 24.999619,
+        "trailing_pe": 31.934551,
+        "forward_pe": 25.692284,
         "peg_ratio": 1.6368,
         "earnings_date": "2026-10-27T00:00:00",
         "currency": "USD",
@@ -534,11 +534,11 @@
         "short_ratio": 3.03,
         "shares_short": 18532235,
         "shares_short_prior_month": 22251297,
-        "float_shares": 1703524695,
+        "float_shares": 1703469556,
         "shares_outstanding": 1704112694,
-        "52_week_change": 0.07221067,
+        "52_week_change": 0.09151757,
         "beta": 0.771,
-        "average_volume": 6522840,
+        "average_volume": 6519721,
         "short_risk_flags": [],
         "long_hard_pass": false,
         "short_hard_pass": false,
@@ -614,7 +614,7 @@
           "max_score": 30,
           "evidence": [
             "Close 230.48; SMA20 226.18; SMA50 221.25; SMA200 201.60.",
-            "RSI14 54.5; ATR14 5.75 (2.5%); volume ratio 1.08x.",
+            "RSI14 54.5; ATR14 5.75 (2.5%); volume ratio 1.09x.",
             "63-day relative strength vs SPY: +6.6%.",
             "Selected strategy: Trend pullback.",
             "Passed: Price > SMA50 > SMA200.",
@@ -645,7 +645,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-11-17 (27 business day(s))."
+            "Next reported earnings date: 2026-11-17 (26 business day(s))."
           ]
         },
         {
@@ -654,8 +654,8 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "Trailing P/E: 29.1x.",
-            "Forward P/E: 14.5x.",
+            "Trailing P/E: 29.0x.",
+            "Forward P/E: 14.4x.",
             "PEG ratio: 0.48."
           ]
         },
@@ -665,7 +665,7 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "20-day average dollar volume: $24,678,849,221."
+            "20-day average dollar volume: $24,683,294,028."
           ]
         },
         {
@@ -686,7 +686,7 @@
           "max_score": 30,
           "evidence": [
             "Close 230.48; SMA20 226.18; SMA50 221.25; SMA200 201.60.",
-            "RSI14 54.5; ATR14 5.75 (2.5%); volume ratio 1.08x.",
+            "RSI14 54.5; ATR14 5.75 (2.5%); volume ratio 1.09x.",
             "63-day relative strength vs SPY: +6.6%.",
             "Selected strategy: Failed reclaim.",
             "Failed: Price is below SMA200.",
@@ -717,7 +717,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-11-17 (27 business day(s))."
+            "Next reported earnings date: 2026-11-17 (26 business day(s))."
           ]
         },
         {
@@ -726,8 +726,8 @@
           "score": 2,
           "max_score": 10,
           "evidence": [
-            "Trailing P/E: 29.1x.",
-            "Forward P/E: 14.5x.",
+            "Trailing P/E: 29.0x.",
+            "Forward P/E: 14.4x.",
             "PEG ratio: 0.48."
           ]
         },
@@ -737,7 +737,7 @@
           "score": 5.0,
           "max_score": 5,
           "evidence": [
-            "20-day average dollar volume: $24,678,849,221."
+            "20-day average dollar volume: $24,683,294,028."
           ]
         },
         {
@@ -776,15 +776,15 @@
       ],
       "facts": {
         "close": 230.47999572753906,
-        "atr14": 5.749191745950776,
-        "rsi14": 54.53071535930998,
+        "atr14": 5.74919174598554,
+        "rsi14": 54.53071535924353,
         "sma20": 226.18450012207032,
         "sma50": 221.25115234375,
-        "sma200": 201.59880142211915,
+        "sma200": 201.59880111694335,
         "prior_high20": 243.3699951171875,
         "prior_low20": 208.92999267578125,
         "low10": 223.1300048828125,
-        "volume_ratio": 1.0848138286423137,
+        "volume_ratio": 1.0881579420218215,
         "rs63": 0.06606549012723062,
         "latest_high": 237.07000732421875,
         "latest_low": 229.85000610351562,
@@ -792,15 +792,15 @@
         "company_name": "NVIDIA Corporation",
         "sector": "Technology",
         "industry": "Semiconductors",
-        "market_cap": 5565400481792,
+        "market_cap": 5536424132608,
         "revenue_growth": 1.059,
         "earnings_growth": 1.278,
         "profit_margin": 0.63663,
         "free_cash_flow": 41809874944,
         "total_cash": 62469001216,
         "total_debt": 38860001280,
-        "trailing_pe": 29.1378,
-        "forward_pe": 14.482299,
+        "trailing_pe": 28.986094,
+        "forward_pe": 14.406897,
         "peg_ratio": 0.4791,
         "earnings_date": "2026-11-17T00:00:00",
         "currency": "USD",
@@ -810,11 +810,11 @@
         "short_ratio": 2.29,
         "shares_short": 294225803,
         "shares_short_prior_month": 285956804,
-        "float_shares": 23132626000,
+        "float_shares": 23132144000,
         "shares_outstanding": 24147000000,
-        "52_week_change": 0.23316193,
+        "52_week_change": 0.25835335,
         "beta": 2.216,
-        "average_volume": 121530425,
+        "average_volume": 121315960,
         "short_risk_flags": [],
         "long_hard_pass": false,
         "short_hard_pass": false,
@@ -833,7 +833,7 @@
         "evidence": [
           "Long score: 88.7/100; short score: 38.0/100.",
           "Price 230.48 versus SMA20 226.18, SMA50 221.25, SMA200 201.60.",
-          "RSI14 54.5; SMA50 slope +9.31; volume ratio 1.08x.",
+          "RSI14 54.5; SMA50 slope +9.31; volume ratio 1.09x.",
           "Short execution plan: entry 229.56, stop 241.38, targets 205.92/194.10/182.29."
         ],
         "bullish_score": 88.7,
@@ -921,7 +921,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-10-28 (13 business day(s))."
+            "Next reported earnings date: 2026-10-28 (12 business day(s))."
           ]
         },
         {
@@ -930,8 +930,8 @@
           "score": 7,
           "max_score": 10,
           "evidence": [
-            "Trailing P/E: 29.1x.",
-            "Forward P/E: 22.1x.",
+            "Trailing P/E: 29.8x.",
+            "Forward P/E: 22.6x.",
             "PEG ratio: 1.62."
           ]
         },
@@ -941,7 +941,7 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "20-day average dollar volume: $11,281,835,305."
+            "20-day average dollar volume: $11,282,540,828."
           ]
         },
         {
@@ -993,7 +993,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-10-28 (13 business day(s))."
+            "Next reported earnings date: 2026-10-28 (12 business day(s))."
           ]
         },
         {
@@ -1002,8 +1002,8 @@
           "score": 7,
           "max_score": 10,
           "evidence": [
-            "Trailing P/E: 29.1x.",
-            "Forward P/E: 22.1x.",
+            "Trailing P/E: 29.8x.",
+            "Forward P/E: 22.6x.",
             "PEG ratio: 1.62."
           ]
         },
@@ -1013,7 +1013,7 @@
           "score": 5.0,
           "max_score": 5,
           "evidence": [
-            "20-day average dollar volume: $11,281,835,305."
+            "20-day average dollar volume: $11,282,540,828."
           ]
         },
         {
@@ -1052,15 +1052,15 @@
       ],
       "facts": {
         "close": 522.6099853515625,
-        "atr14": 11.624061904387943,
-        "rsi14": 61.75513694188486,
+        "atr14": 11.624061904387997,
+        "rsi14": 61.755136941886306,
         "sma20": 508.1274978637695,
         "sma50": 498.49214904785157,
         "sma200": 432.438526763916,
         "prior_high20": 535.6900024414062,
         "prior_low20": 486.0,
         "low10": 497.25,
-        "volume_ratio": 0.9102107591374992,
+        "volume_ratio": 0.9113718401793486,
         "rs63": 0.3319444167927428,
         "latest_high": 533.510009765625,
         "latest_low": 518.7899780273438,
@@ -1068,15 +1068,15 @@
         "company_name": "Microsoft Corporation",
         "sector": "Technology",
         "industry": "Software - Infrastructure",
-        "market_cap": 3880664432640,
+        "market_cap": 3973186846720,
         "revenue_growth": 0.177,
         "earnings_growth": 0.317,
         "profit_margin": 0.40305,
         "free_cash_flow": 16545500160,
         "total_cash": 76842999808,
         "total_debt": 128812998656,
-        "trailing_pe": 29.114761,
-        "forward_pe": 22.072176,
+        "trailing_pe": 29.808912,
+        "forward_pe": 22.59842,
         "peg_ratio": 1.6173,
         "earnings_date": "2026-10-28T00:00:00",
         "currency": "USD",
@@ -1086,11 +1086,11 @@
         "short_ratio": 3.21,
         "shares_short": 67346414,
         "shares_short_prior_month": 68544953,
-        "float_shares": 7414555684,
+        "float_shares": 7414407173,
         "shares_outstanding": 7425545491,
-        "52_week_change": 0.014088869,
+        "52_week_change": 0.022800207,
         "beta": 1.099,
-        "average_volume": 27856907,
+        "average_volume": 27686884,
         "short_risk_flags": [],
         "long_hard_pass": false,
         "short_hard_pass": false,
@@ -1197,7 +1197,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-10-28 (13 business day(s))."
+            "Next reported earnings date: 2026-10-28 (12 business day(s))."
           ]
         },
         {
@@ -1207,7 +1207,7 @@
           "max_score": 10,
           "evidence": [
             "Trailing P/E: 17.5x.",
-            "Forward P/E: 22.9x.",
+            "Forward P/E: 23.3x.",
             "PEG ratio: 1.25."
           ]
         },
@@ -1217,7 +1217,7 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "20-day average dollar volume: $9,211,036,268."
+            "20-day average dollar volume: $9,211,898,285."
           ]
         },
         {
@@ -1269,7 +1269,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-10-28 (13 business day(s))."
+            "Next reported earnings date: 2026-10-28 (12 business day(s))."
           ]
         },
         {
@@ -1279,7 +1279,7 @@
           "max_score": 10,
           "evidence": [
             "Trailing P/E: 17.5x.",
-            "Forward P/E: 22.9x.",
+            "Forward P/E: 23.3x.",
             "PEG ratio: 1.25."
           ]
         },
@@ -1289,7 +1289,7 @@
           "score": 5.0,
           "max_score": 5,
           "evidence": [
-            "20-day average dollar volume: $9,211,036,268."
+            "20-day average dollar volume: $9,211,898,285."
           ]
         },
         {
@@ -1327,15 +1327,15 @@
       ],
       "facts": {
         "close": 348.2900085449219,
-        "atr14": 8.539469566985302,
-        "rsi14": 53.50378125436973,
+        "atr14": 8.539469563924829,
+        "rsi14": 53.50378125831527,
         "sma20": 345.26399993896484,
         "sma50": 345.7745422363281,
-        "sma200": 339.45598968505857,
+        "sma200": 339.45599060058595,
         "prior_high20": 364.1700134277344,
         "prior_low20": 327.739990234375,
         "low10": 335.510009765625,
-        "volume_ratio": 0.8798001572357409,
+        "volume_ratio": 0.8815745662451105,
         "rs63": -0.05194896383523584,
         "latest_high": 356.8299865722656,
         "latest_low": 346.5199890136719,
@@ -1343,15 +1343,15 @@
         "company_name": "Alphabet Inc.",
         "sector": "Communication Services",
         "industry": "Internet Content & Information",
-        "market_cap": 4259564224512,
+        "market_cap": 4300779028480,
         "revenue_growth": 0.242,
         "earnings_growth": 2.94,
         "profit_margin": 0.54771,
         "free_cash_flow": 22665000960,
         "total_cash": 242473992192,
         "total_debt": 120790999040,
-        "trailing_pe": 17.475664,
-        "forward_pe": 22.894041,
+        "trailing_pe": 17.47813,
+        "forward_pe": 23.33272,
         "peg_ratio": 1.2549,
         "earnings_date": "2026-10-28T00:00:00",
         "currency": "USD",
@@ -1361,7 +1361,7 @@
         "short_ratio": 3.68,
         "shares_short": 87393404,
         "shares_short_prior_month": 72705550,
-        "float_shares": 10879441100,
+        "float_shares": 10879196500,
         "shares_outstanding": 5867155790,
         "52_week_change": 0.47224927,
         "beta": 1.211,
@@ -1471,7 +1471,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-10-29 (14 business day(s))."
+            "Next reported earnings date: 2026-10-29 (13 business day(s))."
           ]
         },
         {
@@ -1481,7 +1481,7 @@
           "max_score": 10,
           "evidence": [
             "Trailing P/E: 20.4x.",
-            "Forward P/E: 24.3x.",
+            "Forward P/E: 25.1x.",
             "PEG ratio: 1.48."
           ]
         },
@@ -1491,7 +1491,7 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "20-day average dollar volume: $9,231,526,087."
+            "20-day average dollar volume: $9,232,864,983."
           ]
         },
         {
@@ -1543,7 +1543,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-10-29 (14 business day(s))."
+            "Next reported earnings date: 2026-10-29 (13 business day(s))."
           ]
         },
         {
@@ -1553,7 +1553,7 @@
           "max_score": 10,
           "evidence": [
             "Trailing P/E: 20.4x.",
-            "Forward P/E: 24.3x.",
+            "Forward P/E: 25.1x.",
             "PEG ratio: 1.48."
           ]
         },
@@ -1563,7 +1563,7 @@
           "score": 5.0,
           "max_score": 5,
           "evidence": [
-            "20-day average dollar volume: $9,231,526,087."
+            "20-day average dollar volume: $9,232,864,983."
           ]
         },
         {
@@ -1611,7 +1611,7 @@
         "prior_high20": 260.1400146484375,
         "prior_low20": 244.3000030517578,
         "low10": 244.72999572753906,
-        "volume_ratio": 1.0515310075404576,
+        "volume_ratio": 1.0542548499258202,
         "rs63": 0.007856166105634443,
         "latest_high": 259.8599853515625,
         "latest_low": 253.77999877929688,
@@ -1619,15 +1619,15 @@
         "company_name": "Amazon.com, Inc.",
         "sector": "Consumer Cyclical",
         "industry": "Internet Retail",
-        "market_cap": 2740370800640,
+        "market_cap": 2830652145664,
         "revenue_growth": 0.196,
         "earnings_growth": 2.423,
         "profit_margin": 0.1744,
         "free_cash_flow": 3219124992,
         "total_cash": 122988003328,
         "total_debt": 251635007488,
-        "trailing_pe": 20.439259,
-        "forward_pe": 24.273798,
+        "trailing_pe": 20.438473,
+        "forward_pe": 25.073498,
         "peg_ratio": 1.4781,
         "earnings_date": "2026-10-29T00:00:00",
         "currency": "USD",
@@ -1637,11 +1637,11 @@
         "short_ratio": 2.51,
         "shares_short": 81440414,
         "shares_short_prior_month": 95300129,
-        "float_shares": 9810799373,
+        "float_shares": 9810583646,
         "shares_outstanding": 10786313572,
-        "52_week_change": 0.14130151,
+        "52_week_change": 0.17419231,
         "beta": 1.456,
-        "average_volume": 39179350,
+        "average_volume": 39186425,
         "short_risk_flags": [],
         "long_hard_pass": false,
         "short_hard_pass": false,
@@ -1747,7 +1747,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-11-04 (18 business day(s))."
+            "Next reported earnings date: 2026-11-04 (17 business day(s))."
           ]
         },
         {
@@ -1756,7 +1756,7 @@
           "score": 4,
           "max_score": 10,
           "evidence": [
-            "Forward P/E: -28.7x."
+            "Forward P/E: -28.2x."
           ]
         },
         {
@@ -1765,7 +1765,7 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "20-day average dollar volume: $152,799,363."
+            "20-day average dollar volume: $152,824,495."
           ]
         },
         {
@@ -1814,7 +1814,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-11-04 (18 business day(s))."
+            "Next reported earnings date: 2026-11-04 (17 business day(s))."
           ]
         },
         {
@@ -1823,7 +1823,7 @@
           "score": 4,
           "max_score": 10,
           "evidence": [
-            "Forward P/E: -28.7x."
+            "Forward P/E: -28.2x."
           ]
         },
         {
@@ -1832,7 +1832,7 @@
           "score": 5.0,
           "max_score": 5,
           "evidence": [
-            "20-day average dollar volume: $152,799,363."
+            "20-day average dollar volume: $152,824,495."
           ]
         },
         {
@@ -1873,14 +1873,14 @@
       "facts": {
         "close": 9.760000228881836,
         "atr14": 0.7370690350095334,
-        "rsi14": 38.36809851838441,
+        "rsi14": 38.36809851838442,
         "sma20": 10.882999992370605,
         "sma50": 11.237199993133546,
         "sma200": 11.11850001335144,
         "prior_high20": 12.069999694824219,
         "prior_low20": 9.899999618530273,
         "low10": 9.5600004196167,
-        "volume_ratio": 0.7905274537744201,
+        "volume_ratio": 0.7940483918728076,
         "rs63": -0.06894372547689587,
         "latest_high": 10.239999771118164,
         "latest_low": 9.5600004196167,
@@ -1888,7 +1888,7 @@
         "company_name": "Redwire Corporation",
         "sector": "Industrials",
         "industry": "Aerospace & Defense",
-        "market_cap": 2439927808,
+        "market_cap": 2394929152,
         "revenue_growth": 0.896,
         "earnings_growth": null,
         "profit_margin": -0.57263,
@@ -1896,7 +1896,7 @@
         "total_cash": 556966976,
         "total_debt": 90275000,
         "trailing_pe": null,
-        "forward_pe": -28.705883,
+        "forward_pe": -28.17647,
         "peg_ratio": null,
         "earnings_date": "2026-11-04T00:00:00",
         "currency": "USD",
@@ -1908,9 +1908,9 @@
         "shares_short_prior_month": 39820178,
         "float_shares": 246182942,
         "shares_outstanding": 249992609,
-        "52_week_change": 0.06113994,
+        "52_week_change": 0.11670482,
         "beta": 3.134,
-        "average_volume": 14834485,
+        "average_volume": 14812589,
         "short_risk_flags": [
           "short float 19.8%"
         ],
@@ -2021,7 +2021,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-10-13 (2 business day(s)).",
+            "Next reported earnings date: 2026-10-13 (1 business day(s)).",
             "New entries are blocked within two trading sessions of earnings in both directions."
           ]
         },
@@ -2032,7 +2032,7 @@
           "max_score": 10,
           "evidence": [
             "Trailing P/E: 14.2x.",
-            "Forward P/E: 13.2x.",
+            "Forward P/E: 13.3x.",
             "PEG ratio: 1.57."
           ]
         },
@@ -2091,7 +2091,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-10-13 (2 business day(s)).",
+            "Next reported earnings date: 2026-10-13 (1 business day(s)).",
             "New entries are blocked within two trading sessions of earnings in both directions."
           ]
         },
@@ -2102,7 +2102,7 @@
           "max_score": 10,
           "evidence": [
             "Trailing P/E: 14.2x.",
-            "Forward P/E: 13.2x.",
+            "Forward P/E: 13.3x.",
             "PEG ratio: 1.57."
           ]
         },
@@ -2152,11 +2152,11 @@
       ],
       "facts": {
         "close": 331.4200134277344,
-        "atr14": 6.036648201933717,
-        "rsi14": 37.21770425327225,
+        "atr14": 6.036648201933334,
+        "rsi14": 37.217704253231716,
         "sma20": 339.08385467529297,
         "sma50": 348.85996826171873,
-        "sma200": 319.000029296875,
+        "sma200": 319.00003005981443,
         "prior_high20": 358.26262251003124,
         "prior_low20": 324.2523219854466,
         "low10": 324.2523219854466,
@@ -2168,15 +2168,15 @@
         "company_name": "JPMorgan Chase & Co.",
         "sector": "Financial Services",
         "industry": "Banks - Diversified",
-        "market_cap": 880976134144,
+        "market_cap": 885149401088,
         "revenue_growth": 0.304,
         "earnings_growth": 0.469,
         "profit_margin": 0.34921002,
         "free_cash_flow": null,
         "total_cash": 1526419030016,
         "total_debt": 1343306989568,
-        "trailing_pe": 14.199657,
-        "forward_pe": 13.192174,
+        "trailing_pe": 14.199999,
+        "forward_pe": 13.254667,
         "peg_ratio": 1.5696,
         "earnings_date": "2026-10-13T00:00:00",
         "currency": "USD",
@@ -2186,11 +2186,11 @@
         "short_ratio": 3.88,
         "shares_short": 23990561,
         "shares_short_prior_month": 25289205,
-        "float_shares": 2643991481,
+        "float_shares": 2643938317,
         "shares_outstanding": 2658186195,
-        "52_week_change": 0.07871568,
+        "52_week_change": 0.1014657,
         "beta": 1.015,
-        "average_volume": 7416553,
+        "average_volume": 7299212,
         "short_risk_flags": [],
         "long_hard_pass": false,
         "short_hard_pass": false,
@@ -2232,127 +2232,6 @@
     }
   ],
   "errors": {},
-  "changes_from_previous_close": [
-    {
-      "ticker": "EOG",
-      "field": "Long score",
-      "previous": 83.1,
-      "current": 92.0
-    },
-    {
-      "ticker": "EOG",
-      "field": "Score",
-      "previous": 83.1,
-      "current": 92.0
-    },
-    {
-      "ticker": "V",
-      "field": "Short score",
-      "previous": 39.0,
-      "current": 43.0
-    },
-    {
-      "ticker": "NVDA",
-      "field": "Long score",
-      "previous": 86.4,
-      "current": 88.7
-    },
-    {
-      "ticker": "NVDA",
-      "field": "Short score",
-      "previous": 34.0,
-      "current": 38.0
-    },
-    {
-      "ticker": "NVDA",
-      "field": "Score",
-      "previous": 86.4,
-      "current": 88.7
-    },
-    {
-      "ticker": "MSFT",
-      "field": "Long score",
-      "previous": 85.0,
-      "current": 85.7
-    },
-    {
-      "ticker": "MSFT",
-      "field": "Score",
-      "previous": 85.0,
-      "current": 85.7
-    },
-    {
-      "ticker": "GOOGL",
-      "field": "Long score",
-      "previous": 84.2,
-      "current": 84.0
-    },
-    {
-      "ticker": "GOOGL",
-      "field": "Short score",
-      "previous": 38.0,
-      "current": 30.1
-    },
-    {
-      "ticker": "GOOGL",
-      "field": "Score",
-      "previous": 84.2,
-      "current": 84.0
-    },
-    {
-      "ticker": "AMZN",
-      "field": "Long score",
-      "previous": 81.1,
-      "current": 82.0
-    },
-    {
-      "ticker": "AMZN",
-      "field": "Short score",
-      "previous": 36.0,
-      "current": 40.0
-    },
-    {
-      "ticker": "AMZN",
-      "field": "Score",
-      "previous": 81.1,
-      "current": 82.0
-    },
-    {
-      "ticker": "RDW",
-      "field": "Long score",
-      "previous": 53.2,
-      "current": 36.0
-    },
-    {
-      "ticker": "RDW",
-      "field": "Short score",
-      "previous": 69.0,
-      "current": 65.0
-    },
-    {
-      "ticker": "RDW",
-      "field": "Score",
-      "previous": 69.0,
-      "current": 65.0
-    },
-    {
-      "ticker": "JPM",
-      "field": "Long score",
-      "previous": 58.0,
-      "current": 51.0
-    },
-    {
-      "ticker": "JPM",
-      "field": "Short score",
-      "previous": 45.7,
-      "current": 43.1
-    },
-    {
-      "ticker": "JPM",
-      "field": "Score",
-      "previous": 58.0,
-      "current": 51.0
-    }
-  ],
+  "changes_from_previous_close": [],
   "source_note": "Automated report generated from the community yfinance adapter. Prices may be delayed and headlines are screened by rules; verify primary filings, earnings dates, and the executable Robinhood quote before acting."
 }
