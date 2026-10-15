@@ -474,6 +474,14 @@
         "spy_return_pct": 1.15,
         "alpha_pct": -10.308,
         "win": false
+      },
+      "d20": {
+        "close": 153.17,
+        "stock_return_pct": -0.371,
+        "directional_return_pct": -0.371,
+        "spy_return_pct": 2.978,
+        "alpha_pct": -3.348,
+        "win": false
       }
     }
   },
@@ -520,6 +528,14 @@
         "spy_return_pct": 1.15,
         "alpha_pct": -3.743,
         "win": false
+      },
+      "d20": {
+        "close": 396.06,
+        "stock_return_pct": 5.442,
+        "directional_return_pct": 5.442,
+        "spy_return_pct": 2.978,
+        "alpha_pct": 2.464,
+        "win": true
       }
     }
   },
@@ -566,6 +582,14 @@
         "spy_return_pct": 1.15,
         "alpha_pct": 1.232,
         "win": true
+      },
+      "d20": {
+        "close": 543.45,
+        "stock_return_pct": 9.32,
+        "directional_return_pct": 9.32,
+        "spy_return_pct": 2.978,
+        "alpha_pct": 6.342,
+        "win": true
       }
     }
   },
@@ -610,6 +634,14 @@
         "stock_return_pct": -4.968,
         "directional_return_pct": null,
         "spy_return_pct": 1.15,
+        "alpha_pct": null,
+        "win": null
+      },
+      "d20": {
+        "close": 331.43,
+        "stock_return_pct": -5.975,
+        "directional_return_pct": null,
+        "spy_return_pct": 2.978,
         "alpha_pct": null,
         "win": null
       }
@@ -658,6 +690,14 @@
         "spy_return_pct": 1.15,
         "alpha_pct": null,
         "win": null
+      },
+      "d20": {
+        "close": 228.52,
+        "stock_return_pct": 7.706,
+        "directional_return_pct": null,
+        "spy_return_pct": 2.978,
+        "alpha_pct": null,
+        "win": null
       }
     }
   },
@@ -702,6 +742,14 @@
         "stock_return_pct": -1.177,
         "directional_return_pct": null,
         "spy_return_pct": 1.15,
+        "alpha_pct": null,
+        "win": null
+      },
+      "d20": {
+        "close": 353.78,
+        "stock_return_pct": 2.551,
+        "directional_return_pct": null,
+        "spy_return_pct": 2.978,
         "alpha_pct": null,
         "win": null
       }
@@ -750,6 +798,14 @@
         "spy_return_pct": 1.15,
         "alpha_pct": null,
         "win": null
+      },
+      "d20": {
+        "close": 258.58,
+        "stock_return_pct": 4.09,
+        "directional_return_pct": null,
+        "spy_return_pct": 2.978,
+        "alpha_pct": null,
+        "win": null
       }
     }
   },
@@ -794,6 +850,14 @@
         "stock_return_pct": -0.186,
         "directional_return_pct": null,
         "spy_return_pct": 1.15,
+        "alpha_pct": null,
+        "win": null
+      },
+      "d20": {
+        "close": 9.16,
+        "stock_return_pct": -14.791,
+        "directional_return_pct": null,
+        "spy_return_pct": 2.978,
         "alpha_pct": null,
         "win": null
       }
@@ -3042,6 +3106,14 @@
         "spy_return_pct": 1.948,
         "alpha_pct": 3.346,
         "win": true
+      },
+      "d10": {
+        "close": 228.52,
+        "stock_return_pct": 0.577,
+        "directional_return_pct": 0.577,
+        "spy_return_pct": 1.807,
+        "alpha_pct": -1.231,
+        "win": true
       }
     }
   },
@@ -3080,6 +3152,14 @@
         "spy_return_pct": 1.948,
         "alpha_pct": 1.025,
         "win": true
+      },
+      "d10": {
+        "close": 9.16,
+        "stock_return_pct": -14.632,
+        "directional_return_pct": 14.632,
+        "spy_return_pct": 1.807,
+        "alpha_pct": 14.632,
+        "win": true
       }
     }
   },
@@ -3116,6 +3196,14 @@
         "stock_return_pct": 3.996,
         "directional_return_pct": null,
         "spy_return_pct": 1.948,
+        "alpha_pct": null,
+        "win": null
+      },
+      "d10": {
+        "close": 543.45,
+        "stock_return_pct": 6.777,
+        "directional_return_pct": null,
+        "spy_return_pct": 1.807,
         "alpha_pct": null,
         "win": null
       }
@@ -3156,6 +3244,14 @@
         "spy_return_pct": 1.948,
         "alpha_pct": null,
         "win": null
+      },
+      "d10": {
+        "close": 396.06,
+        "stock_return_pct": 8.249,
+        "directional_return_pct": null,
+        "spy_return_pct": 1.807,
+        "alpha_pct": null,
+        "win": null
       }
     }
   },
@@ -3192,6 +3288,14 @@
         "stock_return_pct": 1.983,
         "directional_return_pct": null,
         "spy_return_pct": 1.948,
+        "alpha_pct": null,
+        "win": null
+      },
+      "d10": {
+        "close": 353.78,
+        "stock_return_pct": 3.772,
+        "directional_return_pct": null,
+        "spy_return_pct": 1.807,
         "alpha_pct": null,
         "win": null
       }
@@ -3232,6 +3336,14 @@
         "spy_return_pct": 1.948,
         "alpha_pct": null,
         "win": null
+      },
+      "d10": {
+        "close": 153.17,
+        "stock_return_pct": 9.673,
+        "directional_return_pct": null,
+        "spy_return_pct": 1.807,
+        "alpha_pct": null,
+        "win": null
       }
     }
   },
@@ -3270,6 +3382,14 @@
         "spy_return_pct": 1.948,
         "alpha_pct": null,
         "win": null
+      },
+      "d10": {
+        "close": 258.58,
+        "stock_return_pct": 4.828,
+        "directional_return_pct": null,
+        "spy_return_pct": 1.807,
+        "alpha_pct": null,
+        "win": null
       }
     }
   },
@@ -3306,6 +3426,14 @@
         "stock_return_pct": -1.105,
         "directional_return_pct": null,
         "spy_return_pct": 1.948,
+        "alpha_pct": null,
+        "win": null
+      },
+      "d10": {
+        "close": 331.43,
+        "stock_return_pct": -1.06,
+        "directional_return_pct": null,
+        "spy_return_pct": 1.807,
         "alpha_pct": null,
         "win": null
       }
@@ -4250,6 +4378,14 @@
         "spy_return_pct": -0.24,
         "alpha_pct": null,
         "win": null
+      },
+      "d5": {
+        "close": 396.06,
+        "stock_return_pct": 6.858,
+        "directional_return_pct": null,
+        "spy_return_pct": -0.139,
+        "alpha_pct": null,
+        "win": null
       }
     }
   },
@@ -4278,6 +4414,14 @@
         "stock_return_pct": -0.74,
         "directional_return_pct": null,
         "spy_return_pct": -0.24,
+        "alpha_pct": null,
+        "win": null
+      },
+      "d5": {
+        "close": 228.52,
+        "stock_return_pct": -4.481,
+        "directional_return_pct": null,
+        "spy_return_pct": -0.139,
         "alpha_pct": null,
         "win": null
       }
@@ -4310,6 +4454,14 @@
         "spy_return_pct": -0.24,
         "alpha_pct": null,
         "win": null
+      },
+      "d5": {
+        "close": 543.45,
+        "stock_return_pct": 2.673,
+        "directional_return_pct": null,
+        "spy_return_pct": -0.139,
+        "alpha_pct": null,
+        "win": null
       }
     }
   },
@@ -4338,6 +4490,14 @@
         "stock_return_pct": 0.811,
         "directional_return_pct": null,
         "spy_return_pct": -0.24,
+        "alpha_pct": null,
+        "win": null
+      },
+      "d5": {
+        "close": 353.78,
+        "stock_return_pct": 1.754,
+        "directional_return_pct": null,
+        "spy_return_pct": -0.139,
         "alpha_pct": null,
         "win": null
       }
@@ -4370,6 +4530,14 @@
         "spy_return_pct": -0.24,
         "alpha_pct": null,
         "win": null
+      },
+      "d5": {
+        "close": 153.17,
+        "stock_return_pct": 6.162,
+        "directional_return_pct": null,
+        "spy_return_pct": -0.139,
+        "alpha_pct": null,
+        "win": null
       }
     }
   },
@@ -4398,6 +4566,14 @@
         "stock_return_pct": 1.416,
         "directional_return_pct": null,
         "spy_return_pct": -0.24,
+        "alpha_pct": null,
+        "win": null
+      },
+      "d5": {
+        "close": 258.58,
+        "stock_return_pct": 0.894,
+        "directional_return_pct": null,
+        "spy_return_pct": -0.139,
         "alpha_pct": null,
         "win": null
       }
@@ -4430,6 +4606,14 @@
         "spy_return_pct": -0.24,
         "alpha_pct": null,
         "win": null
+      },
+      "d5": {
+        "close": 9.16,
+        "stock_return_pct": -12.176,
+        "directional_return_pct": null,
+        "spy_return_pct": -0.139,
+        "alpha_pct": null,
+        "win": null
       }
     }
   },
@@ -4458,6 +4642,14 @@
         "stock_return_pct": -0.513,
         "directional_return_pct": null,
         "spy_return_pct": -0.24,
+        "alpha_pct": null,
+        "win": null
+      },
+      "d5": {
+        "close": 331.43,
+        "stock_return_pct": 0.045,
+        "directional_return_pct": null,
+        "spy_return_pct": -0.139,
         "alpha_pct": null,
         "win": null
       }
@@ -4722,7 +4914,16 @@
     "target_3": null,
     "planned_risk": null,
     "rr_1": null,
-    "outcomes": {}
+    "outcomes": {
+      "d1": {
+        "close": 228.52,
+        "stock_return_pct": 0.972,
+        "directional_return_pct": null,
+        "spy_return_pct": -0.012,
+        "alpha_pct": null,
+        "win": null
+      }
+    }
   },
   {
     "signal_id": "EOG-20261012",
@@ -4743,7 +4944,16 @@
     "target_3": null,
     "planned_risk": null,
     "rr_1": null,
-    "outcomes": {}
+    "outcomes": {
+      "d1": {
+        "close": 153.17,
+        "stock_return_pct": 1.767,
+        "directional_return_pct": null,
+        "spy_return_pct": -0.012,
+        "alpha_pct": null,
+        "win": null
+      }
+    }
   },
   {
     "signal_id": "AMZN-20261012",
@@ -4764,7 +4974,16 @@
     "target_3": null,
     "planned_risk": null,
     "rr_1": null,
-    "outcomes": {}
+    "outcomes": {
+      "d1": {
+        "close": 258.58,
+        "stock_return_pct": -0.366,
+        "directional_return_pct": null,
+        "spy_return_pct": -0.012,
+        "alpha_pct": null,
+        "win": null
+      }
+    }
   },
   {
     "signal_id": "GOOGL-20261012",
@@ -4785,7 +5004,16 @@
     "target_3": null,
     "planned_risk": null,
     "rr_1": null,
-    "outcomes": {}
+    "outcomes": {
+      "d1": {
+        "close": 353.78,
+        "stock_return_pct": 0.301,
+        "directional_return_pct": null,
+        "spy_return_pct": -0.012,
+        "alpha_pct": null,
+        "win": null
+      }
+    }
   },
   {
     "signal_id": "MSFT-20261012",
@@ -4806,7 +5034,16 @@
     "target_3": null,
     "planned_risk": null,
     "rr_1": null,
-    "outcomes": {}
+    "outcomes": {
+      "d1": {
+        "close": 543.45,
+        "stock_return_pct": 0.425,
+        "directional_return_pct": null,
+        "spy_return_pct": -0.012,
+        "alpha_pct": null,
+        "win": null
+      }
+    }
   },
   {
     "signal_id": "V-20261012",
@@ -4827,7 +5064,16 @@
     "target_3": null,
     "planned_risk": null,
     "rr_1": null,
-    "outcomes": {}
+    "outcomes": {
+      "d1": {
+        "close": 396.06,
+        "stock_return_pct": 1.744,
+        "directional_return_pct": null,
+        "spy_return_pct": -0.012,
+        "alpha_pct": null,
+        "win": null
+      }
+    }
   },
   {
     "signal_id": "RDW-20261012",
@@ -4848,7 +5094,16 @@
     "target_3": null,
     "planned_risk": null,
     "rr_1": null,
-    "outcomes": {}
+    "outcomes": {
+      "d1": {
+        "close": 9.16,
+        "stock_return_pct": -0.651,
+        "directional_return_pct": null,
+        "spy_return_pct": -0.012,
+        "alpha_pct": null,
+        "win": null
+      }
+    }
   },
   {
     "signal_id": "JPM-20261012",
@@ -4862,6 +5117,183 @@
     "short_score": 43.1,
     "selected_score": 51.0,
     "strategy": "Recovery/reclaim",
+    "entry": null,
+    "stop": null,
+    "target_1": null,
+    "target_2": null,
+    "target_3": null,
+    "planned_risk": null,
+    "rr_1": null,
+    "outcomes": {
+      "d1": {
+        "close": 331.43,
+        "stock_return_pct": -0.859,
+        "directional_return_pct": null,
+        "spy_return_pct": -0.012,
+        "alpha_pct": null,
+        "win": null
+      }
+    }
+  },
+  {
+    "signal_id": "NVDA-20261013",
+    "signal_date": "2026-10-13",
+    "ticker": "NVDA",
+    "recommendation": "NO TRADE",
+    "direction": "NONE",
+    "confidence": "MEDIUM",
+    "signal_price": 228.52,
+    "long_score": 92.0,
+    "short_score": 34.0,
+    "selected_score": 92.0,
+    "strategy": "Trend pullback",
+    "entry": null,
+    "stop": null,
+    "target_1": null,
+    "target_2": null,
+    "target_3": null,
+    "planned_risk": null,
+    "rr_1": null,
+    "outcomes": {}
+  },
+  {
+    "signal_id": "EOG-20261013",
+    "signal_date": "2026-10-13",
+    "ticker": "EOG",
+    "recommendation": "NO TRADE",
+    "direction": "NONE",
+    "confidence": "MEDIUM",
+    "signal_price": 153.17,
+    "long_score": 88.0,
+    "short_score": 34.0,
+    "selected_score": 88.0,
+    "strategy": "Recovery/reclaim",
+    "entry": null,
+    "stop": null,
+    "target_1": null,
+    "target_2": null,
+    "target_3": null,
+    "planned_risk": null,
+    "rr_1": null,
+    "outcomes": {}
+  },
+  {
+    "signal_id": "V-20261013",
+    "signal_date": "2026-10-13",
+    "ticker": "V",
+    "recommendation": "NO TRADE",
+    "direction": "NONE",
+    "confidence": "MEDIUM",
+    "signal_price": 396.06,
+    "long_score": 85.0,
+    "short_score": 43.0,
+    "selected_score": 85.0,
+    "strategy": "Recovery/reclaim",
+    "entry": null,
+    "stop": null,
+    "target_1": null,
+    "target_2": null,
+    "target_3": null,
+    "planned_risk": null,
+    "rr_1": null,
+    "outcomes": {}
+  },
+  {
+    "signal_id": "GOOGL-20261013",
+    "signal_date": "2026-10-13",
+    "ticker": "GOOGL",
+    "recommendation": "NO TRADE",
+    "direction": "NONE",
+    "confidence": "MEDIUM",
+    "signal_price": 353.78,
+    "long_score": 84.2,
+    "short_score": 38.0,
+    "selected_score": 84.2,
+    "strategy": "Trend pullback",
+    "entry": null,
+    "stop": null,
+    "target_1": null,
+    "target_2": null,
+    "target_3": null,
+    "planned_risk": null,
+    "rr_1": null,
+    "outcomes": {}
+  },
+  {
+    "signal_id": "AMZN-20261013",
+    "signal_date": "2026-10-13",
+    "ticker": "AMZN",
+    "recommendation": "NO TRADE",
+    "direction": "NONE",
+    "confidence": "MEDIUM",
+    "signal_price": 258.58,
+    "long_score": 83.3,
+    "short_score": 40.0,
+    "selected_score": 83.3,
+    "strategy": "Trend pullback",
+    "entry": null,
+    "stop": null,
+    "target_1": null,
+    "target_2": null,
+    "target_3": null,
+    "planned_risk": null,
+    "rr_1": null,
+    "outcomes": {}
+  },
+  {
+    "signal_id": "MSFT-20261013",
+    "signal_date": "2026-10-13",
+    "ticker": "MSFT",
+    "recommendation": "NO TRADE",
+    "direction": "NONE",
+    "confidence": "MEDIUM",
+    "signal_price": 543.45,
+    "long_score": 83.0,
+    "short_score": 43.0,
+    "selected_score": 83.0,
+    "strategy": "Confirmed breakout",
+    "entry": null,
+    "stop": null,
+    "target_1": null,
+    "target_2": null,
+    "target_3": null,
+    "planned_risk": null,
+    "rr_1": null,
+    "outcomes": {}
+  },
+  {
+    "signal_id": "JPM-20261013",
+    "signal_date": "2026-10-13",
+    "ticker": "JPM",
+    "recommendation": "NO TRADE",
+    "direction": "NONE",
+    "confidence": "MEDIUM",
+    "signal_price": 331.43,
+    "long_score": 72.0,
+    "short_score": 53.4,
+    "selected_score": 72.0,
+    "strategy": "Recovery/reclaim",
+    "entry": null,
+    "stop": null,
+    "target_1": null,
+    "target_2": null,
+    "target_3": null,
+    "planned_risk": null,
+    "rr_1": null,
+    "outcomes": {}
+  },
+  {
+    "signal_id": "RDW-20261013",
+    "signal_date": "2026-10-13",
+    "ticker": "RDW",
+    "recommendation": "NO TRADE",
+    "direction": "NONE",
+    "confidence": "MEDIUM",
+    "signal_price": 9.16,
+    "long_score": 36.0,
+    "short_score": 60.0,
+    "selected_score": 60.0,
+    "strategy": "Failed reclaim",
     "entry": null,
     "stop": null,
     "target_1": null,
