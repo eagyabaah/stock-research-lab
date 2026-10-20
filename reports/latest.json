@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-16T20:09:02.461724-04:00",
-  "market_date": "2026-10-15",
+  "generated_at": "2026-10-19T20:54:24.749338-04:00",
+  "market_date": "2026-10-16",
   "market_was_closed": true,
   "watchlist": [
     "MSFT",
@@ -23,287 +23,11 @@
   "reports": [
     {
       "ticker": "EOG",
-      "as_of": "2026-10-15T00:00:00-04:00",
+      "as_of": "2026-10-16T00:00:00-04:00",
       "status": "WATCH",
-      "score": 88.0,
-      "strategy": "Recovery/reclaim",
-      "price": 152.62,
-      "gates": [
-        {
-          "name": "Portfolio risk",
-          "status": "PASS",
-          "score": 0,
-          "max_score": 0,
-          "evidence": [
-            "Current drawdown: 0.0% of the portfolio.",
-            "Current open risk: $0.00; remaining open-risk capacity: $20.00.",
-            "Effective risk budget for a new trade: $5.00."
-          ]
-        },
-        {
-          "name": "Market regime",
-          "status": "PASS",
-          "score": 0,
-          "max_score": 0,
-          "evidence": [
-            "Benchmark close 771.79; SMA50 767.47; SMA200 721.47.",
-            "Twenty-session change in SMA50: +9.82."
-          ]
-        },
-        {
-          "name": "Technical (long)",
-          "status": "PASS",
-          "score": 26.0,
-          "max_score": 30,
-          "evidence": [
-            "Close 152.62; SMA20 144.53; SMA50 145.34; SMA200 133.01.",
-            "RSI14 63.5; ATR14 3.37 (2.2%); volume ratio 0.96x.",
-            "63-day relative strength vs SPY: +5.0%.",
-            "Selected strategy: Recovery/reclaim.",
-            "Passed: Price remains above SMA200.",
-            "Passed: Price reclaimed SMA20 and SMA50.",
-            "Passed: A recent correction created a genuine reclaim.",
-            "Passed: RSI supports recovery.",
-            "Passed: Relative strength is positive.",
-            "Failed: Volume confirms the reclaim."
-          ]
-        },
-        {
-          "name": "Fundamentals (long)",
-          "status": "PASS",
-          "score": 25.0,
-          "max_score": 25,
-          "evidence": [
-            "Revenue Growth: 58.7%.",
-            "Earnings Growth: 109.4%.",
-            "Profit Margin: 25.7%.",
-            "Free Cash Flow: $4,478,750,208.",
-            "Debt-to-cash ratio: 1.68x."
-          ]
-        },
-        {
-          "name": "News/catalyst (long)",
-          "status": "CAUTION",
-          "score": 7.0,
-          "max_score": 15,
-          "evidence": [
-            "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-11-05 (13 business day(s))."
-          ]
-        },
-        {
-          "name": "Valuation (long)",
-          "status": "PASS",
-          "score": 10,
-          "max_score": 10,
-          "evidence": [
-            "Trailing P/E: 12.3x.",
-            "Forward P/E: 10.0x.",
-            "PEG ratio: 1.35."
-          ]
-        },
-        {
-          "name": "Liquidity/execution",
-          "status": "PASS",
-          "score": 10,
-          "max_score": 10,
-          "evidence": [
-            "20-day average dollar volume: $440,211,630."
-          ]
-        },
-        {
-          "name": "Risk/setup (long)",
-          "status": "PASS",
-          "score": 10,
-          "max_score": 10,
-          "evidence": [
-            "LONG entry 155.17; stop 142.81; risk/share 12.35.",
-            "Size 0.404 share(s); notional $62.69; planned risk $4.99.",
-            "Target 1 179.88; Target 2 192.23; Target 3 204.59; reward/risk 2.0:1."
-          ]
-        },
-        {
-          "name": "Technical (short)",
-          "status": "FAIL",
-          "score": 5.0,
-          "max_score": 30,
-          "evidence": [
-            "Close 152.62; SMA20 144.53; SMA50 145.34; SMA200 133.01.",
-            "RSI14 63.5; ATR14 3.37 (2.2%); volume ratio 0.96x.",
-            "63-day relative strength vs SPY: +5.0%.",
-            "Selected strategy: Failed reclaim.",
-            "Failed: Price is below SMA200.",
-            "Failed: Price lost SMA20 and SMA50.",
-            "Passed: A recent rally created a failed reclaim.",
-            "Failed: RSI confirms weakness.",
-            "Failed: Relative strength is negative.",
-            "Failed: Volume confirms the failed reclaim."
-          ]
-        },
-        {
-          "name": "Fundamentals (short)",
-          "status": "FAIL",
-          "score": 0.0,
-          "max_score": 25,
-          "evidence": [
-            "Revenue Growth: 58.7%.",
-            "Earnings Growth: 109.4%.",
-            "Profit Margin: 25.7%.",
-            "Free Cash Flow: $4,478,750,208.",
-            "Debt-to-cash ratio: 1.68x."
-          ]
-        },
-        {
-          "name": "News/catalyst (short)",
-          "status": "CAUTION",
-          "score": 7.0,
-          "max_score": 15,
-          "evidence": [
-            "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-11-05 (13 business day(s))."
-          ]
-        },
-        {
-          "name": "Valuation (short)",
-          "status": "FAIL",
-          "score": 2,
-          "max_score": 10,
-          "evidence": [
-            "Trailing P/E: 12.3x.",
-            "Forward P/E: 10.0x.",
-            "PEG ratio: 1.35."
-          ]
-        },
-        {
-          "name": "Liquidity/execution (short)",
-          "status": "PASS",
-          "score": 5.0,
-          "max_score": 5,
-          "evidence": [
-            "20-day average dollar volume: $440,211,630."
-          ]
-        },
-        {
-          "name": "Short squeeze risk",
-          "status": "PASS",
-          "score": 5.0,
-          "max_score": 5,
-          "evidence": [
-            "No major short-interest warning was detected from available fields."
-          ]
-        },
-        {
-          "name": "Risk/setup (short)",
-          "status": "PASS",
-          "score": 10,
-          "max_score": 10,
-          "evidence": [
-            "SHORT entry 151.48; stop 157.53; risk/share 6.04.",
-            "Size 0.827 share(s); notional $125.28; planned risk $5.00.",
-            "Target 1 139.39; Target 2 133.35; Target 3 127.31; reward/risk 2.0:1."
-          ]
-        }
-      ],
-      "trade_plan": null,
-      "thesis": [
-        "Neither direction cleared enough independent confirmation to justify a new position."
-      ],
-      "bear_case": [
-        "The model prefers patience when the directional scores are too close, a hard gate fails, or risk/reward cannot be established cleanly.",
-        "Short blockers: Technical (short), Fundamentals (short), Valuation (short)."
-      ],
-      "invalidation": [
-        "Exit when price reaches the model stop or the directional thesis is structurally invalidated.",
-        "Re-score after earnings, material guidance, a major filing, or a high-impact headline.",
-        "Do not average down after the invalidation level is breached."
-      ],
-      "facts": {
-        "close": 152.6199951171875,
-        "atr14": 3.3667459729875944,
-        "rsi14": 63.48273275098262,
-        "sma20": 144.53250045776366,
-        "sma50": 145.3392007446289,
-        "sma200": 133.01161220550537,
-        "prior_high20": 154.8800048828125,
-        "prior_low20": 137.35000610351562,
-        "low10": 139.4600067138672,
-        "volume_ratio": 0.959901679639492,
-        "rs63": 0.05007855509447734,
-        "latest_high": 155.0,
-        "latest_low": 151.64999389648438,
-        "sma50_slope20": 1.4337908935546864,
-        "company_name": "EOG Resources, Inc.",
-        "sector": "Energy",
-        "industry": "Oil & Gas E&P",
-        "market_cap": 82880856064,
-        "revenue_growth": 0.587,
-        "earnings_growth": 1.094,
-        "profit_margin": 0.25733,
-        "free_cash_flow": 4478750208,
-        "total_cash": 4906999808,
-        "total_debt": 8249999872,
-        "trailing_pe": 12.296497,
-        "forward_pe": 9.979221,
-        "peg_ratio": 1.3513,
-        "earnings_date": "2026-11-05T00:00:00",
-        "currency": "USD",
-        "website": "https://www.eogresources.com",
-        "business_summary": "EOG Resources, Inc., together with its subsidiaries, explores for, develops, produces, and markets crude oil, natural gas liquids, and natural gas in producing basins in the United States, the Republic of Trinidad and Tobago, and internationally. The company also offers crude oil and condensate, and gathering, processing and marketing. The company was formerly known as Enron Oil & Gas Company. EOG Resources, Inc. was incorporated in 1985 and is headquartered in Houston, Texas.",
-        "short_percent_of_float": 0.0347,
-        "short_ratio": 4.87,
-        "shares_short": 16296281,
-        "shares_short_prior_month": 14772531,
-        "float_shares": 522703814,
-        "shares_outstanding": 524529176,
-        "52_week_change": 0.4368292,
-        "beta": 0.371,
-        "average_volume": 3010353,
-        "short_risk_flags": [],
-        "long_hard_pass": false,
-        "short_hard_pass": false,
-        "long_qualified": false,
-        "short_qualified": false,
-        "max_score": 100
-      },
-      "news": [],
-      "warnings": [
-        "Research model only; broker quotes, borrow availability, option liquidity, and order rules control actual execution.",
-        "The short engine scores stock-specific weakness but cannot confirm real-time locate/borrow availability through the current data adapter.",
-        "Headline classification is a triage tool; read the primary filing or article before committing capital."
-      ],
-      "directional_view": {
-        "bias": "NO TRADE",
-        "evidence": [
-          "Long score: 88.0/100; short score: 34.0/100.",
-          "Price 152.62 versus SMA20 144.53, SMA50 145.34, SMA200 133.01.",
-          "RSI14 63.5; SMA50 slope +1.43; volume ratio 0.96x.",
-          "Short execution plan: entry 151.48, stop 157.53, targets 139.39/133.35/127.31."
-        ],
-        "bullish_score": 88.0,
-        "bearish_score": 34.0,
-        "bearish_strategy": "Failed reclaim",
-        "bearish_trigger": 151.48,
-        "bearish_invalidation": 157.53,
-        "bearish_target_1": 139.39,
-        "bearish_target_2": 133.35,
-        "short_execution_allowed": true,
-        "short_risk_flags": []
-      },
-      "long_score": 88.0,
-      "short_score": 34.0,
-      "recommendation": "NO TRADE",
-      "confidence": "MEDIUM",
-      "selected_direction": "NONE",
-      "long_strategy": "Recovery/reclaim",
-      "short_strategy": "Failed reclaim"
-    },
-    {
-      "ticker": "V",
-      "as_of": "2026-10-15T00:00:00-04:00",
-      "status": "WATCH",
-      "score": 85.0,
+      "score": 89.0,
       "strategy": "Confirmed breakout",
-      "price": 399.75,
+      "price": 158.01,
       "gates": [
         {
           "name": "Portfolio risk",
@@ -322,25 +46,25 @@
           "score": 0,
           "max_score": 0,
           "evidence": [
-            "Benchmark close 771.79; SMA50 767.47; SMA200 721.47.",
-            "Twenty-session change in SMA50: +9.82."
+            "Benchmark close 763.25; SMA50 767.40; SMA200 721.88.",
+            "Twenty-session change in SMA50: +9.51."
           ]
         },
         {
           "name": "Technical (long)",
           "status": "PASS",
-          "score": 26.0,
+          "score": 27.0,
           "max_score": 30,
           "evidence": [
-            "Close 399.75; SMA20 373.01; SMA50 371.82; SMA200 338.08.",
-            "RSI14 72.2; ATR14 7.06 (1.8%); volume ratio 1.30x.",
-            "63-day relative strength vs SPY: +7.6%.",
+            "Close 158.01; SMA20 144.30; SMA50 144.82; SMA200 132.40.",
+            "RSI14 71.3; ATR14 3.59 (2.3%); volume ratio 1.83x.",
+            "63-day relative strength vs SPY: +9.6%.",
             "Selected strategy: Confirmed breakout.",
             "Passed: Close cleared prior 20-day high.",
             "Passed: Volume is at least 1.3x its 20-day average.",
             "Passed: Long and intermediate trends align.",
-            "Failed: RSI confirms without being extreme.",
-            "Passed: Breakout is no more than one ATR extended.",
+            "Passed: RSI confirms without being extreme.",
+            "Failed: Breakout is no more than one ATR extended.",
             "Passed: Relative strength beats SPY."
           ]
         },
@@ -350,11 +74,11 @@
           "score": 25.0,
           "max_score": 25,
           "evidence": [
-            "Revenue Growth: 14.4%.",
-            "Earnings Growth: 10.2%.",
-            "Profit Margin: 50.8%.",
-            "Free Cash Flow: $20,404,000,768.",
-            "Debt-to-cash ratio: 1.73x."
+            "Revenue Growth: 58.7%.",
+            "Earnings Growth: 109.4%.",
+            "Profit Margin: 25.7%.",
+            "Free Cash Flow: $4,478,750,208.",
+            "Debt-to-cash ratio: 1.68x."
           ]
         },
         {
@@ -364,18 +88,18 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-10-27 (6 business day(s))."
+            "Next reported earnings date: 2026-11-05 (12 business day(s))."
           ]
         },
         {
           "name": "Valuation (long)",
-          "status": "CAUTION",
-          "score": 7,
+          "status": "PASS",
+          "score": 10,
           "max_score": 10,
           "evidence": [
-            "Trailing P/E: 34.3x.",
-            "Forward P/E: 26.8x.",
-            "PEG ratio: 1.64."
+            "Trailing P/E: 12.3x.",
+            "Forward P/E: 10.0x.",
+            "PEG ratio: 1.35."
           ]
         },
         {
@@ -384,7 +108,7 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "20-day average dollar volume: $2,460,801,460."
+            "20-day average dollar volume: $419,891,798."
           ]
         },
         {
@@ -393,9 +117,9 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "LONG entry 399.75; stop 391.90; risk/share 7.85.",
-            "Size 0.500 share(s); notional $199.88; planned risk $3.93.",
-            "Target 1 415.46; Target 2 423.31; Target 3 431.17; reward/risk 2.0:1."
+            "LONG entry 158.01; stop 151.27; risk/share 6.74.",
+            "Size 0.742 share(s); notional $117.24; planned risk $5.00.",
+            "Target 1 171.49; Target 2 178.22; Target 3 184.96; reward/risk 2.0:1."
           ]
         },
         {
@@ -404,9 +128,9 @@
           "score": 9.0,
           "max_score": 30,
           "evidence": [
-            "Close 399.75; SMA20 373.01; SMA50 371.82; SMA200 338.08.",
-            "RSI14 72.2; ATR14 7.06 (1.8%); volume ratio 1.30x.",
-            "63-day relative strength vs SPY: +7.6%.",
+            "Close 158.01; SMA20 144.30; SMA50 144.82; SMA200 132.40.",
+            "RSI14 71.3; ATR14 3.59 (2.3%); volume ratio 1.83x.",
+            "63-day relative strength vs SPY: +9.6%.",
             "Selected strategy: Confirmed breakdown.",
             "Failed: Close broke the prior 20-day low.",
             "Passed: Breakdown volume is at least 1.3x average.",
@@ -422,11 +146,11 @@
           "score": 0.0,
           "max_score": 25,
           "evidence": [
-            "Revenue Growth: 14.4%.",
-            "Earnings Growth: 10.2%.",
-            "Profit Margin: 50.8%.",
-            "Free Cash Flow: $20,404,000,768.",
-            "Debt-to-cash ratio: 1.73x."
+            "Revenue Growth: 58.7%.",
+            "Earnings Growth: 109.4%.",
+            "Profit Margin: 25.7%.",
+            "Free Cash Flow: $4,478,750,208.",
+            "Debt-to-cash ratio: 1.68x."
           ]
         },
         {
@@ -436,283 +160,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-10-27 (6 business day(s))."
-          ]
-        },
-        {
-          "name": "Valuation (short)",
-          "status": "CAUTION",
-          "score": 7,
-          "max_score": 10,
-          "evidence": [
-            "Trailing P/E: 34.3x.",
-            "Forward P/E: 26.8x.",
-            "PEG ratio: 1.64."
-          ]
-        },
-        {
-          "name": "Liquidity/execution (short)",
-          "status": "PASS",
-          "score": 5.0,
-          "max_score": 5,
-          "evidence": [
-            "20-day average dollar volume: $2,460,801,460."
-          ]
-        },
-        {
-          "name": "Short squeeze risk",
-          "status": "PASS",
-          "score": 5.0,
-          "max_score": 5,
-          "evidence": [
-            "No major short-interest warning was detected from available fields."
-          ]
-        },
-        {
-          "name": "Risk/setup (short)",
-          "status": "PASS",
-          "score": 10,
-          "max_score": 10,
-          "evidence": [
-            "SHORT entry 356.40; stop 362.04; risk/share 5.65.",
-            "Size 0.561 share(s); notional $199.94; planned risk $3.17.",
-            "Target 1 345.10; Target 2 339.45; Target 3 333.81; reward/risk 2.0:1."
-          ]
-        }
-      ],
-      "trade_plan": null,
-      "thesis": [
-        "Neither direction cleared enough independent confirmation to justify a new position."
-      ],
-      "bear_case": [
-        "The model prefers patience when the directional scores are too close, a hard gate fails, or risk/reward cannot be established cleanly.",
-        "Short blockers: Technical (short), Fundamentals (short)."
-      ],
-      "invalidation": [
-        "Exit when price reaches the model stop or the directional thesis is structurally invalidated.",
-        "Re-score after earnings, material guidance, a major filing, or a high-impact headline.",
-        "Do not average down after the invalidation level is breached."
-      ],
-      "facts": {
-        "close": 399.75,
-        "atr14": 7.059591090141433,
-        "rsi14": 72.22974937546637,
-        "sma20": 373.00650177001955,
-        "sma50": 371.8210205078125,
-        "sma200": 338.0775476074219,
-        "prior_high20": 397.19000244140625,
-        "prior_low20": 356.75,
-        "low10": 356.75,
-        "volume_ratio": 1.3023891303110233,
-        "rs63": 0.07602587520116932,
-        "latest_high": 403.2099914550781,
-        "latest_low": 395.260009765625,
-        "sma50_slope20": 5.450055541992185,
-        "company_name": "Visa Inc.",
-        "sector": "Financial Services",
-        "industry": "Credit Services",
-        "market_cap": 755841957888,
-        "revenue_growth": 0.144,
-        "earnings_growth": 0.102,
-        "profit_margin": 0.50782,
-        "free_cash_flow": 20404000768,
-        "total_cash": 13792000000,
-        "total_debt": 23857999872,
-        "trailing_pe": 34.26468,
-        "forward_pe": 26.824785,
-        "peg_ratio": 1.6368,
-        "earnings_date": "2026-10-27T00:00:00",
-        "currency": "USD",
-        "website": "https://www.visa.com",
-        "business_summary": "Visa Inc. operates as a payment technology company in the United States and internationally. The company operates VisaNet, a transaction processing network that enables authorization, clearing, and settlement of payment transactions. It also offers credit, debit, and prepaid card products; tap to pay, tokenization, and click to pay services; Visa Direct, a platform which facilitates money movement, enabling clients to collect, hold, convert, and send funds across its network; and issuing solutions, such as airport lounge access, dining reservations, shopping experiences, event tickets, and seller offers. In addition, the company provides acceptance solutions, an omnichannel payment integration with e-commerce platforms; risk detection and prevention solutions; and advisory and other services comprising consulting practice, proprietary analytics models, data scientists and economists, marketing services, and managed services. It provides its services under the Visa, Visa Electron, V PAY, Interlink, and PLUS brands. The company serves consumers, sellers, financial institutions, and government entities. Visa Inc. was founded in 1958 and is headquartered in San Francisco, California.",
-        "short_percent_of_float": 0.0121,
-        "short_ratio": 3.35,
-        "shares_short": 20612281,
-        "shares_short_prior_month": 20321652,
-        "float_shares": 1703506315,
-        "shares_outstanding": 1704112694,
-        "52_week_change": 0.1692357,
-        "beta": 0.771,
-        "average_volume": 6449062,
-        "short_risk_flags": [],
-        "long_hard_pass": false,
-        "short_hard_pass": false,
-        "long_qualified": false,
-        "short_qualified": false,
-        "max_score": 100
-      },
-      "news": [],
-      "warnings": [
-        "Research model only; broker quotes, borrow availability, option liquidity, and order rules control actual execution.",
-        "The short engine scores stock-specific weakness but cannot confirm real-time locate/borrow availability through the current data adapter.",
-        "Headline classification is a triage tool; read the primary filing or article before committing capital."
-      ],
-      "directional_view": {
-        "bias": "NO TRADE",
-        "evidence": [
-          "Long score: 85.0/100; short score: 43.0/100.",
-          "Price 399.75 versus SMA20 373.01, SMA50 371.82, SMA200 338.08.",
-          "RSI14 72.2; SMA50 slope +5.45; volume ratio 1.30x.",
-          "Short execution plan: entry 356.40, stop 362.04, targets 345.10/339.45/333.81."
-        ],
-        "bullish_score": 85.0,
-        "bearish_score": 43.0,
-        "bearish_strategy": "Confirmed breakdown",
-        "bearish_trigger": 356.4,
-        "bearish_invalidation": 362.04,
-        "bearish_target_1": 345.1,
-        "bearish_target_2": 339.45,
-        "short_execution_allowed": true,
-        "short_risk_flags": []
-      },
-      "long_score": 85.0,
-      "short_score": 43.0,
-      "recommendation": "NO TRADE",
-      "confidence": "MEDIUM",
-      "selected_direction": "NONE",
-      "long_strategy": "Confirmed breakout",
-      "short_strategy": "Confirmed breakdown"
-    },
-    {
-      "ticker": "GOOGL",
-      "as_of": "2026-10-15T00:00:00-04:00",
-      "status": "WATCH",
-      "score": 84.2,
-      "strategy": "Trend pullback",
-      "price": 349.22,
-      "gates": [
-        {
-          "name": "Portfolio risk",
-          "status": "PASS",
-          "score": 0,
-          "max_score": 0,
-          "evidence": [
-            "Current drawdown: 0.0% of the portfolio.",
-            "Current open risk: $0.00; remaining open-risk capacity: $20.00.",
-            "Effective risk budget for a new trade: $5.00."
-          ]
-        },
-        {
-          "name": "Market regime",
-          "status": "PASS",
-          "score": 0,
-          "max_score": 0,
-          "evidence": [
-            "Benchmark close 771.79; SMA50 767.47; SMA200 721.47.",
-            "Twenty-session change in SMA50: +9.82."
-          ]
-        },
-        {
-          "name": "Technical (long)",
-          "status": "FAIL",
-          "score": 22.2,
-          "max_score": 30,
-          "evidence": [
-            "Close 349.22; SMA20 346.86; SMA50 344.83; SMA200 340.42.",
-            "RSI14 52.8; ATR14 8.70 (2.5%); volume ratio 0.82x.",
-            "63-day relative strength vs SPY: -3.3%.",
-            "Selected strategy: Trend pullback.",
-            "Passed: Price > SMA50 > SMA200.",
-            "Failed: SMA50 is rising.",
-            "Passed: Price is near SMA20.",
-            "Passed: RSI is in the controlled pullback zone.",
-            "Passed: Latest close improved.",
-            "Failed: 63-day relative strength beats SPY."
-          ]
-        },
-        {
-          "name": "Fundamentals (long)",
-          "status": "PASS",
-          "score": 25.0,
-          "max_score": 25,
-          "evidence": [
-            "Revenue Growth: 24.2%.",
-            "Earnings Growth: 294.0%.",
-            "Profit Margin: 54.8%.",
-            "Free Cash Flow: $22,665,000,960.",
-            "Debt-to-cash ratio: 0.50x."
-          ]
-        },
-        {
-          "name": "News/catalyst (long)",
-          "status": "CAUTION",
-          "score": 7.0,
-          "max_score": 15,
-          "evidence": [
-            "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-10-28 (7 business day(s))."
-          ]
-        },
-        {
-          "name": "Valuation (long)",
-          "status": "PASS",
-          "score": 10,
-          "max_score": 10,
-          "evidence": [
-            "Trailing P/E: 17.1x.",
-            "Forward P/E: 22.3x.",
-            "PEG ratio: 1.25."
-          ]
-        },
-        {
-          "name": "Liquidity/execution",
-          "status": "PASS",
-          "score": 10,
-          "max_score": 10,
-          "evidence": [
-            "20-day average dollar volume: $9,039,845,512."
-          ]
-        },
-        {
-          "name": "Risk/setup (long)",
-          "status": "PASS",
-          "score": 10,
-          "max_score": 10,
-          "evidence": [
-            "LONG entry 352.58; stop 342.51; risk/share 10.07.",
-            "Size 0.496 share(s); notional $174.88; planned risk $5.00.",
-            "Target 1 372.73; Target 2 382.80; Target 3 392.88; reward/risk 2.0:1."
-          ]
-        },
-        {
-          "name": "Technical (short)",
-          "status": "FAIL",
-          "score": 9.0,
-          "max_score": 30,
-          "evidence": [
-            "Close 349.22; SMA20 346.86; SMA50 344.83; SMA200 340.42.",
-            "RSI14 52.8; ATR14 8.70 (2.5%); volume ratio 0.82x.",
-            "63-day relative strength vs SPY: -3.3%.",
-            "Selected strategy: Failed reclaim.",
-            "Failed: Price is below SMA200.",
-            "Failed: Price lost SMA20 and SMA50.",
-            "Passed: A recent rally created a failed reclaim.",
-            "Failed: RSI confirms weakness.",
-            "Passed: Relative strength is negative.",
-            "Failed: Volume confirms the failed reclaim."
-          ]
-        },
-        {
-          "name": "Fundamentals (short)",
-          "status": "FAIL",
-          "score": 0.0,
-          "max_score": 25,
-          "evidence": [
-            "Revenue Growth: 24.2%.",
-            "Earnings Growth: 294.0%.",
-            "Profit Margin: 54.8%.",
-            "Free Cash Flow: $22,665,000,960.",
-            "Debt-to-cash ratio: 0.50x."
-          ]
-        },
-        {
-          "name": "News/catalyst (short)",
-          "status": "CAUTION",
-          "score": 7.0,
-          "max_score": 15,
-          "evidence": [
-            "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-10-28 (7 business day(s))."
+            "Next reported earnings date: 2026-11-05 (12 business day(s))."
           ]
         },
         {
@@ -721,9 +169,9 @@
           "score": 2,
           "max_score": 10,
           "evidence": [
-            "Trailing P/E: 17.1x.",
-            "Forward P/E: 22.3x.",
-            "PEG ratio: 1.25."
+            "Trailing P/E: 12.3x.",
+            "Forward P/E: 10.0x.",
+            "PEG ratio: 1.35."
           ]
         },
         {
@@ -732,7 +180,7 @@
           "score": 5.0,
           "max_score": 5,
           "evidence": [
-            "20-day average dollar volume: $9,039,845,512."
+            "20-day average dollar volume: $419,891,798."
           ]
         },
         {
@@ -750,9 +198,9 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "SHORT entry 340.18; stop 351.35; risk/share 11.18.",
-            "Size 0.447 share(s); notional $152.06; planned risk $5.00.",
-            "Target 1 317.82; Target 2 306.64; Target 3 295.46; reward/risk 2.0:1."
+            "SHORT entry 136.25; stop 139.12; risk/share 2.87.",
+            "Size 1.467 share(s); notional $199.88; planned risk $4.21.",
+            "Target 1 130.51; Target 2 127.64; Target 3 124.77; reward/risk 2.0:1."
           ]
         }
       ],
@@ -762,7 +210,6 @@
       ],
       "bear_case": [
         "The model prefers patience when the directional scores are too close, a hard gate fails, or risk/reward cannot be established cleanly.",
-        "Long blockers: Technical (long).",
         "Short blockers: Technical (short), Fundamentals (short), Valuation (short)."
       ],
       "invalidation": [
@@ -771,46 +218,46 @@
         "Do not average down after the invalidation level is breached."
       ],
       "facts": {
-        "close": 349.2200012207031,
-        "atr14": 8.699261213235152,
-        "rsi14": 52.83298708217304,
-        "sma20": 346.8615005493164,
-        "sma50": 344.8305108642578,
-        "sma200": 340.41983474731444,
-        "prior_high20": 364.1700134277344,
-        "prior_low20": 335.510009765625,
-        "low10": 340.6099853515625,
-        "volume_ratio": 0.8178124068356175,
-        "rs63": -0.03320894465853552,
-        "latest_high": 352.1499938964844,
-        "latest_low": 340.6099853515625,
-        "sma50_slope20": -0.7509362792968659,
-        "company_name": "Alphabet Inc.",
-        "sector": "Communication Services",
-        "industry": "Internet Content & Information",
-        "market_cap": 4165393448960,
-        "revenue_growth": 0.242,
-        "earnings_growth": 2.94,
-        "profit_margin": 0.54771,
-        "free_cash_flow": 22665000960,
-        "total_cash": 242473992192,
-        "total_debt": 120790999040,
-        "trailing_pe": 17.089312,
-        "forward_pe": 22.276,
-        "peg_ratio": 1.2549,
-        "earnings_date": "2026-10-28T00:00:00",
+        "close": 158.00999450683594,
+        "atr14": 3.5889423105931257,
+        "rsi14": 71.32472224478911,
+        "sma20": 144.30374450683593,
+        "sma50": 144.82226135253907,
+        "sma200": 132.40069770812988,
+        "prior_high20": 153.96408945557855,
+        "prior_low20": 136.43206134504456,
+        "low10": 139.10407248777082,
+        "volume_ratio": 1.8256200724501626,
+        "rs63": 0.09639055832398613,
+        "latest_high": 158.3699951171875,
+        "latest_low": 152.52999877929688,
+        "sma50_slope20": 1.646697998046875,
+        "company_name": "EOG Resources, Inc.",
+        "sector": "Energy",
+        "industry": "Oil & Gas E&P",
+        "market_cap": 83968884736,
+        "revenue_growth": 0.587,
+        "earnings_growth": 1.094,
+        "profit_margin": 0.25733,
+        "free_cash_flow": 4478750208,
+        "total_cash": 4906999808,
+        "total_debt": 8249999872,
+        "trailing_pe": 12.268481,
+        "forward_pe": 9.956485,
+        "peg_ratio": 1.3513,
+        "earnings_date": "2026-11-05T00:00:00",
         "currency": "USD",
-        "website": "https://abc.xyz",
-        "business_summary": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America. It operates through Google Services, Google Cloud, and Other Bets segments. The Google Services segment provides products and services, including ads, Android, Chrome, devices, Gmail, Google Drive, Google Maps, Google Photos, Google Play, Search, and YouTube. It is also involved in the sale of apps and in-app purchases and digital content in Google Play and YouTube; and devices, as well as the provision of YouTube consumer subscription services, such as YouTube TV, YouTube Music and Premium, NFL Sunday Ticket, and Google One. The Google Cloud segment offers consumption-based fees and subscriptions for AI solutions, including AI infrastructure, Vertex AI platform, and Gemini enterprise. It also provides cybersecurity, and data and analytics services; Google Workspace that include cloud-based communication and collaboration tools for enterprises, such as Calendar, Gmail, Docs, Drive, and Meet; and other enterprise services. The Other Bets segment sells transportation and internet services. Alphabet Inc. was incorporated in 1998 and is headquartered in Mountain View, California.",
-        "short_percent_of_float": 0.0137,
-        "short_ratio": 2.99,
-        "shares_short": 80391960,
-        "shares_short_prior_month": 77698668,
-        "float_shares": 10879318800,
-        "shares_outstanding": 5867155790,
-        "52_week_change": 0.37868142,
-        "beta": 1.211,
-        "average_volume": 26781185,
+        "website": "https://www.eogresources.com",
+        "business_summary": "EOG Resources, Inc., together with its subsidiaries, explores for, develops, produces, and markets crude oil, natural gas liquids, and natural gas in producing basins in the United States, the Republic of Trinidad and Tobago, and internationally. The company also offers crude oil and condensate, and gathering, processing and marketing. The company was formerly known as Enron Oil & Gas Company. EOG Resources, Inc. was incorporated in 1985 and is headquartered in Houston, Texas.",
+        "short_percent_of_float": 0.0347,
+        "short_ratio": 4.87,
+        "shares_short": 16296281,
+        "shares_short_prior_month": 14772531,
+        "float_shares": 522703814,
+        "shares_outstanding": 532628530,
+        "52_week_change": 0.4850564,
+        "beta": 0.371,
+        "average_volume": 3026901,
         "short_risk_flags": [],
         "long_hard_pass": false,
         "short_hard_pass": false,
@@ -827,36 +274,36 @@
       "directional_view": {
         "bias": "NO TRADE",
         "evidence": [
-          "Long score: 84.2/100; short score: 38.0/100.",
-          "Price 349.22 versus SMA20 346.86, SMA50 344.83, SMA200 340.42.",
-          "RSI14 52.8; SMA50 slope -0.75; volume ratio 0.82x.",
-          "Short execution plan: entry 340.18, stop 351.35, targets 317.82/306.64/295.46."
+          "Long score: 89.0/100; short score: 38.0/100.",
+          "Price 158.01 versus SMA20 144.30, SMA50 144.82, SMA200 132.40.",
+          "RSI14 71.3; SMA50 slope +1.65; volume ratio 1.83x.",
+          "Short execution plan: entry 136.25, stop 139.12, targets 130.51/127.64/124.77."
         ],
-        "bullish_score": 84.2,
+        "bullish_score": 89.0,
         "bearish_score": 38.0,
-        "bearish_strategy": "Failed reclaim",
-        "bearish_trigger": 340.18,
-        "bearish_invalidation": 351.35,
-        "bearish_target_1": 317.82,
-        "bearish_target_2": 306.64,
+        "bearish_strategy": "Confirmed breakdown",
+        "bearish_trigger": 136.25,
+        "bearish_invalidation": 139.12,
+        "bearish_target_1": 130.51,
+        "bearish_target_2": 127.64,
         "short_execution_allowed": true,
         "short_risk_flags": []
       },
-      "long_score": 84.2,
+      "long_score": 89.0,
       "short_score": 38.0,
       "recommendation": "NO TRADE",
       "confidence": "MEDIUM",
       "selected_direction": "NONE",
-      "long_strategy": "Trend pullback",
-      "short_strategy": "Failed reclaim"
+      "long_strategy": "Confirmed breakout",
+      "short_strategy": "Confirmed breakdown"
     },
     {
       "ticker": "MSFT",
-      "as_of": "2026-10-15T00:00:00-04:00",
+      "as_of": "2026-10-16T00:00:00-04:00",
       "status": "WATCH",
-      "score": 84.0,
-      "strategy": "Recovery/reclaim",
-      "price": 539.44,
+      "score": 85.7,
+      "strategy": "Trend pullback",
+      "price": 529.05,
       "gates": [
         {
           "name": "Portfolio risk",
@@ -875,26 +322,26 @@
           "score": 0,
           "max_score": 0,
           "evidence": [
-            "Benchmark close 771.79; SMA50 767.47; SMA200 721.47.",
-            "Twenty-session change in SMA50: +9.82."
+            "Benchmark close 763.25; SMA50 767.40; SMA200 721.88.",
+            "Twenty-session change in SMA50: +9.51."
           ]
         },
         {
           "name": "Technical (long)",
           "status": "PASS",
-          "score": 25.0,
+          "score": 26.7,
           "max_score": 30,
           "evidence": [
-            "Close 539.44; SMA20 518.46; SMA50 504.76; SMA200 433.81.",
-            "RSI14 65.1; ATR14 11.44 (2.1%); volume ratio 1.05x.",
-            "63-day relative strength vs SPY: +33.1%.",
-            "Selected strategy: Recovery/reclaim.",
-            "Passed: Price remains above SMA200.",
-            "Passed: Price reclaimed SMA20 and SMA50.",
-            "Failed: A recent correction created a genuine reclaim.",
-            "Passed: RSI supports recovery.",
-            "Passed: Relative strength is positive.",
-            "Passed: Volume confirms the reclaim."
+            "Close 529.05; SMA20 520.22; SMA50 505.37; SMA200 434.03.",
+            "RSI14 57.4; ATR14 12.01 (2.3%); volume ratio 1.11x.",
+            "63-day relative strength vs SPY: +28.7%.",
+            "Selected strategy: Trend pullback.",
+            "Passed: Price > SMA50 > SMA200.",
+            "Passed: SMA50 is rising.",
+            "Passed: Price is near SMA20.",
+            "Passed: RSI is in the controlled pullback zone.",
+            "Failed: Latest close improved.",
+            "Passed: 63-day relative strength beats SPY."
           ]
         },
         {
@@ -917,7 +364,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-10-28 (7 business day(s))."
+            "Next reported earnings date: 2026-10-28 (6 business day(s))."
           ]
         },
         {
@@ -926,8 +373,8 @@
           "score": 7,
           "max_score": 10,
           "evidence": [
-            "Trailing P/E: 29.5x.",
-            "Forward P/E: 22.3x.",
+            "Trailing P/E: 29.7x.",
+            "Forward P/E: 22.5x.",
             "PEG ratio: 1.62."
           ]
         },
@@ -937,7 +384,7 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "20-day average dollar volume: $11,930,145,896."
+            "20-day average dollar volume: $11,608,332,351."
           ]
         },
         {
@@ -946,9 +393,9 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "LONG entry 541.70; stop 509.88; risk/share 31.82.",
-            "Size 0.157 share(s); notional $85.05; planned risk $5.00.",
-            "Target 1 605.35; Target 2 637.18; Target 3 669.00; reward/risk 2.0:1."
+            "LONG entry 544.42; stop 514.22; risk/share 30.20.",
+            "Size 0.165 share(s); notional $89.83; planned risk $4.98.",
+            "Target 1 604.83; Target 2 635.03; Target 3 665.23; reward/risk 2.0:1."
           ]
         },
         {
@@ -957,9 +404,9 @@
           "score": 9.0,
           "max_score": 30,
           "evidence": [
-            "Close 539.44; SMA20 518.46; SMA50 504.76; SMA200 433.81.",
-            "RSI14 65.1; ATR14 11.44 (2.1%); volume ratio 1.05x.",
-            "63-day relative strength vs SPY: +33.1%.",
+            "Close 529.05; SMA20 520.22; SMA50 505.37; SMA200 434.03.",
+            "RSI14 57.4; ATR14 12.01 (2.3%); volume ratio 1.11x.",
+            "63-day relative strength vs SPY: +28.7%.",
             "Selected strategy: Failed reclaim.",
             "Failed: Price is below SMA200.",
             "Failed: Price lost SMA20 and SMA50.",
@@ -989,7 +436,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-10-28 (7 business day(s))."
+            "Next reported earnings date: 2026-10-28 (6 business day(s))."
           ]
         },
         {
@@ -998,8 +445,8 @@
           "score": 7,
           "max_score": 10,
           "evidence": [
-            "Trailing P/E: 29.5x.",
-            "Forward P/E: 22.3x.",
+            "Trailing P/E: 29.7x.",
+            "Forward P/E: 22.5x.",
             "PEG ratio: 1.62."
           ]
         },
@@ -1009,7 +456,7 @@
           "score": 5.0,
           "max_score": 5,
           "evidence": [
-            "20-day average dollar volume: $11,930,145,896."
+            "20-day average dollar volume: $11,608,332,351."
           ]
         },
         {
@@ -1027,9 +474,9 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "SHORT entry 530.65; stop 549.71; risk/share 19.06.",
-            "Size 0.262 share(s); notional $139.03; planned risk $4.99.",
-            "Target 1 492.53; Target 2 473.46; Target 3 454.40; reward/risk 2.0:1."
+            "SHORT entry 523.83; stop 552.83; risk/share 29.00.",
+            "Size 0.172 share(s); notional $90.10; planned risk $4.99.",
+            "Target 1 465.84; Target 2 436.84; Target 3 407.85; reward/risk 2.0:1."
           ]
         }
       ],
@@ -1047,32 +494,32 @@
         "Do not average down after the invalidation level is breached."
       ],
       "facts": {
-        "close": 539.4400024414062,
-        "atr14": 11.439232387353755,
-        "rsi14": 65.08409523081413,
-        "sma20": 518.4570007324219,
-        "sma50": 504.7629296875,
-        "sma200": 433.80626876831053,
+        "close": 529.0499877929688,
+        "atr14": 12.007145406002811,
+        "rsi14": 57.35813967126937,
+        "sma20": 520.2205001831055,
+        "sma50": 505.3655145263672,
+        "sma200": 434.0294845581055,
         "prior_high20": 551.1500244140625,
         "prior_low20": 491.1000061035156,
-        "low10": 513.6599731445312,
-        "volume_ratio": 1.047429728655451,
-        "rs63": 0.331419968390239,
-        "latest_high": 541.1300048828125,
-        "latest_low": 531.219970703125,
-        "sma50_slope20": 42.76629272460934,
+        "low10": 518.7899780273438,
+        "volume_ratio": 1.1119258778813226,
+        "rs63": 0.28650365736340744,
+        "latest_high": 543.8200073242188,
+        "latest_low": 524.4299926757812,
+        "sma50_slope20": 41.166033325195315,
         "company_name": "Microsoft Corporation",
         "sector": "Technology",
         "industry": "Software - Infrastructure",
-        "market_cap": 3928485003264,
+        "market_cap": 3961677414400,
         "revenue_growth": 0.177,
         "earnings_growth": 0.317,
         "profit_margin": 0.40305,
         "free_cash_flow": 16545500160,
         "total_cash": 76842999808,
         "total_debt": 128812998656,
-        "trailing_pe": 29.473536,
-        "forward_pe": 22.302853,
+        "trailing_pe": 29.722563,
+        "forward_pe": 22.491293,
         "peg_ratio": 1.6173,
         "earnings_date": "2026-10-28T00:00:00",
         "currency": "USD",
@@ -1084,9 +531,9 @@
         "shares_short_prior_month": 74451155,
         "float_shares": 7414555684,
         "shares_outstanding": 7425545491,
-        "52_week_change": 0.050352454,
+        "52_week_change": 0.023723364,
         "beta": 1.099,
-        "average_volume": 26943545,
+        "average_volume": 26815178,
         "short_risk_flags": [],
         "long_hard_pass": false,
         "short_hard_pass": false,
@@ -1103,36 +550,36 @@
       "directional_view": {
         "bias": "NO TRADE",
         "evidence": [
-          "Long score: 84.0/100; short score: 43.0/100.",
-          "Price 539.44 versus SMA20 518.46, SMA50 504.76, SMA200 433.81.",
-          "RSI14 65.1; SMA50 slope +42.77; volume ratio 1.05x.",
-          "Short execution plan: entry 530.65, stop 549.71, targets 492.53/473.46/454.40."
+          "Long score: 85.7/100; short score: 43.0/100.",
+          "Price 529.05 versus SMA20 520.22, SMA50 505.37, SMA200 434.03.",
+          "RSI14 57.4; SMA50 slope +41.17; volume ratio 1.11x.",
+          "Short execution plan: entry 523.83, stop 552.83, targets 465.84/436.84/407.85."
         ],
-        "bullish_score": 84.0,
+        "bullish_score": 85.7,
         "bearish_score": 43.0,
         "bearish_strategy": "Failed reclaim",
-        "bearish_trigger": 530.65,
-        "bearish_invalidation": 549.71,
-        "bearish_target_1": 492.53,
-        "bearish_target_2": 473.46,
+        "bearish_trigger": 523.83,
+        "bearish_invalidation": 552.83,
+        "bearish_target_1": 465.84,
+        "bearish_target_2": 436.84,
         "short_execution_allowed": true,
         "short_risk_flags": []
       },
-      "long_score": 84.0,
+      "long_score": 85.7,
       "short_score": 43.0,
       "recommendation": "NO TRADE",
       "confidence": "MEDIUM",
       "selected_direction": "NONE",
-      "long_strategy": "Recovery/reclaim",
+      "long_strategy": "Trend pullback",
       "short_strategy": "Failed reclaim"
     },
     {
-      "ticker": "AMZN",
-      "as_of": "2026-10-15T00:00:00-04:00",
+      "ticker": "V",
+      "as_of": "2026-10-16T00:00:00-04:00",
       "status": "WATCH",
-      "score": 77.8,
-      "strategy": "Trend pullback",
-      "price": 254.76,
+      "score": 80.0,
+      "strategy": "Recovery/reclaim",
+      "price": 402.61,
       "gates": [
         {
           "name": "Portfolio risk",
@@ -1151,39 +598,39 @@
           "score": 0,
           "max_score": 0,
           "evidence": [
-            "Benchmark close 771.79; SMA50 767.47; SMA200 721.47.",
-            "Twenty-session change in SMA50: +9.82."
+            "Benchmark close 763.25; SMA50 767.40; SMA200 721.88.",
+            "Twenty-session change in SMA50: +9.51."
           ]
         },
         {
           "name": "Technical (long)",
           "status": "FAIL",
-          "score": 17.8,
+          "score": 21.0,
           "max_score": 30,
           "evidence": [
-            "Close 254.76; SMA20 253.41; SMA50 257.52; SMA200 242.64.",
-            "RSI14 50.1; ATR14 5.87 (2.3%); volume ratio 0.95x.",
-            "63-day relative strength vs SPY: -1.0%.",
-            "Selected strategy: Trend pullback.",
-            "Failed: Price > SMA50 > SMA200.",
-            "Passed: SMA50 is rising.",
-            "Passed: Price is near SMA20.",
-            "Passed: RSI is in the controlled pullback zone.",
-            "Passed: Latest close improved.",
-            "Failed: 63-day relative strength beats SPY."
+            "Close 402.61; SMA20 374.72; SMA50 372.48; SMA200 338.33.",
+            "RSI14 73.6; ATR14 6.91 (1.7%); volume ratio 1.14x.",
+            "63-day relative strength vs SPY: +8.8%.",
+            "Selected strategy: Recovery/reclaim.",
+            "Passed: Price remains above SMA200.",
+            "Passed: Price reclaimed SMA20 and SMA50.",
+            "Failed: A recent correction created a genuine reclaim.",
+            "Failed: RSI supports recovery.",
+            "Passed: Relative strength is positive.",
+            "Passed: Volume confirms the reclaim."
           ]
         },
         {
           "name": "Fundamentals (long)",
           "status": "PASS",
-          "score": 23.0,
+          "score": 25.0,
           "max_score": 25,
           "evidence": [
-            "Revenue Growth: 19.6%.",
-            "Earnings Growth: 242.3%.",
-            "Profit Margin: 17.4%.",
-            "Free Cash Flow: $3,219,124,992.",
-            "Debt-to-cash ratio: 2.05x."
+            "Revenue Growth: 14.4%.",
+            "Earnings Growth: 10.2%.",
+            "Profit Margin: 50.8%.",
+            "Free Cash Flow: $20,404,000,768.",
+            "Debt-to-cash ratio: 1.73x."
           ]
         },
         {
@@ -1193,18 +640,18 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-10-29 (8 business day(s))."
+            "Next reported earnings date: 2026-10-27 (5 business day(s))."
           ]
         },
         {
           "name": "Valuation (long)",
-          "status": "PASS",
-          "score": 10,
+          "status": "CAUTION",
+          "score": 7,
           "max_score": 10,
           "evidence": [
-            "Trailing P/E: 20.1x.",
-            "Forward P/E: 23.9x.",
-            "PEG ratio: 1.48."
+            "Trailing P/E: 34.3x.",
+            "Forward P/E: 26.8x.",
+            "PEG ratio: 1.64."
           ]
         },
         {
@@ -1213,7 +660,7 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "20-day average dollar volume: $9,220,414,030."
+            "20-day average dollar volume: $2,236,675,083."
           ]
         },
         {
@@ -1222,9 +669,9 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "LONG entry 255.89; stop 250.47; risk/share 5.42.",
-            "Size 0.781 share(s); notional $199.85; planned risk $4.23.",
-            "Target 1 266.73; Target 2 272.15; Target 3 277.57; reward/risk 2.0:1."
+            "LONG entry 405.09; stop 369.54; risk/share 35.55.",
+            "Size 0.140 share(s); notional $56.71; planned risk $4.98.",
+            "Target 1 476.18; Target 2 511.73; Target 3 547.28; reward/risk 2.0:1."
           ]
         },
         {
@@ -1233,29 +680,29 @@
           "score": 9.0,
           "max_score": 30,
           "evidence": [
-            "Close 254.76; SMA20 253.41; SMA50 257.52; SMA200 242.64.",
-            "RSI14 50.1; ATR14 5.87 (2.3%); volume ratio 0.95x.",
-            "63-day relative strength vs SPY: -1.0%.",
+            "Close 402.61; SMA20 374.72; SMA50 372.48; SMA200 338.33.",
+            "RSI14 73.6; ATR14 6.91 (1.7%); volume ratio 1.14x.",
+            "63-day relative strength vs SPY: +8.8%.",
             "Selected strategy: Failed reclaim.",
             "Failed: Price is below SMA200.",
             "Failed: Price lost SMA20 and SMA50.",
             "Passed: A recent rally created a failed reclaim.",
             "Failed: RSI confirms weakness.",
-            "Passed: Relative strength is negative.",
-            "Failed: Volume confirms the failed reclaim."
+            "Failed: Relative strength is negative.",
+            "Passed: Volume confirms the failed reclaim."
           ]
         },
         {
           "name": "Fundamentals (short)",
           "status": "FAIL",
-          "score": 2.0,
+          "score": 0.0,
           "max_score": 25,
           "evidence": [
-            "Revenue Growth: 19.6%.",
-            "Earnings Growth: 242.3%.",
-            "Profit Margin: 17.4%.",
-            "Free Cash Flow: $3,219,124,992.",
-            "Debt-to-cash ratio: 2.05x."
+            "Revenue Growth: 14.4%.",
+            "Earnings Growth: 10.2%.",
+            "Profit Margin: 50.8%.",
+            "Free Cash Flow: $20,404,000,768.",
+            "Debt-to-cash ratio: 1.73x."
           ]
         },
         {
@@ -1265,18 +712,18 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-10-29 (8 business day(s))."
+            "Next reported earnings date: 2026-10-27 (5 business day(s))."
           ]
         },
         {
           "name": "Valuation (short)",
-          "status": "FAIL",
-          "score": 2,
+          "status": "CAUTION",
+          "score": 7,
           "max_score": 10,
           "evidence": [
-            "Trailing P/E: 20.1x.",
-            "Forward P/E: 23.9x.",
-            "PEG ratio: 1.48."
+            "Trailing P/E: 34.3x.",
+            "Forward P/E: 26.8x.",
+            "PEG ratio: 1.64."
           ]
         },
         {
@@ -1285,7 +732,7 @@
           "score": 5.0,
           "max_score": 5,
           "evidence": [
-            "20-day average dollar volume: $9,220,414,030."
+            "20-day average dollar volume: $2,236,675,083."
           ]
         },
         {
@@ -1303,9 +750,9 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "SHORT entry 248.36; stop 257.82; risk/share 9.46.",
-            "Size 0.528 share(s); notional $131.13; planned risk $5.00.",
-            "Target 1 229.44; Target 2 219.98; Target 3 210.52; reward/risk 2.0:1."
+            "SHORT entry 399.38; stop 409.92; risk/share 10.54.",
+            "Size 0.474 share(s); notional $189.31; planned risk $5.00.",
+            "Target 1 378.30; Target 2 367.76; Target 3 357.22; reward/risk 2.0:1."
           ]
         }
       ],
@@ -1316,7 +763,7 @@
       "bear_case": [
         "The model prefers patience when the directional scores are too close, a hard gate fails, or risk/reward cannot be established cleanly.",
         "Long blockers: Technical (long).",
-        "Short blockers: Technical (short), Fundamentals (short), Valuation (short)."
+        "Short blockers: Technical (short), Fundamentals (short)."
       ],
       "invalidation": [
         "Exit when price reaches the model stop or the directional thesis is structurally invalidated.",
@@ -1324,46 +771,46 @@
         "Do not average down after the invalidation level is breached."
       ],
       "facts": {
-        "close": 254.75999450683594,
-        "atr14": 5.873488178681865,
-        "rsi14": 50.09785874375949,
-        "sma20": 253.41149978637696,
-        "sma50": 257.5211996459961,
-        "sma200": 242.64074981689453,
-        "prior_high20": 263.70001220703125,
-        "prior_low20": 244.72999572753906,
-        "low10": 248.64999389648438,
-        "volume_ratio": 0.9496045443605948,
-        "rs63": -0.010464021903109355,
-        "latest_high": 255.60000610351562,
-        "latest_low": 248.64999389648438,
-        "sma50_slope20": 1.8148001098632847,
-        "company_name": "Amazon.com, Inc.",
-        "sector": "Consumer Cyclical",
-        "industry": "Internet Retail",
-        "market_cap": 2696578334720,
-        "revenue_growth": 0.196,
-        "earnings_growth": 2.423,
-        "profit_margin": 0.1744,
-        "free_cash_flow": 3219124992,
-        "total_cash": 122988003328,
-        "total_debt": 251635007488,
-        "trailing_pe": 20.11263,
-        "forward_pe": 23.939138,
-        "peg_ratio": 1.4781,
-        "earnings_date": "2026-10-29T00:00:00",
+        "close": 402.6099853515625,
+        "atr14": 6.913190244277513,
+        "rsi14": 73.63412643515403,
+        "sma20": 374.7225006103516,
+        "sma50": 372.47755920410157,
+        "sma200": 338.3330505371094,
+        "prior_high20": 403.2099914550781,
+        "prior_low20": 356.75,
+        "low10": 359.04998779296875,
+        "volume_ratio": 1.1400754164932592,
+        "rs63": 0.08759943429136996,
+        "latest_high": 404.739990234375,
+        "latest_low": 399.7300109863281,
+        "sma50_slope20": 5.691881103515641,
+        "company_name": "Visa Inc.",
+        "sector": "Financial Services",
+        "industry": "Credit Services",
+        "market_cap": 756423983104,
+        "revenue_growth": 0.144,
+        "earnings_growth": 0.102,
+        "profit_margin": 0.50782,
+        "free_cash_flow": 20404000768,
+        "total_cash": 13792000000,
+        "total_debt": 23857999872,
+        "trailing_pe": 34.291065,
+        "forward_pe": 26.845442,
+        "peg_ratio": 1.6368,
+        "earnings_date": "2026-10-27T00:00:00",
         "currency": "USD",
-        "website": "https://www.amazon.com",
-        "business_summary": "Amazon.com, Inc. engages in the retail sale of consumer products, advertising, and subscriptions service through online and physical stores in North America and internationally. The company operates through three segments: North America, International, and Amazon Web Services (AWS). It also manufactures and sells electronic devices, including Kindle, fire tablets, fire TVs, echo, ring, blink, and eero; and develops and produces media content. In addition, the company offers programs that enable sellers to sell their products in its stores; and programs that allow authors, independent publishers, musicians, filmmakers, Twitch streamers, skill and app developers, and others to publish and sell content. Further, it provides compute, storage, Artificial intelligence, database, analytics, machine learning, and other services, as well as advertising services through programs, such as sponsored ads, display, and video advertising. Additionally, the company offers Amazon Prime, a membership program. The company's products offered through its stores include merchandise and content purchased for resale and products offered by third-party sellers. It serves consumers, sellers, developers, enterprises, content creators, advertisers, and employees. The company was incorporated in 1994 and is headquartered in Seattle, Washington.",
-        "short_percent_of_float": 0.0088,
-        "short_ratio": 2.49,
-        "shares_short": 86657682,
-        "shares_short_prior_month": 92067423,
-        "float_shares": 9810799373,
-        "shares_outstanding": 10786313572,
-        "52_week_change": 0.19583178,
-        "beta": 1.456,
-        "average_volume": 38703565,
+        "website": "https://www.visa.com",
+        "business_summary": "Visa Inc. operates as a payment technology company in the United States and internationally. The company operates VisaNet, a transaction processing network that enables authorization, clearing, and settlement of payment transactions. It also offers credit, debit, and prepaid card products; tap to pay, tokenization, and click to pay services; Visa Direct, a platform which facilitates money movement, enabling clients to collect, hold, convert, and send funds across its network; and issuing solutions, such as airport lounge access, dining reservations, shopping experiences, event tickets, and seller offers. In addition, the company provides acceptance solutions, an omnichannel payment integration with e-commerce platforms; risk detection and prevention solutions; and advisory and other services comprising consulting practice, proprietary analytics models, data scientists and economists, marketing services, and managed services. It provides its services under the Visa, Visa Electron, V PAY, Interlink, and PLUS brands. The company serves consumers, sellers, financial institutions, and government entities. Visa Inc. was founded in 1958 and is headquartered in San Francisco, California.",
+        "short_percent_of_float": 0.0121,
+        "short_ratio": 3.35,
+        "shares_short": 20612281,
+        "shares_short_prior_month": 20321652,
+        "float_shares": 1703506315,
+        "shares_outstanding": 1704112694,
+        "52_week_change": 0.16898465,
+        "beta": 0.771,
+        "average_volume": 6439368,
         "short_risk_flags": [],
         "long_hard_pass": false,
         "short_hard_pass": false,
@@ -1380,36 +827,36 @@
       "directional_view": {
         "bias": "NO TRADE",
         "evidence": [
-          "Long score: 77.8/100; short score: 40.0/100.",
-          "Price 254.76 versus SMA20 253.41, SMA50 257.52, SMA200 242.64.",
-          "RSI14 50.1; SMA50 slope +1.81; volume ratio 0.95x.",
-          "Short execution plan: entry 248.36, stop 257.82, targets 229.44/219.98/210.52."
+          "Long score: 80.0/100; short score: 43.0/100.",
+          "Price 402.61 versus SMA20 374.72, SMA50 372.48, SMA200 338.33.",
+          "RSI14 73.6; SMA50 slope +5.69; volume ratio 1.14x.",
+          "Short execution plan: entry 399.38, stop 409.92, targets 378.30/367.76/357.22."
         ],
-        "bullish_score": 77.8,
-        "bearish_score": 40.0,
+        "bullish_score": 80.0,
+        "bearish_score": 43.0,
         "bearish_strategy": "Failed reclaim",
-        "bearish_trigger": 248.36,
-        "bearish_invalidation": 257.82,
-        "bearish_target_1": 229.44,
-        "bearish_target_2": 219.98,
+        "bearish_trigger": 399.38,
+        "bearish_invalidation": 409.92,
+        "bearish_target_1": 378.3,
+        "bearish_target_2": 367.76,
         "short_execution_allowed": true,
         "short_risk_flags": []
       },
-      "long_score": 77.8,
-      "short_score": 40.0,
+      "long_score": 80.0,
+      "short_score": 43.0,
       "recommendation": "NO TRADE",
       "confidence": "MEDIUM",
       "selected_direction": "NONE",
-      "long_strategy": "Trend pullback",
+      "long_strategy": "Recovery/reclaim",
       "short_strategy": "Failed reclaim"
     },
     {
       "ticker": "JPM",
-      "as_of": "2026-10-15T00:00:00-04:00",
+      "as_of": "2026-10-16T00:00:00-04:00",
       "status": "WATCH",
-      "score": 72.0,
+      "score": 76.0,
       "strategy": "Recovery/reclaim",
-      "price": 335.53,
+      "price": 339.72,
       "gates": [
         {
           "name": "Portfolio risk",
@@ -1428,24 +875,24 @@
           "score": 0,
           "max_score": 0,
           "evidence": [
-            "Benchmark close 771.79; SMA50 767.47; SMA200 721.47.",
-            "Twenty-session change in SMA50: +9.82."
+            "Benchmark close 763.25; SMA50 767.40; SMA200 721.88.",
+            "Twenty-session change in SMA50: +9.51."
           ]
         },
         {
           "name": "Technical (long)",
           "status": "FAIL",
-          "score": 14.0,
+          "score": 18.0,
           "max_score": 30,
           "evidence": [
-            "Close 335.53; SMA20 335.14; SMA50 346.99; SMA200 319.35.",
-            "RSI14 45.9; ATR14 6.34 (1.9%); volume ratio 1.00x.",
-            "63-day relative strength vs SPY: -5.2%.",
+            "Close 339.72; SMA20 334.73; SMA50 346.69; SMA200 319.46.",
+            "RSI14 52.3; ATR14 6.52 (1.9%); volume ratio 1.03x.",
+            "63-day relative strength vs SPY: -2.4%.",
             "Selected strategy: Recovery/reclaim.",
             "Passed: Price remains above SMA200.",
             "Failed: Price reclaimed SMA20 and SMA50.",
             "Passed: A recent correction created a genuine reclaim.",
-            "Failed: RSI supports recovery.",
+            "Passed: RSI supports recovery.",
             "Failed: Relative strength is positive.",
             "Passed: Volume confirms the reclaim."
           ]
@@ -1469,7 +916,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2027-01-14 (63 business day(s))."
+            "Next reported earnings date: 2027-01-14 (62 business day(s))."
           ]
         },
         {
@@ -1478,8 +925,8 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "Trailing P/E: 14.2x.",
-            "Forward P/E: 13.3x.",
+            "Trailing P/E: 14.0x.",
+            "Forward P/E: 13.1x.",
             "PEG ratio: 1.57."
           ]
         },
@@ -1489,7 +936,7 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "20-day average dollar volume: $2,914,188,387."
+            "20-day average dollar volume: $2,738,529,678."
           ]
         },
         {
@@ -1498,27 +945,27 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "LONG entry 337.57; stop 330.39; risk/share 7.18.",
-            "Size 0.592 share(s); notional $199.84; planned risk $4.25.",
-            "Target 1 351.92; Target 2 359.10; Target 3 366.27; reward/risk 2.0:1."
+            "LONG entry 344.73; stop 329.84; risk/share 14.88.",
+            "Size 0.335 share(s); notional $115.48; planned risk $4.99.",
+            "Target 1 374.49; Target 2 389.37; Target 3 404.25; reward/risk 2.0:1."
           ]
         },
         {
           "name": "Technical (short)",
           "status": "FAIL",
-          "score": 12.2,
+          "score": 13.0,
           "max_score": 30,
           "evidence": [
-            "Close 335.53; SMA20 335.14; SMA50 346.99; SMA200 319.35.",
-            "RSI14 45.9; ATR14 6.34 (1.9%); volume ratio 1.00x.",
-            "63-day relative strength vs SPY: -5.2%.",
-            "Selected strategy: Bearish trend.",
-            "Failed: Price < SMA20 < SMA50.",
-            "Failed: SMA50 is below SMA200.",
-            "Passed: SMA50 is falling.",
-            "Passed: RSI is below 50.",
-            "Failed: Latest close weakened.",
-            "Passed: 63-day relative strength trails SPY."
+            "Close 339.72; SMA20 334.73; SMA50 346.69; SMA200 319.46.",
+            "RSI14 52.3; ATR14 6.52 (1.9%); volume ratio 1.03x.",
+            "63-day relative strength vs SPY: -2.4%.",
+            "Selected strategy: Failed reclaim.",
+            "Failed: Price is below SMA200.",
+            "Failed: Price lost SMA20 and SMA50.",
+            "Passed: A recent rally created a failed reclaim.",
+            "Failed: RSI confirms weakness.",
+            "Passed: Relative strength is negative.",
+            "Passed: Volume confirms the failed reclaim."
           ]
         },
         {
@@ -1540,7 +987,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2027-01-14 (63 business day(s))."
+            "Next reported earnings date: 2027-01-14 (62 business day(s))."
           ]
         },
         {
@@ -1549,8 +996,8 @@
           "score": 2,
           "max_score": 10,
           "evidence": [
-            "Trailing P/E: 14.2x.",
-            "Forward P/E: 13.3x.",
+            "Trailing P/E: 14.0x.",
+            "Forward P/E: 13.1x.",
             "PEG ratio: 1.57."
           ]
         },
@@ -1560,7 +1007,7 @@
           "score": 5.0,
           "max_score": 5,
           "evidence": [
-            "20-day average dollar volume: $2,914,188,387."
+            "20-day average dollar volume: $2,738,529,678."
           ]
         },
         {
@@ -1578,9 +1025,9 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "SHORT entry 331.92; stop 338.31; risk/share 6.39.",
-            "Size 0.602 share(s); notional $199.82; planned risk $3.85.",
-            "Target 1 319.15; Target 2 312.76; Target 3 306.37; reward/risk 2.0:1."
+            "SHORT entry 337.19; stop 349.29; risk/share 12.09.",
+            "Size 0.413 share(s); notional $139.26; planned risk $4.99.",
+            "Target 1 313.01; Target 2 300.91; Target 3 288.82; reward/risk 2.0:1."
           ]
         }
       ],
@@ -1599,32 +1046,32 @@
         "Do not average down after the invalidation level is breached."
       ],
       "facts": {
-        "close": 335.5299987792969,
-        "atr14": 6.336461947558983,
-        "rsi14": 45.868077044379405,
-        "sma20": 335.14247436523436,
-        "sma50": 346.98570129394534,
-        "sma200": 319.3524168395996,
+        "close": 339.7200012207031,
+        "atr14": 6.517428609443718,
+        "rsi14": 52.34539307262699,
+        "sma20": 334.7317642211914,
+        "sma50": 346.68947631835937,
+        "sma200": 319.4644721984863,
         "prior_high20": 352.740199054288,
         "prior_low20": 324.2523219854466,
         "low10": 325.07000732421875,
-        "volume_ratio": 1.0015911082414795,
-        "rs63": -0.05234359153917123,
-        "latest_high": 337.25,
-        "latest_low": 332.239990234375,
-        "sma50_slope20": -4.177367553710894,
+        "volume_ratio": 1.0287994893785606,
+        "rs63": -0.023558192887342955,
+        "latest_high": 344.3999938964844,
+        "latest_low": 337.5199890136719,
+        "sma50_slope20": -4.756183471679719,
         "company_name": "JPMorgan Chase & Co.",
         "sector": "Financial Services",
         "industry": "Banks - Diversified",
-        "market_cap": 902160449536,
+        "market_cap": 885722316800,
         "revenue_growth": 0.102,
         "earnings_growth": 0.099,
         "profit_margin": 0.34592,
         "free_cash_flow": null,
         "total_cash": 1881473941504,
         "total_debt": 1326255046656,
-        "trailing_pe": 14.25,
-        "forward_pe": 13.321705,
+        "trailing_pe": 13.990353,
+        "forward_pe": 13.063603,
         "peg_ratio": 1.5696,
         "earnings_date": "2027-01-14T00:00:00",
         "currency": "USD",
@@ -1634,11 +1081,11 @@
         "short_ratio": 3.0,
         "shares_short": 24120442,
         "shares_short_prior_month": 26537949,
-        "float_shares": 2641392540,
+        "float_shares": 2641419096,
         "shares_outstanding": 2655600000,
-        "52_week_change": 0.12760448,
+        "52_week_change": 0.12356126,
         "beta": 1.015,
-        "average_volume": 7178615,
+        "average_volume": 7165535,
         "short_risk_flags": [],
         "long_hard_pass": false,
         "short_hard_pass": false,
@@ -1655,36 +1102,36 @@
       "directional_view": {
         "bias": "NO TRADE",
         "evidence": [
-          "Long score: 72.0/100; short score: 41.2/100.",
-          "Price 335.53 versus SMA20 335.14, SMA50 346.99, SMA200 319.35.",
-          "RSI14 45.9; SMA50 slope -4.18; volume ratio 1.00x.",
-          "Short execution plan: entry 331.92, stop 338.31, targets 319.15/312.76/306.37."
+          "Long score: 76.0/100; short score: 42.0/100.",
+          "Price 339.72 versus SMA20 334.73, SMA50 346.69, SMA200 319.46.",
+          "RSI14 52.3; SMA50 slope -4.76; volume ratio 1.03x.",
+          "Short execution plan: entry 337.19, stop 349.29, targets 313.01/300.91/288.82."
         ],
-        "bullish_score": 72.0,
-        "bearish_score": 41.2,
-        "bearish_strategy": "Bearish trend",
-        "bearish_trigger": 331.92,
-        "bearish_invalidation": 338.31,
-        "bearish_target_1": 319.15,
-        "bearish_target_2": 312.76,
+        "bullish_score": 76.0,
+        "bearish_score": 42.0,
+        "bearish_strategy": "Failed reclaim",
+        "bearish_trigger": 337.19,
+        "bearish_invalidation": 349.29,
+        "bearish_target_1": 313.01,
+        "bearish_target_2": 300.91,
         "short_execution_allowed": true,
         "short_risk_flags": []
       },
-      "long_score": 72.0,
-      "short_score": 41.2,
+      "long_score": 76.0,
+      "short_score": 42.0,
       "recommendation": "NO TRADE",
       "confidence": "MEDIUM",
       "selected_direction": "NONE",
       "long_strategy": "Recovery/reclaim",
-      "short_strategy": "Bearish trend"
+      "short_strategy": "Failed reclaim"
     },
     {
-      "ticker": "NVDA",
-      "as_of": "2026-10-15T00:00:00-04:00",
+      "ticker": "AMZN",
+      "as_of": "2026-10-16T00:00:00-04:00",
       "status": "WATCH",
-      "score": 70.0,
+      "score": 74.0,
       "strategy": "Recovery/reclaim",
-      "price": 217.23,
+      "price": 250.0,
       "gates": [
         {
           "name": "Portfolio risk",
@@ -1703,8 +1150,562 @@
           "score": 0,
           "max_score": 0,
           "evidence": [
-            "Benchmark close 771.79; SMA50 767.47; SMA200 721.47.",
-            "Twenty-session change in SMA50: +9.82."
+            "Benchmark close 763.25; SMA50 767.40; SMA200 721.88.",
+            "Twenty-session change in SMA50: +9.51."
+          ]
+        },
+        {
+          "name": "Technical (long)",
+          "status": "FAIL",
+          "score": 14.0,
+          "max_score": 30,
+          "evidence": [
+            "Close 250.00; SMA20 253.23; SMA50 257.08; SMA200 242.73.",
+            "RSI14 45.0; ATR14 5.95 (2.4%); volume ratio 1.13x.",
+            "63-day relative strength vs SPY: -3.1%.",
+            "Selected strategy: Recovery/reclaim.",
+            "Passed: Price remains above SMA200.",
+            "Failed: Price reclaimed SMA20 and SMA50.",
+            "Passed: A recent correction created a genuine reclaim.",
+            "Failed: RSI supports recovery.",
+            "Failed: Relative strength is positive.",
+            "Passed: Volume confirms the reclaim."
+          ]
+        },
+        {
+          "name": "Fundamentals (long)",
+          "status": "PASS",
+          "score": 23.0,
+          "max_score": 25,
+          "evidence": [
+            "Revenue Growth: 19.6%.",
+            "Earnings Growth: 242.3%.",
+            "Profit Margin: 17.4%.",
+            "Free Cash Flow: $3,219,124,992.",
+            "Debt-to-cash ratio: 2.05x."
+          ]
+        },
+        {
+          "name": "News/catalyst (long)",
+          "status": "CAUTION",
+          "score": 7.0,
+          "max_score": 15,
+          "evidence": [
+            "Reviewed 0 headline(s) published in the last seven days.",
+            "Next reported earnings date: 2026-10-29 (7 business day(s))."
+          ]
+        },
+        {
+          "name": "Valuation (long)",
+          "status": "PASS",
+          "score": 10,
+          "max_score": 10,
+          "evidence": [
+            "Trailing P/E: 21.1x.",
+            "Forward P/E: 25.1x.",
+            "PEG ratio: 1.48."
+          ]
+        },
+        {
+          "name": "Liquidity/execution",
+          "status": "PASS",
+          "score": 10,
+          "max_score": 10,
+          "evidence": [
+            "20-day average dollar volume: $9,061,108,306."
+          ]
+        },
+        {
+          "name": "Risk/setup (long)",
+          "status": "PASS",
+          "score": 10,
+          "max_score": 10,
+          "evidence": [
+            "LONG entry 255.84; stop 248.76; risk/share 7.07.",
+            "Size 0.706 share(s); notional $180.62; planned risk $4.99.",
+            "Target 1 269.98; Target 2 277.06; Target 3 284.13; reward/risk 2.0:1."
+          ]
+        },
+        {
+          "name": "Technical (short)",
+          "status": "PASS",
+          "score": 25.0,
+          "max_score": 30,
+          "evidence": [
+            "Close 250.00; SMA20 253.23; SMA50 257.08; SMA200 242.73.",
+            "RSI14 45.0; ATR14 5.95 (2.4%); volume ratio 1.13x.",
+            "63-day relative strength vs SPY: -3.1%.",
+            "Selected strategy: Failed reclaim.",
+            "Failed: Price is below SMA200.",
+            "Passed: Price lost SMA20 and SMA50.",
+            "Passed: A recent rally created a failed reclaim.",
+            "Passed: RSI confirms weakness.",
+            "Passed: Relative strength is negative.",
+            "Passed: Volume confirms the failed reclaim."
+          ]
+        },
+        {
+          "name": "Fundamentals (short)",
+          "status": "FAIL",
+          "score": 2.0,
+          "max_score": 25,
+          "evidence": [
+            "Revenue Growth: 19.6%.",
+            "Earnings Growth: 242.3%.",
+            "Profit Margin: 17.4%.",
+            "Free Cash Flow: $3,219,124,992.",
+            "Debt-to-cash ratio: 2.05x."
+          ]
+        },
+        {
+          "name": "News/catalyst (short)",
+          "status": "CAUTION",
+          "score": 7.0,
+          "max_score": 15,
+          "evidence": [
+            "Reviewed 0 headline(s) published in the last seven days.",
+            "Next reported earnings date: 2026-10-29 (7 business day(s))."
+          ]
+        },
+        {
+          "name": "Valuation (short)",
+          "status": "FAIL",
+          "score": 2,
+          "max_score": 10,
+          "evidence": [
+            "Trailing P/E: 21.1x.",
+            "Forward P/E: 25.1x.",
+            "PEG ratio: 1.48."
+          ]
+        },
+        {
+          "name": "Liquidity/execution (short)",
+          "status": "PASS",
+          "score": 5.0,
+          "max_score": 5,
+          "evidence": [
+            "20-day average dollar volume: $9,061,108,306."
+          ]
+        },
+        {
+          "name": "Short squeeze risk",
+          "status": "PASS",
+          "score": 5.0,
+          "max_score": 5,
+          "evidence": [
+            "No major short-interest warning was detected from available fields."
+          ]
+        },
+        {
+          "name": "Risk/setup (short)",
+          "status": "PASS",
+          "score": 10,
+          "max_score": 10,
+          "evidence": [
+            "SHORT entry 248.30; stop 257.69; risk/share 9.39.",
+            "Size 0.532 share(s); notional $132.10; planned risk $4.99.",
+            "Target 1 229.53; Target 2 220.15; Target 3 210.76; reward/risk 2.0:1."
+          ]
+        }
+      ],
+      "trade_plan": null,
+      "thesis": [
+        "Neither direction cleared enough independent confirmation to justify a new position."
+      ],
+      "bear_case": [
+        "The model prefers patience when the directional scores are too close, a hard gate fails, or risk/reward cannot be established cleanly.",
+        "Long blockers: Technical (long).",
+        "Short blockers: Fundamentals (short), Valuation (short)."
+      ],
+      "invalidation": [
+        "Exit when price reaches the model stop or the directional thesis is structurally invalidated.",
+        "Re-score after earnings, material guidance, a major filing, or a high-impact headline.",
+        "Do not average down after the invalidation level is breached."
+      ],
+      "facts": {
+        "close": 250.0,
+        "atr14": 5.949666678962959,
+        "rsi14": 44.993069185694196,
+        "sma20": 253.2259994506836,
+        "sma50": 257.0759994506836,
+        "sma200": 242.72809982299805,
+        "prior_high20": 263.70001220703125,
+        "prior_low20": 244.72999572753906,
+        "low10": 248.60000610351562,
+        "volume_ratio": 1.1258632486487112,
+        "rs63": -0.03102805422513466,
+        "latest_high": 255.5399932861328,
+        "latest_low": 248.60000610351562,
+        "sma50_slope20": 1.2361996459960949,
+        "company_name": "Amazon.com, Inc.",
+        "sector": "Consumer Cyclical",
+        "industry": "Internet Retail",
+        "market_cap": 2830868152320,
+        "revenue_growth": 0.196,
+        "earnings_growth": 2.423,
+        "profit_margin": 0.1744,
+        "free_cash_flow": 3219124992,
+        "total_cash": 122988003328,
+        "total_debt": 251635007488,
+        "trailing_pe": 21.11424,
+        "forward_pe": 25.131308,
+        "peg_ratio": 1.4781,
+        "earnings_date": "2026-10-29T00:00:00",
+        "currency": "USD",
+        "website": "https://www.amazon.com",
+        "business_summary": "Amazon.com, Inc. engages in the retail sale of consumer products, advertising, and subscriptions service through online and physical stores in North America and internationally. The company operates through three segments: North America, International, and Amazon Web Services (AWS). It also manufactures and sells electronic devices, including Kindle, fire tablets, fire TVs, echo, ring, blink, and eero; and develops and produces media content. In addition, the company offers programs that enable sellers to sell their products in its stores; and programs that allow authors, independent publishers, musicians, filmmakers, Twitch streamers, skill and app developers, and others to publish and sell content. Further, it provides compute, storage, Artificial intelligence, database, analytics, machine learning, and other services, as well as advertising services through programs, such as sponsored ads, display, and video advertising. Additionally, the company offers Amazon Prime, a membership program. The company's products offered through its stores include merchandise and content purchased for resale and products offered by third-party sellers. It serves consumers, sellers, developers, enterprises, content creators, advertisers, and employees. The company was incorporated in 1994 and is headquartered in Seattle, Washington.",
+        "short_percent_of_float": 0.0088,
+        "short_ratio": 2.49,
+        "shares_short": 86657682,
+        "shares_short_prior_month": 92067423,
+        "float_shares": 9810799373,
+        "shares_outstanding": 10786313572,
+        "52_week_change": 0.15484107,
+        "beta": 1.456,
+        "average_volume": 38653442,
+        "short_risk_flags": [],
+        "long_hard_pass": false,
+        "short_hard_pass": false,
+        "long_qualified": false,
+        "short_qualified": false,
+        "max_score": 100
+      },
+      "news": [],
+      "warnings": [
+        "Research model only; broker quotes, borrow availability, option liquidity, and order rules control actual execution.",
+        "The short engine scores stock-specific weakness but cannot confirm real-time locate/borrow availability through the current data adapter.",
+        "Headline classification is a triage tool; read the primary filing or article before committing capital."
+      ],
+      "directional_view": {
+        "bias": "NO TRADE",
+        "evidence": [
+          "Long score: 74.0/100; short score: 56.0/100.",
+          "Price 250.00 versus SMA20 253.23, SMA50 257.08, SMA200 242.73.",
+          "RSI14 45.0; SMA50 slope +1.24; volume ratio 1.13x.",
+          "Short execution plan: entry 248.30, stop 257.69, targets 229.53/220.15/210.76."
+        ],
+        "bullish_score": 74.0,
+        "bearish_score": 56.0,
+        "bearish_strategy": "Failed reclaim",
+        "bearish_trigger": 248.3,
+        "bearish_invalidation": 257.69,
+        "bearish_target_1": 229.53,
+        "bearish_target_2": 220.15,
+        "short_execution_allowed": true,
+        "short_risk_flags": []
+      },
+      "long_score": 74.0,
+      "short_score": 56.0,
+      "recommendation": "NO TRADE",
+      "confidence": "MEDIUM",
+      "selected_direction": "NONE",
+      "long_strategy": "Recovery/reclaim",
+      "short_strategy": "Failed reclaim"
+    },
+    {
+      "ticker": "GOOGL",
+      "as_of": "2026-10-16T00:00:00-04:00",
+      "status": "WATCH",
+      "score": 71.0,
+      "strategy": "Recovery/reclaim",
+      "price": 340.59,
+      "gates": [
+        {
+          "name": "Portfolio risk",
+          "status": "PASS",
+          "score": 0,
+          "max_score": 0,
+          "evidence": [
+            "Current drawdown: 0.0% of the portfolio.",
+            "Current open risk: $0.00; remaining open-risk capacity: $20.00.",
+            "Effective risk budget for a new trade: $5.00."
+          ]
+        },
+        {
+          "name": "Market regime",
+          "status": "PASS",
+          "score": 0,
+          "max_score": 0,
+          "evidence": [
+            "Benchmark close 763.25; SMA50 767.40; SMA200 721.88.",
+            "Twenty-session change in SMA50: +9.51."
+          ]
+        },
+        {
+          "name": "Technical (long)",
+          "status": "FAIL",
+          "score": 9.0,
+          "max_score": 30,
+          "evidence": [
+            "Close 340.59; SMA20 346.41; SMA50 344.49; SMA200 340.56.",
+            "RSI14 44.5; ATR14 8.91 (2.6%); volume ratio 1.14x.",
+            "63-day relative strength vs SPY: -6.3%.",
+            "Selected strategy: Recovery/reclaim.",
+            "Passed: Price remains above SMA200.",
+            "Failed: Price reclaimed SMA20 and SMA50.",
+            "Failed: A recent correction created a genuine reclaim.",
+            "Failed: RSI supports recovery.",
+            "Failed: Relative strength is positive.",
+            "Passed: Volume confirms the reclaim."
+          ]
+        },
+        {
+          "name": "Fundamentals (long)",
+          "status": "PASS",
+          "score": 25.0,
+          "max_score": 25,
+          "evidence": [
+            "Revenue Growth: 24.2%.",
+            "Earnings Growth: 294.0%.",
+            "Profit Margin: 54.8%.",
+            "Free Cash Flow: $22,665,000,960.",
+            "Debt-to-cash ratio: 0.50x."
+          ]
+        },
+        {
+          "name": "News/catalyst (long)",
+          "status": "CAUTION",
+          "score": 7.0,
+          "max_score": 15,
+          "evidence": [
+            "Reviewed 0 headline(s) published in the last seven days.",
+            "Next reported earnings date: 2026-10-28 (6 business day(s))."
+          ]
+        },
+        {
+          "name": "Valuation (long)",
+          "status": "PASS",
+          "score": 10,
+          "max_score": 10,
+          "evidence": [
+            "Trailing P/E: 17.3x.",
+            "Forward P/E: 22.5x.",
+            "PEG ratio: 1.25."
+          ]
+        },
+        {
+          "name": "Liquidity/execution",
+          "status": "PASS",
+          "score": 10,
+          "max_score": 10,
+          "evidence": [
+            "20-day average dollar volume: $8,693,001,145."
+          ]
+        },
+        {
+          "name": "Risk/setup (long)",
+          "status": "PASS",
+          "score": 10,
+          "max_score": 10,
+          "evidence": [
+            "LONG entry 351.11; stop 339.74; risk/share 11.37.",
+            "Size 0.439 share(s); notional $154.14; planned risk $4.99.",
+            "Target 1 373.85; Target 2 385.22; Target 3 396.59; reward/risk 2.0:1."
+          ]
+        },
+        {
+          "name": "Technical (short)",
+          "status": "PASS",
+          "score": 25.0,
+          "max_score": 30,
+          "evidence": [
+            "Close 340.59; SMA20 346.41; SMA50 344.49; SMA200 340.56.",
+            "RSI14 44.5; ATR14 8.91 (2.6%); volume ratio 1.14x.",
+            "63-day relative strength vs SPY: -6.3%.",
+            "Selected strategy: Failed reclaim.",
+            "Failed: Price is below SMA200.",
+            "Passed: Price lost SMA20 and SMA50.",
+            "Passed: A recent rally created a failed reclaim.",
+            "Passed: RSI confirms weakness.",
+            "Passed: Relative strength is negative.",
+            "Passed: Volume confirms the failed reclaim."
+          ]
+        },
+        {
+          "name": "Fundamentals (short)",
+          "status": "FAIL",
+          "score": 0.0,
+          "max_score": 25,
+          "evidence": [
+            "Revenue Growth: 24.2%.",
+            "Earnings Growth: 294.0%.",
+            "Profit Margin: 54.8%.",
+            "Free Cash Flow: $22,665,000,960.",
+            "Debt-to-cash ratio: 0.50x."
+          ]
+        },
+        {
+          "name": "News/catalyst (short)",
+          "status": "CAUTION",
+          "score": 7.0,
+          "max_score": 15,
+          "evidence": [
+            "Reviewed 0 headline(s) published in the last seven days.",
+            "Next reported earnings date: 2026-10-28 (6 business day(s))."
+          ]
+        },
+        {
+          "name": "Valuation (short)",
+          "status": "FAIL",
+          "score": 2,
+          "max_score": 10,
+          "evidence": [
+            "Trailing P/E: 17.3x.",
+            "Forward P/E: 22.5x.",
+            "PEG ratio: 1.25."
+          ]
+        },
+        {
+          "name": "Liquidity/execution (short)",
+          "status": "PASS",
+          "score": 5.0,
+          "max_score": 5,
+          "evidence": [
+            "20-day average dollar volume: $8,693,001,145."
+          ]
+        },
+        {
+          "name": "Short squeeze risk",
+          "status": "PASS",
+          "score": 5.0,
+          "max_score": 5,
+          "evidence": [
+            "No major short-interest warning was detected from available fields."
+          ]
+        },
+        {
+          "name": "Risk/setup (short)",
+          "status": "PASS",
+          "score": 10,
+          "max_score": 10,
+          "evidence": [
+            "SHORT entry 338.63; stop 351.17; risk/share 12.54.",
+            "Size 0.398 share(s); notional $134.78; planned risk $4.99.",
+            "Target 1 313.56; Target 2 301.03; Target 3 288.49; reward/risk 2.0:1."
+          ]
+        }
+      ],
+      "trade_plan": null,
+      "thesis": [
+        "Neither direction cleared enough independent confirmation to justify a new position."
+      ],
+      "bear_case": [
+        "The model prefers patience when the directional scores are too close, a hard gate fails, or risk/reward cannot be established cleanly.",
+        "Long blockers: Technical (long).",
+        "Short blockers: Fundamentals (short), Valuation (short)."
+      ],
+      "invalidation": [
+        "Exit when price reaches the model stop or the directional thesis is structurally invalidated.",
+        "Re-score after earnings, material guidance, a major filing, or a high-impact headline.",
+        "Do not average down after the invalidation level is breached."
+      ],
+      "facts": {
+        "close": 340.5899963378906,
+        "atr14": 8.905029488174382,
+        "rsi14": 44.465853299811194,
+        "sma20": 346.4139999389648,
+        "sma50": 344.4919067382813,
+        "sma200": 340.5565823364258,
+        "prior_high20": 364.1700134277344,
+        "prior_low20": 335.510009765625,
+        "low10": 339.0799865722656,
+        "volume_ratio": 1.1350275704765145,
+        "rs63": -0.06283334467664081,
+        "latest_high": 350.6600036621094,
+        "latest_low": 339.0799865722656,
+        "sma50_slope20": -0.9071508789062364,
+        "company_name": "Alphabet Inc.",
+        "sector": "Communication Services",
+        "industry": "Internet Content & Information",
+        "market_cap": 4209298898944,
+        "revenue_growth": 0.242,
+        "earnings_growth": 2.94,
+        "profit_margin": 0.54771,
+        "free_cash_flow": 22665000960,
+        "total_cash": 242473992192,
+        "total_debt": 120790999040,
+        "trailing_pe": 17.269442,
+        "forward_pe": 22.507751,
+        "peg_ratio": 1.2549,
+        "earnings_date": "2026-10-28T00:00:00",
+        "currency": "USD",
+        "website": "https://abc.xyz",
+        "business_summary": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America. It operates through Google Services, Google Cloud, and Other Bets segments. The Google Services segment provides products and services, including ads, Android, Chrome, devices, Gmail, Google Drive, Google Maps, Google Photos, Google Play, Search, and YouTube. It is also involved in the sale of apps and in-app purchases and digital content in Google Play and YouTube; and devices, as well as the provision of YouTube consumer subscription services, such as YouTube TV, YouTube Music and Premium, NFL Sunday Ticket, and Google One. The Google Cloud segment offers consumption-based fees and subscriptions for AI solutions, including AI infrastructure, Vertex AI platform, and Gemini enterprise. It also provides cybersecurity, and data and analytics services; Google Workspace that include cloud-based communication and collaboration tools for enterprises, such as Calendar, Gmail, Docs, Drive, and Meet; and other enterprise services. The Other Bets segment sells transportation and internet services. Alphabet Inc. was incorporated in 1998 and is headquartered in Mountain View, California.",
+        "short_percent_of_float": 0.0137,
+        "short_ratio": 2.99,
+        "shares_short": 80391960,
+        "shares_short_prior_month": 77698668,
+        "float_shares": 10879808000,
+        "shares_outstanding": 5867155790,
+        "52_week_change": 0.32757747,
+        "beta": 1.211,
+        "average_volume": 26759270,
+        "short_risk_flags": [],
+        "long_hard_pass": false,
+        "short_hard_pass": false,
+        "long_qualified": false,
+        "short_qualified": false,
+        "max_score": 100
+      },
+      "news": [],
+      "warnings": [
+        "Research model only; broker quotes, borrow availability, option liquidity, and order rules control actual execution.",
+        "The short engine scores stock-specific weakness but cannot confirm real-time locate/borrow availability through the current data adapter.",
+        "Headline classification is a triage tool; read the primary filing or article before committing capital."
+      ],
+      "directional_view": {
+        "bias": "NO TRADE",
+        "evidence": [
+          "Long score: 71.0/100; short score: 54.0/100.",
+          "Price 340.59 versus SMA20 346.41, SMA50 344.49, SMA200 340.56.",
+          "RSI14 44.5; SMA50 slope -0.91; volume ratio 1.14x.",
+          "Short execution plan: entry 338.63, stop 351.17, targets 313.56/301.03/288.49."
+        ],
+        "bullish_score": 71.0,
+        "bearish_score": 54.0,
+        "bearish_strategy": "Failed reclaim",
+        "bearish_trigger": 338.63,
+        "bearish_invalidation": 351.17,
+        "bearish_target_1": 313.56,
+        "bearish_target_2": 301.03,
+        "short_execution_allowed": true,
+        "short_risk_flags": []
+      },
+      "long_score": 71.0,
+      "short_score": 54.0,
+      "recommendation": "NO TRADE",
+      "confidence": "MEDIUM",
+      "selected_direction": "NONE",
+      "long_strategy": "Recovery/reclaim",
+      "short_strategy": "Failed reclaim"
+    },
+    {
+      "ticker": "NVDA",
+      "as_of": "2026-10-16T00:00:00-04:00",
+      "status": "WATCH",
+      "score": 70.0,
+      "strategy": "Recovery/reclaim",
+      "price": 214.13,
+      "gates": [
+        {
+          "name": "Portfolio risk",
+          "status": "PASS",
+          "score": 0,
+          "max_score": 0,
+          "evidence": [
+            "Current drawdown: 0.0% of the portfolio.",
+            "Current open risk: $0.00; remaining open-risk capacity: $20.00.",
+            "Effective risk budget for a new trade: $5.00."
+          ]
+        },
+        {
+          "name": "Market regime",
+          "status": "PASS",
+          "score": 0,
+          "max_score": 0,
+          "evidence": [
+            "Benchmark close 763.25; SMA50 767.40; SMA200 721.88.",
+            "Twenty-session change in SMA50: +9.51."
           ]
         },
         {
@@ -1713,9 +1714,9 @@
           "score": 18.0,
           "max_score": 30,
           "evidence": [
-            "Close 217.23; SMA20 228.58; SMA50 223.06; SMA200 202.52.",
-            "RSI14 40.2; ATR14 6.01 (2.8%); volume ratio 1.17x.",
-            "63-day relative strength vs SPY: +3.1%.",
+            "Close 214.13; SMA20 228.18; SMA50 222.96; SMA200 202.66.",
+            "RSI14 37.6; ATR14 5.96 (2.8%); volume ratio 1.15x.",
+            "63-day relative strength vs SPY: +2.3%.",
             "Selected strategy: Recovery/reclaim.",
             "Passed: Price remains above SMA200.",
             "Failed: Price reclaimed SMA20 and SMA50.",
@@ -1745,7 +1746,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-11-17 (21 business day(s))."
+            "Next reported earnings date: 2026-11-17 (20 business day(s))."
           ]
         },
         {
@@ -1754,8 +1755,8 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "Trailing P/E: 27.1x.",
-            "Forward P/E: 13.5x.",
+            "Trailing P/E: 27.4x.",
+            "Forward P/E: 13.6x.",
             "PEG ratio: 0.48."
           ]
         },
@@ -1765,7 +1766,7 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "20-day average dollar volume: $24,740,796,189."
+            "20-day average dollar volume: $23,919,972,286."
           ]
         },
         {
@@ -1783,9 +1784,9 @@
           "score": 21.0,
           "max_score": 30,
           "evidence": [
-            "Close 217.23; SMA20 228.58; SMA50 223.06; SMA200 202.52.",
-            "RSI14 40.2; ATR14 6.01 (2.8%); volume ratio 1.17x.",
-            "63-day relative strength vs SPY: +3.1%.",
+            "Close 214.13; SMA20 228.18; SMA50 222.96; SMA200 202.66.",
+            "RSI14 37.6; ATR14 5.96 (2.8%); volume ratio 1.15x.",
+            "63-day relative strength vs SPY: +2.3%.",
             "Selected strategy: Failed reclaim.",
             "Failed: Price is below SMA200.",
             "Passed: Price lost SMA20 and SMA50.",
@@ -1815,7 +1816,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-11-17 (21 business day(s))."
+            "Next reported earnings date: 2026-11-17 (20 business day(s))."
           ]
         },
         {
@@ -1824,8 +1825,8 @@
           "score": 2,
           "max_score": 10,
           "evidence": [
-            "Trailing P/E: 27.1x.",
-            "Forward P/E: 13.5x.",
+            "Trailing P/E: 27.4x.",
+            "Forward P/E: 13.6x.",
             "PEG ratio: 0.48."
           ]
         },
@@ -1835,7 +1836,7 @@
           "score": 5.0,
           "max_score": 5,
           "evidence": [
-            "20-day average dollar volume: $24,740,796,189."
+            "20-day average dollar volume: $23,919,972,286."
           ]
         },
         {
@@ -1853,9 +1854,9 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "SHORT entry 212.55; stop 222.98; risk/share 10.43.",
-            "Size 0.479 share(s); notional $101.81; planned risk $5.00.",
-            "Target 1 191.69; Target 2 181.26; Target 3 170.83; reward/risk 2.0:1."
+            "SHORT entry 213.02; stop 223.15; risk/share 10.13.",
+            "Size 0.493 share(s); notional $105.02; planned risk $4.99.",
+            "Target 1 192.76; Target 2 182.63; Target 3 172.49; reward/risk 2.0:1."
           ]
         }
       ],
@@ -1874,46 +1875,46 @@
         "Do not average down after the invalidation level is breached."
       ],
       "facts": {
-        "close": 217.22999572753906,
-        "atr14": 6.01116309235182,
-        "rsi14": 40.20329097024441,
-        "sma20": 228.58400115966796,
-        "sma50": 223.05545776367188,
-        "sma200": 202.52172676086425,
+        "close": 214.1300048828125,
+        "atr14": 5.964650396581205,
+        "rsi14": 37.558176720628786,
+        "sma20": 228.17700119018554,
+        "sma50": 222.96315307617186,
+        "sma200": 202.65686584472655,
         "prior_high20": 243.3699951171875,
-        "prior_low20": 217.14999389648438,
+        "prior_low20": 212.85000610351562,
         "low10": 212.85000610351562,
-        "volume_ratio": 1.1731174345586686,
-        "rs63": 0.03137806559399037,
-        "latest_high": 218.47000122070312,
-        "latest_low": 212.85000610351562,
-        "sma50_slope20": 9.382812805175774,
+        "volume_ratio": 1.1525171160880499,
+        "rs63": 0.023485312485968857,
+        "latest_high": 218.67999267578125,
+        "latest_low": 213.32000732421875,
+        "sma50_slope20": 8.896174926757794,
         "company_name": "NVIDIA Corporation",
         "sector": "Technology",
         "industry": "Semiconductors",
-        "market_cap": 5170596937728,
+        "market_cap": 5242072072192,
         "revenue_growth": 1.059,
         "earnings_growth": 1.278,
         "profit_margin": 0.63663,
         "free_cash_flow": 41809874944,
         "total_cash": 62469001216,
         "total_debt": 38860001280,
-        "trailing_pe": 27.070797,
-        "forward_pe": 13.454941,
+        "trailing_pe": 27.445007,
+        "forward_pe": 13.640933,
         "peg_ratio": 0.4791,
         "earnings_date": "2026-11-17T00:00:00",
         "currency": "USD",
         "website": "https://www.nvidia.com",
-        "business_summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. It has a collaboration with Cisco to develop Ultra-Dense Small Form Factor Pluggable (USFP), a high-density optical module pluggable transceiver. It has a collaboration with ChipAgents to develop Build-A-Chip-Bench, a benchmark for AI agents carrying chip design tasks. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California.",
+        "business_summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. It has a collaboration with Cisco to develop Ultra-Dense Small Form Factor Pluggable (USFP), a high-density optical module pluggable transceiver. It has a collaboration with ChipAgents to develop Build-A-Chip-Bench, a benchmark for AI agents carrying chip design tasks and The Company has a strategic alliance with MediaTek to build the next generations of AI computing platforms. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California.",
         "short_percent_of_float": 0.0134000005,
         "short_ratio": 2.75,
         "shares_short": 311389688,
         "shares_short_prior_month": 298301619,
         "float_shares": 23133108000,
         "shares_outstanding": 24147000000,
-        "52_week_change": 0.18562388,
+        "52_week_change": 0.17241573,
         "beta": 2.216,
-        "average_volume": 118867254,
+        "average_volume": 118505879,
         "short_risk_flags": [],
         "long_hard_pass": false,
         "short_hard_pass": false,
@@ -1931,17 +1932,17 @@
         "bias": "NO TRADE",
         "evidence": [
           "Long score: 70.0/100; short score: 50.0/100.",
-          "Price 217.23 versus SMA20 228.58, SMA50 223.06, SMA200 202.52.",
-          "RSI14 40.2; SMA50 slope +9.38; volume ratio 1.17x.",
-          "Short execution plan: entry 212.55, stop 222.98, targets 191.69/181.26/170.83."
+          "Price 214.13 versus SMA20 228.18, SMA50 222.96, SMA200 202.66.",
+          "RSI14 37.6; SMA50 slope +8.90; volume ratio 1.15x.",
+          "Short execution plan: entry 213.02, stop 223.15, targets 192.76/182.63/172.49."
         ],
         "bullish_score": 70.0,
         "bearish_score": 50.0,
         "bearish_strategy": "Failed reclaim",
-        "bearish_trigger": 212.55,
-        "bearish_invalidation": 222.98,
-        "bearish_target_1": 191.69,
-        "bearish_target_2": 181.26,
+        "bearish_trigger": 213.02,
+        "bearish_invalidation": 223.15,
+        "bearish_target_1": 192.76,
+        "bearish_target_2": 182.63,
         "short_execution_allowed": true,
         "short_risk_flags": []
       },
@@ -1955,11 +1956,11 @@
     },
     {
       "ticker": "RDW",
-      "as_of": "2026-10-15T00:00:00-04:00",
+      "as_of": "2026-10-16T00:00:00-04:00",
       "status": "WATCH",
-      "score": 60.0,
-      "strategy": "Failed reclaim",
-      "price": 8.91,
+      "score": 64.6,
+      "strategy": "Bearish trend",
+      "price": 8.39,
       "gates": [
         {
           "name": "Portfolio risk",
@@ -1978,26 +1979,26 @@
           "score": 0,
           "max_score": 0,
           "evidence": [
-            "Benchmark close 771.79; SMA50 767.47; SMA200 721.47.",
-            "Twenty-session change in SMA50: +9.82."
+            "Benchmark close 763.25; SMA50 767.40; SMA200 721.88.",
+            "Twenty-session change in SMA50: +9.51."
           ]
         },
         {
           "name": "Technical (long)",
           "status": "FAIL",
-          "score": 13.0,
+          "score": 5.0,
           "max_score": 30,
           "evidence": [
-            "Close 8.91; SMA20 10.45; SMA50 11.19; SMA200 11.15.",
-            "RSI14 34.3; ATR14 0.69 (7.8%); volume ratio 1.14x.",
-            "63-day relative strength vs SPY: +1.4%.",
+            "Close 8.39; SMA20 10.33; SMA50 11.12; SMA200 11.16.",
+            "RSI14 30.7; ATR14 0.69 (8.2%); volume ratio 0.89x.",
+            "63-day relative strength vs SPY: -5.5%.",
             "Selected strategy: Recovery/reclaim.",
             "Failed: Price remains above SMA200.",
             "Failed: Price reclaimed SMA20 and SMA50.",
             "Passed: A recent correction created a genuine reclaim.",
             "Failed: RSI supports recovery.",
-            "Passed: Relative strength is positive.",
-            "Passed: Volume confirms the reclaim."
+            "Failed: Relative strength is positive.",
+            "Failed: Volume confirms the reclaim."
           ]
         },
         {
@@ -2019,7 +2020,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-11-04 (12 business day(s))."
+            "Next reported earnings date: 2026-11-04 (11 business day(s))."
           ]
         },
         {
@@ -2028,7 +2029,7 @@
           "score": 4,
           "max_score": 10,
           "evidence": [
-            "Forward P/E: -26.2x."
+            "Forward P/E: -26.4x."
           ]
         },
         {
@@ -2037,7 +2038,7 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "20-day average dollar volume: $148,566,570."
+            "20-day average dollar volume: $136,440,998."
           ]
         },
         {
@@ -2051,20 +2052,20 @@
         },
         {
           "name": "Technical (short)",
-          "status": "FAIL",
-          "score": 21.0,
+          "status": "PASS",
+          "score": 25.6,
           "max_score": 30,
           "evidence": [
-            "Close 8.91; SMA20 10.45; SMA50 11.19; SMA200 11.15.",
-            "RSI14 34.3; ATR14 0.69 (7.8%); volume ratio 1.14x.",
-            "63-day relative strength vs SPY: +1.4%.",
-            "Selected strategy: Failed reclaim.",
-            "Passed: Price is below SMA200.",
-            "Passed: Price lost SMA20 and SMA50.",
-            "Failed: A recent rally created a failed reclaim.",
-            "Passed: RSI confirms weakness.",
-            "Failed: Relative strength is negative.",
-            "Passed: Volume confirms the failed reclaim."
+            "Close 8.39; SMA20 10.33; SMA50 11.12; SMA200 11.16.",
+            "RSI14 30.7; ATR14 0.69 (8.2%); volume ratio 0.89x.",
+            "63-day relative strength vs SPY: -5.5%.",
+            "Selected strategy: Bearish trend.",
+            "Passed: Price < SMA20 < SMA50.",
+            "Passed: SMA50 is below SMA200.",
+            "Failed: SMA50 is falling.",
+            "Passed: RSI is below 50.",
+            "Passed: Latest close weakened.",
+            "Passed: 63-day relative strength trails SPY."
           ]
         },
         {
@@ -2086,7 +2087,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 0 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2026-11-04 (12 business day(s))."
+            "Next reported earnings date: 2026-11-04 (11 business day(s))."
           ]
         },
         {
@@ -2095,7 +2096,7 @@
           "score": 4,
           "max_score": 10,
           "evidence": [
-            "Forward P/E: -26.2x."
+            "Forward P/E: -26.4x."
           ]
         },
         {
@@ -2104,7 +2105,7 @@
           "score": 5.0,
           "max_score": 5,
           "evidence": [
-            "20-day average dollar volume: $148,566,570."
+            "20-day average dollar volume: $136,440,998."
           ]
         },
         {
@@ -2122,9 +2123,9 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "SHORT entry 8.02; stop 9.49; risk/share 1.47.",
-            "Size 3.392 share(s); notional $27.19; planned risk $5.00.",
-            "Target 1 5.07; Target 2 3.59; Target 3 2.12; reward/risk 2.0:1."
+            "SHORT entry 8.27; stop 10.67; risk/share 2.41.",
+            "Size 2.076 share(s); notional $17.16; planned risk $5.00.",
+            "Target 1 3.45; Target 2 1.04; Target 3 0.01; reward/risk 2.0:1."
           ]
         }
       ],
@@ -2135,7 +2136,7 @@
       "bear_case": [
         "The model prefers patience when the directional scores are too close, a hard gate fails, or risk/reward cannot be established cleanly.",
         "Long blockers: Technical (long), Fundamentals (long), Risk/setup (long).",
-        "Short blockers: Technical (short), Fundamentals (short)."
+        "Short blockers: Fundamentals (short)."
       ],
       "invalidation": [
         "Exit when price reaches the model stop or the directional thesis is structurally invalidated.",
@@ -2143,24 +2144,24 @@
         "Do not average down after the invalidation level is breached."
       ],
       "facts": {
-        "close": 8.90999984741211,
-        "atr14": 0.6923198979450128,
-        "rsi14": 34.26820366476855,
-        "sma20": 10.447499990463257,
-        "sma50": 11.185399971008302,
-        "sma200": 11.153450007438659,
+        "close": 8.390000343322754,
+        "atr14": 0.6864398807116009,
+        "rsi14": 30.665772107951938,
+        "sma20": 10.330000019073486,
+        "sma50": 11.116599979400634,
+        "sma200": 11.155700008869172,
         "prior_high20": 12.069999694824219,
-        "prior_low20": 8.470000267028809,
+        "prior_low20": 8.050000190734863,
         "low10": 8.050000190734863,
-        "volume_ratio": 1.1379732589661737,
-        "rs63": 0.013516389319974564,
-        "latest_high": 8.970000267028809,
-        "latest_low": 8.050000190734863,
-        "sma50_slope20": 0.48939999580383464,
+        "volume_ratio": 0.8925462443652624,
+        "rs63": -0.05548664185450736,
+        "latest_high": 8.895000457763672,
+        "latest_low": 8.300000190734863,
+        "sma50_slope20": 0.41520001411437946,
         "company_name": "Redwire Corporation",
         "sector": "Industrials",
         "industry": "Aerospace & Defense",
-        "market_cap": 2097438080,
+        "market_cap": 2114937472,
         "revenue_growth": 0.896,
         "earnings_growth": null,
         "profit_margin": -0.57263,
@@ -2168,7 +2169,7 @@
         "total_cash": 556966976,
         "total_debt": 90275000,
         "trailing_pe": null,
-        "forward_pe": -26.218752,
+        "forward_pe": -26.4375,
         "peg_ratio": null,
         "earnings_date": "2026-11-04T00:00:00",
         "currency": "USD",
@@ -2180,9 +2181,9 @@
         "shares_short_prior_month": 40196707,
         "float_shares": 246182942,
         "shares_outstanding": 249992609,
-        "52_week_change": 0.11794233,
+        "52_week_change": 0.01696968,
         "beta": 3.134,
-        "average_volume": 14447820,
+        "average_volume": 14415770,
         "short_risk_flags": [
           "short float 21.3%"
         ],
@@ -2201,124 +2202,148 @@
       "directional_view": {
         "bias": "NO TRADE",
         "evidence": [
-          "Long score: 44.0/100; short score: 60.0/100.",
-          "Price 8.91 versus SMA20 10.45, SMA50 11.19, SMA200 11.15.",
-          "RSI14 34.3; SMA50 slope +0.49; volume ratio 1.14x.",
-          "Short execution plan: entry 8.02, stop 9.49, targets 5.07/3.59/2.12.",
+          "Long score: 36.0/100; short score: 64.6/100.",
+          "Price 8.39 versus SMA20 10.33, SMA50 11.12, SMA200 11.16.",
+          "RSI14 30.7; SMA50 slope +0.42; volume ratio 0.89x.",
+          "Short execution plan: entry 8.27, stop 10.67, targets 3.45/1.04/0.01.",
           "Short-specific risks: short float 21.3%"
         ],
-        "bullish_score": 44.0,
-        "bearish_score": 60.0,
-        "bearish_strategy": "Failed reclaim",
-        "bearish_trigger": 8.02,
-        "bearish_invalidation": 9.49,
-        "bearish_target_1": 5.07,
-        "bearish_target_2": 3.59,
+        "bullish_score": 36.0,
+        "bearish_score": 64.6,
+        "bearish_strategy": "Bearish trend",
+        "bearish_trigger": 8.27,
+        "bearish_invalidation": 10.67,
+        "bearish_target_1": 3.45,
+        "bearish_target_2": 1.04,
         "short_execution_allowed": true,
         "short_risk_flags": [
           "short float 21.3%"
         ]
       },
-      "long_score": 44.0,
-      "short_score": 60.0,
+      "long_score": 36.0,
+      "short_score": 64.6,
       "recommendation": "NO TRADE",
       "confidence": "MEDIUM",
       "selected_direction": "NONE",
       "long_strategy": "Recovery/reclaim",
-      "short_strategy": "Failed reclaim"
+      "short_strategy": "Bearish trend"
     }
   ],
   "errors": {},
   "changes_from_previous_close": [
     {
-      "ticker": "V",
-      "field": "Long score",
-      "previous": 89.0,
-      "current": 85.0
-    },
-    {
-      "ticker": "V",
-      "field": "Score",
-      "previous": 89.0,
-      "current": 85.0
-    },
-    {
-      "ticker": "GOOGL",
+      "ticker": "EOG",
       "field": "Long score",
       "previous": 88.0,
-      "current": 84.2
+      "current": 89.0
     },
     {
-      "ticker": "GOOGL",
+      "ticker": "EOG",
       "field": "Short score",
-      "previous": 42.0,
+      "previous": 34.0,
       "current": 38.0
     },
     {
-      "ticker": "GOOGL",
+      "ticker": "EOG",
       "field": "Score",
       "previous": 88.0,
-      "current": 84.2
+      "current": 89.0
     },
     {
       "ticker": "MSFT",
       "field": "Long score",
-      "previous": 85.7,
-      "current": 84.0
-    },
-    {
-      "ticker": "MSFT",
-      "field": "Short score",
-      "previous": 39.0,
-      "current": 43.0
+      "previous": 84.0,
+      "current": 85.7
     },
     {
       "ticker": "MSFT",
       "field": "Score",
-      "previous": 85.7,
-      "current": 84.0
+      "previous": 84.0,
+      "current": 85.7
     },
     {
-      "ticker": "AMZN",
+      "ticker": "V",
       "field": "Long score",
-      "previous": 74.4,
-      "current": 77.8
+      "previous": 85.0,
+      "current": 80.0
     },
     {
-      "ticker": "AMZN",
-      "field": "Short score",
-      "previous": 44.0,
-      "current": 40.0
-    },
-    {
-      "ticker": "AMZN",
+      "ticker": "V",
       "field": "Score",
-      "previous": 74.4,
-      "current": 77.8
+      "previous": 85.0,
+      "current": 80.0
+    },
+    {
+      "ticker": "JPM",
+      "field": "Long score",
+      "previous": 72.0,
+      "current": 76.0
     },
     {
       "ticker": "JPM",
       "field": "Short score",
-      "previous": 50.1,
-      "current": 41.2
+      "previous": 41.2,
+      "current": 42.0
     },
     {
-      "ticker": "NVDA",
-      "field": "Long score",
-      "previous": 80.0,
-      "current": 70.0
-    },
-    {
-      "ticker": "NVDA",
+      "ticker": "JPM",
       "field": "Score",
-      "previous": 80.0,
-      "current": 70.0
+      "previous": 72.0,
+      "current": 76.0
+    },
+    {
+      "ticker": "AMZN",
+      "field": "Long score",
+      "previous": 77.8,
+      "current": 74.0
+    },
+    {
+      "ticker": "AMZN",
+      "field": "Short score",
+      "previous": 40.0,
+      "current": 56.0
+    },
+    {
+      "ticker": "AMZN",
+      "field": "Score",
+      "previous": 77.8,
+      "current": 74.0
+    },
+    {
+      "ticker": "GOOGL",
+      "field": "Long score",
+      "previous": 84.2,
+      "current": 71.0
+    },
+    {
+      "ticker": "GOOGL",
+      "field": "Short score",
+      "previous": 38.0,
+      "current": 54.0
+    },
+    {
+      "ticker": "GOOGL",
+      "field": "Score",
+      "previous": 84.2,
+      "current": 71.0
     },
     {
       "ticker": "RDW",
       "field": "Long score",
-      "previous": 36.0,
-      "current": 44.0
+      "previous": 44.0,
+      "current": 36.0
+    },
+    {
+      "ticker": "RDW",
+      "field": "Short score",
+      "previous": 60.0,
+      "current": 64.6
+    },
+    {
+      "ticker": "RDW",
+      "field": "Score",
+      "previous": 60.0,
+      "current": 64.6
     }
   ],
   "source_note": "Automated report generated from the community yfinance adapter. Prices may be delayed and headlines are screened by rules; verify primary filings, earnings dates, and the executable Robinhood quote before acting."
