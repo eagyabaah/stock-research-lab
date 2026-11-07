@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T20:59:07.354229-05:00",
+  "generated_at": "2026-11-06T20:35:56.566320-05:00",
   "watchlist": [
     "MTNGH",
     "GCB",
@@ -10,16 +10,16 @@
   ],
   "summary": {
     "accumulate": 0,
-    "watch": 6,
+    "watch": 3,
     "insufficient": 0,
-    "avoid": 0
+    "avoid": 3
   },
   "reports": [
     {
       "ticker": "MTNGH",
       "status": "WATCH",
-      "score": 85.0,
-      "completeness_pct": 82,
+      "score": 78.0,
+      "completeness_pct": 73,
       "gates": [
         {
           "gate": "Fundamentals",
@@ -27,9 +27,9 @@
           "score": 35.0,
           "max_score": 35,
           "evidence": [
-            "Revenue growth: 41.1%.",
-            "Earnings growth: 26.6%.",
-            "ROE: 74.5%."
+            "Revenue growth: 60.7%.",
+            "Earnings growth: 27.4%.",
+            "ROE: 78.8%."
           ]
         },
         {
@@ -38,8 +38,8 @@
           "score": 20.0,
           "max_score": 20,
           "evidence": [
-            "P/E: 10.9x.",
-            "Dividend yield: 7.4%."
+            "P/E: 11.7x.",
+            "Dividend yield: 7.3%."
           ]
         },
         {
@@ -54,12 +54,11 @@
         },
         {
           "gate": "News/governance",
-          "status": "PASS",
-          "score": 15.0,
+          "status": "CAUTION",
+          "score": 8.0,
           "max_score": 15,
           "evidence": [
-            "Unresolved governance flag: no.",
-            "Unresolved regulatory flag: no."
+            "Unresolved governance flag: no."
           ]
         },
         {
@@ -86,7 +85,7 @@
       "business_summary": "Scancom Plc provides telecommunications services in Ghana. The company operates through Network services, Interconnect and roaming, Digital and Fintech, and Mobile, devices and accessories segments. It offers voice, data, mobile financial, and enterprise solutions, as well as consultancy and support services in the areas of mobile banking, payment services, and fintech. The company also provides communications, digital solutions, connectivity solutions, cloud and hosting services, digital platforms, managed mobility, Internet, security services. Its products include internet and connectivity solutions, such as leased lines, dedicated internet services, sponsored data, MTN global MPLS, MTN Yello Biz, business broadband, MTN SD -WAN, MTN Wi-Fi extenders, and MTN APN sim cards; digital solutions, including business manager, business messenger, web-wiz, USSD, bulk SMS, and mobile advertising services; and mobile solution, which include association bundle, SME plus, corporate postpaid, adwumapa bundle, groupshare, and corporate postpaid solutions. In addition, the company offers money transfers; airtime topups; bill payments; general payments; bulk payment payroll; school fees paymen...",
       "price": null,
       "price_as_of": null,
-      "fetched_at": "2026-11-06T01:59:33+00:00",
+      "fetched_at": "2026-11-07T01:36:25+00:00",
       "metrics": [
         {
           "key": "price",
@@ -100,8 +99,8 @@
         {
           "key": "revenue_growth_pct",
           "label": "Revenue growth",
-          "value": 41.13,
-          "display": "+41.13%",
+          "value": 60.69,
+          "display": "+60.69%",
           "as_of": "2026-10-30",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/MTNGH/financials/income-statement/"
@@ -109,8 +108,8 @@
         {
           "key": "earnings_growth_pct",
           "label": "Net-income growth",
-          "value": 26.61,
-          "display": "+26.61%",
+          "value": 27.39,
+          "display": "+27.39%",
           "as_of": "2026-10-30",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/MTNGH/financials/income-statement/"
@@ -118,27 +117,27 @@
         {
           "key": "roe_pct",
           "label": "Return on equity",
-          "value": 74.47,
-          "display": "+74.47%",
-          "as_of": "2026-11-05",
+          "value": 78.83,
+          "display": "+78.83%",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/MTNGH/statistics/"
         },
         {
           "key": "pe_ratio",
           "label": "Trailing P/E",
-          "value": 10.89,
-          "display": "10.89x",
-          "as_of": "2026-11-05",
+          "value": 11.65,
+          "display": "11.65x",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/MTNGH/statistics/"
         },
         {
           "key": "dividend_yield_pct",
           "label": "Dividend yield",
-          "value": 7.36,
-          "display": "+7.36%",
-          "as_of": "2026-11-05",
+          "value": 7.3,
+          "display": "+7.30%",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/MTNGH/statistics/"
         },
@@ -147,7 +146,7 @@
           "label": "Operating cash flow positive",
           "value": true,
           "display": "Yes",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/MTNGH/statistics/"
         },
@@ -156,7 +155,7 @@
           "label": "Debt/equity",
           "value": 0.3,
           "display": "0.30x",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/MTNGH/statistics/"
         },
@@ -165,7 +164,7 @@
           "label": "Estimated average daily traded value",
           "value": null,
           "display": "Unknown",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/MTNGH/statistics/"
         },
@@ -174,7 +173,7 @@
           "label": "Price versus 200-day average",
           "value": null,
           "display": "Unknown",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/MTNGH/statistics/"
         },
@@ -183,7 +182,7 @@
           "label": "Business profile",
           "value": "Radiotelephone Communications",
           "display": "Radiotelephone Communications",
-          "as_of": "2026-10-30",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/MTNGH/company/"
         },
@@ -192,16 +191,16 @@
           "label": "Potential governance concern in reviewed GSE results",
           "value": false,
           "display": "None detected",
-          "as_of": "2026-11-06",
+          "as_of": "2026-11-07",
           "source": "Ghana Stock Exchange search",
           "url": "https://gse.com.gh/?s=Scancom+MTN+Ghana"
         },
         {
           "key": "regulatory_flag",
           "label": "Potential regulatory concern in reviewed SEC results",
-          "value": false,
-          "display": "None detected",
-          "as_of": "2026-11-06",
+          "value": null,
+          "display": "Unknown",
+          "as_of": null,
           "source": "SEC Ghana search",
           "url": "https://sec.gov.gh/?s=Scancom+MTN+Ghana"
         }
@@ -259,14 +258,15 @@
       "source_warnings": [
         "StockAnalysis supplies delayed research data; the final executable price is the IC Wealth quote.",
         "The governance and regulatory checks screen matching official search results; open the linked evidence before accumulating.",
+        "The SEC Ghana search was unavailable, so regulatory evidence remains Unknown.",
         "A delayed closing price could not be extracted from the data page."
       ]
     },
     {
       "ticker": "UNIL",
       "status": "WATCH",
-      "score": 76.0,
-      "completeness_pct": 82,
+      "score": 69.0,
+      "completeness_pct": 73,
       "gates": [
         {
           "gate": "Fundamentals",
@@ -301,12 +301,11 @@
         },
         {
           "gate": "News/governance",
-          "status": "PASS",
-          "score": 15.0,
+          "status": "CAUTION",
+          "score": 8.0,
           "max_score": 15,
           "evidence": [
-            "Unresolved governance flag: no.",
-            "Unresolved regulatory flag: no."
+            "Unresolved governance flag: no."
           ]
         },
         {
@@ -333,7 +332,7 @@
       "business_summary": "Unilever Ghana PLC manufactures and markets fast-moving consumer goods in Ghana. It operates through Nutrition, Home Care, and Beauty & Personal Care segments. The company provides laundry and household care products; food products; and skin cleansing and care, oral, and deodorant products. The company is headquartered in Tema, Ghana. Unilever Ghana PLC is a subsidiary of Unilever Overseas Holdings Limited. Unilever Ghana PLC",
       "price": null,
       "price_as_of": null,
-      "fetched_at": "2026-11-06T01:59:57+00:00",
+      "fetched_at": "2026-11-07T01:37:13+00:00",
       "metrics": [
         {
           "key": "price",
@@ -439,16 +438,16 @@
           "label": "Potential governance concern in reviewed GSE results",
           "value": false,
           "display": "None detected",
-          "as_of": "2026-11-06",
+          "as_of": "2026-11-07",
           "source": "Ghana Stock Exchange search",
           "url": "https://gse.com.gh/?s=Unilever+Ghana"
         },
         {
           "key": "regulatory_flag",
           "label": "Potential regulatory concern in reviewed SEC results",
-          "value": false,
-          "display": "None detected",
-          "as_of": "2026-11-06",
+          "value": null,
+          "display": "Unknown",
+          "as_of": null,
           "source": "SEC Ghana search",
           "url": "https://sec.gov.gh/?s=Unilever+Ghana"
         }
@@ -506,14 +505,15 @@
       "source_warnings": [
         "StockAnalysis supplies delayed research data; the final executable price is the IC Wealth quote.",
         "The governance and regulatory checks screen matching official search results; open the linked evidence before accumulating.",
+        "The SEC Ghana search was unavailable, so regulatory evidence remains Unknown.",
         "A delayed closing price could not be extracted from the data page."
       ]
     },
     {
       "ticker": "GCB",
       "status": "WATCH",
-      "score": 74.0,
-      "completeness_pct": 82,
+      "score": 67.0,
+      "completeness_pct": 73,
       "gates": [
         {
           "gate": "Fundamentals",
@@ -548,12 +548,11 @@
         },
         {
           "gate": "News/governance",
-          "status": "PASS",
-          "score": 15.0,
+          "status": "CAUTION",
+          "score": 8.0,
           "max_score": 15,
           "evidence": [
-            "Unresolved governance flag: no.",
-            "Unresolved regulatory flag: no."
+            "Unresolved governance flag: no."
           ]
         },
         {
@@ -580,7 +579,7 @@
       "business_summary": "GCB Bank Plc engages in the retail and corporate banking, consumer and commercial banking, and treasury activities in Ghana. The company offers current, savings, salary, student, deposit, call, and foreign currency and exchange accounts; personal, employee scheme, and short- and medium-term loans; and overdrafts. It also provides bulk cash collection and payroll solutions; import and export finance; letters of credit; bills for collection; money transfer and remittance; business development and advisory services; insurance; bonds and guarantees; and electronic, mobile and Internet banking services, as well as bancassurance services. In addition, the company offers debit cards; and fee collection services; and capital raising, financial advisory, and alternative/long-term assets services. Further, it provides swift and telegraphic transfer, travellers cheques, finware networking, cash management, small business finance scheme, money market, foreign drafts, trade, and documentary collection services. The company serves public and private corporates, financial institutions, and government and its agencies. GCB Bank Plc was founded in 1953 and is headquartered in Accra, Ghana. GCB B...",
       "price": null,
       "price_as_of": null,
-      "fetched_at": "2026-11-06T01:59:38+00:00",
+      "fetched_at": "2026-11-07T01:36:33+00:00",
       "metrics": [
         {
           "key": "price",
@@ -614,7 +613,7 @@
           "label": "Return on equity",
           "value": 38.86,
           "display": "+38.86%",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/GCB/statistics/"
         },
@@ -623,7 +622,7 @@
           "label": "Trailing P/E",
           "value": 5.99,
           "display": "5.99x",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/GCB/statistics/"
         },
@@ -632,7 +631,7 @@
           "label": "Dividend yield",
           "value": 2.38,
           "display": "+2.38%",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/GCB/statistics/"
         },
@@ -641,7 +640,7 @@
           "label": "Operating cash flow positive",
           "value": false,
           "display": "No",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/GCB/statistics/"
         },
@@ -650,7 +649,7 @@
           "label": "Debt/equity",
           "value": 0.94,
           "display": "0.94x",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/GCB/statistics/"
         },
@@ -659,7 +658,7 @@
           "label": "Estimated average daily traded value",
           "value": null,
           "display": "Unknown",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/GCB/statistics/"
         },
@@ -668,7 +667,7 @@
           "label": "Price versus 200-day average",
           "value": null,
           "display": "Unknown",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/GCB/statistics/"
         },
@@ -686,16 +685,16 @@
           "label": "Potential governance concern in reviewed GSE results",
           "value": false,
           "display": "None detected",
-          "as_of": "2026-11-06",
+          "as_of": "2026-11-07",
           "source": "Ghana Stock Exchange search",
           "url": "https://gse.com.gh/?s=GCB+Bank"
         },
         {
           "key": "regulatory_flag",
           "label": "Potential regulatory concern in reviewed SEC results",
-          "value": false,
-          "display": "None detected",
-          "as_of": "2026-11-06",
+          "value": null,
+          "display": "Unknown",
+          "as_of": null,
           "source": "SEC Ghana search",
           "url": "https://sec.gov.gh/?s=GCB+Bank"
         }
@@ -753,14 +752,15 @@
       "source_warnings": [
         "StockAnalysis supplies delayed research data; the final executable price is the IC Wealth quote.",
         "The governance and regulatory checks screen matching official search results; open the linked evidence before accumulating.",
+        "The SEC Ghana search was unavailable, so regulatory evidence remains Unknown.",
         "A delayed closing price could not be extracted from the data page."
       ]
     },
     {
       "ticker": "EGH",
-      "status": "WATCH",
-      "score": 49.0,
-      "completeness_pct": 82,
+      "status": "AVOID FOR NOW",
+      "score": 42.0,
+      "completeness_pct": 73,
       "gates": [
         {
           "gate": "Fundamentals",
@@ -795,12 +795,11 @@
         },
         {
           "gate": "News/governance",
-          "status": "PASS",
-          "score": 15.0,
+          "status": "CAUTION",
+          "score": 8.0,
           "max_score": 15,
           "evidence": [
-            "Unresolved governance flag: no.",
-            "Unresolved regulatory flag: no."
+            "Unresolved governance flag: no."
           ]
         },
         {
@@ -827,7 +826,7 @@
       "business_summary": "Ecobank Ghana PLC provides retail banking, corporate and investment banking, and other financial services in Ghana and internationally. It operates through Consumer Banking, Commercial Banking, Corporate Banking, and Treasury segments. The company offers deposit, current, savings, and electronic accounts; personal loans, advance facility, mortgage loan, travel loan, salary advance, and cash backed loan; debit and credit cards; payment, collection, and structured trade solutions under the Ecobank OMNIPlus, Ecobank OMNILite, Bank Collect, and SWIFT brands. It also provides working capital loans, asset financing, project finance, and borrowing base structures; fixed income, currencies, and commodities solutions; balance sheet management for oversight and analytical rigor; and custody services, including safekeeping, settlement and administrative services for securities, cash and other financial assets. In addition, the company offers financial advisory, debt capital markets, loan syndications, mergers and acquisitions, and principal financing; payments, bancassurance, and wealth management products; overdrafts, funds transfers, standing orders, and ATM card services. It serves indi...",
       "price": null,
       "price_as_of": null,
-      "fetched_at": "2026-11-06T01:59:42+00:00",
+      "fetched_at": "2026-11-07T01:36:45+00:00",
       "metrics": [
         {
           "key": "price",
@@ -861,7 +860,7 @@
           "label": "Return on equity",
           "value": 23.68,
           "display": "+23.68%",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/EGH/statistics/"
         },
@@ -870,7 +869,7 @@
           "label": "Trailing P/E",
           "value": 6.71,
           "display": "6.71x",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/EGH/statistics/"
         },
@@ -879,7 +878,7 @@
           "label": "Dividend yield",
           "value": 3.3,
           "display": "+3.30%",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/EGH/statistics/"
         },
@@ -888,7 +887,7 @@
           "label": "Operating cash flow positive",
           "value": false,
           "display": "No",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/EGH/statistics/"
         },
@@ -897,7 +896,7 @@
           "label": "Debt/equity",
           "value": 0.04,
           "display": "0.04x",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/EGH/statistics/"
         },
@@ -906,7 +905,7 @@
           "label": "Estimated average daily traded value",
           "value": null,
           "display": "Unknown",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/EGH/statistics/"
         },
@@ -915,7 +914,7 @@
           "label": "Price versus 200-day average",
           "value": null,
           "display": "Unknown",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/EGH/statistics/"
         },
@@ -933,16 +932,16 @@
           "label": "Potential governance concern in reviewed GSE results",
           "value": false,
           "display": "None detected",
-          "as_of": "2026-11-06",
+          "as_of": "2026-11-07",
           "source": "Ghana Stock Exchange search",
           "url": "https://gse.com.gh/?s=Ecobank+Ghana"
         },
         {
           "key": "regulatory_flag",
           "label": "Potential regulatory concern in reviewed SEC results",
-          "value": false,
-          "display": "None detected",
-          "as_of": "2026-11-06",
+          "value": null,
+          "display": "Unknown",
+          "as_of": null,
           "source": "SEC Ghana search",
           "url": "https://sec.gov.gh/?s=Ecobank+Ghana"
         }
@@ -995,25 +994,20 @@
           "published": null,
           "publisher": "Ghana Stock Exchange",
           "link": "https://gse.com.gh/financial-statement/pr-185-ecobank-ghana-plc-summary-consolidated-and-separate-financial-statements-unaudited-for-the-period-ended-31-march-2026/"
-        },
-        {
-          "title": "DIRECTIVE ON PAYMENTS TO THE SECURITIES AND EXCHANGE COMMISSION, GHANA",
-          "published": null,
-          "publisher": "SEC Ghana",
-          "link": "https://sec.gov.gh/directive-on-payments-to-the-securities-and-exchange-commission-ghana/"
         }
       ],
       "source_warnings": [
         "StockAnalysis supplies delayed research data; the final executable price is the IC Wealth quote.",
         "The governance and regulatory checks screen matching official search results; open the linked evidence before accumulating.",
+        "The SEC Ghana search was unavailable, so regulatory evidence remains Unknown.",
         "A delayed closing price could not be extracted from the data page."
       ]
     },
     {
       "ticker": "GOIL",
-      "status": "WATCH",
-      "score": 47.0,
-      "completeness_pct": 82,
+      "status": "AVOID FOR NOW",
+      "score": 40.0,
+      "completeness_pct": 73,
       "gates": [
         {
           "gate": "Fundamentals",
@@ -1048,12 +1042,11 @@
         },
         {
           "gate": "News/governance",
-          "status": "PASS",
-          "score": 15.0,
+          "status": "CAUTION",
+          "score": 8.0,
           "max_score": 15,
           "evidence": [
-            "Unresolved governance flag: no.",
-            "Unresolved regulatory flag: no."
+            "Unresolved governance flag: no."
           ]
         },
         {
@@ -1080,7 +1073,7 @@
       "business_summary": "GOIL Plc, together with its subsidiaries, engages in the marketing of petroleum and other energy products and services in Ghana. The company offers marine gas oil, aviation fuel, mining diesel and lubricants, raw bitumen, polymer modified, Liquefied Petroleum Gas (LPG) and auto LP gas, premix fuel, and jet fuel; GOCARD; and fuel coupons. It also operates lube bay, fuel retailing, and non-fuels and convenience retail businesses. In addition, the company provides bunkering services, such as cargo sourcing, marketing, and credit management. Further, it is involved in operating as a bulk importer, storage facility, supplier, distributor, and trader of petroleum products; oil and gas operations; production, sale, and marketing of bitumen products; and provision of consultancy and related support, electronic payments, money transfers, and other IT-related business services. The company was formerly known as Ghana Oil Company. GOIL Plc was incorporated in 1960 and is based in Accra, Ghana. GOIL Plc",
       "price": null,
       "price_as_of": null,
-      "fetched_at": "2026-11-06T01:59:52+00:00",
+      "fetched_at": "2026-11-07T01:37:05+00:00",
       "metrics": [
         {
           "key": "price",
@@ -1114,7 +1107,7 @@
           "label": "Return on equity",
           "value": 9.55,
           "display": "+9.55%",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/GOIL/statistics/"
         },
@@ -1123,7 +1116,7 @@
           "label": "Trailing P/E",
           "value": 21.9,
           "display": "21.90x",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/GOIL/statistics/"
         },
@@ -1132,7 +1125,7 @@
           "label": "Dividend yield",
           "value": 1.09,
           "display": "+1.09%",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/GOIL/statistics/"
         },
@@ -1141,7 +1134,7 @@
           "label": "Operating cash flow positive",
           "value": true,
           "display": "Yes",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/GOIL/statistics/"
         },
@@ -1150,7 +1143,7 @@
           "label": "Debt/equity",
           "value": 0.54,
           "display": "0.54x",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/GOIL/statistics/"
         },
@@ -1159,7 +1152,7 @@
           "label": "Estimated average daily traded value",
           "value": null,
           "display": "Unknown",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/GOIL/statistics/"
         },
@@ -1168,7 +1161,7 @@
           "label": "Price versus 200-day average",
           "value": null,
           "display": "Unknown",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/GOIL/statistics/"
         },
@@ -1186,16 +1179,16 @@
           "label": "Potential governance concern in reviewed GSE results",
           "value": false,
           "display": "None detected",
-          "as_of": "2026-11-06",
+          "as_of": "2026-11-07",
           "source": "Ghana Stock Exchange search",
           "url": "https://gse.com.gh/?s=GOIL"
         },
         {
           "key": "regulatory_flag",
           "label": "Potential regulatory concern in reviewed SEC results",
-          "value": false,
-          "display": "None detected",
-          "as_of": "2026-11-06",
+          "value": null,
+          "display": "Unknown",
+          "as_of": null,
           "source": "SEC Ghana search",
           "url": "https://sec.gov.gh/?s=GOIL"
         }
@@ -1253,14 +1246,15 @@
       "source_warnings": [
         "StockAnalysis supplies delayed research data; the final executable price is the IC Wealth quote.",
         "The governance and regulatory checks screen matching official search results; open the linked evidence before accumulating.",
+        "The SEC Ghana search was unavailable, so regulatory evidence remains Unknown.",
         "A delayed closing price could not be extracted from the data page."
       ]
     },
     {
       "ticker": "SCB",
-      "status": "WATCH",
-      "score": 46.0,
-      "completeness_pct": 82,
+      "status": "AVOID FOR NOW",
+      "score": 39.0,
+      "completeness_pct": 73,
       "gates": [
         {
           "gate": "Fundamentals",
@@ -1295,12 +1289,11 @@
         },
         {
           "gate": "News/governance",
-          "status": "PASS",
-          "score": 15.0,
+          "status": "CAUTION",
+          "score": 8.0,
           "max_score": 15,
           "evidence": [
-            "Unresolved governance flag: no.",
-            "Unresolved regulatory flag: no."
+            "Unresolved governance flag: no."
           ]
         },
         {
@@ -1327,7 +1320,7 @@
       "business_summary": "Standard Chartered Bank Ghana PLC provides various banking products and services. It operates through three segments: Corporate and Investment Banking, Wealth and Retail Banking, and Standard Chartered Wealth Management. The company offers current and saving accounts, fixed deposit, secured and unsecured loans, fixed income securities, and mutual funds for individuals. It also provides macro and credit trading; lending and financial solutions, capital markets and advisory, payments and liquidity, trade and working capital, and securities and prime services; and investments, bancassurance, wealth advice, and portfolio management, as well as debit cards; credit cards; online and mobile banking; and ATM services. Standard Chartered Bank Ghana PLC was founded in 1896 and is headquartered in Accra, Ghana. Standard Chartered Bank Ghana PLC operates as a subsidiary of Standard Chartered Holdings (Africa) BV. Standard Chartered Bank Ghana PLC",
       "price": null,
       "price_as_of": null,
-      "fetched_at": "2026-11-06T01:59:47+00:00",
+      "fetched_at": "2026-11-07T01:36:53+00:00",
       "metrics": [
         {
           "key": "price",
@@ -1361,7 +1354,7 @@
           "label": "Return on equity",
           "value": 26.45,
           "display": "+26.45%",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/SCB/statistics/"
         },
@@ -1370,7 +1363,7 @@
           "label": "Trailing P/E",
           "value": 14.47,
           "display": "14.47x",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/SCB/statistics/"
         },
@@ -1379,7 +1372,7 @@
           "label": "Dividend yield",
           "value": 2.39,
           "display": "+2.39%",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/SCB/statistics/"
         },
@@ -1388,7 +1381,7 @@
           "label": "Operating cash flow positive",
           "value": false,
           "display": "No",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/SCB/statistics/"
         },
@@ -1397,7 +1390,7 @@
           "label": "Debt/equity",
           "value": 0.15,
           "display": "0.15x",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/SCB/statistics/"
         },
@@ -1406,7 +1399,7 @@
           "label": "Estimated average daily traded value",
           "value": null,
           "display": "Unknown",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/SCB/statistics/"
         },
@@ -1415,7 +1408,7 @@
           "label": "Price versus 200-day average",
           "value": null,
           "display": "Unknown",
-          "as_of": "2026-11-05",
+          "as_of": "2026-11-06",
           "source": "StockAnalysis / S&P Global",
           "url": "https://stockanalysis.com/quote/ghse/SCB/statistics/"
         },
@@ -1433,16 +1426,16 @@
           "label": "Potential governance concern in reviewed GSE results",
           "value": false,
           "display": "None detected",
-          "as_of": "2026-11-06",
+          "as_of": "2026-11-07",
           "source": "Ghana Stock Exchange search",
           "url": "https://gse.com.gh/?s=Standard+Chartered+Bank+Ghana"
         },
         {
           "key": "regulatory_flag",
           "label": "Potential regulatory concern in reviewed SEC results",
-          "value": false,
-          "display": "None detected",
-          "as_of": "2026-11-06",
+          "value": null,
+          "display": "Unknown",
+          "as_of": null,
           "source": "SEC Ghana search",
           "url": "https://sec.gov.gh/?s=Standard+Chartered+Bank+Ghana"
         }
@@ -1495,17 +1488,12 @@
           "published": null,
           "publisher": "Ghana Stock Exchange",
           "link": "https://gse.com.gh/financial-statement/pr-325-standard-chartered-bank-ghana-plc-unaudited-summary-of-consolidated-and-separate-financial-statements-for-the-period-ended-30-june-2026/"
-        },
-        {
-          "title": "SPEECH BY REV. DANIEL OGBARMEY TETTEH, DIRECTOR-GENERAL OF THE SECURITIES AND EXCHANGE COMMISSION DELIVERED AT THE OPENING EVENT OF THE SECOND INDUCTION CEREMONY OF THE INSTITUTE OF CHARTERED ACCOUNTANTS, GHANA, HELD AT THE LABADI BEACH HOTEL ON THURSDAY, 3RD OCTOBER, 2019",
-          "published": null,
-          "publisher": "SEC Ghana",
-          "link": "https://sec.gov.gh/speech-by-rev-daniel-ogbarmey-tetteh-director-general-of-the-securities-and-exchange-commission-delivered-at-the-opening-event-of-the-second-induction-ceremony-of-the-institute-of-chartered-accoun/"
         }
       ],
       "source_warnings": [
         "StockAnalysis supplies delayed research data; the final executable price is the IC Wealth quote.",
         "The governance and regulatory checks screen matching official search results; open the linked evidence before accumulating.",
+        "The SEC Ghana search was unavailable, so regulatory evidence remains Unknown.",
         "A delayed closing price could not be extracted from the data page."
       ]
     }
