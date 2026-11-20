@@ -9546,6 +9546,14 @@
         "spy_return_pct": -4.053,
         "alpha_pct": null,
         "win": null
+      },
+      "d20": {
+        "close": 149.49,
+        "stock_return_pct": -5.362,
+        "directional_return_pct": null,
+        "spy_return_pct": -6.295,
+        "alpha_pct": null,
+        "win": null
       }
     }
   },
@@ -9590,6 +9598,14 @@
         "stock_return_pct": 2.85,
         "directional_return_pct": null,
         "spy_return_pct": -4.053,
+        "alpha_pct": null,
+        "win": null
+      },
+      "d20": {
+        "close": 498.3,
+        "stock_return_pct": -4.372,
+        "directional_return_pct": null,
+        "spy_return_pct": -6.295,
         "alpha_pct": null,
         "win": null
       }
@@ -9638,6 +9654,14 @@
         "spy_return_pct": -4.053,
         "alpha_pct": null,
         "win": null
+      },
+      "d20": {
+        "close": 257.37,
+        "stock_return_pct": 2.792,
+        "directional_return_pct": null,
+        "spy_return_pct": -6.295,
+        "alpha_pct": null,
+        "win": null
       }
     }
   },
@@ -9684,6 +9708,14 @@
         "spy_return_pct": -4.053,
         "alpha_pct": null,
         "win": null
+      },
+      "d20": {
+        "close": 402.25,
+        "stock_return_pct": -2.918,
+        "directional_return_pct": null,
+        "spy_return_pct": -6.295,
+        "alpha_pct": null,
+        "win": null
       }
     }
   },
@@ -9728,6 +9760,14 @@
         "stock_return_pct": 0.238,
         "directional_return_pct": null,
         "spy_return_pct": -4.053,
+        "alpha_pct": null,
+        "win": null
+      },
+      "d20": {
+        "close": 320.22,
+        "stock_return_pct": -4.849,
+        "directional_return_pct": null,
+        "spy_return_pct": -6.295,
         "alpha_pct": null,
         "win": null
       }
@@ -9822,6 +9862,14 @@
         "spy_return_pct": -4.053,
         "alpha_pct": null,
         "win": null
+      },
+      "d20": {
+        "close": 145.98,
+        "stock_return_pct": -31.21,
+        "directional_return_pct": null,
+        "spy_return_pct": -6.295,
+        "alpha_pct": null,
+        "win": null
       }
     }
   },
@@ -9866,6 +9914,14 @@
         "stock_return_pct": -12.846,
         "directional_return_pct": null,
         "spy_return_pct": -4.053,
+        "alpha_pct": null,
+        "win": null
+      },
+      "d20": {
+        "close": 272.66,
+        "stock_return_pct": -15.903,
+        "directional_return_pct": null,
+        "spy_return_pct": -6.295,
         "alpha_pct": null,
         "win": null
       }
@@ -14770,7 +14826,16 @@
     "target_3": 444.19,
     "planned_risk": 3.09,
     "rr_1": 2.0,
-    "outcomes": {}
+    "outcomes": {
+      "d1": {
+        "close": 402.25,
+        "stock_return_pct": -3.124,
+        "directional_return_pct": -3.124,
+        "spy_return_pct": -1.962,
+        "alpha_pct": -1.161,
+        "win": false
+      }
+    }
   },
   {
     "signal_id": "EOG-20261118",
@@ -14791,7 +14856,16 @@
     "target_3": null,
     "planned_risk": null,
     "rr_1": null,
-    "outcomes": {}
+    "outcomes": {
+      "d1": {
+        "close": 149.49,
+        "stock_return_pct": -0.134,
+        "directional_return_pct": null,
+        "spy_return_pct": -1.962,
+        "alpha_pct": null,
+        "win": null
+      }
+    }
   },
   {
     "signal_id": "AMZN-20261118",
@@ -14812,7 +14886,16 @@
     "target_3": null,
     "planned_risk": null,
     "rr_1": null,
-    "outcomes": {}
+    "outcomes": {
+      "d1": {
+        "close": 257.37,
+        "stock_return_pct": -3.873,
+        "directional_return_pct": null,
+        "spy_return_pct": -1.962,
+        "alpha_pct": null,
+        "win": null
+      }
+    }
   },
   {
     "signal_id": "NVDA-20261118",
@@ -14833,7 +14916,16 @@
     "target_3": null,
     "planned_risk": null,
     "rr_1": null,
-    "outcomes": {}
+    "outcomes": {
+      "d1": {
+        "close": 145.98,
+        "stock_return_pct": -3.299,
+        "directional_return_pct": null,
+        "spy_return_pct": -1.962,
+        "alpha_pct": null,
+        "win": null
+      }
+    }
   },
   {
     "signal_id": "GOOGL-20261118",
@@ -14854,7 +14946,16 @@
     "target_3": null,
     "planned_risk": null,
     "rr_1": null,
-    "outcomes": {}
+    "outcomes": {
+      "d1": {
+        "close": 272.66,
+        "stock_return_pct": -3.463,
+        "directional_return_pct": null,
+        "spy_return_pct": -1.962,
+        "alpha_pct": null,
+        "win": null
+      }
+    }
   },
   {
     "signal_id": "RDW-20261118",
@@ -14896,7 +14997,16 @@
     "target_3": null,
     "planned_risk": null,
     "rr_1": null,
-    "outcomes": {}
+    "outcomes": {
+      "d1": {
+        "close": 498.3,
+        "stock_return_pct": -1.965,
+        "directional_return_pct": null,
+        "spy_return_pct": -1.962,
+        "alpha_pct": null,
+        "win": null
+      }
+    }
   },
   {
     "signal_id": "JPM-20261118",
@@ -14910,6 +15020,183 @@
     "short_score": 62.0,
     "selected_score": 70.0,
     "strategy": "Recovery/reclaim",
+    "entry": null,
+    "stop": null,
+    "target_1": null,
+    "target_2": null,
+    "target_3": null,
+    "planned_risk": null,
+    "rr_1": null,
+    "outcomes": {
+      "d1": {
+        "close": 320.22,
+        "stock_return_pct": -1.2,
+        "directional_return_pct": null,
+        "spy_return_pct": -1.962,
+        "alpha_pct": null,
+        "win": null
+      }
+    }
+  },
+  {
+    "signal_id": "GOOGL-20261119",
+    "signal_date": "2026-11-19",
+    "ticker": "GOOGL",
+    "recommendation": "SHORT",
+    "direction": "SHORT",
+    "confidence": "MEDIUM",
+    "signal_price": 272.66,
+    "long_score": 66.0,
+    "short_score": 77.0,
+    "selected_score": 77.0,
+    "strategy": "Bearish trend",
+    "entry": 271.82,
+    "stop": 297.56,
+    "target_1": 220.35,
+    "target_2": 194.61,
+    "target_3": 168.88,
+    "planned_risk": 4.99,
+    "rr_1": 2.0,
+    "outcomes": {}
+  },
+  {
+    "signal_id": "V-20261119",
+    "signal_date": "2026-11-19",
+    "ticker": "V",
+    "recommendation": "NO TRADE",
+    "direction": "NONE",
+    "confidence": "MEDIUM",
+    "signal_price": 402.25,
+    "long_score": 85.0,
+    "short_score": 55.0,
+    "selected_score": 85.0,
+    "strategy": "Recovery/reclaim",
+    "entry": null,
+    "stop": null,
+    "target_1": null,
+    "target_2": null,
+    "target_3": null,
+    "planned_risk": null,
+    "rr_1": null,
+    "outcomes": {}
+  },
+  {
+    "signal_id": "EOG-20261119",
+    "signal_date": "2026-11-19",
+    "ticker": "EOG",
+    "recommendation": "NO TRADE",
+    "direction": "NONE",
+    "confidence": "MEDIUM",
+    "signal_price": 149.49,
+    "long_score": 84.0,
+    "short_score": 52.0,
+    "selected_score": 84.0,
+    "strategy": "Recovery/reclaim",
+    "entry": null,
+    "stop": null,
+    "target_1": null,
+    "target_2": null,
+    "target_3": null,
+    "planned_risk": null,
+    "rr_1": null,
+    "outcomes": {}
+  },
+  {
+    "signal_id": "MSFT-20261119",
+    "signal_date": "2026-11-19",
+    "ticker": "MSFT",
+    "recommendation": "NO TRADE",
+    "direction": "NONE",
+    "confidence": "MEDIUM",
+    "signal_price": 498.3,
+    "long_score": 83.0,
+    "short_score": 62.0,
+    "selected_score": 83.0,
+    "strategy": "Recovery/reclaim",
+    "entry": null,
+    "stop": null,
+    "target_1": null,
+    "target_2": null,
+    "target_3": null,
+    "planned_risk": null,
+    "rr_1": null,
+    "outcomes": {}
+  },
+  {
+    "signal_id": "AMZN-20261119",
+    "signal_date": "2026-11-19",
+    "ticker": "AMZN",
+    "recommendation": "NO TRADE",
+    "direction": "NONE",
+    "confidence": "MEDIUM",
+    "signal_price": 257.37,
+    "long_score": 80.2,
+    "short_score": 62.0,
+    "selected_score": 80.2,
+    "strategy": "Trend pullback",
+    "entry": null,
+    "stop": null,
+    "target_1": null,
+    "target_2": null,
+    "target_3": null,
+    "planned_risk": null,
+    "rr_1": null,
+    "outcomes": {}
+  },
+  {
+    "signal_id": "RDW-20261119",
+    "signal_date": "2026-11-19",
+    "ticker": "RDW",
+    "recommendation": "NO TRADE",
+    "direction": "NONE",
+    "confidence": "MEDIUM",
+    "signal_price": 6.82,
+    "long_score": 44.0,
+    "short_score": 73.7,
+    "selected_score": 73.7,
+    "strategy": "Bearish trend",
+    "entry": null,
+    "stop": null,
+    "target_1": null,
+    "target_2": null,
+    "target_3": null,
+    "planned_risk": null,
+    "rr_1": null,
+    "outcomes": {}
+  },
+  {
+    "signal_id": "NVDA-20261119",
+    "signal_date": "2026-11-19",
+    "ticker": "NVDA",
+    "recommendation": "NO TRADE",
+    "direction": "NONE",
+    "confidence": "MEDIUM",
+    "signal_price": 145.98,
+    "long_score": 69.0,
+    "short_score": 62.0,
+    "selected_score": 69.0,
+    "strategy": "Recovery/reclaim",
+    "entry": null,
+    "stop": null,
+    "target_1": null,
+    "target_2": null,
+    "target_3": null,
+    "planned_risk": null,
+    "rr_1": null,
+    "outcomes": {}
+  },
+  {
+    "signal_id": "JPM-20261119",
+    "signal_date": "2026-11-19",
+    "ticker": "JPM",
+    "recommendation": "NO TRADE",
+    "direction": "NONE",
+    "confidence": "MEDIUM",
+    "signal_price": 320.22,
+    "long_score": 62.0,
+    "short_score": 67.0,
+    "selected_score": 67.0,
+    "strategy": "Failed reclaim",
     "entry": null,
     "stop": null,
     "target_1": null,
