@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-26T22:55:54.448471-05:00",
-  "market_date": "2026-11-25",
-  "market_was_closed": true,
+  "generated_at": "2026-11-27T22:42:22.218057-05:00",
+  "market_date": "2026-11-27",
+  "market_was_closed": false,
   "watchlist": [
     "MSFT",
     "AMZN",
@@ -14,740 +14,20 @@
   ],
   "summary": {
     "qualified_long": 0,
-    "qualified_short": 2,
-    "watch": 6,
-    "no_trade": 6,
+    "qualified_short": 0,
+    "watch": 8,
+    "no_trade": 8,
     "rejected": 0
   },
-  "action": "REVIEW SHORT SETUPS",
+  "action": "NO TRADE",
   "reports": [
     {
-      "ticker": "GOOGL",
-      "as_of": "2026-11-25T00:00:00-05:00",
-      "status": "QUALIFIED SHORT",
-      "score": 77.0,
-      "strategy": "Bearish trend",
-      "price": 273.1,
-      "gates": [
-        {
-          "name": "Portfolio risk",
-          "status": "PASS",
-          "score": 0,
-          "max_score": 0,
-          "evidence": [
-            "Current drawdown: 0.0% of the portfolio.",
-            "Current open risk: $0.00; remaining open-risk capacity: $20.00.",
-            "Effective risk budget for a new trade: $5.00."
-          ]
-        },
-        {
-          "name": "Market regime",
-          "status": "FAIL",
-          "score": 0,
-          "max_score": 0,
-          "evidence": [
-            "Benchmark close 716.70; SMA50 757.85; SMA200 730.77.",
-            "Twenty-session change in SMA50: -8.98.",
-            "Benchmark is below SMA200; this blocks new longs but does not automatically block shorts."
-          ]
-        },
-        {
-          "name": "Technical (long)",
-          "status": "FAIL",
-          "score": 5.0,
-          "max_score": 30,
-          "evidence": [
-            "Close 273.10; SMA20 283.05; SMA50 318.24; SMA200 336.06.",
-            "RSI14 36.9; ATR14 11.85 (4.3%); volume ratio 0.91x.",
-            "63-day relative strength vs SPY: -13.0%.",
-            "Selected strategy: Recovery/reclaim.",
-            "Failed: Price remains above SMA200.",
-            "Failed: Price reclaimed SMA20 and SMA50.",
-            "Passed: A recent correction created a genuine reclaim.",
-            "Failed: RSI supports recovery.",
-            "Failed: Relative strength is positive.",
-            "Failed: Volume confirms the reclaim."
-          ]
-        },
-        {
-          "name": "Fundamentals (long)",
-          "status": "CAUTION",
-          "score": 15.0,
-          "max_score": 25,
-          "evidence": [
-            "Revenue Growth: 24.7%.",
-            "Earnings Growth: -25.3%.",
-            "Profit Margin: 50.0%.",
-            "Free Cash Flow: $-1,162,499,968.",
-            "Debt-to-cash ratio: 0.57x."
-          ]
-        },
-        {
-          "name": "News/catalyst (long)",
-          "status": "PASS",
-          "score": 15.0,
-          "max_score": 15,
-          "evidence": [
-            "Reviewed 10 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2027-02-03 (48 business day(s))."
-          ]
-        },
-        {
-          "name": "Valuation (long)",
-          "status": "PASS",
-          "score": 10,
-          "max_score": 10,
-          "evidence": [
-            "Trailing P/E: 14.3x.",
-            "Forward P/E: 17.9x.",
-            "PEG ratio: 0.94."
-          ]
-        },
-        {
-          "name": "Liquidity/execution",
-          "status": "PASS",
-          "score": 10,
-          "max_score": 10,
-          "evidence": [
-            "20-day average dollar volume: $12,833,963,242."
-          ]
-        },
-        {
-          "name": "Risk/setup (long)",
-          "status": "FAIL",
-          "score": 0,
-          "max_score": 10,
-          "evidence": [
-            "No valid entry and stop plan could be calculated."
-          ]
-        },
-        {
-          "name": "Technical (short)",
-          "status": "PASS",
-          "score": 30.0,
-          "max_score": 30,
-          "evidence": [
-            "Close 273.10; SMA20 283.05; SMA50 318.24; SMA200 336.06.",
-            "RSI14 36.9; ATR14 11.85 (4.3%); volume ratio 0.91x.",
-            "63-day relative strength vs SPY: -13.0%.",
-            "Selected strategy: Bearish trend.",
-            "Passed: Price < SMA20 < SMA50.",
-            "Passed: SMA50 is below SMA200.",
-            "Passed: SMA50 is falling.",
-            "Passed: RSI is below 50.",
-            "Passed: Latest close weakened.",
-            "Passed: 63-day relative strength trails SPY."
-          ]
-        },
-        {
-          "name": "Fundamentals (short)",
-          "status": "FAIL",
-          "score": 10.0,
-          "max_score": 25,
-          "evidence": [
-            "Revenue Growth: 24.7%.",
-            "Earnings Growth: -25.3%.",
-            "Profit Margin: 50.0%.",
-            "Free Cash Flow: $-1,162,499,968.",
-            "Debt-to-cash ratio: 0.57x."
-          ]
-        },
-        {
-          "name": "News/catalyst (short)",
-          "status": "PASS",
-          "score": 15.0,
-          "max_score": 15,
-          "evidence": [
-            "Reviewed 10 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2027-02-03 (48 business day(s))."
-          ]
-        },
-        {
-          "name": "Valuation (short)",
-          "status": "FAIL",
-          "score": 2,
-          "max_score": 10,
-          "evidence": [
-            "Trailing P/E: 14.3x.",
-            "Forward P/E: 17.9x.",
-            "PEG ratio: 0.94."
-          ]
-        },
-        {
-          "name": "Liquidity/execution (short)",
-          "status": "PASS",
-          "score": 5.0,
-          "max_score": 5,
-          "evidence": [
-            "20-day average dollar volume: $12,833,963,242."
-          ]
-        },
-        {
-          "name": "Short squeeze risk",
-          "status": "PASS",
-          "score": 5.0,
-          "max_score": 5,
-          "evidence": [
-            "No major short-interest warning was detected from available fields."
-          ]
-        },
-        {
-          "name": "Risk/setup (short)",
-          "status": "PASS",
-          "score": 10,
-          "max_score": 10,
-          "evidence": [
-            "SHORT entry 262.14; stop 288.97; risk/share 26.84.",
-            "Size 0.186 share(s); notional $48.76; planned risk $4.99.",
-            "Target 1 208.47; Target 2 181.63; Target 3 154.79; reward/risk 2.0:1."
-          ]
-        }
-      ],
-      "trade_plan": {
-        "direction": "SHORT",
-        "entry_trigger": 262.14,
-        "stop": 288.97,
-        "target_1": 208.47,
-        "target_2": 181.63,
-        "target_3": 154.79,
-        "risk_per_share": 26.84,
-        "reward_risk_1": 2.0,
-        "shares": 0.186,
-        "notional": 48.76,
-        "planned_risk": 4.99
-      },
-      "thesis": [
-        "The short thesis is led by the bearish trend setup and a short score that cleared the model threshold."
-      ],
-      "bear_case": [
-        "A short thesis can fail quickly through a squeeze, reclaim, gap, or positive catalyst even when the chart is bearish.",
-        "Long blockers: Technical (long), Risk/setup (long).",
-        "Short blockers: Fundamentals (short), Valuation (short)."
-      ],
-      "invalidation": [
-        "Exit when price reaches the model stop or the directional thesis is structurally invalidated.",
-        "Re-score after earnings, material guidance, a major filing, or a high-impact headline.",
-        "Do not average down after the invalidation level is breached.",
-        "For shorts, reassess immediately after a high-volume reclaim of the broken support or a squeeze in short-interest names."
-      ],
-      "facts": {
-        "close": 273.1000061035156,
-        "atr14": 11.850084451937072,
-        "rsi14": 36.93047255713456,
-        "sma20": 283.0485015869141,
-        "sma50": 318.2408001708984,
-        "sma200": 336.0611779785156,
-        "prior_high20": 326.4100036621094,
-        "prior_low20": 264.2200012207031,
-        "low10": 262.7300109863281,
-        "volume_ratio": 0.9078027315640537,
-        "rs63": -0.12954151870719366,
-        "latest_high": 273.6199951171875,
-        "latest_low": 262.7300109863281,
-        "sma50_slope20": -23.212817382812545,
-        "company_name": "Alphabet Inc.",
-        "sector": "Communication Services",
-        "industry": "Internet Content & Information",
-        "market_cap": 3357491331072,
-        "revenue_growth": 0.247,
-        "earnings_growth": -0.253,
-        "profit_margin": 0.50031,
-        "free_cash_flow": -1162499968,
-        "total_cash": 265098002432,
-        "total_debt": 150330998784,
-        "trailing_pe": 14.261097,
-        "forward_pe": 17.85552,
-        "peg_ratio": 0.9371,
-        "earnings_date": "2027-02-03T00:00:00",
-        "currency": "USD",
-        "website": "https://abc.xyz",
-        "business_summary": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America. It operates through Google Services, Google Cloud, and Other Bets segments. The Google Services segment provides products and services, including ads, Android, Chrome, devices, Gmail, Google Drive, Google Maps, Google Photos, Google Play, Search, and YouTube. It is also involved in the sale of apps and in-app purchases and digital content in Google Play and YouTube; and devices, as well as the provision of YouTube consumer subscription services, such as YouTube TV, YouTube Music and Premium, NFL Sunday Ticket, and Google One. The Google Cloud segment offers consumption-based fees and subscriptions for AI solutions, including AI infrastructure, Vertex AI platform, and Gemini enterprise. It also provides cybersecurity, and data and analytics services; Google Workspace that include cloud-based communication and collaboration tools for enterprises, such as Calendar, Gmail, Docs, Drive, and Meet; and other enterprise services. The Other Bets segment sells transportation and internet services. Alphabet Inc. was incorporated in 1998 and is headquartered in Mountain View, California.",
-        "short_percent_of_float": 0.0134000005,
-        "short_ratio": 2.06,
-        "shares_short": 78649008,
-        "shares_short_prior_month": 78436901,
-        "float_shares": 10951986960,
-        "shares_outstanding": 5888000000,
-        "52_week_change": -0.14704227,
-        "beta": 1.226,
-        "average_volume": 32195529,
-        "short_risk_flags": [],
-        "long_hard_pass": false,
-        "short_hard_pass": true,
-        "long_qualified": false,
-        "short_qualified": true,
-        "max_score": 100
-      },
-      "news": [
-        {
-          "title": "5 Best Quantum Computing Stocks To Buy for 2027",
-          "publisher": "Insider Monkey",
-          "published": "2026-11-27T03:21:49Z",
-          "link": "https://finance.yahoo.com/technology/articles/5-best-quantum-computing-stocks-032149616.html",
-          "summary": "Quantum computing is entering a consequential period as technology companies work to turn experimental processors into systems capable of solving commercially relevant problems. The competition increasingly extends beyond building more qubits to improving their reliability, reducing error-correction requirements, and integrating quantum hardware with conventional computing infrastructure. The industry’s commercial opportunity is also beginning to take […]"
-        },
-        {
-          "title": "5 Best Tech Stocks to Buy for 2027 According to Hedge Funds",
-          "publisher": "Insider Monkey",
-          "published": "2026-11-27T03:08:56Z",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/5-best-tech-stocks-buy-030856400.html",
-          "summary": "Tech stocks aren’t lacking in growth stories for 2027. The problem is that smart money is increasingly selective about which companies it’s willing to pay a premium for. AI is still the big story, but skepticism is growing about whether the money invested will deliver the promised returns. You could see that shift very clearly […]"
-        },
-        {
-          "title": "‘How Can TSLA Compete With Waymo?’ Gary Black Questions Tesla’s Robotaxi Strategy, Predicts Waymo Will Lead in Miles and Trips",
-          "publisher": "Benzinga",
-          "published": "2026-11-27T01:30:07Z",
-          "link": "https://finance.yahoo.com/technology/articles/tsla-compete-waymo-gary-black-013007370.html",
-          "summary": "Investor Gary Black of The Future Fund LLC slammed Tesla Inc.‘s bullish supporters, backing Alphabet Inc.‘s Waymo Robotaxi service in the autonomous race instead. Waymo Is Not ‘Terrified’ Of Tesla’s FSD On Sunday, user Randy Kirk took to X, quoting..."
-        },
-        {
-          "title": "Jim Lebenthal Says This Is “a Correction, Not Something Worse.” Why He’s Buying More Alphabet",
-          "publisher": "24/7 Wall St.",
-          "published": "2026-11-26T22:07:55Z",
-          "link": "https://247wallst.com/investing/2026/11/26/jim-lebenthal-says-this-is-a-correction-not-something-worse-why-hes-buying-more-alphabet/",
-          "summary": "Jim Lebenthal sees a dip and keeps buying, betting on a handful of businesses firing at once. The filings back much of his case, but one number in Alphabet's latest quarter could decide whether his optimism holds."
-        },
-        {
-          "title": "Jensen Huang’s Return Doesn’t Make Nvidia Stock (NVDA) a Buy",
-          "publisher": "TipRanks",
-          "published": "2026-11-26T21:22:00Z",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/jensen-huang-return-doesn-t-212200380.html",
-          "summary": "Jensen Huang’s return as CEO doesn’t make Nvidia (NVDA) stock a Buy, despite the market’s positive reaction. Shares of the leading semiconductor manufacturer jumped roughly 31.5% on November 23 after Nvidia’s board unanimously reinstated Huang with immediate effect. Yet the stock remains down roughly 31% over the past month following a steep sell-off. Although Nvidia enjoys a long runway for growth, I believe investors should closely watch the regulatory scrutiny still surrounding the company. I"
-        },
-        {
-          "title": "Broadcom Stocks Edge Lower After Rebounding From an Intraday Low of $278",
-          "publisher": "GuruFocus.com",
-          "published": "2026-11-26T18:30:41Z",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/broadcom-stocks-edge-lower-rebounding-183041028.html",
-          "summary": "Shares erased a 7.7% intraday slide to their lowest level since July 2025 as Google and Anthropic exposure stays in focus."
-        },
-        {
-          "title": "Alphabet Stocks Slip 2.13% as Credit Swaps Hit Record Amid $9.1 Billion Cash Burn",
-          "publisher": "GuruFocus.com",
-          "published": "2026-11-26T18:26:01Z",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/alphabet-stocks-slip-2-13-182601811.html",
-          "summary": "Five-year default swaps reached a record as third-quarter capex of $51.4 billion pushed free cash flow below zero."
-        },
-        {
-          "title": "George Soros and 64 Other Big Funds Bought Meta Last Quarter. David Tepper and 33 Others Sold. Who’s Right?",
-          "publisher": "TIKR",
-          "published": "2026-11-26T18:09:59Z",
-          "link": "https://www.tikr.com/blog/george-soros-and-64-other-big-funds-bought-meta-last-quarter-david-tepper-and-33-others-sold-whos-right?ref=yahoofinance&tlnk=yf-261126-jj5cfjgh",
-          "summary": "Key TakeawaysOf the 460 big funds that have filed 13Fs for the quarter ended Sept. 30, 65 bought Meta and 34 sold, while 178 held it at the quarter’s end."
-        },
-        {
-          "title": "Alphabet Could Be the Safest Way to Own Anthropic. Here’s the Math.",
-          "publisher": "Motley Fool",
-          "published": "2026-11-26T17:47:02Z",
-          "link": "https://www.fool.com/investing/2026/11/26/alphabet-could-be-the-safest-way-to-own-anthropic-here-s-the-math/",
-          "summary": "Alphabet owns a piece of Anthropic and also gets paid to supply its computing power, which is a nice way to be on both sides of the AI boom."
-        },
-        {
-          "title": "Amazon Has 59 Buy Ratings and Not a Single Sell. Here’s Where its Headed",
-          "publisher": "24/7 Wall St.",
-          "published": "2026-11-26T17:10:02Z",
-          "link": "https://247wallst.com/investing/2026/11/26/amazon-has-59-buy-ratings-and-not-a-single-sell-heres-where-its-headed/",
-          "summary": "Wall Street analysts agree on Amazon, yet the stock keeps stalling while AWS accelerates. A $220 billion spending plan and negative free cash flow could decide whether the cloud giant rewards patient investors or tests their nerve."
-        }
-      ],
-      "warnings": [
-        "Research model only; broker quotes, borrow availability, option liquidity, and order rules control actual execution.",
-        "The short engine scores stock-specific weakness but cannot confirm real-time locate/borrow availability through the current data adapter.",
-        "Headline classification is a triage tool; read the primary filing or article before committing capital."
-      ],
-      "directional_view": {
-        "bias": "SHORT",
-        "evidence": [
-          "Long score: 55.0/100; short score: 77.0/100.",
-          "Price 273.10 versus SMA20 283.05, SMA50 318.24, SMA200 336.06.",
-          "RSI14 36.9; SMA50 slope -23.21; volume ratio 0.91x.",
-          "Short execution plan: entry 262.14, stop 288.97, targets 208.47/181.63/154.79."
-        ],
-        "bullish_score": 55.0,
-        "bearish_score": 77.0,
-        "bearish_strategy": "Bearish trend",
-        "bearish_trigger": 262.14,
-        "bearish_invalidation": 288.97,
-        "bearish_target_1": 208.47,
-        "bearish_target_2": 181.63,
-        "short_execution_allowed": true,
-        "short_risk_flags": []
-      },
-      "long_score": 55.0,
-      "short_score": 77.0,
-      "recommendation": "SHORT",
-      "confidence": "MEDIUM",
-      "selected_direction": "SHORT",
-      "long_strategy": "Recovery/reclaim",
-      "short_strategy": "Bearish trend"
-    },
-    {
-      "ticker": "AMZN",
-      "as_of": "2026-11-25T00:00:00-05:00",
-      "status": "QUALIFIED SHORT",
-      "score": 75.0,
-      "strategy": "Failed reclaim",
-      "price": 244.43,
-      "gates": [
-        {
-          "name": "Portfolio risk",
-          "status": "PASS",
-          "score": 0,
-          "max_score": 0,
-          "evidence": [
-            "Current drawdown: 0.0% of the portfolio.",
-            "Current open risk: $0.00; remaining open-risk capacity: $20.00.",
-            "Effective risk budget for a new trade: $5.00."
-          ]
-        },
-        {
-          "name": "Market regime",
-          "status": "FAIL",
-          "score": 0,
-          "max_score": 0,
-          "evidence": [
-            "Benchmark close 716.70; SMA50 757.85; SMA200 730.77.",
-            "Twenty-session change in SMA50: -8.98.",
-            "Benchmark is below SMA200; this blocks new longs but does not automatically block shorts."
-          ]
-        },
-        {
-          "name": "Technical (long)",
-          "status": "FAIL",
-          "score": 13.0,
-          "max_score": 30,
-          "evidence": [
-            "Close 244.43; SMA20 257.19; SMA50 255.12; SMA200 245.78.",
-            "RSI14 42.0; ATR14 10.45 (4.3%); volume ratio 1.13x.",
-            "63-day relative strength vs SPY: +2.2%.",
-            "Selected strategy: Recovery/reclaim.",
-            "Failed: Price remains above SMA200.",
-            "Failed: Price reclaimed SMA20 and SMA50.",
-            "Passed: A recent correction created a genuine reclaim.",
-            "Failed: RSI supports recovery.",
-            "Passed: Relative strength is positive.",
-            "Passed: Volume confirms the reclaim."
-          ]
-        },
-        {
-          "name": "Fundamentals (long)",
-          "status": "CAUTION",
-          "score": 13.0,
-          "max_score": 25,
-          "evidence": [
-            "Revenue Growth: 12.1%.",
-            "Earnings Growth: -3.1%.",
-            "Profit Margin: 16.9%.",
-            "Free Cash Flow: $-34,731,749,376.",
-            "Debt-to-cash ratio: 2.67x."
-          ]
-        },
-        {
-          "name": "News/catalyst (long)",
-          "status": "PASS",
-          "score": 15.0,
-          "max_score": 15,
-          "evidence": [
-            "Reviewed 10 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2027-02-04 (49 business day(s))."
-          ]
-        },
-        {
-          "name": "Valuation (long)",
-          "status": "PASS",
-          "score": 10,
-          "max_score": 10,
-          "evidence": [
-            "Trailing P/E: 19.8x.",
-            "Forward P/E: 22.4x.",
-            "PEG ratio: 1.15."
-          ]
-        },
-        {
-          "name": "Liquidity/execution",
-          "status": "PASS",
-          "score": 10,
-          "max_score": 10,
-          "evidence": [
-            "20-day average dollar volume: $14,138,990,657."
-          ]
-        },
-        {
-          "name": "Risk/setup (long)",
-          "status": "FAIL",
-          "score": 0,
-          "max_score": 10,
-          "evidence": [
-            "No valid entry and stop plan could be calculated."
-          ]
-        },
-        {
-          "name": "Technical (short)",
-          "status": "PASS",
-          "score": 26.0,
-          "max_score": 30,
-          "evidence": [
-            "Close 244.43; SMA20 257.19; SMA50 255.12; SMA200 245.78.",
-            "RSI14 42.0; ATR14 10.45 (4.3%); volume ratio 1.13x.",
-            "63-day relative strength vs SPY: +2.2%.",
-            "Selected strategy: Failed reclaim.",
-            "Passed: Price is below SMA200.",
-            "Passed: Price lost SMA20 and SMA50.",
-            "Passed: A recent rally created a failed reclaim.",
-            "Passed: RSI confirms weakness.",
-            "Failed: Relative strength is negative.",
-            "Passed: Volume confirms the failed reclaim."
-          ]
-        },
-        {
-          "name": "Fundamentals (short)",
-          "status": "CAUTION",
-          "score": 12.0,
-          "max_score": 25,
-          "evidence": [
-            "Revenue Growth: 12.1%.",
-            "Earnings Growth: -3.1%.",
-            "Profit Margin: 16.9%.",
-            "Free Cash Flow: $-34,731,749,376.",
-            "Debt-to-cash ratio: 2.67x."
-          ]
-        },
-        {
-          "name": "News/catalyst (short)",
-          "status": "PASS",
-          "score": 15.0,
-          "max_score": 15,
-          "evidence": [
-            "Reviewed 10 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2027-02-04 (49 business day(s))."
-          ]
-        },
-        {
-          "name": "Valuation (short)",
-          "status": "FAIL",
-          "score": 2,
-          "max_score": 10,
-          "evidence": [
-            "Trailing P/E: 19.8x.",
-            "Forward P/E: 22.4x.",
-            "PEG ratio: 1.15."
-          ]
-        },
-        {
-          "name": "Liquidity/execution (short)",
-          "status": "PASS",
-          "score": 5.0,
-          "max_score": 5,
-          "evidence": [
-            "20-day average dollar volume: $14,138,990,657."
-          ]
-        },
-        {
-          "name": "Short squeeze risk",
-          "status": "PASS",
-          "score": 5.0,
-          "max_score": 5,
-          "evidence": [
-            "No major short-interest warning was detected from available fields."
-          ]
-        },
-        {
-          "name": "Risk/setup (short)",
-          "status": "PASS",
-          "score": 10,
-          "max_score": 10,
-          "evidence": [
-            "SHORT entry 235.44; stop 254.39; risk/share 18.96.",
-            "Size 0.263 share(s); notional $61.92; planned risk $4.99.",
-            "Target 1 197.52; Target 2 178.57; Target 3 159.61; reward/risk 2.0:1."
-          ]
-        }
-      ],
-      "trade_plan": {
-        "direction": "SHORT",
-        "entry_trigger": 235.44,
-        "stop": 254.39,
-        "target_1": 197.52,
-        "target_2": 178.57,
-        "target_3": 159.61,
-        "risk_per_share": 18.96,
-        "reward_risk_1": 2.0,
-        "shares": 0.263,
-        "notional": 61.92,
-        "planned_risk": 4.99
-      },
-      "thesis": [
-        "The short thesis is led by the failed reclaim setup and a short score that cleared the model threshold."
-      ],
-      "bear_case": [
-        "A short thesis can fail quickly through a squeeze, reclaim, gap, or positive catalyst even when the chart is bearish.",
-        "Long blockers: Technical (long), Risk/setup (long).",
-        "Short blockers: Valuation (short)."
-      ],
-      "invalidation": [
-        "Exit when price reaches the model stop or the directional thesis is structurally invalidated.",
-        "Re-score after earnings, material guidance, a major filing, or a high-impact headline.",
-        "Do not average down after the invalidation level is breached.",
-        "For shorts, reassess immediately after a high-volume reclaim of the broken support or a squeeze in short-interest names."
-      ],
-      "facts": {
-        "close": 244.42999267578125,
-        "atr14": 10.446245330957547,
-        "rsi14": 41.954987144310046,
-        "sma20": 257.18749923706054,
-        "sma50": 255.11580017089844,
-        "sma200": 245.78109992980956,
-        "prior_high20": 275.3399963378906,
-        "prior_low20": 229.36000061035156,
-        "low10": 235.9600067138672,
-        "volume_ratio": 1.1286720862508919,
-        "rs63": 0.022076412840291493,
-        "latest_high": 246.55999755859375,
-        "latest_low": 235.9600067138672,
-        "sma50_slope20": 0.0006002807617164763,
-        "company_name": "Amazon.com, Inc.",
-        "sector": "Consumer Cyclical",
-        "industry": "Internet Retail",
-        "market_cap": 2643055345664,
-        "revenue_growth": 0.121,
-        "earnings_growth": -0.031,
-        "profit_margin": 0.16900998,
-        "free_cash_flow": -34731749376,
-        "total_cash": 114226003968,
-        "total_debt": 304840998912,
-        "trailing_pe": 19.759903,
-        "forward_pe": 22.371244,
-        "peg_ratio": 1.1455,
-        "earnings_date": "2027-02-04T00:00:00",
-        "currency": "USD",
-        "website": "https://www.amazon.com",
-        "business_summary": "Amazon.com, Inc. engages in the retail sale of consumer products, advertising, and subscriptions service through online and physical stores in North America and internationally. The company operates through three segments: North America, International, and Amazon Web Services (AWS). It also manufactures and sells electronic devices, including Kindle, fire tablets, fire TVs, echo, ring, blink, and eero; and develops and produces media content. In addition, the company offers programs that enable sellers to sell their products in its stores; and programs that allow authors, independent publishers, musicians, filmmakers, Twitch streamers, skill and app developers, and others to publish and sell content. Further, it provides compute, storage, Artificial intelligence, database, analytics, machine learning, and other services, as well as advertising services through programs, such as sponsored ads, display, and video advertising. Additionally, the company offers Amazon Prime, a membership program. The company's products offered through its stores include merchandise and content purchased for resale and products offered by third-party sellers. It serves consumers, sellers, developers, enterprises, content creators, advertisers, and employees. The company was incorporated in 1994 and is headquartered in Seattle, Washington.",
-        "short_percent_of_float": 0.010299999,
-        "short_ratio": 2.14,
-        "shares_short": 101201166,
-        "shares_short_prior_month": 93656399,
-        "float_shares": 9838333888,
-        "shares_outstanding": 10813138306,
-        "52_week_change": 0.04806626,
-        "beta": 1.503,
-        "average_volume": 41694870,
-        "short_risk_flags": [],
-        "long_hard_pass": false,
-        "short_hard_pass": true,
-        "long_qualified": false,
-        "short_qualified": true,
-        "max_score": 100
-      },
-      "news": [
-        {
-          "title": "Can Amazon (AMZN) Turn Its AWS Growth Outlook Into Cash?",
-          "publisher": "Insider Monkey",
-          "published": "2026-11-27T03:52:40Z",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/amazon-amzn-turn-aws-growth-035240906.html",
-          "summary": "Amazon.com, Inc. (NASDAQ:AMZN) is seventh in 10 High-Conviction Stocks Billionaire Philippe Laffont Is Betting On for 2027, as AWS growth expectations put infrastructure spending in focus. Coatue Management’s November 16 regulatory filing puts billionaire Philippe Laffont’s positioning back in focus as investors look toward 2027. Its ten largest disclosed stock holdings represented 55.9% of a […]"
-        },
-        {
-          "title": "5 Best Quantum Computing Stocks To Buy for 2027",
-          "publisher": "Insider Monkey",
-          "published": "2026-11-27T03:21:49Z",
-          "link": "https://finance.yahoo.com/technology/articles/5-best-quantum-computing-stocks-032149616.html",
-          "summary": "Quantum computing is entering a consequential period as technology companies work to turn experimental processors into systems capable of solving commercially relevant problems. The competition increasingly extends beyond building more qubits to improving their reliability, reducing error-correction requirements, and integrating quantum hardware with conventional computing infrastructure. The industry’s commercial opportunity is also beginning to take […]"
-        },
-        {
-          "title": "5 Best Tech Stocks to Buy for 2027 According to Hedge Funds",
-          "publisher": "Insider Monkey",
-          "published": "2026-11-27T03:08:56Z",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/5-best-tech-stocks-buy-030856400.html",
-          "summary": "Tech stocks aren’t lacking in growth stories for 2027. The problem is that smart money is increasingly selective about which companies it’s willing to pay a premium for. AI is still the big story, but skepticism is growing about whether the money invested will deliver the promised returns. You could see that shift very clearly […]"
-        },
-        {
-          "title": "Weeks Before His Wife Needs a Nursing Home, He Buys a $75,000 SUV Online. Medicaid Ignores One Car Whatever It Costs, Taking $75,000 Off the Savings It Expects Them to Spend Down",
-          "publisher": "24/7 Wall St.",
-          "published": "2026-11-27T00:04:07Z",
-          "link": "https://247wallst.com/personal-finance/2026/11/26/weeks-before-his-wife-needs-a-nursing-home-he-buys-a-75000-suv-online-medicaid-ignores-one-car-whatever-it-costs-taking-75000-off-the-savings-it-expects-them-to-spend-down/",
-          "summary": "A husband orders a luxury SUV online weeks before his wife enters a nursing home, and Medicaid shrugs. Hand the same money to his son, though, and she could spend months with no one paying for her bed."
-        },
-        {
-          "title": "Amazon tried to kill Musk’s plan for 1 million AI satellites. The FCC chair scolded it and gave SpaceX the green light",
-          "publisher": "Moneywise",
-          "published": "2026-11-26T23:30:00Z",
-          "link": "https://finance.yahoo.com/technology/ai/articles/amazon-tried-kill-musk-plan-233000718.html",
-          "summary": "Musk says moving AI data centers into space could save money and energy, but critics warn his plan could threaten scientific research and the environment."
-        },
-        {
-          "title": "Steve Cohen’s 5 Biggest Stock Bets for 2027",
-          "publisher": "Insider Monkey",
-          "published": "2026-11-26T22:06:14Z",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/steve-cohen-5-biggest-stock-220614898.html",
-          "summary": "Steve Cohen’s Point72 Asset Management filed its third-quarter 13F with the SEC on November 16, reporting about $90.0 billion in holdings at September 30, including options, according to 13f.info. That snapshot predates the Nasdaq Composite’s 5.5% drop on November 5, its biggest one-day fall in 19 months, which left the index more than 10% below […]"
-        },
-        {
-          "title": "Jensen Huang’s Return Doesn’t Make Nvidia Stock (NVDA) a Buy",
-          "publisher": "TipRanks",
-          "published": "2026-11-26T21:22:00Z",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/jensen-huang-return-doesn-t-212200380.html",
-          "summary": "Jensen Huang’s return as CEO doesn’t make Nvidia (NVDA) stock a Buy, despite the market’s positive reaction. Shares of the leading semiconductor manufacturer jumped roughly 31.5% on November 23 after Nvidia’s board unanimously reinstated Huang with immediate effect. Yet the stock remains down roughly 31% over the past month following a steep sell-off. Although Nvidia enjoys a long runway for growth, I believe investors should closely watch the regulatory scrutiny still surrounding the company. I"
-        },
-        {
-          "title": "SpaceX Stocks Rise 1.3% as FCC Approves 1 Million Orbital Data Center Satellites",
-          "publisher": "GuruFocus.com",
-          "published": "2026-11-26T19:10:28Z",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/spacex-stocks-rise-1-3-191028542.html",
-          "summary": "The conditional license for the Starmind network sets a seven-year deadline for the first satellite and full deployment by 2040."
-        },
-        {
-          "title": "Goldman Sachs sends strong signal on Amazon stock before Black Friday",
-          "publisher": "TheStreet",
-          "published": "2026-11-26T18:17:00Z",
-          "link": "https://www.thestreet.com/investing/stocks/goldman-sachs-amazon-stock-370-target",
-          "summary": "One overlooked detail could change the entire outlook."
-        },
-        {
-          "title": "Stanley Druckenmiller, Bill Ackman and 7 Other Famous Investors Own Amazon. Here’s Who Bought and Sold Recently",
-          "publisher": "TIKR",
-          "published": "2026-11-26T18:11:13Z",
-          "link": "https://www.tikr.com/blog/stanley-druckenmiller-bill-ackman-and-7-other-famous-investors-own-amazon-heres-who-bought-and-sold-recently?ref=yahoofinance&tlnk=yf-261126-2mffj2wm",
-          "summary": "Key TakeawaysNine famous investors held Amazon at Sept. 30, per their latest 13Fs, and Stanley Druckenmiller’s family office added 43% to its stake in the quarter."
-        }
-      ],
-      "warnings": [
-        "Research model only; broker quotes, borrow availability, option liquidity, and order rules control actual execution.",
-        "The short engine scores stock-specific weakness but cannot confirm real-time locate/borrow availability through the current data adapter.",
-        "Headline classification is a triage tool; read the primary filing or article before committing capital."
-      ],
-      "directional_view": {
-        "bias": "SHORT",
-        "evidence": [
-          "Long score: 61.0/100; short score: 75.0/100.",
-          "Price 244.43 versus SMA20 257.19, SMA50 255.12, SMA200 245.78.",
-          "RSI14 42.0; SMA50 slope +0.00; volume ratio 1.13x.",
-          "Short execution plan: entry 235.44, stop 254.39, targets 197.52/178.57/159.61."
-        ],
-        "bullish_score": 61.0,
-        "bearish_score": 75.0,
-        "bearish_strategy": "Failed reclaim",
-        "bearish_trigger": 235.44,
-        "bearish_invalidation": 254.39,
-        "bearish_target_1": 197.52,
-        "bearish_target_2": 178.57,
-        "short_execution_allowed": true,
-        "short_risk_flags": []
-      },
-      "long_score": 61.0,
-      "short_score": 75.0,
-      "recommendation": "SHORT",
-      "confidence": "MEDIUM",
-      "selected_direction": "SHORT",
-      "long_strategy": "Recovery/reclaim",
-      "short_strategy": "Failed reclaim"
-    },
-    {
       "ticker": "V",
-      "as_of": "2026-11-25T00:00:00-05:00",
+      "as_of": "2026-11-27T00:00:00-05:00",
       "status": "WATCH",
       "score": 97.0,
       "strategy": "Trend pullback",
-      "price": 424.39,
+      "price": 429.56,
       "gates": [
         {
           "name": "Portfolio risk",
@@ -766,8 +46,8 @@
           "score": 0,
           "max_score": 0,
           "evidence": [
-            "Benchmark close 716.70; SMA50 757.85; SMA200 730.77.",
-            "Twenty-session change in SMA50: -8.98.",
+            "Benchmark close 728.32; SMA50 757.20; SMA200 730.98.",
+            "Twenty-session change in SMA50: -9.67.",
             "Benchmark is below SMA200; this blocks new longs but does not automatically block shorts."
           ]
         },
@@ -777,9 +57,9 @@
           "score": 30.0,
           "max_score": 30,
           "evidence": [
-            "Close 424.39; SMA20 418.78; SMA50 396.66; SMA200 349.31.",
-            "RSI14 59.3; ATR14 9.31 (2.2%); volume ratio 0.90x.",
-            "63-day relative strength vs SPY: +18.8%.",
+            "Close 429.56; SMA20 419.77; SMA50 397.87; SMA200 349.82.",
+            "RSI14 62.0; ATR14 9.29 (2.2%); volume ratio 0.51x.",
+            "63-day relative strength vs SPY: +17.9%.",
             "Selected strategy: Trend pullback.",
             "Passed: Price > SMA50 > SMA200.",
             "Passed: SMA50 is rising.",
@@ -809,8 +89,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 10 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2027-01-26 (42 business day(s)).",
-            "Positive headline: Mastercard's Debia Partnership: Turning AI Discovery Into Dollars"
+            "Next reported earnings date: 2027-01-26 (41 business day(s))."
           ]
         },
         {
@@ -819,8 +98,8 @@
           "score": 7,
           "max_score": 10,
           "evidence": [
-            "Trailing P/E: 34.4x.",
-            "Forward P/E: 24.8x.",
+            "Trailing P/E: 34.9x.",
+            "Forward P/E: 25.1x.",
             "PEG ratio: 1.82."
           ]
         },
@@ -830,7 +109,7 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "20-day average dollar volume: $3,082,835,647."
+            "20-day average dollar volume: $3,004,456,276."
           ]
         },
         {
@@ -839,9 +118,9 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "LONG entry 427.14; stop 414.12; risk/share 13.01.",
-            "Size 0.384 share(s); notional $164.02; planned risk $5.00.",
-            "Target 1 453.16; Target 2 466.17; Target 3 479.19; reward/risk 2.0:1."
+            "LONG entry 432.47; stop 415.12; risk/share 17.35.",
+            "Size 0.288 share(s); notional $124.55; planned risk $5.00.",
+            "Target 1 467.18; Target 2 484.53; Target 3 501.88; reward/risk 2.0:1."
           ]
         },
         {
@@ -850,9 +129,9 @@
           "score": 5.0,
           "max_score": 30,
           "evidence": [
-            "Close 424.39; SMA20 418.78; SMA50 396.66; SMA200 349.31.",
-            "RSI14 59.3; ATR14 9.31 (2.2%); volume ratio 0.90x.",
-            "63-day relative strength vs SPY: +18.8%.",
+            "Close 429.56; SMA20 419.77; SMA50 397.87; SMA200 349.82.",
+            "RSI14 62.0; ATR14 9.29 (2.2%); volume ratio 0.51x.",
+            "63-day relative strength vs SPY: +17.9%.",
             "Selected strategy: Failed reclaim.",
             "Failed: Price is below SMA200.",
             "Failed: Price lost SMA20 and SMA50.",
@@ -877,13 +156,12 @@
         },
         {
           "name": "News/catalyst (short)",
-          "status": "CAUTION",
-          "score": 12.0,
+          "status": "PASS",
+          "score": 15.0,
           "max_score": 15,
           "evidence": [
             "Reviewed 10 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2027-01-26 (42 business day(s)).",
-            "Positive headline against short thesis: Mastercard's Debia Partnership: Turning AI Discovery Into Dollars"
+            "Next reported earnings date: 2027-01-26 (41 business day(s))."
           ]
         },
         {
@@ -892,8 +170,8 @@
           "score": 7,
           "max_score": 10,
           "evidence": [
-            "Trailing P/E: 34.4x.",
-            "Forward P/E: 24.8x.",
+            "Trailing P/E: 34.9x.",
+            "Forward P/E: 25.1x.",
             "PEG ratio: 1.82."
           ]
         },
@@ -903,7 +181,7 @@
           "score": 5.0,
           "max_score": 5,
           "evidence": [
-            "20-day average dollar volume: $3,082,835,647."
+            "20-day average dollar volume: $3,004,456,276."
           ]
         },
         {
@@ -921,9 +199,9 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "SHORT entry 413.00; stop 425.76; risk/share 12.76.",
-            "Size 0.391 share(s); notional $161.48; planned risk $4.99.",
-            "Target 1 387.49; Target 2 374.74; Target 3 361.98; reward/risk 2.0:1."
+            "SHORT entry 422.56; stop 438.98; risk/share 16.42.",
+            "Size 0.304 share(s); notional $128.46; planned risk $4.99.",
+            "Target 1 389.72; Target 2 373.30; Target 3 356.88; reward/risk 2.0:1."
           ]
         }
       ],
@@ -941,32 +219,32 @@
         "Do not average down after the invalidation level is breached."
       ],
       "facts": {
-        "close": 424.3900146484375,
-        "atr14": 9.310422997065213,
-        "rsi14": 59.26843351633631,
-        "sma20": 418.7778045654297,
-        "sma50": 396.66474975585936,
-        "sma200": 349.3095367431641,
+        "close": 429.55999755859375,
+        "atr14": 9.287537126990708,
+        "rsi14": 62.03214433202813,
+        "sma20": 419.7667297363281,
+        "sma50": 397.87101989746094,
+        "sma200": 349.8206202697754,
         "prior_high20": 441.4129311637065,
-        "prior_low20": 393.27202123950275,
+        "prior_low20": 400.739990234375,
         "low10": 400.739990234375,
-        "volume_ratio": 0.8950090498904916,
-        "rs63": 0.1881256488476727,
-        "latest_high": 426.6700134277344,
-        "latest_low": 413.4700012207031,
-        "sma50_slope20": 17.912034912109334,
+        "volume_ratio": 0.5149656887273529,
+        "rs63": 0.1787449319107225,
+        "latest_high": 432.010009765625,
+        "latest_low": 423.0199890136719,
+        "sma50_slope20": 18.2199676513672,
         "company_name": "Visa Inc.",
         "sector": "Financial Services",
         "industry": "Credit Services",
-        "market_cap": 791826923520,
+        "market_cap": 801473101824,
         "revenue_growth": 0.132,
         "earnings_growth": 0.219,
         "profit_margin": 0.51203996,
         "free_cash_flow": 20983375872,
         "total_cash": 14083000320,
         "total_debt": 22954999808,
-        "trailing_pe": 34.447243,
-        "forward_pe": 24.759634,
+        "trailing_pe": 34.866882,
+        "forward_pe": 25.061258,
         "peg_ratio": 1.8189,
         "earnings_date": "2027-01-26T00:00:00",
         "currency": "USD",
@@ -980,7 +258,7 @@
         "shares_outstanding": 1724473215,
         "52_week_change": 0.26895702,
         "beta": 0.786,
-        "average_volume": 6473409,
+        "average_volume": 6470741,
         "short_risk_flags": [],
         "long_hard_pass": false,
         "short_hard_pass": false,
@@ -990,74 +268,74 @@
       },
       "news": [
         {
-          "title": "The Nasdaq Composite Is in a Correction, but These 3 Dividend Stocks Are Near 52-Week Highs. Here's Why They're Still Worth Buying Right Now.",
-          "publisher": "Motley Fool",
-          "published": "2026-11-26T21:33:02Z",
-          "link": "https://www.fool.com/investing/2026/11/26/the-nasdaq-composite-is-in-a-correction-but-these-3-dividend-stocks-are-near-52-week-highs-here-s-why-they-re-still-worth-buying-right-now/",
-          "summary": "Johnson & Johnson, Visa, and Coca-Cola have held up during the market's recent turbulence."
+          "title": "US Fintech Weekly: Payment Networks Rally Into Black Friday As Wedbush Backs Brokerages",
+          "publisher": "Stocktwits",
+          "published": "2026-11-28T00:01:26Z",
+          "link": "https://stocktwits.com/news-articles/markets/equity/us-fintech-weekly-payment-networks-rally-into-black-friday-as-wedbush-backs-brokerages/cNRRKmjR9Vj",
+          "summary": "Holiday retail momentum lifted payment infrastructure stocks during the Thanksgiving-shortened week of November 23–27, 2026."
         },
         {
-          "title": "Billionaire Chris Hohn’s TCI Has 30% of Its $49.6 Billion Stock Portfolio in GE Aerospace",
+          "title": "Billionaire Andreas Halvorsen’s Viking Opened an $818 Million Mastercard Stake While Cutting Its Visa Shares 32.6%",
           "publisher": "24/7 Wall St.",
-          "published": "2026-11-26T20:46:58Z",
-          "link": "https://247wallst.com/investing/2026/11/26/billionaire-chris-hohns-tci-has-30-of-its-49-6-billion-stock-portfolio-in-ge-aerospace/",
-          "summary": "One of the market's most concentrated funds just parked nearly a third of its money in a single industrial name, and the stock has barely moved this year. What does that bet reveal, and what should an ordinary retirement saver copy?"
+          "published": "2026-11-27T21:59:30Z",
+          "link": "https://247wallst.com/investing/2026/11/27/billionaire-andreas-halvorsens-viking-opened-an-818-million-mastercard-stake-while-cutting-its-visa-shares-32-6/",
+          "summary": "One of the savviest hedge funds just bought a giant new Mastercard position while selling down Visa, yet it never abandoned the rival. What does that split signal for retirement investors holding either card network?"
         },
         {
-          "title": "Mastercard Stocks Rise 1.94% as Payment Networks Gain in AI Selloff Rotation",
-          "publisher": "GuruFocus.com",
-          "published": "2026-11-26T18:37:21Z",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/mastercard-stocks-rise-1-94-183721566.html",
-          "summary": "Mastercard, Visa and American Express all rose while the Nasdaq fell, leaving Mastercard within 2% of its early November record."
+          "title": "Every Holiday Swipe Pays a Toll—And These 2 Buffett Stocks Own It",
+          "publisher": "Investing.com",
+          "published": "2026-11-27T20:39:08Z",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/every-holiday-swipe-pays-toll-203908999.html",
+          "summary": "Investing.com and Yahoo Finance LLC may earn commission or revenue on some items through the links below."
         },
         {
-          "title": "Stanley Druckenmiller and 10 Other Big Funds Bought Newmont Last Quarter. Ken Fisher and 5 Others Sold. Who’s Right?",
-          "publisher": "TIKR",
-          "published": "2026-11-26T18:15:05Z",
-          "link": "https://www.tikr.com/blog/stanley-druckenmiller-and-10-other-big-funds-bought-newmont-last-quarter-ken-fisher-and-5-others-sold-whos-right?ref=yahoofinance&tlnk=yf-261126-5xvcrmf7",
-          "summary": "Key TakeawaysOf the 460 big funds that have filed 13Fs for the third quarter, 11 bought Newmont and 6 sold, with Stanley Druckenmiller’s Duquesne Family Office opening new stakes in Newmont, Agnico Eagle and Barrick. Most of the sellers trimmed."
+          "title": "What Is The One Risk Facing Visa Stock Now?",
+          "publisher": "Trefis",
+          "published": "2026-11-27T19:41:46Z",
+          "link": "https://www.trefis.com/stock/v/articles/629359/what-is-the-one-risk-facing-visa-stock-now/2026-11-27",
+          "summary": "Today's big story: Anthropic Broke Its $83 IPO Price. What Did Facebook Do Next."
         },
         {
-          "title": "Visa (V) Up 5.9% Since Last Earnings Report: Can It Continue?",
+          "title": "Visa Stock: Is V Outperforming the Financial Sector?",
+          "publisher": "Barchart",
+          "published": "2026-11-27T17:51:05Z",
+          "link": "https://www.barchart.com/story/news/9035667/visa-stock-is-v-outperforming-the-financial-sector",
+          "summary": "Visa has outperformed the financial sector over the past three months."
+        },
+        {
+          "title": "10 Best Strong Buy Stocks to Buy and Hold For the Next 5 Years",
+          "publisher": "Insider Monkey",
+          "published": "2026-11-27T14:30:59Z",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/10-best-strong-buy-stocks-142359236.html",
+          "summary": "The S&P 500 fell 3.7% on Friday, November 20, its seventh straight losing session and its longest losing streak since the pandemic crash, according to Jared Blikre, global markets and data editor at Yahoo Finance. The index closed in correction territory, about $8 trillion below its October 6 record, and the Nasdaq-100 dropped 5.6% to […]"
+        },
+        {
+          "title": "Can Holiday Bargain Hunting Boost Visa's Cross-Border Business?",
           "publisher": "Zacks",
-          "published": "2026-11-26T15:30:19Z",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/visa-v-5-9-since-153019522.html",
-          "summary": "Visa (V) reported earnings 30 days ago. What's next for the stock? We take a look at earnings estimates for some clues."
+          "published": "2026-11-27T12:56:00Z",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/holiday-bargain-hunting-boost-visas-125600178.html",
+          "summary": "V could see a boost in cross-border payments as Canadian holiday shoppers seek better deals from foreign merchants and prioritize travel and experiences."
         },
         {
-          "title": "3 big reasons why Black Friday will probably exceed retailer expectations",
-          "publisher": "Yahoo Finance Video",
-          "published": "2026-11-26T13:00:00Z",
-          "link": "https://finance.yahoo.com/video/3-big-reasons-why-black-130000004.html",
-          "summary": "The Super Bowl for shopping and everything discounts and deals is upon us once again: Black Friday. \n\nYahoo Finance Executive Editor Brian Sozzi examines why this year's Black Friday could be a huge event for retailers as US consumers prepare to spend big for the holidays."
-        },
-        {
-          "title": "Mastercard's Debia Partnership: Turning AI Discovery Into Dollars",
+          "title": "Can American Express Deliver Mid-Teens EPS Growth in 2027?",
           "publisher": "Zacks",
-          "published": "2026-11-26T11:22:00Z",
-          "link": "https://finance.yahoo.com/technology/ai/articles/mastercards-debia-partnership-turning-ai-112200845.html",
-          "summary": "MA's Debia partnership aims to turn AI-driven shopping into payments, unlocking potential growth opportunities across two key revenue streams."
+          "published": "2026-11-27T12:54:00Z",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/american-express-deliver-mid-teens-125400353.html",
+          "summary": "AXP's 2027 earnings growth hinges on rising card fees, moderating customer engagement costs and resilient credit quality amid intensifying competition."
         },
         {
-          "title": "What State Street Financial Sel Sector SPDR (XLF) Bought: Berkshire Leads on Nov. 24",
-          "publisher": "GuruFocus.com",
-          "published": "2026-11-26T11:04:58Z",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/state-street-financial-sel-sector-110458586.html",
-          "summary": "The fund added $266.5 million across all 76 holdings on Tuesday, led by a $36.3 million increase in Berkshire Hathaway."
+          "title": "What Is Visa (V) Doing With Stablecoin Payments In Europe And Asia?",
+          "publisher": "Simply Wall St.",
+          "published": "2026-11-27T12:09:39Z",
+          "link": "https://finance.yahoo.com/markets/crypto/articles/visa-v-doing-stablecoin-payments-120939492.html",
+          "summary": "Visa (NYSE: V) is expanding stablecoin-based payment options through new partnerships with Norwegian Block Exchange and Triple-A in 2026. The planned NBX Visa Flex Card will let customers settle payments in fiat or supported stablecoins across multiple European markets. Visa's collaboration with Triple-A aims to use stablecoins for cross-border Visa Direct payouts in Asia Pacific outside regular banking hours. These moves into stablecoin cards and cross-border payouts matter, but they are..."
         },
         {
-          "title": "The Best Dividend Stocks to Buy With $5,000 in November",
-          "publisher": "Motley Fool",
-          "published": "2026-11-25T21:21:02Z",
-          "link": "https://www.fool.com/investing/2026/11/25/the-best-dividend-stocks-to-buy-with-5000-in-november/",
-          "summary": "Here's a reliable high-yield stock, a dividend growth stock, and a turnaround story for you to consider."
-        },
-        {
-          "title": "Jensen Huang's return, neocloud risk, and a holiday retail rally",
-          "publisher": "Yahoo Finance Video",
-          "published": "2026-11-25T21:00:00Z",
-          "link": "https://finance.yahoo.com/video/jensen-huangs-return-neocloud-risk-and-a-holiday-retail-rally-222042649.html",
-          "summary": "In this special edition of Sozzi Unleashed: At The Close, Brian Sozzi warns that investors can be right about a tech revolution and still lose a fortune, lays out three reasons Nvidia may deserve another look after Jensen Huang's return, and explains why the debt-fueled neoclouds like CoreWeave and Nebius still make him nervous. Former federal prosecutor Gil Soffer, head of corporate investigations at Katten, joins to discuss how Nvidia's board probe proceeds with Huang back in charge and whether he could be fired again. Brian also connects the dots on the AI build-out and inflation with a clip from Chicago Fed President Austan Goolsbee, and makes the case for a strong holiday season for retailers with comments from Walmart CFO John David Rainey and Gap CEO Richard Dickson."
+          "title": "Visa and NBX plan stablecoin-linked payment card",
+          "publisher": "Electronic Payments",
+          "published": "2026-11-27T06:45:57Z",
+          "link": "https://www.electronicpaymentsinternational.com/news/visa-and-nbx-plan-stablecoin-linked-payment-card/",
+          "summary": "The NBX Visa Flex Card is expected to launch next year."
         }
       ],
       "warnings": [
@@ -1068,23 +346,23 @@
       "directional_view": {
         "bias": "NO TRADE",
         "evidence": [
-          "Long score: 97.0/100; short score: 44.0/100.",
-          "Price 424.39 versus SMA20 418.78, SMA50 396.66, SMA200 349.31.",
-          "RSI14 59.3; SMA50 slope +17.91; volume ratio 0.90x.",
-          "Short execution plan: entry 413.00, stop 425.76, targets 387.49/374.74/361.98."
+          "Long score: 97.0/100; short score: 47.0/100.",
+          "Price 429.56 versus SMA20 419.77, SMA50 397.87, SMA200 349.82.",
+          "RSI14 62.0; SMA50 slope +18.22; volume ratio 0.51x.",
+          "Short execution plan: entry 422.56, stop 438.98, targets 389.72/373.30/356.88."
         ],
         "bullish_score": 97.0,
-        "bearish_score": 44.0,
+        "bearish_score": 47.0,
         "bearish_strategy": "Failed reclaim",
-        "bearish_trigger": 413.0,
-        "bearish_invalidation": 425.76,
-        "bearish_target_1": 387.49,
-        "bearish_target_2": 374.74,
+        "bearish_trigger": 422.56,
+        "bearish_invalidation": 438.98,
+        "bearish_target_1": 389.72,
+        "bearish_target_2": 373.3,
         "short_execution_allowed": true,
         "short_risk_flags": []
       },
       "long_score": 97.0,
-      "short_score": 44.0,
+      "short_score": 47.0,
       "recommendation": "NO TRADE",
       "confidence": "MEDIUM",
       "selected_direction": "NONE",
@@ -1093,11 +371,11 @@
     },
     {
       "ticker": "EOG",
-      "as_of": "2026-11-25T00:00:00-05:00",
+      "as_of": "2026-11-27T00:00:00-05:00",
       "status": "WATCH",
-      "score": 88.0,
-      "strategy": "Recovery/reclaim",
-      "price": 148.31,
+      "score": 91.1,
+      "strategy": "Trend pullback",
+      "price": 148.7,
       "gates": [
         {
           "name": "Portfolio risk",
@@ -1116,27 +394,27 @@
           "score": 0,
           "max_score": 0,
           "evidence": [
-            "Benchmark close 716.70; SMA50 757.85; SMA200 730.77.",
-            "Twenty-session change in SMA50: -8.98.",
+            "Benchmark close 728.32; SMA50 757.20; SMA200 730.98.",
+            "Twenty-session change in SMA50: -9.67.",
             "Benchmark is below SMA200; this blocks new longs but does not automatically block shorts."
           ]
         },
         {
           "name": "Technical (long)",
           "status": "FAIL",
-          "score": 18.0,
+          "score": 21.1,
           "max_score": 30,
           "evidence": [
-            "Close 148.31; SMA20 152.30; SMA50 150.00; SMA200 139.21.",
-            "RSI14 44.7; ATR14 4.22 (2.8%); volume ratio 1.21x.",
-            "63-day relative strength vs SPY: +10.2%.",
-            "Selected strategy: Recovery/reclaim.",
-            "Passed: Price remains above SMA200.",
-            "Failed: Price reclaimed SMA20 and SMA50.",
-            "Passed: A recent correction created a genuine reclaim.",
-            "Failed: RSI supports recovery.",
-            "Passed: Relative strength is positive.",
-            "Passed: Volume confirms the reclaim."
+            "Close 148.70; SMA20 151.62; SMA50 150.08; SMA200 139.38.",
+            "RSI14 45.4; ATR14 4.12 (2.8%); volume ratio 0.51x.",
+            "63-day relative strength vs SPY: +9.5%.",
+            "Selected strategy: Trend pullback.",
+            "Failed: Price > SMA50 > SMA200.",
+            "Passed: SMA50 is rising.",
+            "Passed: Price is near SMA20.",
+            "Passed: RSI is in the controlled pullback zone.",
+            "Passed: Latest close improved.",
+            "Passed: 63-day relative strength beats SPY."
           ]
         },
         {
@@ -1159,7 +437,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 10 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2027-02-23 (62 business day(s)).",
+            "Next reported earnings date: 2027-02-23 (61 business day(s)).",
             "Positive headline: Earnings Upgrades Could Be A Big Deal For EOG Stock"
           ]
         },
@@ -1180,7 +458,7 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "20-day average dollar volume: $587,248,064."
+            "20-day average dollar volume: $581,641,374."
           ]
         },
         {
@@ -1189,27 +467,27 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "LONG entry 150.01; stop 146.83; risk/share 3.18.",
-            "Size 1.333 share(s); notional $199.96; planned risk $4.24.",
-            "Target 1 156.37; Target 2 159.55; Target 3 162.73; reward/risk 2.0:1."
+            "LONG entry 151.35; stop 148.02; risk/share 3.33.",
+            "Size 1.321 share(s); notional $199.93; planned risk $4.39.",
+            "Target 1 158.00; Target 2 161.32; Target 3 164.65; reward/risk 2.0:1."
           ]
         },
         {
           "name": "Technical (short)",
           "status": "FAIL",
-          "score": 21.0,
+          "score": 17.0,
           "max_score": 30,
           "evidence": [
-            "Close 148.31; SMA20 152.30; SMA50 150.00; SMA200 139.21.",
-            "RSI14 44.7; ATR14 4.22 (2.8%); volume ratio 1.21x.",
-            "63-day relative strength vs SPY: +10.2%.",
+            "Close 148.70; SMA20 151.62; SMA50 150.08; SMA200 139.38.",
+            "RSI14 45.4; ATR14 4.12 (2.8%); volume ratio 0.51x.",
+            "63-day relative strength vs SPY: +9.5%.",
             "Selected strategy: Failed reclaim.",
             "Failed: Price is below SMA200.",
             "Passed: Price lost SMA20 and SMA50.",
             "Passed: A recent rally created a failed reclaim.",
             "Passed: RSI confirms weakness.",
             "Failed: Relative strength is negative.",
-            "Passed: Volume confirms the failed reclaim."
+            "Failed: Volume confirms the failed reclaim."
           ]
         },
         {
@@ -1232,7 +510,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 10 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2027-02-23 (62 business day(s)).",
+            "Next reported earnings date: 2027-02-23 (61 business day(s)).",
             "Positive headline against short thesis: Earnings Upgrades Could Be A Big Deal For EOG Stock"
           ]
         },
@@ -1253,7 +531,7 @@
           "score": 5.0,
           "max_score": 5,
           "evidence": [
-            "20-day average dollar volume: $587,248,064."
+            "20-day average dollar volume: $581,641,374."
           ]
         },
         {
@@ -1271,9 +549,9 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "SHORT entry 145.30; stop 152.97; risk/share 7.67.",
-            "Size 0.652 share(s); notional $94.73; planned risk $5.00.",
-            "Target 1 129.96; Target 2 122.29; Target 3 114.63; reward/risk 2.0:1."
+            "SHORT entry 148.48; stop 153.17; risk/share 4.69.",
+            "Size 1.065 share(s); notional $158.14; planned risk $5.00.",
+            "Target 1 139.10; Target 2 134.41; Target 3 129.72; reward/risk 2.0:1."
           ]
         }
       ],
@@ -1292,32 +570,32 @@
         "Do not average down after the invalidation level is breached."
       ],
       "facts": {
-        "close": 148.30999755859375,
-        "atr14": 4.222902789153069,
-        "rsi14": 44.67598485125973,
-        "sma20": 152.2974998474121,
-        "sma50": 149.99837493896484,
-        "sma200": 139.21004188537597,
+        "close": 148.6999969482422,
+        "atr14": 4.123409863574613,
+        "rsi14": 45.4016285422519,
+        "sma20": 151.62149963378906,
+        "sma50": 150.08241912841797,
+        "sma200": 139.37520812988282,
         "prior_high20": 165.92999267578125,
         "prior_low20": 144.13999938964844,
         "low10": 144.8300018310547,
-        "volume_ratio": 1.2054838908776695,
-        "rs63": 0.1015129064399215,
-        "latest_high": 149.8000030517578,
-        "latest_low": 145.50999450683594,
-        "sma50_slope20": 2.26821716308595,
+        "volume_ratio": 0.5059217101753987,
+        "rs63": 0.09528051426222628,
+        "latest_high": 151.13999938964844,
+        "latest_low": 148.69000244140625,
+        "sma50_slope20": 2.077480773925771,
         "company_name": "EOG Resources, Inc.",
         "sector": "Energy",
         "industry": "Oil & Gas E&P",
-        "market_cap": 76896395264,
+        "market_cap": 77098606592,
         "revenue_growth": 0.427,
         "earnings_growth": 0.974,
         "profit_margin": 0.28059,
         "free_cash_flow": 5560249856,
         "total_cash": 5746999808,
         "total_debt": 8262000128,
-        "trailing_pe": 9.574564,
-        "forward_pe": 8.718579,
+        "trailing_pe": 9.599742,
+        "forward_pe": 8.741506,
         "peg_ratio": 1.1161,
         "earnings_date": "2027-02-23T00:00:00",
         "currency": "USD",
@@ -1331,7 +609,7 @@
         "shares_outstanding": 518484224,
         "52_week_change": 0.37515068,
         "beta": 0.269,
-        "average_volume": 3293809,
+        "average_volume": 3294580,
         "short_risk_flags": [
           "days-to-cover 5.2"
         ],
@@ -1421,39 +699,39 @@
       "directional_view": {
         "bias": "NO TRADE",
         "evidence": [
-          "Long score: 88.0/100; short score: 53.0/100.",
-          "Price 148.31 versus SMA20 152.30, SMA50 150.00, SMA200 139.21.",
-          "RSI14 44.7; SMA50 slope +2.27; volume ratio 1.21x.",
-          "Short execution plan: entry 145.30, stop 152.97, targets 129.96/122.29/114.63.",
+          "Long score: 91.1/100; short score: 49.0/100.",
+          "Price 148.70 versus SMA20 151.62, SMA50 150.08, SMA200 139.38.",
+          "RSI14 45.4; SMA50 slope +2.08; volume ratio 0.51x.",
+          "Short execution plan: entry 148.48, stop 153.17, targets 139.10/134.41/129.72.",
           "Short-specific risks: days-to-cover 5.2"
         ],
-        "bullish_score": 88.0,
-        "bearish_score": 53.0,
+        "bullish_score": 91.1,
+        "bearish_score": 49.0,
         "bearish_strategy": "Failed reclaim",
-        "bearish_trigger": 145.3,
-        "bearish_invalidation": 152.97,
-        "bearish_target_1": 129.96,
-        "bearish_target_2": 122.29,
+        "bearish_trigger": 148.48,
+        "bearish_invalidation": 153.17,
+        "bearish_target_1": 139.1,
+        "bearish_target_2": 134.41,
         "short_execution_allowed": true,
         "short_risk_flags": [
           "days-to-cover 5.2"
         ]
       },
-      "long_score": 88.0,
-      "short_score": 53.0,
+      "long_score": 91.1,
+      "short_score": 49.0,
       "recommendation": "NO TRADE",
       "confidence": "MEDIUM",
       "selected_direction": "NONE",
-      "long_strategy": "Recovery/reclaim",
+      "long_strategy": "Trend pullback",
       "short_strategy": "Failed reclaim"
     },
     {
-      "ticker": "RDW",
-      "as_of": "2026-11-25T00:00:00-05:00",
+      "ticker": "AMZN",
+      "as_of": "2026-11-27T00:00:00-05:00",
       "status": "WATCH",
-      "score": 74.0,
-      "strategy": "Bearish trend",
-      "price": 5.89,
+      "score": 79.1,
+      "strategy": "Trend pullback",
+      "price": 254.12,
       "gates": [
         {
           "name": "Portfolio risk",
@@ -1472,8 +750,357 @@
           "score": 0,
           "max_score": 0,
           "evidence": [
-            "Benchmark close 716.70; SMA50 757.85; SMA200 730.77.",
-            "Twenty-session change in SMA50: -8.98.",
+            "Benchmark close 728.32; SMA50 757.20; SMA200 730.98.",
+            "Twenty-session change in SMA50: -9.67.",
+            "Benchmark is below SMA200; this blocks new longs but does not automatically block shorts."
+          ]
+        },
+        {
+          "name": "Technical (long)",
+          "status": "FAIL",
+          "score": 21.1,
+          "max_score": 30,
+          "evidence": [
+            "Close 254.12; SMA20 257.70; SMA50 255.17; SMA200 246.03.",
+            "RSI14 48.6; ATR14 10.48 (4.1%); volume ratio 0.52x.",
+            "63-day relative strength vs SPY: +0.5%.",
+            "Selected strategy: Trend pullback.",
+            "Failed: Price > SMA50 > SMA200.",
+            "Passed: SMA50 is rising.",
+            "Passed: Price is near SMA20.",
+            "Passed: RSI is in the controlled pullback zone.",
+            "Passed: Latest close improved.",
+            "Passed: 63-day relative strength beats SPY."
+          ]
+        },
+        {
+          "name": "Fundamentals (long)",
+          "status": "CAUTION",
+          "score": 13.0,
+          "max_score": 25,
+          "evidence": [
+            "Revenue Growth: 12.1%.",
+            "Earnings Growth: -3.1%.",
+            "Profit Margin: 16.9%.",
+            "Free Cash Flow: $-34,731,749,376.",
+            "Debt-to-cash ratio: 2.67x."
+          ]
+        },
+        {
+          "name": "News/catalyst (long)",
+          "status": "PASS",
+          "score": 15.0,
+          "max_score": 15,
+          "evidence": [
+            "Reviewed 10 headline(s) published in the last seven days.",
+            "Next reported earnings date: 2027-02-04 (48 business day(s))."
+          ]
+        },
+        {
+          "name": "Valuation (long)",
+          "status": "PASS",
+          "score": 10,
+          "max_score": 10,
+          "evidence": [
+            "Trailing P/E: 20.5x.",
+            "Forward P/E: 23.3x.",
+            "PEG ratio: 1.15."
+          ]
+        },
+        {
+          "name": "Liquidity/execution",
+          "status": "PASS",
+          "score": 10,
+          "max_score": 10,
+          "evidence": [
+            "20-day average dollar volume: $13,446,430,908."
+          ]
+        },
+        {
+          "name": "Risk/setup (long)",
+          "status": "PASS",
+          "score": 10,
+          "max_score": 10,
+          "evidence": [
+            "LONG entry 255.80; stop 247.95; risk/share 7.86.",
+            "Size 0.636 share(s); notional $162.69; planned risk $5.00.",
+            "Target 1 271.52; Target 2 279.37; Target 3 287.23; reward/risk 2.0:1."
+          ]
+        },
+        {
+          "name": "Technical (short)",
+          "status": "FAIL",
+          "score": 17.0,
+          "max_score": 30,
+          "evidence": [
+            "Close 254.12; SMA20 257.70; SMA50 255.17; SMA200 246.03.",
+            "RSI14 48.6; ATR14 10.48 (4.1%); volume ratio 0.52x.",
+            "63-day relative strength vs SPY: +0.5%.",
+            "Selected strategy: Failed reclaim.",
+            "Failed: Price is below SMA200.",
+            "Passed: Price lost SMA20 and SMA50.",
+            "Passed: A recent rally created a failed reclaim.",
+            "Passed: RSI confirms weakness.",
+            "Failed: Relative strength is negative.",
+            "Failed: Volume confirms the failed reclaim."
+          ]
+        },
+        {
+          "name": "Fundamentals (short)",
+          "status": "CAUTION",
+          "score": 12.0,
+          "max_score": 25,
+          "evidence": [
+            "Revenue Growth: 12.1%.",
+            "Earnings Growth: -3.1%.",
+            "Profit Margin: 16.9%.",
+            "Free Cash Flow: $-34,731,749,376.",
+            "Debt-to-cash ratio: 2.67x."
+          ]
+        },
+        {
+          "name": "News/catalyst (short)",
+          "status": "PASS",
+          "score": 15.0,
+          "max_score": 15,
+          "evidence": [
+            "Reviewed 10 headline(s) published in the last seven days.",
+            "Next reported earnings date: 2027-02-04 (48 business day(s))."
+          ]
+        },
+        {
+          "name": "Valuation (short)",
+          "status": "FAIL",
+          "score": 2,
+          "max_score": 10,
+          "evidence": [
+            "Trailing P/E: 20.5x.",
+            "Forward P/E: 23.3x.",
+            "PEG ratio: 1.15."
+          ]
+        },
+        {
+          "name": "Liquidity/execution (short)",
+          "status": "PASS",
+          "score": 5.0,
+          "max_score": 5,
+          "evidence": [
+            "20-day average dollar volume: $13,446,430,908."
+          ]
+        },
+        {
+          "name": "Short squeeze risk",
+          "status": "PASS",
+          "score": 5.0,
+          "max_score": 5,
+          "evidence": [
+            "No major short-interest warning was detected from available fields."
+          ]
+        },
+        {
+          "name": "Risk/setup (short)",
+          "status": "PASS",
+          "score": 10,
+          "max_score": 10,
+          "evidence": [
+            "SHORT entry 247.93; stop 263.03; risk/share 15.10.",
+            "Size 0.331 share(s); notional $82.06; planned risk $5.00.",
+            "Target 1 217.72; Target 2 202.61; Target 3 187.51; reward/risk 2.0:1."
+          ]
+        }
+      ],
+      "trade_plan": null,
+      "thesis": [
+        "Neither direction cleared enough independent confirmation to justify a new position."
+      ],
+      "bear_case": [
+        "The model prefers patience when the directional scores are too close, a hard gate fails, or risk/reward cannot be established cleanly.",
+        "Long blockers: Technical (long).",
+        "Short blockers: Technical (short), Valuation (short)."
+      ],
+      "invalidation": [
+        "Exit when price reaches the model stop or the directional thesis is structurally invalidated.",
+        "Re-score after earnings, material guidance, a major filing, or a high-impact headline.",
+        "Do not average down after the invalidation level is breached."
+      ],
+      "facts": {
+        "close": 254.1199951171875,
+        "atr14": 10.475085386140266,
+        "rsi14": 48.63770318842801,
+        "sma20": 257.7039993286133,
+        "sma50": 255.17440002441407,
+        "sma200": 246.03129989624023,
+        "prior_high20": 275.3399963378906,
+        "prior_low20": 229.36000061035156,
+        "low10": 235.9600067138672,
+        "volume_ratio": 0.519712120611353,
+        "rs63": 0.004776448132958189,
+        "latest_high": 255.27999877929688,
+        "latest_low": 248.4499969482422,
+        "sma50_slope20": 0.5002001953125159,
+        "company_name": "Amazon.com, Inc.",
+        "sector": "Consumer Cyclical",
+        "industry": "Internet Retail",
+        "market_cap": 2747834564608,
+        "revenue_growth": 0.121,
+        "earnings_growth": -0.031,
+        "profit_margin": 0.16900998,
+        "free_cash_flow": -34731749376,
+        "total_cash": 114226003968,
+        "total_debt": 304840998912,
+        "trailing_pe": 20.54325,
+        "forward_pe": 23.258112,
+        "peg_ratio": 1.1455,
+        "earnings_date": "2027-02-04T00:00:00",
+        "currency": "USD",
+        "website": "https://www.amazon.com",
+        "business_summary": "Amazon.com, Inc. engages in the retail sale of consumer products, advertising, and subscriptions service through online and physical stores in North America and internationally. The company operates through three segments: North America, International, and Amazon Web Services (AWS). It also manufactures and sells electronic devices, including Kindle, fire tablets, fire TVs, echo, ring, blink, and eero; and develops and produces media content. In addition, the company offers programs that enable sellers to sell their products in its stores; and programs that allow authors, independent publishers, musicians, filmmakers, Twitch streamers, skill and app developers, and others to publish and sell content. Further, it provides compute, storage, Artificial intelligence, database, analytics, machine learning, and other services, as well as advertising services through programs, such as sponsored ads, display, and video advertising. Additionally, the company offers Amazon Prime, a membership program. The company's products offered through its stores include merchandise and content purchased for resale and products offered by third-party sellers. It serves consumers, sellers, developers, enterprises, content creators, advertisers, and employees. The company was incorporated in 1994 and is headquartered in Seattle, Washington.",
+        "short_percent_of_float": 0.010299999,
+        "short_ratio": 2.14,
+        "shares_short": 101201166,
+        "shares_short_prior_month": 93656399,
+        "float_shares": 9838333888,
+        "shares_outstanding": 10813138306,
+        "52_week_change": 0.04806626,
+        "beta": 1.503,
+        "average_volume": 41786411,
+        "short_risk_flags": [],
+        "long_hard_pass": false,
+        "short_hard_pass": false,
+        "long_qualified": false,
+        "short_qualified": false,
+        "max_score": 100
+      },
+      "news": [
+        {
+          "title": "Amazon takes its car store abroad for the first time in 2027",
+          "publisher": "TheStreet",
+          "published": "2026-11-28T03:03:00Z",
+          "link": "https://www.thestreet.com/automotive/amazon-takes-its-car-store-abroad-britain-uk-for-first-time-2027",
+          "summary": "Britain is first in line, but one part of the deal does not change at all."
+        },
+        {
+          "title": "U.S. Black Friday online sales set to exceed $13 billion, Adobe predicts",
+          "publisher": "Investing.com",
+          "published": "2026-11-28T01:26:46Z",
+          "link": "https://finance.yahoo.com/economy/articles/u-black-friday-online-sales-012646652.html",
+          "summary": "Investing.com -- U.S. online spending on Black Friday is expected to exceed $13 billion, according to Adobe Analytics, as shoppers pursue holiday discounts amid persistent inflation and elevated gasoline prices."
+        },
+        {
+          "title": "e.l.f. Beauty vs. Wendy's: Which Consumer Goods Stock Is a Better Buy for 2027?",
+          "publisher": "Motley Fool",
+          "published": "2026-11-27T23:58:53Z",
+          "link": "https://www.fool.com/coverage/better-buy/2026/11/27/elf-beauty-vs-wendys-which-consumer-goods-stock-is-a-better-buy-for-2027/",
+          "summary": "e.l.f. is growing fast and expanding overseas, though growth is expected to cool and it carries debt. Wendy's is a household name with a turnaround plan, but its U.S. sales are falling."
+        },
+        {
+          "title": "Plot Twist: Nvidia’s Vera Rubin Gets 2-6.5x GB300’s Tokens per Dollar. Amazon’s Trainium Edge Was Against the Old Chip",
+          "publisher": "TIKR",
+          "published": "2026-11-27T23:23:55Z",
+          "link": "https://www.tikr.com/blog/plot-twist-nvidias-vera-rubin-gets-2-6-5x-gb300s-tokens-per-dollar-amazons-trainium-edge-was-against-the-old-chip?ref=yahoofinance&tlnk=yf-261127-2mxwqf36",
+          "summary": "Key TakeawaysSemiAnalysis found that Nvidia’s Vera Rubin NVL72 rack delivers 2x to 6. 5x the tokens per dollar of total cost of its GB300 NVL72 rack."
+        },
+        {
+          "title": "Meta’s (META) Muse Could Unlock a New Revenue Stream",
+          "publisher": "TipRanks",
+          "published": "2026-11-27T23:23:53Z",
+          "link": "https://finance.yahoo.com/technology/ai/articles/meta-meta-muse-could-unlock-232353308.html",
+          "summary": "Meta Platforms, Inc. (META) could unlock a new revenue stream through Muse, its personal artificial intelligence (AI) agent. The social media platform operator has historically monetized its massive user base, which reached 3.64 billion daily active people (DAP) in September, primarily through advertising. Now, after investing $220 billion in capital expenditures between Q1 2023 and Q3 2026 and projecting $135 billion to $145 billion in full-year 2026 capex, Meta is looking to turn its AI invest"
+        },
+        {
+          "title": "Amazon Hits Its Lowest P/E Ever. Jim Cramer Predicts It Will “Prove to Be the Winner”",
+          "publisher": "TIKR",
+          "published": "2026-11-27T23:22:41Z",
+          "link": "https://www.tikr.com/blog/amazon-hits-its-lowest-p-e-ever-jim-cramer-predicts-it-will-prove-to-be-the-winner?ref=yahoofinance&tlnk=yf-261127-6f785p32",
+          "summary": "Key TakeawaysAmazon’s forward P/E has fallen to about 24x, near its lowest in a decade, even as analysts expect its normalized EPS to nearly double from 2025 to 2028. Voters are turning against new data centers, which makes the capacity AWS already owns worth more."
+        },
+        {
+          "title": "What Amazon.com (AMZN)'s UK Car Marketplace Launch Means For Shareholders",
+          "publisher": "Simply Wall St.",
+          "published": "2026-11-27T22:12:35Z",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/amazon-com-amzn-uk-car-221235075.html",
+          "summary": "Amazon.com is expanding its Amazon Autos online car marketplace to the UK in early 2027, while Amazon Web Services continues to post revenue growth and remains a major contributor to group operating income. The combination of capital-heavy cloud infrastructure spending and a new geography for high-ticket auto transactions illustrates how Amazon.com is leaning on AWS cash generation and new verticals to support its long-term buildout. The next focus is on how Amazon.com's heavy AWS capex plan..."
+        },
+        {
+          "title": "Billionaire Chase Coleman’s Tiger Global Raised Its Cerebras Stake 48% to $790 Million",
+          "publisher": "24/7 Wall St.",
+          "published": "2026-11-27T21:37:57Z",
+          "link": "https://247wallst.com/investing/2026/11/27/billionaire-chase-colemans-tiger-global-raised-its-cerebras-stake-48-to-790-million/",
+          "summary": "A famed hedge fund keeps buying a newly public AI chipmaker even as the stock sinks far below its debut high. Before retirement investors copy the move, one detail about how Tiger sized the bet matters more than the purchase itself."
+        },
+        {
+          "title": "5 Best Tech Stocks to Buy for 2027 According to Hedge Funds",
+          "publisher": "Insider Monkey",
+          "published": "2026-11-27T21:28:56Z",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/5-best-tech-stocks-buy-030856400.html",
+          "summary": "Tech stocks aren’t lacking in growth stories for 2027. The problem is that smart money is increasingly selective about which companies it’s willing to pay a premium for. AI is still the big story, but skepticism is growing about whether the money invested will deliver the promised returns. You could see that shift very clearly […]"
+        },
+        {
+          "title": "Can Record Black Friday Spending Lift Amazon Stock?",
+          "publisher": "Zacks",
+          "published": "2026-11-27T20:35:00Z",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/record-black-friday-spending-lift-203500466.html",
+          "summary": "Amazon stock has held up amid the tech selloff. Can holiday demand and strong AWS growth drive shares higher?"
+        }
+      ],
+      "warnings": [
+        "Research model only; broker quotes, borrow availability, option liquidity, and order rules control actual execution.",
+        "The short engine scores stock-specific weakness but cannot confirm real-time locate/borrow availability through the current data adapter.",
+        "Headline classification is a triage tool; read the primary filing or article before committing capital."
+      ],
+      "directional_view": {
+        "bias": "NO TRADE",
+        "evidence": [
+          "Long score: 79.1/100; short score: 66.0/100.",
+          "Price 254.12 versus SMA20 257.70, SMA50 255.17, SMA200 246.03.",
+          "RSI14 48.6; SMA50 slope +0.50; volume ratio 0.52x.",
+          "Short execution plan: entry 247.93, stop 263.03, targets 217.72/202.61/187.51."
+        ],
+        "bullish_score": 79.1,
+        "bearish_score": 66.0,
+        "bearish_strategy": "Failed reclaim",
+        "bearish_trigger": 247.93,
+        "bearish_invalidation": 263.03,
+        "bearish_target_1": 217.72,
+        "bearish_target_2": 202.61,
+        "short_execution_allowed": true,
+        "short_risk_flags": []
+      },
+      "long_score": 79.1,
+      "short_score": 66.0,
+      "recommendation": "NO TRADE",
+      "confidence": "MEDIUM",
+      "selected_direction": "NONE",
+      "long_strategy": "Trend pullback",
+      "short_strategy": "Failed reclaim"
+    },
+    {
+      "ticker": "GOOGL",
+      "as_of": "2026-11-27T00:00:00-05:00",
+      "status": "WATCH",
+      "score": 73.7,
+      "strategy": "Bearish trend",
+      "price": 274.96,
+      "gates": [
+        {
+          "name": "Portfolio risk",
+          "status": "PASS",
+          "score": 0,
+          "max_score": 0,
+          "evidence": [
+            "Current drawdown: 0.0% of the portfolio.",
+            "Current open risk: $0.00; remaining open-risk capacity: $20.00.",
+            "Effective risk budget for a new trade: $5.00."
+          ]
+        },
+        {
+          "name": "Market regime",
+          "status": "FAIL",
+          "score": 0,
+          "max_score": 0,
+          "evidence": [
+            "Benchmark close 728.32; SMA50 757.20; SMA200 730.98.",
+            "Twenty-session change in SMA50: -9.67.",
             "Benchmark is below SMA200; this blocks new longs but does not automatically block shorts."
           ]
         },
@@ -1483,9 +1110,705 @@
           "score": 5.0,
           "max_score": 30,
           "evidence": [
-            "Close 5.89; SMA20 7.30; SMA50 8.86; SMA200 10.72.",
-            "RSI14 35.4; ATR14 0.71 (12.1%); volume ratio 0.94x.",
-            "63-day relative strength vs SPY: -40.9%.",
+            "Close 274.96; SMA20 282.61; SMA50 316.79; SMA200 335.88.",
+            "RSI14 38.3; ATR14 11.69 (4.2%); volume ratio 0.57x.",
+            "63-day relative strength vs SPY: -15.5%.",
+            "Selected strategy: Recovery/reclaim.",
+            "Failed: Price remains above SMA200.",
+            "Failed: Price reclaimed SMA20 and SMA50.",
+            "Passed: A recent correction created a genuine reclaim.",
+            "Failed: RSI supports recovery.",
+            "Failed: Relative strength is positive.",
+            "Failed: Volume confirms the reclaim."
+          ]
+        },
+        {
+          "name": "Fundamentals (long)",
+          "status": "CAUTION",
+          "score": 15.0,
+          "max_score": 25,
+          "evidence": [
+            "Revenue Growth: 24.7%.",
+            "Earnings Growth: -25.3%.",
+            "Profit Margin: 50.0%.",
+            "Free Cash Flow: $-1,162,499,968.",
+            "Debt-to-cash ratio: 0.57x."
+          ]
+        },
+        {
+          "name": "News/catalyst (long)",
+          "status": "CAUTION",
+          "score": 12.0,
+          "max_score": 15,
+          "evidence": [
+            "Reviewed 10 headline(s) published in the last seven days.",
+            "Next reported earnings date: 2027-02-03 (47 business day(s)).",
+            "Negative headline against long thesis: Warning for Alphabet Investors: MScience Data Show Q4 Search Revenue Tracking Below Consensus"
+          ]
+        },
+        {
+          "name": "Valuation (long)",
+          "status": "PASS",
+          "score": 10,
+          "max_score": 10,
+          "evidence": [
+            "Trailing P/E: 14.4x.",
+            "Forward P/E: 18.0x.",
+            "PEG ratio: 0.94."
+          ]
+        },
+        {
+          "name": "Liquidity/execution",
+          "status": "PASS",
+          "score": 10,
+          "max_score": 10,
+          "evidence": [
+            "20-day average dollar volume: $11,161,957,970."
+          ]
+        },
+        {
+          "name": "Risk/setup (long)",
+          "status": "FAIL",
+          "score": 0,
+          "max_score": 10,
+          "evidence": [
+            "No valid entry and stop plan could be calculated."
+          ]
+        },
+        {
+          "name": "Technical (short)",
+          "status": "PASS",
+          "score": 26.7,
+          "max_score": 30,
+          "evidence": [
+            "Close 274.96; SMA20 282.61; SMA50 316.79; SMA200 335.88.",
+            "RSI14 38.3; ATR14 11.69 (4.2%); volume ratio 0.57x.",
+            "63-day relative strength vs SPY: -15.5%.",
+            "Selected strategy: Bearish trend.",
+            "Passed: Price < SMA20 < SMA50.",
+            "Passed: SMA50 is below SMA200.",
+            "Passed: SMA50 is falling.",
+            "Passed: RSI is below 50.",
+            "Failed: Latest close weakened.",
+            "Passed: 63-day relative strength trails SPY."
+          ]
+        },
+        {
+          "name": "Fundamentals (short)",
+          "status": "FAIL",
+          "score": 10.0,
+          "max_score": 25,
+          "evidence": [
+            "Revenue Growth: 24.7%.",
+            "Earnings Growth: -25.3%.",
+            "Profit Margin: 50.0%.",
+            "Free Cash Flow: $-1,162,499,968.",
+            "Debt-to-cash ratio: 0.57x."
+          ]
+        },
+        {
+          "name": "News/catalyst (short)",
+          "status": "PASS",
+          "score": 15.0,
+          "max_score": 15,
+          "evidence": [
+            "Reviewed 10 headline(s) published in the last seven days.",
+            "Next reported earnings date: 2027-02-03 (47 business day(s)).",
+            "Negative headline: Warning for Alphabet Investors: MScience Data Show Q4 Search Revenue Tracking Below Consensus"
+          ]
+        },
+        {
+          "name": "Valuation (short)",
+          "status": "FAIL",
+          "score": 2,
+          "max_score": 10,
+          "evidence": [
+            "Trailing P/E: 14.4x.",
+            "Forward P/E: 18.0x.",
+            "PEG ratio: 0.94."
+          ]
+        },
+        {
+          "name": "Liquidity/execution (short)",
+          "status": "PASS",
+          "score": 5.0,
+          "max_score": 5,
+          "evidence": [
+            "20-day average dollar volume: $11,161,957,970."
+          ]
+        },
+        {
+          "name": "Short squeeze risk",
+          "status": "PASS",
+          "score": 5.0,
+          "max_score": 5,
+          "evidence": [
+            "No major short-interest warning was detected from available fields."
+          ]
+        },
+        {
+          "name": "Risk/setup (short)",
+          "status": "PASS",
+          "score": 10,
+          "max_score": 10,
+          "evidence": [
+            "SHORT entry 269.45; stop 288.45; risk/share 19.00.",
+            "Size 0.263 share(s); notional $70.86; planned risk $5.00.",
+            "Target 1 231.44; Target 2 212.44; Target 3 193.43; reward/risk 2.0:1."
+          ]
+        }
+      ],
+      "trade_plan": null,
+      "thesis": [
+        "Neither direction cleared enough independent confirmation to justify a new position."
+      ],
+      "bear_case": [
+        "The model prefers patience when the directional scores are too close, a hard gate fails, or risk/reward cannot be established cleanly.",
+        "Long blockers: Technical (long), Risk/setup (long).",
+        "Short blockers: Fundamentals (short), Valuation (short)."
+      ],
+      "invalidation": [
+        "Exit when price reaches the model stop or the directional thesis is structurally invalidated.",
+        "Re-score after earnings, material guidance, a major filing, or a high-impact headline.",
+        "Do not average down after the invalidation level is breached."
+      ],
+      "facts": {
+        "close": 274.9599914550781,
+        "atr14": 11.685791833204116,
+        "rsi14": 38.33802269054178,
+        "sma20": 282.60550079345705,
+        "sma50": 316.7934002685547,
+        "sma200": 335.8841970825195,
+        "prior_high20": 304.9700012207031,
+        "prior_low20": 262.7300109863281,
+        "low10": 262.7300109863281,
+        "volume_ratio": 0.570988758540507,
+        "rs63": -0.15518086838964906,
+        "latest_high": 279.5799865722656,
+        "latest_low": 270.0299987792969,
+        "sma50_slope20": -23.44664611816404,
+        "company_name": "Alphabet Inc.",
+        "sector": "Communication Services",
+        "industry": "Internet Content & Information",
+        "market_cap": 3380358152192,
+        "revenue_growth": 0.247,
+        "earnings_growth": -0.253,
+        "profit_margin": 0.50031,
+        "free_cash_flow": -1162499968,
+        "total_cash": 265098002432,
+        "total_debt": 150330998784,
+        "trailing_pe": 14.358224,
+        "forward_pe": 17.97432,
+        "peg_ratio": 0.9371,
+        "earnings_date": "2027-02-03T00:00:00",
+        "currency": "USD",
+        "website": "https://abc.xyz",
+        "business_summary": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America. It operates through Google Services, Google Cloud, and Other Bets segments. The Google Services segment provides products and services, including ads, Android, Chrome, devices, Gmail, Google Drive, Google Maps, Google Photos, Google Play, Search, and YouTube. It is also involved in the sale of apps and in-app purchases and digital content in Google Play and YouTube; and devices, as well as the provision of YouTube consumer subscription services, such as YouTube TV, YouTube Music and Premium, NFL Sunday Ticket, and Google One. The Google Cloud segment offers consumption-based fees and subscriptions for AI solutions, including AI infrastructure, Vertex AI platform, and Gemini enterprise. It also provides cybersecurity, and data and analytics services; Google Workspace that include cloud-based communication and collaboration tools for enterprises, such as Calendar, Gmail, Docs, Drive, and Meet; and other enterprise services. The Other Bets segment sells transportation and internet services. Alphabet Inc. was incorporated in 1998 and is headquartered in Mountain View, California.",
+        "short_percent_of_float": 0.0134000005,
+        "short_ratio": 2.06,
+        "shares_short": 78649008,
+        "shares_short_prior_month": 78436901,
+        "float_shares": 10951986960,
+        "shares_outstanding": 5888000000,
+        "52_week_change": -0.14704227,
+        "beta": 1.226,
+        "average_volume": 32335277,
+        "short_risk_flags": [],
+        "long_hard_pass": false,
+        "short_hard_pass": true,
+        "long_qualified": false,
+        "short_qualified": false,
+        "max_score": 100
+      },
+      "news": [
+        {
+          "title": "Plot Twist: Nvidia’s Vera Rubin Gets 2-6.5x GB300’s Tokens per Dollar. Amazon’s Trainium Edge Was Against the Old Chip",
+          "publisher": "TIKR",
+          "published": "2026-11-27T23:23:55Z",
+          "link": "https://www.tikr.com/blog/plot-twist-nvidias-vera-rubin-gets-2-6-5x-gb300s-tokens-per-dollar-amazons-trainium-edge-was-against-the-old-chip?ref=yahoofinance&tlnk=yf-261127-2mxwqf36",
+          "summary": "Key TakeawaysSemiAnalysis found that Nvidia’s Vera Rubin NVL72 rack delivers 2x to 6. 5x the tokens per dollar of total cost of its GB300 NVL72 rack."
+        },
+        {
+          "title": "Amazon Hits Its Lowest P/E Ever. Jim Cramer Predicts It Will “Prove to Be the Winner”",
+          "publisher": "TIKR",
+          "published": "2026-11-27T23:22:41Z",
+          "link": "https://www.tikr.com/blog/amazon-hits-its-lowest-p-e-ever-jim-cramer-predicts-it-will-prove-to-be-the-winner?ref=yahoofinance&tlnk=yf-261127-6f785p32",
+          "summary": "Key TakeawaysAmazon’s forward P/E has fallen to about 24x, near its lowest in a decade, even as analysts expect its normalized EPS to nearly double from 2025 to 2028. Voters are turning against new data centers, which makes the capacity AWS already owns worth more."
+        },
+        {
+          "title": "Warning for Alphabet Investors: MScience Data Show Q4 Search Revenue Tracking Below Consensus",
+          "publisher": "TIKR",
+          "published": "2026-11-27T23:21:23Z",
+          "link": "https://www.tikr.com/blog/warning-for-alphabet-investors-mscience-data-show-q4-search-revenue-tracking-below-consensus?ref=yahoofinance&tlnk=yf-261127-64qqmx2j",
+          "summary": "Key TakeawaysMScience data have Alphabet’s fourth-quarter ad revenue tracking 2. 4% below consensus, with Search & other growth slowing to 7."
+        },
+        {
+          "title": "5 Best Tech Stocks to Buy for 2027 According to Hedge Funds",
+          "publisher": "Insider Monkey",
+          "published": "2026-11-27T21:28:56Z",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/5-best-tech-stocks-buy-030856400.html",
+          "summary": "Tech stocks aren’t lacking in growth stories for 2027. The problem is that smart money is increasingly selective about which companies it’s willing to pay a premium for. AI is still the big story, but skepticism is growing about whether the money invested will deliver the promised returns. You could see that shift very clearly […]"
+        },
+        {
+          "title": "Jensen Huang Is Back. Nvidia’s (NVDA) Bull Case Remains",
+          "publisher": "TipRanks",
+          "published": "2026-11-27T21:06:00Z",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/jensen-huang-back-nvidia-nvda-210600721.html",
+          "summary": "Jensen Huang is back at the helm, and Nvidia’s (NVDA) bull case remains in play. Nvidia shares surged 31.5% on November 23 after news of Jensen Huang’s reinstatement, underscoring how closely investor confidence in the company is tied to its co-founder. While near-term volatility is likely to persist, I remain decisively Bullish over the long term. Nvidia makes the chips, networking gear, and software powering the artificial intelligence (AI) boom, and its earnings story is strong enough to ride"
+        },
+        {
+          "title": "Alphabet Down Nearly 20%: What Would Its CEO Say?",
+          "publisher": "Trefis",
+          "published": "2026-11-27T20:25:13Z",
+          "link": "https://www.trefis.com/stock/googl/articles/629198/alphabet-down-nearly-20-what-would-its-ceo-say/2026-11-27",
+          "summary": "Today's big story: Anthropic Broke Its $83 IPO Price. What Did Facebook Do Next."
+        },
+        {
+          "title": "Alphabet Stocks Move Lower as Record Credit Spreads Shadow AI Spending",
+          "publisher": "GuruFocus.com",
+          "published": "2026-11-27T19:18:39Z",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/alphabet-stocks-move-lower-record-191839414.html",
+          "summary": "Shares lag a tech rebound near a 52-week low, after $51.4 billion of quarterly capex pushed free cash flow negative."
+        },
+        {
+          "title": "Jim Cramer Is Still Bullish On These 5 Tech Stocks Despite AI Bear Market",
+          "publisher": "Insider Monkey",
+          "published": "2026-11-27T18:49:21Z",
+          "link": "https://finance.yahoo.com/technology/articles/jim-cramer-still-bullish-5-184921596.html",
+          "summary": "The Nasdaq-100 briefly fell 20% below its October 6 record closing high on November 25 before recovering much of the day’s loss. The sell-off had picked up weeks earlier. On November 5, the Nasdaq Composite fell 5.5% as investors reconsidered how quickly the U.S. could build out AI infrastructure after the midterm elections. By late […]"
+        },
+        {
+          "title": "Top Stock Reports for Alphabet, Meta & Bank of America",
+          "publisher": "Zacks",
+          "published": "2026-11-27T18:41:00Z",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/top-stock-reports-alphabet-meta-184100991.html",
+          "summary": "Top stock reports for Alphabet, Meta and Bank of America spotlight AI-driven growth, advertising gains and rising interest income amid mounting cost pressures."
+        },
+        {
+          "title": "AppLovin vs. Magnite: Which Technology Stock Is a Better Buy for 2027?",
+          "publisher": "Motley Fool",
+          "published": "2026-11-27T18:16:14Z",
+          "link": "https://www.fool.com/coverage/better-buy/2026/11/27/applovin-vs-magnite-which-technology-stock-is-a-better-buy-for-2027/",
+          "summary": "Two ad-tech stocks, one with explosive growth and sky-high margins, the other a conservative bet on connected TV, with very different balance sheets."
+        }
+      ],
+      "warnings": [
+        "Research model only; broker quotes, borrow availability, option liquidity, and order rules control actual execution.",
+        "The short engine scores stock-specific weakness but cannot confirm real-time locate/borrow availability through the current data adapter.",
+        "Headline classification is a triage tool; read the primary filing or article before committing capital."
+      ],
+      "directional_view": {
+        "bias": "NO TRADE",
+        "evidence": [
+          "Long score: 52.0/100; short score: 73.7/100.",
+          "Price 274.96 versus SMA20 282.61, SMA50 316.79, SMA200 335.88.",
+          "RSI14 38.3; SMA50 slope -23.45; volume ratio 0.57x.",
+          "Short execution plan: entry 269.45, stop 288.45, targets 231.44/212.44/193.43."
+        ],
+        "bullish_score": 52.0,
+        "bearish_score": 73.7,
+        "bearish_strategy": "Bearish trend",
+        "bearish_trigger": 269.45,
+        "bearish_invalidation": 288.45,
+        "bearish_target_1": 231.44,
+        "bearish_target_2": 212.44,
+        "short_execution_allowed": true,
+        "short_risk_flags": []
+      },
+      "long_score": 52.0,
+      "short_score": 73.7,
+      "recommendation": "NO TRADE",
+      "confidence": "MEDIUM",
+      "selected_direction": "NONE",
+      "long_strategy": "Recovery/reclaim",
+      "short_strategy": "Bearish trend"
+    },
+    {
+      "ticker": "MSFT",
+      "as_of": "2026-11-27T00:00:00-05:00",
+      "status": "WATCH",
+      "score": 72.0,
+      "strategy": "Recovery/reclaim",
+      "price": 492.85,
+      "gates": [
+        {
+          "name": "Portfolio risk",
+          "status": "PASS",
+          "score": 0,
+          "max_score": 0,
+          "evidence": [
+            "Current drawdown: 0.0% of the portfolio.",
+            "Current open risk: $0.00; remaining open-risk capacity: $20.00.",
+            "Effective risk budget for a new trade: $5.00."
+          ]
+        },
+        {
+          "name": "Market regime",
+          "status": "FAIL",
+          "score": 0,
+          "max_score": 0,
+          "evidence": [
+            "Benchmark close 728.32; SMA50 757.20; SMA200 730.98.",
+            "Twenty-session change in SMA50: -9.67.",
+            "Benchmark is below SMA200; this blocks new longs but does not automatically block shorts."
+          ]
+        },
+        {
+          "name": "Technical (long)",
+          "status": "FAIL",
+          "score": 14.0,
+          "max_score": 30,
+          "evidence": [
+            "Close 492.85; SMA20 514.56; SMA50 518.57; SMA200 443.69.",
+            "RSI14 40.6; ATR14 16.49 (3.3%); volume ratio 0.43x.",
+            "63-day relative strength vs SPY: +1.3%.",
+            "Selected strategy: Recovery/reclaim.",
+            "Passed: Price remains above SMA200.",
+            "Failed: Price reclaimed SMA20 and SMA50.",
+            "Passed: A recent correction created a genuine reclaim.",
+            "Failed: RSI supports recovery.",
+            "Passed: Relative strength is positive.",
+            "Failed: Volume confirms the reclaim."
+          ]
+        },
+        {
+          "name": "Fundamentals (long)",
+          "status": "PASS",
+          "score": 23.0,
+          "max_score": 25,
+          "evidence": [
+            "Revenue Growth: 18.8%.",
+            "Earnings Growth: 32.3%.",
+            "Profit Margin: 41.2%.",
+            "Free Cash Flow: $2,994,125,056.",
+            "Debt-to-cash ratio: 2.08x."
+          ]
+        },
+        {
+          "name": "News/catalyst (long)",
+          "status": "PASS",
+          "score": 15.0,
+          "max_score": 15,
+          "evidence": [
+            "Reviewed 10 headline(s) published in the last seven days.",
+            "Next reported earnings date: 2027-01-27 (42 business day(s))."
+          ]
+        },
+        {
+          "name": "Valuation (long)",
+          "status": "PASS",
+          "score": 10,
+          "max_score": 10,
+          "evidence": [
+            "Trailing P/E: 25.7x.",
+            "Forward P/E: 20.3x.",
+            "PEG ratio: 1.43."
+          ]
+        },
+        {
+          "name": "Liquidity/execution",
+          "status": "PASS",
+          "score": 10,
+          "max_score": 10,
+          "evidence": [
+            "20-day average dollar volume: $15,129,059,157."
+          ]
+        },
+        {
+          "name": "Risk/setup (long)",
+          "status": "FAIL",
+          "score": 0,
+          "max_score": 10,
+          "evidence": [
+            "No valid entry and stop plan could be calculated."
+          ]
+        },
+        {
+          "name": "Technical (short)",
+          "status": "FAIL",
+          "score": 17.0,
+          "max_score": 30,
+          "evidence": [
+            "Close 492.85; SMA20 514.56; SMA50 518.57; SMA200 443.69.",
+            "RSI14 40.6; ATR14 16.49 (3.3%); volume ratio 0.43x.",
+            "63-day relative strength vs SPY: +1.3%.",
+            "Selected strategy: Failed reclaim.",
+            "Failed: Price is below SMA200.",
+            "Passed: Price lost SMA20 and SMA50.",
+            "Passed: A recent rally created a failed reclaim.",
+            "Passed: RSI confirms weakness.",
+            "Failed: Relative strength is negative.",
+            "Failed: Volume confirms the failed reclaim."
+          ]
+        },
+        {
+          "name": "Fundamentals (short)",
+          "status": "FAIL",
+          "score": 2.0,
+          "max_score": 25,
+          "evidence": [
+            "Revenue Growth: 18.8%.",
+            "Earnings Growth: 32.3%.",
+            "Profit Margin: 41.2%.",
+            "Free Cash Flow: $2,994,125,056.",
+            "Debt-to-cash ratio: 2.08x."
+          ]
+        },
+        {
+          "name": "News/catalyst (short)",
+          "status": "PASS",
+          "score": 15.0,
+          "max_score": 15,
+          "evidence": [
+            "Reviewed 10 headline(s) published in the last seven days.",
+            "Next reported earnings date: 2027-01-27 (42 business day(s))."
+          ]
+        },
+        {
+          "name": "Valuation (short)",
+          "status": "FAIL",
+          "score": 2,
+          "max_score": 10,
+          "evidence": [
+            "Trailing P/E: 25.7x.",
+            "Forward P/E: 20.3x.",
+            "PEG ratio: 1.43."
+          ]
+        },
+        {
+          "name": "Liquidity/execution (short)",
+          "status": "PASS",
+          "score": 5.0,
+          "max_score": 5,
+          "evidence": [
+            "20-day average dollar volume: $15,129,059,157."
+          ]
+        },
+        {
+          "name": "Short squeeze risk",
+          "status": "PASS",
+          "score": 5.0,
+          "max_score": 5,
+          "evidence": [
+            "No major short-interest warning was detected from available fields."
+          ]
+        },
+        {
+          "name": "Risk/setup (short)",
+          "status": "PASS",
+          "score": 10,
+          "max_score": 10,
+          "evidence": [
+            "SHORT entry 488.01; stop 512.84; risk/share 24.83.",
+            "Size 0.201 share(s); notional $98.09; planned risk $4.99.",
+            "Target 1 438.35; Target 2 413.52; Target 3 388.69; reward/risk 2.0:1."
+          ]
+        }
+      ],
+      "trade_plan": null,
+      "thesis": [
+        "Neither direction cleared enough independent confirmation to justify a new position."
+      ],
+      "bear_case": [
+        "The model prefers patience when the directional scores are too close, a hard gate fails, or risk/reward cannot be established cleanly.",
+        "Long blockers: Technical (long), Risk/setup (long).",
+        "Short blockers: Technical (short), Fundamentals (short), Valuation (short)."
+      ],
+      "invalidation": [
+        "Exit when price reaches the model stop or the directional thesis is structurally invalidated.",
+        "Re-score after earnings, material guidance, a major filing, or a high-impact headline.",
+        "Do not average down after the invalidation level is breached."
+      ],
+      "facts": {
+        "close": 492.8500061035156,
+        "atr14": 16.487036046356895,
+        "rsi14": 40.647786583046305,
+        "sma20": 514.564321899414,
+        "sma50": 518.5655932617187,
+        "sma200": 443.68816299438475,
+        "prior_high20": 558.0719712336797,
+        "prior_low20": 477.3900146484375,
+        "low10": 477.3900146484375,
+        "volume_ratio": 0.4259426181007367,
+        "rs63": 0.012563599658378055,
+        "latest_high": 500.4700012207031,
+        "latest_low": 488.8299865722656,
+        "sma50_slope20": 7.4575280761718545,
+        "company_name": "Microsoft Corporation",
+        "sector": "Technology",
+        "industry": "Software - Infrastructure",
+        "market_cap": 3660000002048,
+        "revenue_growth": 0.188,
+        "earnings_growth": 0.323,
+        "profit_margin": 0.41169998,
+        "free_cash_flow": 2994125056,
+        "total_cash": 64509001728,
+        "total_debt": 133930999808,
+        "trailing_pe": 25.72286,
+        "forward_pe": 20.342325,
+        "peg_ratio": 1.4334,
+        "earnings_date": "2027-01-27T00:00:00",
+        "currency": "USD",
+        "website": "https://www.microsoft.com",
+        "business_summary": "Microsoft Corporation, a technology company, develops and supports a portfolio of technology solutions for individuals and businesses worldwide. Its products include operating systems, server applications, business solution applications, software development tools, desktop and server management tools, and video games; and devices, such as PCs, tablets, gaming and entertainment consoles, other intelligent devices, and related accessories. The company's Productivity and Business Processes segment offers Microsoft 365 Commercial, Enterprise Mobility + Security, Power BI, Exchange, SharePoint, Microsoft Teams, Microsoft 365 Security and Compliance, Microsoft 365 Copilot, and Windows Commercial on-premises and Office licensed on-premises. This segment also provides Microsoft 365 Consumer products and cloud services; LinkedIn, including talent solutions, marketing solutions, subscriptions, and sales solutions; Dynamics 365, a set of cloud-based applications; and on-premises ERP and CRM applications. Its Intelligent Cloud segment offers server products and cloud services; cloud and AI consumption-based services, GitHub cloud services, health and life sciences cloud services, as well as virtual desktop offerings, and other cloud services; SQL Server, Windows Server, Visual Studio, System Center, and related client access licenses; and enterprise support services, industry solutions, Microsoft partner network, and learning experience. The company's More Personal Computing segment provides Windows OEM licensing and devices comprising Surface and PC accessories; XBOX hardware, and XBOX first- and third-party content and services; XBOX Game Pass and other subscriptions; XBOX Cloud Gaming, advertising, and other cloud services; and search advertising consisting of Bing, Copilot, Microsoft News, Microsoft Edge, and third-party affiliates. It sells its products through partners and retail networks. The company was founded in 1975 and is headquartered in Redmond, Washington.",
+        "short_percent_of_float": 0.009,
+        "short_ratio": 2.59,
+        "shares_short": 66905913,
+        "shares_short_prior_month": 65674557,
+        "float_shares": 7415426570,
+        "shares_outstanding": 7426194552,
+        "52_week_change": -0.0042275786,
+        "beta": 1.045,
+        "average_volume": 24136826,
+        "short_risk_flags": [],
+        "long_hard_pass": false,
+        "short_hard_pass": false,
+        "long_qualified": false,
+        "short_qualified": false,
+        "max_score": 100
+      },
+      "news": [
+        {
+          "title": "Vanguard's Growth ETF Has 3 Stocks Making Up More Than a Third of It. Only 1 Has Held Up in the Tech Sell-Off.",
+          "publisher": "Motley Fool",
+          "published": "2026-11-28T01:09:02Z",
+          "link": "https://www.fool.com/investing/2026/11/27/vanguard-s-growth-etf-has-3-stocks-making-up-more-than-a-third-of-it-only-1-has-held-up-in-the-tech-sell-off/",
+          "summary": "The stock that's held up best belongs to the slowest grower of the three."
+        },
+        {
+          "title": "Billionaire Chase Coleman’s Tiger Global Raised Its Cerebras Stake 48% to $790 Million",
+          "publisher": "24/7 Wall St.",
+          "published": "2026-11-27T21:37:57Z",
+          "link": "https://247wallst.com/investing/2026/11/27/billionaire-chase-colemans-tiger-global-raised-its-cerebras-stake-48-to-790-million/",
+          "summary": "A famed hedge fund keeps buying a newly public AI chipmaker even as the stock sinks far below its debut high. Before retirement investors copy the move, one detail about how Tiger sized the bet matters more than the purchase itself."
+        },
+        {
+          "title": "5 Best Tech Stocks to Buy for 2027 According to Hedge Funds",
+          "publisher": "Insider Monkey",
+          "published": "2026-11-27T21:28:56Z",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/5-best-tech-stocks-buy-030856400.html",
+          "summary": "Tech stocks aren’t lacking in growth stories for 2027. The problem is that smart money is increasingly selective about which companies it’s willing to pay a premium for. AI is still the big story, but skepticism is growing about whether the money invested will deliver the promised returns. You could see that shift very clearly […]"
+        },
+        {
+          "title": "Should You Pick Palantir Over Its Big Tech Rivals?",
+          "publisher": "Trefis",
+          "published": "2026-11-27T19:59:21Z",
+          "link": "https://www.trefis.com/stock/pltr/articles/629344/should-you-pick-palantir-over-its-big-tech-rivals/2026-11-27",
+          "summary": "Today's big story: Anthropic Broke Its $83 IPO Price. What Did Facebook Do Next."
+        },
+        {
+          "title": "IREN (NasdaqGS:IREN) Stock Sees Modest Fair Value Cut After AI Cloud Sentiment Swings",
+          "publisher": "Simply Wall St.",
+          "published": "2026-11-27T19:09:22Z",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/iren-nasdaqgs-iren-stock-sees-190922720.html",
+          "summary": "The analyst fair value estimate for IREN has shifted from US$56.69 to US$52.74, pointing to a modest reset in the price target used in current valuation work. This updated view comes against a backdrop of sharp share price swings following IREN’s Q1 update, moves in Microsoft’s capex guidance, and sentiment shifts around AI cloud infrastructure tied to Nvidia’s GPU ecosystem. As you read on, you will see how these valuation changes fit into the broader IREN story and what to watch as the..."
+        },
+        {
+          "title": "Microsoft Stocks Rise 0.26% as Code Red Targets One-Hour Outage Recovery",
+          "publisher": "GuruFocus.com",
+          "published": "2026-11-27T18:23:20Z",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/microsoft-stocks-rise-0-26-182320294.html",
+          "summary": "Internal memos show Microsoft overhauling Microsoft 365 reliability after a near 24-hour outage hit Outlook, Teams and Copilot worldwide."
+        },
+        {
+          "title": "What Does Alphabet (GOOGL) Need To Prove After The Air Force Cloud Breach?",
+          "publisher": "Simply Wall St.",
+          "published": "2026-11-27T18:10:25Z",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/does-alphabet-googl-prove-air-181025421.html",
+          "summary": "Alphabet (NasdaqGS:GOOGL) is a key provider to the US Air Force's Cloud One platform that has been breached by hackers. The cyber intrusion disrupted parts of Cloud One operations and potentially exposed sensitive military and logistics information, according to initial Air Force briefings. Cloud One also relies on infrastructure from Microsoft, Amazon and Oracle, raising wider questions about security coordination across major contractors. The Cloud One breach involving Alphabet's..."
+        },
+        {
+          "title": "Franklin Templeton Flags Hidden Risk in S&P 500 Investing",
+          "publisher": "GuruFocus.com",
+          "published": "2026-11-27T18:00:23Z",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/franklin-templeton-flags-hidden-risk-180023148.html",
+          "summary": "Wall Street's biggest growth story comes with a catch."
+        },
+        {
+          "title": "Oracle Has Frustrated Me, but Even With Zero AI Revenue the Stock Is Worth $133—So I’m Buying at $104",
+          "publisher": "24/7 Wall St.",
+          "published": "2026-11-27T17:45:51Z",
+          "link": "https://247wallst.com/investing/2026/11/27/oracle-has-frustrated-me-but-even-with-zero-ai-revenue-the-stock-is-worth-133-so-im-buying-at-104/",
+          "summary": "Oracle has piled on debt, diluted shareholders, and burned cash, yet one analyst's brutal stress test suggests the old business alone may protect new buyers. What happens when every AI contract is assumed to fail?"
+        },
+        {
+          "title": "Sector Update: Energy Stocks Rise Friday Afternoon",
+          "publisher": "MT Newswires",
+          "published": "2026-11-27T17:44:41Z",
+          "link": "https://finance.yahoo.com/energy/articles/sector-energy-stocks-rise-friday-174441830.html",
+          "summary": "Energy stocks were higher Friday afternoon, with the NYSE Energy Sector Index rising 1.6% and the St"
+        }
+      ],
+      "warnings": [
+        "Research model only; broker quotes, borrow availability, option liquidity, and order rules control actual execution.",
+        "The short engine scores stock-specific weakness but cannot confirm real-time locate/borrow availability through the current data adapter.",
+        "Headline classification is a triage tool; read the primary filing or article before committing capital."
+      ],
+      "directional_view": {
+        "bias": "NO TRADE",
+        "evidence": [
+          "Long score: 72.0/100; short score: 56.0/100.",
+          "Price 492.85 versus SMA20 514.56, SMA50 518.57, SMA200 443.69.",
+          "RSI14 40.6; SMA50 slope +7.46; volume ratio 0.43x.",
+          "Short execution plan: entry 488.01, stop 512.84, targets 438.35/413.52/388.69."
+        ],
+        "bullish_score": 72.0,
+        "bearish_score": 56.0,
+        "bearish_strategy": "Failed reclaim",
+        "bearish_trigger": 488.01,
+        "bearish_invalidation": 512.84,
+        "bearish_target_1": 438.35,
+        "bearish_target_2": 413.52,
+        "short_execution_allowed": true,
+        "short_risk_flags": []
+      },
+      "long_score": 72.0,
+      "short_score": 56.0,
+      "recommendation": "NO TRADE",
+      "confidence": "MEDIUM",
+      "selected_direction": "NONE",
+      "long_strategy": "Recovery/reclaim",
+      "short_strategy": "Failed reclaim"
+    },
+    {
+      "ticker": "RDW",
+      "as_of": "2026-11-27T00:00:00-05:00",
+      "status": "WATCH",
+      "score": 70.7,
+      "strategy": "Bearish trend",
+      "price": 6.43,
+      "gates": [
+        {
+          "name": "Portfolio risk",
+          "status": "PASS",
+          "score": 0,
+          "max_score": 0,
+          "evidence": [
+            "Current drawdown: 0.0% of the portfolio.",
+            "Current open risk: $0.00; remaining open-risk capacity: $20.00.",
+            "Effective risk budget for a new trade: $5.00."
+          ]
+        },
+        {
+          "name": "Market regime",
+          "status": "FAIL",
+          "score": 0,
+          "max_score": 0,
+          "evidence": [
+            "Benchmark close 728.32; SMA50 757.20; SMA200 730.98.",
+            "Twenty-session change in SMA50: -9.67.",
+            "Benchmark is below SMA200; this blocks new longs but does not automatically block shorts."
+          ]
+        },
+        {
+          "name": "Technical (long)",
+          "status": "FAIL",
+          "score": 5.0,
+          "max_score": 30,
+          "evidence": [
+            "Close 6.43; SMA20 7.17; SMA50 8.76; SMA200 10.70.",
+            "RSI14 41.0; ATR14 0.70 (10.9%); volume ratio 0.61x.",
+            "63-day relative strength vs SPY: -35.7%.",
             "Selected strategy: Recovery/reclaim.",
             "Failed: Price remains above SMA200.",
             "Failed: Price reclaimed SMA20 and SMA50.",
@@ -1523,7 +1846,7 @@
           "score": 4,
           "max_score": 10,
           "evidence": [
-            "Forward P/E: -21.3x."
+            "Forward P/E: -23.3x."
           ]
         },
         {
@@ -1532,7 +1855,7 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "20-day average dollar volume: $97,274,018."
+            "20-day average dollar volume: $95,557,850."
           ]
         },
         {
@@ -1547,18 +1870,18 @@
         {
           "name": "Technical (short)",
           "status": "PASS",
-          "score": 30.0,
+          "score": 26.7,
           "max_score": 30,
           "evidence": [
-            "Close 5.89; SMA20 7.30; SMA50 8.86; SMA200 10.72.",
-            "RSI14 35.4; ATR14 0.71 (12.1%); volume ratio 0.94x.",
-            "63-day relative strength vs SPY: -40.9%.",
+            "Close 6.43; SMA20 7.17; SMA50 8.76; SMA200 10.70.",
+            "RSI14 41.0; ATR14 0.70 (10.9%); volume ratio 0.61x.",
+            "63-day relative strength vs SPY: -35.7%.",
             "Selected strategy: Bearish trend.",
             "Passed: Price < SMA20 < SMA50.",
             "Passed: SMA50 is below SMA200.",
             "Passed: SMA50 is falling.",
             "Passed: RSI is below 50.",
-            "Passed: Latest close weakened.",
+            "Failed: Latest close weakened.",
             "Passed: 63-day relative strength trails SPY."
           ]
         },
@@ -1590,7 +1913,7 @@
           "score": 4,
           "max_score": 10,
           "evidence": [
-            "Forward P/E: -21.3x."
+            "Forward P/E: -23.3x."
           ]
         },
         {
@@ -1599,7 +1922,7 @@
           "score": 5.0,
           "max_score": 5,
           "evidence": [
-            "20-day average dollar volume: $97,274,018."
+            "20-day average dollar volume: $95,557,850."
           ]
         },
         {
@@ -1617,9 +1940,9 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "SHORT entry 5.36; stop 7.66; risk/share 2.30.",
-            "Size 2.173 share(s); notional $11.65; planned risk $5.00.",
-            "Target 1 0.76; Target 2 0.01; Target 3 0.01; reward/risk 2.0:1."
+            "SHORT entry 5.93; stop 7.52; risk/share 1.59.",
+            "Size 3.140 share(s); notional $18.61; planned risk $5.00.",
+            "Target 1 2.74; Target 2 1.15; Target 3 0.01; reward/risk 2.0:1."
           ]
         }
       ],
@@ -1638,24 +1961,24 @@
         "Do not average down after the invalidation level is breached."
       ],
       "facts": {
-        "close": 5.889999866485596,
-        "atr14": 0.7119796457545138,
-        "rsi14": 35.39736287345657,
-        "sma20": 7.303999996185302,
-        "sma50": 8.860200023651123,
-        "sma200": 10.717000012397767,
+        "close": 6.429999828338623,
+        "atr14": 0.7011239526848728,
+        "rsi14": 41.04409918984861,
+        "sma20": 7.167499995231628,
+        "sma50": 8.757800016403198,
+        "sma200": 10.70410001039505,
         "prior_high20": 9.449999809265137,
-        "prior_low20": 5.590000152587891,
+        "prior_low20": 5.394999980926514,
         "low10": 5.394999980926514,
-        "volume_ratio": 0.9446731024120869,
-        "rs63": -0.40913306128869154,
-        "latest_high": 6.079999923706055,
-        "latest_low": 5.394999980926514,
-        "sma50_slope20": -1.4803999900817875,
+        "volume_ratio": 0.6136788807700226,
+        "rs63": -0.3574837251670512,
+        "latest_high": 6.449999809265137,
+        "latest_low": 5.960999965667725,
+        "sma50_slope20": -1.5180000019073479,
         "company_name": "Redwire Corporation",
         "sector": "Industrials",
         "industry": "Aerospace & Defense",
-        "market_cap": 1473791744,
+        "market_cap": 1608910080,
         "revenue_growth": 0.054,
         "earnings_growth": null,
         "profit_margin": -0.52359,
@@ -1663,7 +1986,7 @@
         "total_cash": 488120992,
         "total_debt": 89921000,
         "trailing_pe": null,
-        "forward_pe": -21.34058,
+        "forward_pe": -23.297102,
         "peg_ratio": null,
         "earnings_date": "2026-11-04T00:00:00",
         "currency": "USD",
@@ -1677,7 +2000,7 @@
         "shares_outstanding": 250219316,
         "52_week_change": 0.068965554,
         "beta": 3.126,
-        "average_volume": 12709609,
+        "average_volume": 12786793,
         "short_risk_flags": [
           "short float 20.8%"
         ],
@@ -1688,6 +2011,13 @@
         "max_score": 100
       },
       "news": [
+        {
+          "title": "Why Did Redwire Stock Pop on Friday",
+          "publisher": "Motley Fool",
+          "published": "2026-11-27T19:09:46Z",
+          "link": "https://www.fool.com/investing/2026/11/27/why-did-redwire-stock-pop-on-friday/",
+          "summary": "After a 74% drop, Redwire stock could be a buy."
+        },
         {
           "title": "PL Expands European Defense Footprint: A New Growth Opportunity Ahead?",
           "publisher": "Zacks",
@@ -1750,13 +2080,6 @@
           "published": "2026-11-20T19:46:53Z",
           "link": "https://www.trefis.com/stock/rklb/articles/627244/what-could-send-rocket-lab-stock-higher/2026-11-20",
           "summary": "Today's big story: Will 2027 Be A 2022 Repeat For Stocks."
-        },
-        {
-          "title": "AST SpaceMobile vs. Redwire: Which Space Infrastructure Stock Is a Better Buy for 2027?",
-          "publisher": "Motley Fool",
-          "published": "2026-11-20T18:50:02Z",
-          "link": "https://www.fool.com/coverage/better-buy/2026/11/20/ast-spacemobile-vs-redwire-which-space-infrastructure-stock-is-a-better-buy-for-2027/",
-          "summary": "Redwire's revenue grew nearly 46% while AST SpaceMobile's sales soared over 670%, but one balance sheet gap separates these two space stocks sharply."
         }
       ],
       "warnings": [
@@ -1767,26 +2090,26 @@
       "directional_view": {
         "bias": "NO TRADE",
         "evidence": [
-          "Long score: 44.0/100; short score: 74.0/100.",
-          "Price 5.89 versus SMA20 7.30, SMA50 8.86, SMA200 10.72.",
-          "RSI14 35.4; SMA50 slope -1.48; volume ratio 0.94x.",
-          "Short execution plan: entry 5.36, stop 7.66, targets 0.76/0.01/0.01.",
+          "Long score: 44.0/100; short score: 70.7/100.",
+          "Price 6.43 versus SMA20 7.17, SMA50 8.76, SMA200 10.70.",
+          "RSI14 41.0; SMA50 slope -1.52; volume ratio 0.61x.",
+          "Short execution plan: entry 5.93, stop 7.52, targets 2.74/1.15/0.01.",
           "Short-specific risks: short float 20.8%"
         ],
         "bullish_score": 44.0,
-        "bearish_score": 74.0,
+        "bearish_score": 70.7,
         "bearish_strategy": "Bearish trend",
-        "bearish_trigger": 5.36,
-        "bearish_invalidation": 7.66,
-        "bearish_target_1": 0.76,
-        "bearish_target_2": 0.01,
+        "bearish_trigger": 5.93,
+        "bearish_invalidation": 7.52,
+        "bearish_target_1": 2.74,
+        "bearish_target_2": 1.15,
         "short_execution_allowed": true,
         "short_risk_flags": [
           "short float 20.8%"
         ]
       },
       "long_score": 44.0,
-      "short_score": 74.0,
+      "short_score": 70.7,
       "recommendation": "NO TRADE",
       "confidence": "MEDIUM",
       "selected_direction": "NONE",
@@ -1794,359 +2117,12 @@
       "short_strategy": "Bearish trend"
     },
     {
-      "ticker": "MSFT",
-      "as_of": "2026-11-25T00:00:00-05:00",
-      "status": "WATCH",
-      "score": 72.0,
-      "strategy": "Recovery/reclaim",
-      "price": 489.93,
-      "gates": [
-        {
-          "name": "Portfolio risk",
-          "status": "PASS",
-          "score": 0,
-          "max_score": 0,
-          "evidence": [
-            "Current drawdown: 0.0% of the portfolio.",
-            "Current open risk: $0.00; remaining open-risk capacity: $20.00.",
-            "Effective risk budget for a new trade: $5.00."
-          ]
-        },
-        {
-          "name": "Market regime",
-          "status": "FAIL",
-          "score": 0,
-          "max_score": 0,
-          "evidence": [
-            "Benchmark close 716.70; SMA50 757.85; SMA200 730.77.",
-            "Twenty-session change in SMA50: -8.98.",
-            "Benchmark is below SMA200; this blocks new longs but does not automatically block shorts."
-          ]
-        },
-        {
-          "name": "Technical (long)",
-          "status": "FAIL",
-          "score": 14.0,
-          "max_score": 30,
-          "evidence": [
-            "Close 489.93; SMA20 516.38; SMA50 518.64; SMA200 443.23.",
-            "RSI14 39.0; ATR14 16.86 (3.4%); volume ratio 0.87x.",
-            "63-day relative strength vs SPY: +4.0%.",
-            "Selected strategy: Recovery/reclaim.",
-            "Passed: Price remains above SMA200.",
-            "Failed: Price reclaimed SMA20 and SMA50.",
-            "Passed: A recent correction created a genuine reclaim.",
-            "Failed: RSI supports recovery.",
-            "Passed: Relative strength is positive.",
-            "Failed: Volume confirms the reclaim."
-          ]
-        },
-        {
-          "name": "Fundamentals (long)",
-          "status": "PASS",
-          "score": 23.0,
-          "max_score": 25,
-          "evidence": [
-            "Revenue Growth: 18.8%.",
-            "Earnings Growth: 32.3%.",
-            "Profit Margin: 41.2%.",
-            "Free Cash Flow: $2,994,125,056.",
-            "Debt-to-cash ratio: 2.08x."
-          ]
-        },
-        {
-          "name": "News/catalyst (long)",
-          "status": "PASS",
-          "score": 15.0,
-          "max_score": 15,
-          "evidence": [
-            "Reviewed 10 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2027-01-27 (43 business day(s))."
-          ]
-        },
-        {
-          "name": "Valuation (long)",
-          "status": "PASS",
-          "score": 10,
-          "max_score": 10,
-          "evidence": [
-            "Trailing P/E: 25.6x.",
-            "Forward P/E: 20.2x.",
-            "PEG ratio: 1.43."
-          ]
-        },
-        {
-          "name": "Liquidity/execution",
-          "status": "PASS",
-          "score": 10,
-          "max_score": 10,
-          "evidence": [
-            "20-day average dollar volume: $15,861,884,042."
-          ]
-        },
-        {
-          "name": "Risk/setup (long)",
-          "status": "FAIL",
-          "score": 0,
-          "max_score": 10,
-          "evidence": [
-            "No valid entry and stop plan could be calculated."
-          ]
-        },
-        {
-          "name": "Technical (short)",
-          "status": "FAIL",
-          "score": 17.0,
-          "max_score": 30,
-          "evidence": [
-            "Close 489.93; SMA20 516.38; SMA50 518.64; SMA200 443.23.",
-            "RSI14 39.0; ATR14 16.86 (3.4%); volume ratio 0.87x.",
-            "63-day relative strength vs SPY: +4.0%.",
-            "Selected strategy: Failed reclaim.",
-            "Failed: Price is below SMA200.",
-            "Passed: Price lost SMA20 and SMA50.",
-            "Passed: A recent rally created a failed reclaim.",
-            "Passed: RSI confirms weakness.",
-            "Failed: Relative strength is negative.",
-            "Failed: Volume confirms the failed reclaim."
-          ]
-        },
-        {
-          "name": "Fundamentals (short)",
-          "status": "FAIL",
-          "score": 2.0,
-          "max_score": 25,
-          "evidence": [
-            "Revenue Growth: 18.8%.",
-            "Earnings Growth: 32.3%.",
-            "Profit Margin: 41.2%.",
-            "Free Cash Flow: $2,994,125,056.",
-            "Debt-to-cash ratio: 2.08x."
-          ]
-        },
-        {
-          "name": "News/catalyst (short)",
-          "status": "PASS",
-          "score": 15.0,
-          "max_score": 15,
-          "evidence": [
-            "Reviewed 10 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2027-01-27 (43 business day(s))."
-          ]
-        },
-        {
-          "name": "Valuation (short)",
-          "status": "FAIL",
-          "score": 2,
-          "max_score": 10,
-          "evidence": [
-            "Trailing P/E: 25.6x.",
-            "Forward P/E: 20.2x.",
-            "PEG ratio: 1.43."
-          ]
-        },
-        {
-          "name": "Liquidity/execution (short)",
-          "status": "PASS",
-          "score": 5.0,
-          "max_score": 5,
-          "evidence": [
-            "20-day average dollar volume: $15,861,884,042."
-          ]
-        },
-        {
-          "name": "Short squeeze risk",
-          "status": "PASS",
-          "score": 5.0,
-          "max_score": 5,
-          "evidence": [
-            "No major short-interest warning was detected from available fields."
-          ]
-        },
-        {
-          "name": "Risk/setup (short)",
-          "status": "PASS",
-          "score": 10,
-          "max_score": 10,
-          "evidence": [
-            "SHORT entry 476.55; stop 506.08; risk/share 29.54.",
-            "Size 0.169 share(s); notional $80.54; planned risk $4.99.",
-            "Target 1 417.47; Target 2 387.93; Target 3 358.40; reward/risk 2.0:1."
-          ]
-        }
-      ],
-      "trade_plan": null,
-      "thesis": [
-        "Neither direction cleared enough independent confirmation to justify a new position."
-      ],
-      "bear_case": [
-        "The model prefers patience when the directional scores are too close, a hard gate fails, or risk/reward cannot be established cleanly.",
-        "Long blockers: Technical (long), Risk/setup (long).",
-        "Short blockers: Technical (short), Fundamentals (short), Valuation (short)."
-      ],
-      "invalidation": [
-        "Exit when price reaches the model stop or the directional thesis is structurally invalidated.",
-        "Re-score after earnings, material guidance, a major filing, or a high-impact headline.",
-        "Do not average down after the invalidation level is breached."
-      ],
-      "facts": {
-        "close": 489.92999267578125,
-        "atr14": 16.85988384619846,
-        "rsi14": 38.994147254337,
-        "sma20": 516.3777145385742,
-        "sma50": 518.6443994140625,
-        "sma200": 443.2291432189941,
-        "prior_high20": 558.0719712336797,
-        "prior_low20": 481.0299987792969,
-        "low10": 477.3900146484375,
-        "volume_ratio": 0.8726688446835669,
-        "rs63": 0.040157596587356514,
-        "latest_high": 493.44000244140625,
-        "latest_low": 477.3900146484375,
-        "sma50_slope20": 8.469331665039078,
-        "company_name": "Microsoft Corporation",
-        "sector": "Technology",
-        "industry": "Software - Infrastructure",
-        "market_cap": 3638315450368,
-        "revenue_growth": 0.188,
-        "earnings_growth": 0.323,
-        "profit_margin": 0.41169998,
-        "free_cash_flow": 2994125056,
-        "total_cash": 64509001728,
-        "total_debt": 133930999808,
-        "trailing_pe": 25.57046,
-        "forward_pe": 20.241896,
-        "peg_ratio": 1.4334,
-        "earnings_date": "2027-01-27T00:00:00",
-        "currency": "USD",
-        "website": "https://www.microsoft.com",
-        "business_summary": "Microsoft Corporation, a technology company, develops and supports a portfolio of technology solutions for individuals and businesses worldwide. Its products include operating systems, server applications, business solution applications, software development tools, desktop and server management tools, and video games; and devices, such as PCs, tablets, gaming and entertainment consoles, other intelligent devices, and related accessories. The company's Productivity and Business Processes segment offers Microsoft 365 Commercial, Enterprise Mobility + Security, Power BI, Exchange, SharePoint, Microsoft Teams, Microsoft 365 Security and Compliance, Microsoft 365 Copilot, and Windows Commercial on-premises and Office licensed on-premises. This segment also provides Microsoft 365 Consumer products and cloud services; LinkedIn, including talent solutions, marketing solutions, subscriptions, and sales solutions; Dynamics 365, a set of cloud-based applications; and on-premises ERP and CRM applications. Its Intelligent Cloud segment offers server products and cloud services; cloud and AI consumption-based services, GitHub cloud services, health and life sciences cloud services, as well as virtual desktop offerings, and other cloud services; SQL Server, Windows Server, Visual Studio, System Center, and related client access licenses; and enterprise support services, industry solutions, Microsoft partner network, and learning experience. The company's More Personal Computing segment provides Windows OEM licensing and devices comprising Surface and PC accessories; XBOX hardware, and XBOX first- and third-party content and services; XBOX Game Pass and other subscriptions; XBOX Cloud Gaming, advertising, and other cloud services; and search advertising consisting of Bing, Copilot, Microsoft News, Microsoft Edge, and third-party affiliates. It sells its products through partners and retail networks. The company was founded in 1975 and is headquartered in Redmond, Washington.",
-        "short_percent_of_float": 0.009,
-        "short_ratio": 2.59,
-        "shares_short": 66905913,
-        "shares_short_prior_month": 65674557,
-        "float_shares": 7415426570,
-        "shares_outstanding": 7426194552,
-        "52_week_change": -0.0042275786,
-        "beta": 1.045,
-        "average_volume": 24207951,
-        "short_risk_flags": [],
-        "long_hard_pass": false,
-        "short_hard_pass": false,
-        "long_qualified": false,
-        "short_qualified": false,
-        "max_score": 100
-      },
-      "news": [
-        {
-          "title": "5 Best Quantum Computing Stocks To Buy for 2027",
-          "publisher": "Insider Monkey",
-          "published": "2026-11-27T03:21:49Z",
-          "link": "https://finance.yahoo.com/technology/articles/5-best-quantum-computing-stocks-032149616.html",
-          "summary": "Quantum computing is entering a consequential period as technology companies work to turn experimental processors into systems capable of solving commercially relevant problems. The competition increasingly extends beyond building more qubits to improving their reliability, reducing error-correction requirements, and integrating quantum hardware with conventional computing infrastructure. The industry’s commercial opportunity is also beginning to take […]"
-        },
-        {
-          "title": "5 Best Tech Stocks to Buy for 2027 According to Hedge Funds",
-          "publisher": "Insider Monkey",
-          "published": "2026-11-27T03:08:56Z",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/5-best-tech-stocks-buy-030856400.html",
-          "summary": "Tech stocks aren’t lacking in growth stories for 2027. The problem is that smart money is increasingly selective about which companies it’s willing to pay a premium for. AI is still the big story, but skepticism is growing about whether the money invested will deliver the promised returns. You could see that shift very clearly […]"
-        },
-        {
-          "title": "Tech Stock Sell-Off: Down 13%, Is Microsoft a Buy Now?",
-          "publisher": "Motley Fool",
-          "published": "2026-11-26T22:20:02Z",
-          "link": "https://www.fool.com/investing/2026/11/26/tech-stock-sell-off-down-13-is-microsoft-a-buy-now/",
-          "summary": "While other big tech names are burning through cash on AI, Microsoft is paying for its build-out and still has money left over."
-        },
-        {
-          "title": "Steve Cohen’s 5 Biggest Stock Bets for 2027",
-          "publisher": "Insider Monkey",
-          "published": "2026-11-26T22:06:14Z",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/steve-cohen-5-biggest-stock-220614898.html",
-          "summary": "Steve Cohen’s Point72 Asset Management filed its third-quarter 13F with the SEC on November 16, reporting about $90.0 billion in holdings at September 30, including options, according to 13f.info. That snapshot predates the Nasdaq Composite’s 5.5% drop on November 5, its biggest one-day fall in 19 months, which left the index more than 10% below […]"
-        },
-        {
-          "title": "Jensen Huang’s Return Doesn’t Make Nvidia Stock (NVDA) a Buy",
-          "publisher": "TipRanks",
-          "published": "2026-11-26T21:22:00Z",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/jensen-huang-return-doesn-t-212200380.html",
-          "summary": "Jensen Huang’s return as CEO doesn’t make Nvidia (NVDA) stock a Buy, despite the market’s positive reaction. Shares of the leading semiconductor manufacturer jumped roughly 31.5% on November 23 after Nvidia’s board unanimously reinstated Huang with immediate effect. Yet the stock remains down roughly 31% over the past month following a steep sell-off. Although Nvidia enjoys a long runway for growth, I believe investors should closely watch the regulatory scrutiny still surrounding the company. I"
-        },
-        {
-          "title": "Microsoft Stocks Slip 1.25% While Nadella Backs Cheaper In-House AI Models",
-          "publisher": "GuruFocus.com",
-          "published": "2026-11-26T18:42:00Z",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/microsoft-stocks-slip-1-25-184200035.html",
-          "summary": "Microsoft's CEO said trailing frontier labs by three to six months is fine if Microsoft spends a fraction of their compute."
-        },
-        {
-          "title": "Can NICE (TASE:NICE) Support A Reasonable Price On Earnings?",
-          "publisher": "Simply Wall St.",
-          "published": "2026-11-26T18:14:20Z",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/nice-tase-nice-support-reasonable-181420159.html",
-          "summary": "NICE has seen its share price fall sharply over recent years, yet fresh product launches and partnerships keep attention on what investors are really paying for. The live question is whether the current US$303.00 price tag is properly grounded in the company’s earnings power. Over the past 5 years the stock has fallen 67.4%, which puts the spotlight squarely on whether today’s earnings can support even a partial rebuild in investor confidence. Recent launches around NICE Cognigy and deeper..."
-        },
-        {
-          "title": "David Tepper, Cathie Wood and 4 Other Famous Investors Own Nvidia. Here’s Who Bought Recently",
-          "publisher": "TIKR",
-          "published": "2026-11-26T18:12:50Z",
-          "link": "https://www.tikr.com/blog/david-tepper-cathie-wood-and-4-other-famous-investors-own-nvidia-heres-who-bought-recently?ref=yahoofinance&tlnk=yf-261126-8957xqr5",
-          "summary": "Key TakeawaysSix famous investors held Nvidia at Sept. 30."
-        },
-        {
-          "title": "Stanley Druckenmiller, Bill Ackman and 7 Other Famous Investors Own Amazon. Here’s Who Bought and Sold Recently",
-          "publisher": "TIKR",
-          "published": "2026-11-26T18:11:13Z",
-          "link": "https://www.tikr.com/blog/stanley-druckenmiller-bill-ackman-and-7-other-famous-investors-own-amazon-heres-who-bought-and-sold-recently?ref=yahoofinance&tlnk=yf-261126-2mffj2wm",
-          "summary": "Key TakeawaysNine famous investors held Amazon at Sept. 30, per their latest 13Fs, and Stanley Druckenmiller’s family office added 43% to its stake in the quarter."
-        },
-        {
-          "title": "What Does Pinterest (PINS) Pay Overhaul Mean For Its Takeover Talk And Ad Push?",
-          "publisher": "Simply Wall St.",
-          "published": "2026-11-26T17:14:47Z",
-          "link": "https://finance.yahoo.com/media-advertising/articles/does-pinterest-pins-pay-overhaul-171447901.html",
-          "summary": "Pinterest (NYSE:PINS) reworked executive compensation in November 2026, adding fresh change-in-control terms that investors read as potential takeover defenses. The company expanded its collaboration with Microsoft Advertising, bringing more visual search driven shopping ads across Pinterest's surfaces. Management highlighted the role of AI and first party data in powering the new shopping ad formats across both platforms. The executive pay reset and Microsoft Advertising expansion only..."
-        }
-      ],
-      "warnings": [
-        "Research model only; broker quotes, borrow availability, option liquidity, and order rules control actual execution.",
-        "The short engine scores stock-specific weakness but cannot confirm real-time locate/borrow availability through the current data adapter.",
-        "Headline classification is a triage tool; read the primary filing or article before committing capital."
-      ],
-      "directional_view": {
-        "bias": "NO TRADE",
-        "evidence": [
-          "Long score: 72.0/100; short score: 56.0/100.",
-          "Price 489.93 versus SMA20 516.38, SMA50 518.64, SMA200 443.23.",
-          "RSI14 39.0; SMA50 slope +8.47; volume ratio 0.87x.",
-          "Short execution plan: entry 476.55, stop 506.08, targets 417.47/387.93/358.40."
-        ],
-        "bullish_score": 72.0,
-        "bearish_score": 56.0,
-        "bearish_strategy": "Failed reclaim",
-        "bearish_trigger": 476.55,
-        "bearish_invalidation": 506.08,
-        "bearish_target_1": 417.47,
-        "bearish_target_2": 387.93,
-        "short_execution_allowed": true,
-        "short_risk_flags": []
-      },
-      "long_score": 72.0,
-      "short_score": 56.0,
-      "recommendation": "NO TRADE",
-      "confidence": "MEDIUM",
-      "selected_direction": "NONE",
-      "long_strategy": "Recovery/reclaim",
-      "short_strategy": "Failed reclaim"
-    },
-    {
       "ticker": "NVDA",
-      "as_of": "2026-11-25T00:00:00-05:00",
+      "as_of": "2026-11-27T00:00:00-05:00",
       "status": "WATCH",
-      "score": 69.0,
-      "strategy": "Recovery/reclaim",
-      "price": 149.3,
+      "score": 63.7,
+      "strategy": "Bearish trend",
+      "price": 150.49,
       "gates": [
         {
           "name": "Portfolio risk",
@@ -2165,27 +2141,27 @@
           "score": 0,
           "max_score": 0,
           "evidence": [
-            "Benchmark close 716.70; SMA50 757.85; SMA200 730.77.",
-            "Twenty-session change in SMA50: -8.98.",
+            "Benchmark close 728.32; SMA50 757.20; SMA200 730.98.",
+            "Twenty-session change in SMA50: -9.67.",
             "Benchmark is below SMA200; this blocks new longs but does not automatically block shorts."
           ]
         },
         {
           "name": "Technical (long)",
           "status": "FAIL",
-          "score": 9.0,
+          "score": 5.0,
           "max_score": 30,
           "evidence": [
-            "Close 149.30; SMA20 172.48; SMA50 203.65; SMA200 202.62.",
-            "RSI14 37.5; ATR14 13.38 (9.0%); volume ratio 1.04x.",
-            "63-day relative strength vs SPY: -27.6%.",
+            "Close 150.49; SMA20 169.32; SMA50 202.28; SMA200 202.43.",
+            "RSI14 38.1; ATR14 12.90 (8.6%); volume ratio 0.52x.",
+            "63-day relative strength vs SPY: -25.6%.",
             "Selected strategy: Recovery/reclaim.",
             "Failed: Price remains above SMA200.",
             "Failed: Price reclaimed SMA20 and SMA50.",
             "Passed: A recent correction created a genuine reclaim.",
             "Failed: RSI supports recovery.",
             "Failed: Relative strength is positive.",
-            "Passed: Volume confirms the reclaim."
+            "Failed: Volume confirms the reclaim."
           ]
         },
         {
@@ -2203,11 +2179,12 @@
         },
         {
           "name": "News/catalyst (long)",
-          "status": "PASS",
-          "score": 15.0,
+          "status": "CAUTION",
+          "score": 12.0,
           "max_score": 15,
           "evidence": [
-            "Reviewed 10 headline(s) published in the last seven days."
+            "Reviewed 10 headline(s) published in the last seven days.",
+            "Negative headline against long thesis: Chip stocks lead a Black Friday rally, but Nvidia misses out: AlphaCheck"
           ]
         },
         {
@@ -2216,8 +2193,8 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "Trailing P/E: 16.0x.",
-            "Forward P/E: 9.0x.",
+            "Trailing P/E: 16.2x.",
+            "Forward P/E: 9.1x.",
             "PEG ratio: 0.15."
           ]
         },
@@ -2227,7 +2204,7 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "20-day average dollar volume: $57,494,376,350."
+            "20-day average dollar volume: $58,063,464,484."
           ]
         },
         {
@@ -2242,19 +2219,19 @@
         {
           "name": "Technical (short)",
           "status": "PASS",
-          "score": 25.0,
+          "score": 26.7,
           "max_score": 30,
           "evidence": [
-            "Close 149.30; SMA20 172.48; SMA50 203.65; SMA200 202.62.",
-            "RSI14 37.5; ATR14 13.38 (9.0%); volume ratio 1.04x.",
-            "63-day relative strength vs SPY: -27.6%.",
-            "Selected strategy: Failed reclaim.",
-            "Passed: Price is below SMA200.",
-            "Passed: Price lost SMA20 and SMA50.",
-            "Failed: A recent rally created a failed reclaim.",
-            "Passed: RSI confirms weakness.",
-            "Passed: Relative strength is negative.",
-            "Passed: Volume confirms the failed reclaim."
+            "Close 150.49; SMA20 169.32; SMA50 202.28; SMA200 202.43.",
+            "RSI14 38.1; ATR14 12.90 (8.6%); volume ratio 0.52x.",
+            "63-day relative strength vs SPY: -25.6%.",
+            "Selected strategy: Bearish trend.",
+            "Passed: Price < SMA20 < SMA50.",
+            "Passed: SMA50 is below SMA200.",
+            "Passed: SMA50 is falling.",
+            "Passed: RSI is below 50.",
+            "Failed: Latest close weakened.",
+            "Passed: 63-day relative strength trails SPY."
           ]
         },
         {
@@ -2276,7 +2253,8 @@
           "score": 15.0,
           "max_score": 15,
           "evidence": [
-            "Reviewed 10 headline(s) published in the last seven days."
+            "Reviewed 10 headline(s) published in the last seven days.",
+            "Negative headline: Chip stocks lead a Black Friday rally, but Nvidia misses out: AlphaCheck"
           ]
         },
         {
@@ -2285,8 +2263,8 @@
           "score": 2,
           "max_score": 10,
           "evidence": [
-            "Trailing P/E: 16.0x.",
-            "Forward P/E: 9.0x.",
+            "Trailing P/E: 16.2x.",
+            "Forward P/E: 9.1x.",
             "PEG ratio: 0.15."
           ]
         },
@@ -2296,7 +2274,7 @@
           "score": 5.0,
           "max_score": 5,
           "evidence": [
-            "20-day average dollar volume: $57,494,376,350."
+            "20-day average dollar volume: $58,063,464,484."
           ]
         },
         {
@@ -2314,9 +2292,9 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "SHORT entry 140.50; stop 160.41; risk/share 19.91.",
-            "Size 0.251 share(s); notional $35.27; planned risk $5.00.",
-            "Target 1 100.69; Target 2 80.78; Target 3 60.88; reward/risk 2.0:1."
+            "SHORT entry 144.75; stop 175.77; risk/share 31.02.",
+            "Size 0.161 share(s); notional $23.30; planned risk $4.99.",
+            "Target 1 82.70; Target 2 51.68; Target 3 20.65; reward/risk 2.0:1."
           ]
         }
       ],
@@ -2335,32 +2313,32 @@
         "Do not average down after the invalidation level is breached."
       ],
       "facts": {
-        "close": 149.3000030517578,
-        "atr14": 13.38257158432599,
-        "rsi14": 37.45265939388151,
-        "sma20": 172.4775016784668,
-        "sma50": 203.65440155029296,
-        "sma200": 202.62062858581544,
-        "prior_high20": 219.99000549316406,
+        "close": 150.49000549316406,
+        "atr14": 12.89738763812504,
+        "rsi14": 38.118588521141234,
+        "sma20": 169.31900177001953,
+        "sma50": 202.27740173339845,
+        "sma200": 202.4250468444824,
+        "prior_high20": 215.3300018310547,
         "prior_low20": 124.5,
         "low10": 124.5,
-        "volume_ratio": 1.0444237648895396,
-        "rs63": -0.276144631990064,
-        "latest_high": 150.3699951171875,
-        "latest_low": 141.1699981689453,
-        "sma50_slope20": -18.342704467773444,
+        "volume_ratio": 0.5212261793707684,
+        "rs63": -0.2564969555060378,
+        "latest_high": 151.97999572753906,
+        "latest_low": 145.38999938964844,
+        "sma50_slope20": -19.646567687988266,
         "company_name": "NVIDIA Corporation",
         "sector": "Technology",
         "industry": "Semiconductors",
-        "market_cap": 3605147156480,
+        "market_cap": 3633882071040,
         "revenue_growth": 1.032,
         "earnings_growth": 1.077,
         "profit_margin": 0.62535,
         "free_cash_flow": 99241377792,
         "total_cash": 97731002368,
         "total_debt": 38148001792,
-        "trailing_pe": 16.03652,
-        "forward_pe": 8.991117,
+        "trailing_pe": 16.16434,
+        "forward_pe": 9.06278,
         "peg_ratio": 0.1519,
         "earnings_date": "2026-11-17T00:00:00",
         "currency": "USD",
@@ -2374,7 +2352,7 @@
         "shares_outstanding": 24147000000,
         "52_week_change": -0.15649718,
         "beta": 2.247,
-        "average_volume": 187728343,
+        "average_volume": 185963558,
         "short_risk_flags": [],
         "long_hard_pass": false,
         "short_hard_pass": true,
@@ -2384,74 +2362,74 @@
       },
       "news": [
         {
-          "title": "Will Jensen Huang's second act as Nvidia CEO be different?",
+          "title": "Stocks snap from a $6 trillion washout to a $3.5 trillion surge as Nvidia, Micron, and SpaceX bounce back",
+          "publisher": "Yahoo Finance",
+          "published": "2026-11-27T15:12:18Z",
+          "link": "https://finance.yahoo.com/markets/article/stocks-snap-from-a-6-trillion-washout-to-a-3-trillion-surge-as-nvidia-micron-and-spacex-bounce-back-151218930.html",
+          "summary": "Wall Street is no longer running for the exits as chipmakers pull stocks off Wednesday's lows."
+        },
+        {
+          "title": "Why this portfolio manager says investors should 'avoid the neoclouds'",
           "publisher": "Yahoo Finance Video",
-          "published": "2026-11-26T14:00:00Z",
-          "link": "https://finance.yahoo.com/video/jensen-huangs-second-act-nvidia-140000599.html",
-          "summary": "In the Loop host Ejaaz Ahamadeen takes a look at the Nvidia (NVDA) leadership saga as Jensen Huang steps back into his CEO role. Ahamadeen explores how Huang's leadership style and strategic vision could evolve in his second act, and why the outlook for the AI chip giant remains bright."
+          "published": "2026-11-27T16:00:03Z",
+          "link": "https://finance.yahoo.com/video/why-this-portfolio-manager-says-investors-should-avoid-the-neoclouds-160003179.html",
+          "summary": "Washington Crossing Advisors senior portfolio manager Chad Morganlander chats with Yahoo Finance Executive Editor Brian Sozzi about how investors should be approaching dip buying, the AI trade, and more."
         },
         {
-          "title": "Jensen Huang 'absolutely could be fired again,' legal expert says",
+          "title": "PacSun CEO talks brand resurgence, holiday shopping season boom",
           "publisher": "Yahoo Finance Video",
-          "published": "2026-11-26T13:00:00Z",
-          "link": "https://finance.yahoo.com/video/jensen-huang-absolutely-could-fired-130000374.html",
-          "summary": "Gil Soffer of Katten Soffer speaks with Yahoo Finance Executive Editor Brian Sozzi about how the investigation into Nvidia CEO Jensen Huang could take, whether he could shut it down, and the worst-case outcomes he faces."
+          "published": "2026-11-27T15:43:16Z",
+          "link": "https://finance.yahoo.com/video/pacsun-ceo-talks-brand-resurgence-holiday-shopping-season-boom-154316985.html",
+          "summary": "Yahoo Finance Executive Editor Brian Sozzi is joined on Sozzi Unleashed by PacSun CEO Brianne Olsen to discuss the brand's resurgence and what to expect from the holiday shopping season."
         },
         {
-          "title": "5 things I'm thankful for in AI",
+          "title": "Can AI earn a spot in the creative world? Ja Rule think so.",
           "publisher": "Yahoo Finance Video",
-          "published": "2026-11-26T12:00:00Z",
-          "link": "https://finance.yahoo.com/video/5-things-im-thankful-ai-120000522.html",
-          "summary": "Happy Thanksgiving. Host Ejaaz Ahamadeen counts five things he's grateful for in AI: Jensen Huang back at Nvidia, open-source AI back on the table, Google breaking up the two-horse race, Anthropic's record-breaking IPO and how fast AI is getting smarter and cheaper. Then he gets to the part that worries him."
+          "published": "2026-11-27T15:28:28Z",
+          "link": "https://finance.yahoo.com/video/can-ai-earn-a-spot-in-the-creative-world-ja-rule-think-so-152828382.html",
+          "summary": "Can AI ultimately be used for good, especially for artists? Yahoo Finance Executive Editor Brian Sozzi sits down with musician Ja Rule, who describes his positive experiences with AI that are helping him rethink and reimagine his own work."
         },
         {
-          "title": "5 Best Quantum Computing Stocks To Buy for 2027",
-          "publisher": "Insider Monkey",
-          "published": "2026-11-27T03:21:49Z",
-          "link": "https://finance.yahoo.com/technology/articles/5-best-quantum-computing-stocks-032149616.html",
-          "summary": "Quantum computing is entering a consequential period as technology companies work to turn experimental processors into systems capable of solving commercially relevant problems. The competition increasingly extends beyond building more qubits to improving their reliability, reducing error-correction requirements, and integrating quantum hardware with conventional computing infrastructure. The industry’s commercial opportunity is also beginning to take […]"
+          "title": "All these Nvidia headlines are just noise: Why you should keep watching AI spending",
+          "publisher": "Yahoo Finance Video",
+          "published": "2026-11-27T15:22:36Z",
+          "link": "https://finance.yahoo.com/video/all-these-nvidia-headlines-are-just-noise-why-you-should-keep-watching-ai-spending-152236102.html",
+          "summary": "Yahoo Finance Executive Editor Brian Sozzi shares a few thoughts on the latest flurry of Nvidia (NVDA)-related headlines."
         },
         {
-          "title": "Nvidia Is Down 35% From Its All-Time High, Tied for Its Biggest Drop Since the AI Boom Began. Is It a Buy?",
-          "publisher": "Motley Fool",
-          "published": "2026-11-27T03:20:02Z",
-          "link": "https://www.fool.com/investing/2026/11/26/nvidia-is-down-35-from-its-all-time-high-tied-for-its-biggest-drop-since-the-ai-boom-began-is-it-a-buy/",
-          "summary": "Nvidia is a bargain buy right now."
+          "title": "Nvidia halts sales to SE Asia, SpaceX surges on Musk's share promise",
+          "publisher": "Yahoo Finance Video",
+          "published": "2026-11-27T15:10:01Z",
+          "link": "https://finance.yahoo.com/video/nvidia-halts-sales-to-se-asia-spacex-surges-on-musks-share-promise-151001061.html",
+          "summary": "Nvidia has halted sales to Southeast Asia following the U.S. government's decision to tighten restrictions on China. SpaceX shares are popping after Elon Musk promised two shares of the company to every child in America with an active Trump Account. Julie Hyman and Jake Conley are joined by Washington Crossing Advisors Senior Portfolio Manager Chad Morganlander to discuss."
         },
         {
-          "title": "5 Best Tech Stocks to Buy for 2027 According to Hedge Funds",
-          "publisher": "Insider Monkey",
-          "published": "2026-11-27T03:08:56Z",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/5-best-tech-stocks-buy-030856400.html",
-          "summary": "Tech stocks aren’t lacking in growth stories for 2027. The problem is that smart money is increasingly selective about which companies it’s willing to pay a premium for. AI is still the big story, but skepticism is growing about whether the money invested will deliver the promised returns. You could see that shift very clearly […]"
+          "title": "SpaceX, Tesla have had a bumpy 2026 thus far: What to know",
+          "publisher": "Yahoo Finance Video",
+          "published": "2026-11-27T14:58:49Z",
+          "link": "https://finance.yahoo.com/video/spacex-tesla-have-had-a-bumpy-2026-thus-far-what-to-know-145849441.html",
+          "summary": "Yahoo Finance Executive Editor Brian Sozzi focuses on Elon Musk's two public companies — SpaceX (SPCX) and Tesla (TSLA) — and their respective stock performances in 2026. While getting a slight boost at the time of this video's posting, SpaceX is still trading below its IPO price of $135 per share."
         },
         {
-          "title": "Stocks Are Plunging Right Now. Here's What History Says Investors Should Do.",
-          "publisher": "Motley Fool",
-          "published": "2026-11-27T02:20:00Z",
-          "link": "https://www.fool.com/investing/2026/11/26/stocks-are-plunging-right-now-heres-what-history-s/",
-          "summary": "Stocks briefly swung into correction territory in November; here's why staying invested may be a smart choice."
+          "title": "Chip stocks lead a Black Friday rally, but Nvidia misses out: AlphaCheck",
+          "publisher": "Yahoo Finance",
+          "published": "2026-11-27T14:57:27Z",
+          "link": "https://finance.yahoo.com/markets/article/chip-stocks-lead-a-black-friday-rally-but-nvidia-misses-out-alphacheck-145727185.html",
+          "summary": "Stocks rose on Friday as the AI trade rebounded amid a low-volume trading day."
         },
         {
-          "title": "Asian Markets Mostly Higher as Sentiment Stabilizes",
-          "publisher": "The Wall Street Journal",
-          "published": "2026-11-27T02:13:00Z",
-          "link": "https://www.wsj.com/finance/asian-markets-mostly-higher-as-sentiment-stabilizes-8f998c4d?siteid=yhoof2&yptr=yahoo",
-          "summary": "Asian markets tracked gains in U.S. stock futures as sentiment around artificial intelligence stabilized."
+          "title": "How Leopold Aschenbrenner made a $225 million bet on AI infrastructure",
+          "publisher": "Yahoo Finance Video",
+          "published": "2026-11-27T14:30:00Z",
+          "link": "https://finance.yahoo.com/video/leopold-aschenbrenner-made-225-million-143000764.html",
+          "summary": "In the Loop Host Ejaaz Ahamadeen recounts how Situational Awareness founder Leopold Aschenbrenner received his initial investments of up to $225 million and bet big on the AI infrastructure build-out, giving a timeline of his firm's initial success and growth."
         },
         {
-          "title": "The Savvy Showmanship That Helps Jensen Huang Always Come Out on Top",
-          "publisher": "The Wall Street Journal",
-          "published": "2026-11-27T02:00:00Z",
-          "link": "https://www.wsj.com/business/jensen-huang-nvidia-ping-pong-rise-and-fall-bfd13000?siteid=yhoof2&yptr=yahoo",
-          "summary": "As a longtime friend of the Nvidia CEO puts it, “Jensen will always pull a rabbit out of a hat.”"
-        },
-        {
-          "title": "Dow Jones Futures Rise; Look For This Bullish Market Signal On Black Friday",
-          "publisher": "Investor's Business Daily",
-          "published": "2026-11-27T01:34:35Z",
-          "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-wild-ride-nasdaq-nvidia-slash-losses-anthropic-higher/?src=A00220&yptr=yahoo",
-          "summary": "Futures rose on Thanksgiving after a wild market session, with the Nasdaq rallying off lows and Anthropic reversing higher."
+          "title": "Nvidia freezing chip orders to four Southeast Asian countries",
+          "publisher": "Yahoo Finance Video",
+          "published": "2026-11-27T14:00:11Z",
+          "link": "https://finance.yahoo.com/video/nvidia-freezing-chip-orders-to-four-southeast-asian-countries-140011925.html",
+          "summary": "Nvidia (NVDA) has reportedly halted chip orders to Southeast Asia, according to the Financial Times, as US regulators aim to tighten export controls to China.\n\nThe 8:30 Hosts Julie Hyman and Jake Conley are joined by Washington Crossing Advisors senior portfolio manager Chad Morganlander to discuss this headline following the chipmaking company's recent scandals."
         }
       ],
       "warnings": [
@@ -2462,36 +2440,36 @@
       "directional_view": {
         "bias": "NO TRADE",
         "evidence": [
-          "Long score: 69.0/100; short score: 62.0/100.",
-          "Price 149.30 versus SMA20 172.48, SMA50 203.65, SMA200 202.62.",
-          "RSI14 37.5; SMA50 slope -18.34; volume ratio 1.04x.",
-          "Short execution plan: entry 140.50, stop 160.41, targets 100.69/80.78/60.88."
+          "Long score: 62.0/100; short score: 63.7/100.",
+          "Price 150.49 versus SMA20 169.32, SMA50 202.28, SMA200 202.43.",
+          "RSI14 38.1; SMA50 slope -19.65; volume ratio 0.52x.",
+          "Short execution plan: entry 144.75, stop 175.77, targets 82.70/51.68/20.65."
         ],
-        "bullish_score": 69.0,
-        "bearish_score": 62.0,
-        "bearish_strategy": "Failed reclaim",
-        "bearish_trigger": 140.5,
-        "bearish_invalidation": 160.41,
-        "bearish_target_1": 100.69,
-        "bearish_target_2": 80.78,
+        "bullish_score": 62.0,
+        "bearish_score": 63.7,
+        "bearish_strategy": "Bearish trend",
+        "bearish_trigger": 144.75,
+        "bearish_invalidation": 175.77,
+        "bearish_target_1": 82.7,
+        "bearish_target_2": 51.68,
         "short_execution_allowed": true,
         "short_risk_flags": []
       },
-      "long_score": 69.0,
-      "short_score": 62.0,
+      "long_score": 62.0,
+      "short_score": 63.7,
       "recommendation": "NO TRADE",
       "confidence": "MEDIUM",
       "selected_direction": "NONE",
       "long_strategy": "Recovery/reclaim",
-      "short_strategy": "Failed reclaim"
+      "short_strategy": "Bearish trend"
     },
     {
       "ticker": "JPM",
-      "as_of": "2026-11-25T00:00:00-05:00",
+      "as_of": "2026-11-27T00:00:00-05:00",
       "status": "WATCH",
-      "score": 67.0,
+      "score": 63.0,
       "strategy": "Failed reclaim",
-      "price": 316.74,
+      "price": 322.96,
       "gates": [
         {
           "name": "Portfolio risk",
@@ -2510,27 +2488,27 @@
           "score": 0,
           "max_score": 0,
           "evidence": [
-            "Benchmark close 716.70; SMA50 757.85; SMA200 730.77.",
-            "Twenty-session change in SMA50: -8.98.",
+            "Benchmark close 728.32; SMA50 757.20; SMA200 730.98.",
+            "Twenty-session change in SMA50: -9.67.",
             "Benchmark is below SMA200; this blocks new longs but does not automatically block shorts."
           ]
         },
         {
           "name": "Technical (long)",
           "status": "FAIL",
-          "score": 9.0,
+          "score": 5.0,
           "max_score": 30,
           "evidence": [
-            "Close 316.74; SMA20 333.66; SMA50 334.89; SMA200 322.89.",
-            "RSI14 37.1; ATR14 8.02 (2.5%); volume ratio 1.03x.",
-            "63-day relative strength vs SPY: -3.3%.",
+            "Close 322.96; SMA20 332.63; SMA50 334.40; SMA200 322.97.",
+            "RSI14 43.4; ATR14 8.03 (2.5%); volume ratio 0.49x.",
+            "63-day relative strength vs SPY: -4.1%.",
             "Selected strategy: Recovery/reclaim.",
             "Failed: Price remains above SMA200.",
             "Failed: Price reclaimed SMA20 and SMA50.",
             "Passed: A recent correction created a genuine reclaim.",
             "Failed: RSI supports recovery.",
             "Failed: Relative strength is positive.",
-            "Passed: Volume confirms the reclaim."
+            "Failed: Volume confirms the reclaim."
           ]
         },
         {
@@ -2552,7 +2530,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 10 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2027-01-14 (34 business day(s))."
+            "Next reported earnings date: 2027-01-14 (33 business day(s))."
           ]
         },
         {
@@ -2561,8 +2539,8 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "Trailing P/E: 13.3x.",
-            "Forward P/E: 12.4x.",
+            "Trailing P/E: 13.5x.",
+            "Forward P/E: 12.6x.",
             "PEG ratio: 1.32."
           ]
         },
@@ -2572,7 +2550,7 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "20-day average dollar volume: $2,454,347,432."
+            "20-day average dollar volume: $2,411,766,438."
           ]
         },
         {
@@ -2587,19 +2565,19 @@
         {
           "name": "Technical (short)",
           "status": "PASS",
-          "score": 30.0,
+          "score": 26.0,
           "max_score": 30,
           "evidence": [
-            "Close 316.74; SMA20 333.66; SMA50 334.89; SMA200 322.89.",
-            "RSI14 37.1; ATR14 8.02 (2.5%); volume ratio 1.03x.",
-            "63-day relative strength vs SPY: -3.3%.",
+            "Close 322.96; SMA20 332.63; SMA50 334.40; SMA200 322.97.",
+            "RSI14 43.4; ATR14 8.03 (2.5%); volume ratio 0.49x.",
+            "63-day relative strength vs SPY: -4.1%.",
             "Selected strategy: Failed reclaim.",
             "Passed: Price is below SMA200.",
             "Passed: Price lost SMA20 and SMA50.",
             "Passed: A recent rally created a failed reclaim.",
             "Passed: RSI confirms weakness.",
             "Passed: Relative strength is negative.",
-            "Passed: Volume confirms the failed reclaim."
+            "Failed: Volume confirms the failed reclaim."
           ]
         },
         {
@@ -2621,7 +2599,7 @@
           "max_score": 15,
           "evidence": [
             "Reviewed 10 headline(s) published in the last seven days.",
-            "Next reported earnings date: 2027-01-14 (34 business day(s))."
+            "Next reported earnings date: 2027-01-14 (33 business day(s))."
           ]
         },
         {
@@ -2630,8 +2608,8 @@
           "score": 2,
           "max_score": 10,
           "evidence": [
-            "Trailing P/E: 13.3x.",
-            "Forward P/E: 12.4x.",
+            "Trailing P/E: 13.5x.",
+            "Forward P/E: 12.6x.",
             "PEG ratio: 1.32."
           ]
         },
@@ -2641,7 +2619,7 @@
           "score": 5.0,
           "max_score": 5,
           "evidence": [
-            "20-day average dollar volume: $2,454,347,432."
+            "20-day average dollar volume: $2,411,766,438."
           ]
         },
         {
@@ -2659,9 +2637,9 @@
           "score": 10,
           "max_score": 10,
           "evidence": [
-            "SHORT entry 309.09; stop 324.42; risk/share 15.33.",
-            "Size 0.326 share(s); notional $100.76; planned risk $5.00.",
-            "Target 1 278.42; Target 2 263.09; Target 3 247.75; reward/risk 2.0:1."
+            "SHORT entry 320.97; stop 331.02; risk/share 10.05.",
+            "Size 0.497 share(s); notional $159.52; planned risk $4.99.",
+            "Target 1 300.87; Target 2 290.83; Target 3 280.78; reward/risk 2.0:1."
           ]
         }
       ],
@@ -2680,32 +2658,32 @@
         "Do not average down after the invalidation level is breached."
       ],
       "facts": {
-        "close": 316.739990234375,
-        "atr14": 8.017316763291717,
-        "rsi14": 37.080509653979334,
-        "sma20": 333.6599975585938,
-        "sma50": 334.8915081787109,
-        "sma200": 322.8897647094727,
+        "close": 322.9599914550781,
+        "atr14": 8.033936994485165,
+        "rsi14": 43.35214047112799,
+        "sma20": 332.6289978027344,
+        "sma50": 334.3991888427734,
+        "sma200": 322.97295303344725,
         "prior_high20": 359.79998779296875,
         "prior_low20": 309.17999267578125,
         "low10": 309.17999267578125,
-        "volume_ratio": 1.033699194833941,
-        "rs63": -0.03310835555373215,
-        "latest_high": 318.4100036621094,
-        "latest_low": 309.489990234375,
-        "sma50_slope20": -7.816163940429703,
+        "volume_ratio": 0.4867348194405203,
+        "rs63": -0.041433134786061254,
+        "latest_high": 324.989990234375,
+        "latest_low": 321.3699951171875,
+        "sma50_slope20": -8.070352783203134,
         "company_name": "JPMorgan Chase & Co.",
         "sector": "Financial Services",
         "industry": "Banks - Diversified",
-        "market_cap": 841137782784,
+        "market_cap": 857655672832,
         "revenue_growth": 0.102,
         "earnings_growth": 0.099,
         "profit_margin": 0.34592,
         "free_cash_flow": null,
         "total_cash": 1591950966784,
         "total_debt": 1335691968512,
-        "trailing_pe": 13.286074,
-        "forward_pe": 12.385691,
+        "trailing_pe": 13.546979,
+        "forward_pe": 12.628915,
         "peg_ratio": 1.32,
         "earnings_date": "2027-01-14T00:00:00",
         "currency": "USD",
@@ -2719,7 +2697,7 @@
         "shares_outstanding": 2655609509,
         "52_week_change": 0.011690259,
         "beta": 1.02,
-        "average_volume": 7395420,
+        "average_volume": 7430111,
         "short_risk_flags": [],
         "long_hard_pass": false,
         "short_hard_pass": true,
@@ -2729,74 +2707,74 @@
       },
       "news": [
         {
-          "title": "Is Standard Chartered (LSE:STAN) Undervalued Following Its J.P. Morgan Conference Appearance?",
-          "publisher": "Simply Wall St.",
-          "published": "2026-11-26T22:09:08Z",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/standard-chartered-lse-stan-undervalued-220908677.html",
-          "summary": "Conference spotlight on Standard Chartered Standard Chartered (LSE:STAN) will participate in the J.P. Morgan UK Leaders Conference on 18 November 2026 in London, with Group CFO Manus James MacGregor Costello set to outline the bank’s current position for institutional investors. Recent trading tells a mixed story for Standard Chartered. The 1-day share price return of 1.32% comes after 7-day and 90-day share price declines of 7.10% and 13.41%, while the 5-year total shareholder return of..."
+          "title": "JPMorgan Plans a Private Club for Well-Heeled Clients in a 1930s Branch",
+          "publisher": "The Wall Street Journal",
+          "published": "2026-11-28T00:00:00Z",
+          "link": "https://www.wsj.com/finance/banking/jpmorgan-plans-a-private-club-for-well-heeled-clients-in-a-1930s-branch-c609a03c?siteid=yhoof2&yptr=yahoo",
+          "summary": "The mansion-like historic structure is being renovated for lounges and a dining room, kitchen and bar, city documents show."
         },
         {
-          "title": "JPMorgan Sees $450 Billion AI Debt Wave as Credit Risks Mount",
-          "publisher": "GuruFocus.com",
-          "published": "2026-11-26T15:47:41Z",
-          "link": "https://finance.yahoo.com/technology/ai/articles/jpmorgan-sees-450-billion-ai-154741192.html",
-          "summary": "Growing artificial intelligence infrastructure spending could drive corporate borrowing and investment banking activity."
-        },
-        {
-          "title": "Will Bank of America's Swiss Expansion Fuel Further Fee Income Growth?",
+          "title": "JPMorgan Chase & Co. (JPM) Outpaces Stock Market Gains: What You Should Know",
           "publisher": "Zacks",
-          "published": "2026-11-26T14:11:00Z",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/bank-americas-swiss-expansion-fuel-141100657.html",
-          "summary": "BAC's Swiss expansion is driving rapid client growth and broader European capabilities, potentially boosting cross-border opportunities and fee income."
+          "published": "2026-11-27T21:45:02Z",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-chase-co-jpm-outpaces-214502182.html",
+          "summary": "In the closing of the recent trading day, JPMorgan Chase & Co. (JPM) stood at $322.96, denoting a +1.96% move from the preceding trading day."
         },
         {
-          "title": "JPMorgan Rethinks UK Investments: Will Higher Taxes Hurt Growth?",
-          "publisher": "Zacks",
-          "published": "2026-11-26T14:05:00Z",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-rethinks-uk-investments-higher-140500776.html",
-          "summary": "JPM reconsiders major U.K. investments as rising banking taxes threaten profitability, raising concerns over future expansion and long-term earnings growth."
-        },
-        {
-          "title": "What State Street Financial Sel Sector SPDR (XLF) Bought: Berkshire Leads on Nov. 24",
-          "publisher": "GuruFocus.com",
-          "published": "2026-11-26T11:04:58Z",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/state-street-financial-sel-sector-110458586.html",
-          "summary": "The fund added $266.5 million across all 76 holdings on Tuesday, led by a $36.3 million increase in Berkshire Hathaway."
-        },
-        {
-          "title": "Why Outages at Apps Like Chase Mean Cybersecurity Is Now Everyone’s Problem",
-          "publisher": "Unchained",
-          "published": "2026-11-26T11:00:08Z",
-          "link": "https://unchainedcrypto.com/why-outages-at-apps-like-chase-mean-cybersecurity-is-now-everyones-problem/",
-          "summary": "Austin Campbell, founder of Zero Knowledge Group, says outages are now breaking everyday apps and that AI will hurt everyone between big tech and the data-minimized. Chris Perkins, head of Franklin Crypto, warns mixed messages break trust. From Unchained, the no-hype resource for all things crypto."
-        },
-        {
-          "title": "What Is JPMorgan Chase (JPM) Saying With Its $450 Billion AI Debt Call?",
+          "title": "Why JPMorgan Chase Fans May Look To ETFs Right Now",
           "publisher": "Simply Wall St.",
-          "published": "2026-11-26T08:08:38Z",
-          "link": "https://finance.yahoo.com/technology/ai/articles/jpmorgan-chase-jpm-saying-450-080838063.html",
-          "summary": "JPMorgan Chase (NYSE:JPM) analysts project that AI related capital expenditure will drive US$450b in investment grade debt issuance in 2027. The bank links this expected borrowing to funding for artificial intelligence infrastructure and hardware across corporate issuers. JPMorgan Chase frames the potential 2027 AI funding wave as a key theme for debt capital markets and sector funding models. This projected US$450b AI funding spike through investment grade bonds fits into a wider capital..."
+          "published": "2026-11-27T21:13:49Z",
+          "link": "https://finance.yahoo.com/markets/options/articles/why-jpmorgan-chase-fans-may-211349086.html",
+          "summary": "If you like JPMorgan Chase for its global reach and mix of banking services, owning the stock outright means living with its company specific issues on their own. Simply Wall St points out that heavier long term spending on marketing, technology and artificial intelligence could grow faster than revenue and squeeze profit margins. Holding JPMorgan Chase inside an exchange traded fund spreads that single company risk across a basket of businesses, and also reduces how much its performance can..."
         },
         {
-          "title": "Washington Calls It a Goldilocks Economy. On a $2,071 Social Security Check, She Calls It the Annoyance Economy: Prices Up 3.7%, and Her Real Raise Is Just 3.3%",
+          "title": "Weekly Wrap: Bitcoin Struggles As Latest Rally Fails",
+          "publisher": "CryptoProwl",
+          "published": "2026-11-27T20:19:00Z",
+          "link": "https://www.cryptoprowl.com/releases/weekly-wrap-bitcoin-struggles-as-latest-rally-fails-8104",
+          "summary": "Bitcoin (CRYPTO: $BTC) continues to struggle as the latest attempt at a rally by the largest cryptocurrency failed ..."
+        },
+        {
+          "title": "Financial Services Roundup: Market Talk",
+          "publisher": "The Wall Street Journal",
+          "published": "2026-11-27T17:56:00Z",
+          "link": "https://www.wsj.com/business/financial-services-roundup-market-talk-b653ca86?siteid=yhoof2&yptr=yahoo",
+          "summary": "Find insight on bank lending, Italian wealth managers and more in the latest Market Talks covering financial services."
+        },
+        {
+          "title": "Banks Facing Bond Price-Fixing Trial Agree to Pay Over $400 Million",
+          "publisher": "Bloomberg",
+          "published": "2026-11-27T16:12:19Z",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/banks-facing-bond-price-fixing-161219624.html",
+          "summary": "Wall Street firms including some of the industry’s biggest banks are nearing an agreement to pay more than $400 million to end a high-stakes lawsuit claiming they schemed to fix prices in the muni bond market."
+        },
+        {
+          "title": "JPMorgan Says Bitcoin ‘Capitulation’ Has Been Reached",
+          "publisher": "CryptoProwl",
+          "published": "2026-11-27T15:01:00Z",
+          "link": "https://www.cryptoprowl.com/releases/jpmorgan-says-bitcoin-capitulation-has-been-reached-8098",
+          "summary": "JPMorgan Chase (NYSE: $JPM), the largest U.S. bank, says that Bitcoin (CRYPTO: $BTC) “capitulation” has..."
+        },
+        {
+          "title": "The Dividend Portfolio It Takes to Pay $85,000 a Year",
           "publisher": "24/7 Wall St.",
-          "published": "2026-11-26T02:03:25Z",
-          "link": "https://247wallst.com/personal-finance/social-security/2026/11/25/washington-calls-it-a-goldilocks-economy-on-a-2071-social-security-check-she-calls-it-the-annoyance-economy-prices-up-3-7-and-her-real-raise-is-just-3-3/",
-          "summary": "Officials say the economy is just right, but a retiree on an average Social Security check sees a January raise shrink before it even arrives. One Medicare line item and one overlooked price index explain why she starts 2027 behind."
+          "published": "2026-11-27T14:47:52Z",
+          "link": "https://247wallst.com/investing/2026/11/27/the-dividend-portfolio-it-takes-to-pay-85000-a-year/",
+          "summary": "Chasing a bigger yield shrinks the nest egg you need, but it also hands your paycheck to the companies with the least room to keep paying. Which trade-off can a retiring couple live with?"
         },
         {
-          "title": "Market Chatter: JPMorgan Projects $450 Billion in AI High-Grade Debt Issuance for 2027",
-          "publisher": "MT Newswires",
-          "published": "2026-11-25T22:20:27Z",
-          "link": "https://finance.yahoo.com/technology/ai/articles/market-chatter-jpmorgan-projects-450-222027435.html",
-          "summary": "Companies will raise $450 billion in public investment-grade debt markets next year to fund artifici"
+          "title": "JPMorgan Flags Major Turning Point for AI Stocks",
+          "publisher": "GuruFocus.com",
+          "published": "2026-11-27T14:33:59Z",
+          "link": "https://finance.yahoo.com/technology/ai/articles/jpmorgan-flags-major-turning-point-143359163.html",
+          "summary": "The technology spending boom could reach a critical crossroads."
         },
         {
-          "title": "JPMorgan sees $450B in AI bond issuance in 2027",
-          "publisher": "Investing.com",
-          "published": "2026-11-25T21:58:24Z",
-          "link": "https://finance.yahoo.com/technology/ai/articles/jpmorgan-sees-450b-ai-bond-215824242.html",
-          "summary": "Investing.com -- JPMorgan Chase & Co. expects companies to raise $450 billion through investment-grade bond markets in 2027 to fund artificial intelligence capital expenditures, up from $368 billion in global investment-grade bond issuance for AI-focused companies this year."
+          "title": "Exploits Arrive in “10 to 15 Minutes,” Patches in 45 Days, per Cisco’s Jeetu Patel. Cue CrowdStrike",
+          "publisher": "TIKR",
+          "published": "2026-11-27T13:35:36Z",
+          "link": "https://www.tikr.com/blog/exploits-arrive-in-10-to-15-minutes-patches-in-45-days-per-ciscos-jeetu-patel-cue-crowdstrike?ref=yahoofinance&tlnk=yf-261127-27866rp2",
+          "summary": "Key TakeawaysCisco’s Jeetu Patel says attackers can exploit a newly announced software flaw within 10 to 15 minutes, while patching takes about 45 days. Patching faster brings its own risk, as recent outages at JPMorgan Chase and Microsoft show."
         }
       ],
       "warnings": [
@@ -2807,23 +2785,23 @@
       "directional_view": {
         "bias": "NO TRADE",
         "evidence": [
-          "Long score: 65.0/100; short score: 67.0/100.",
-          "Price 316.74 versus SMA20 333.66, SMA50 334.89, SMA200 322.89.",
-          "RSI14 37.1; SMA50 slope -7.82; volume ratio 1.03x.",
-          "Short execution plan: entry 309.09, stop 324.42, targets 278.42/263.09/247.75."
+          "Long score: 61.0/100; short score: 63.0/100.",
+          "Price 322.96 versus SMA20 332.63, SMA50 334.40, SMA200 322.97.",
+          "RSI14 43.4; SMA50 slope -8.07; volume ratio 0.49x.",
+          "Short execution plan: entry 320.97, stop 331.02, targets 300.87/290.83/280.78."
         ],
-        "bullish_score": 65.0,
-        "bearish_score": 67.0,
+        "bullish_score": 61.0,
+        "bearish_score": 63.0,
         "bearish_strategy": "Failed reclaim",
-        "bearish_trigger": 309.09,
-        "bearish_invalidation": 324.42,
-        "bearish_target_1": 278.42,
-        "bearish_target_2": 263.09,
+        "bearish_trigger": 320.97,
+        "bearish_invalidation": 331.02,
+        "bearish_target_1": 300.87,
+        "bearish_target_2": 290.83,
         "short_execution_allowed": true,
         "short_risk_flags": []
       },
-      "long_score": 65.0,
-      "short_score": 67.0,
+      "long_score": 61.0,
+      "short_score": 63.0,
       "recommendation": "NO TRADE",
       "confidence": "MEDIUM",
       "selected_direction": "NONE",
@@ -2834,118 +2812,172 @@
   "errors": {},
   "changes_from_previous_close": [
     {
-      "ticker": "GOOGL",
-      "field": "Recommendation",
-      "previous": "NO TRADE",
-      "current": "SHORT"
-    },
-    {
-      "ticker": "GOOGL",
-      "field": "Short score",
-      "previous": 74.0,
-      "current": 77.0
-    },
-    {
-      "ticker": "GOOGL",
-      "field": "Score",
-      "previous": 74.0,
-      "current": 77.0
-    },
-    {
-      "ticker": "GOOGL",
-      "field": "Directional view",
-      "previous": "NO TRADE",
-      "current": "SHORT"
-    },
-    {
-      "ticker": "GOOGL",
-      "field": "Entry",
-      "previous": null,
-      "current": 262.14
-    },
-    {
-      "ticker": "GOOGL",
-      "field": "Stop",
-      "previous": null,
-      "current": 288.97
-    },
-    {
-      "ticker": "GOOGL",
-      "field": "Target 1",
-      "previous": null,
-      "current": 208.47
-    },
-    {
-      "ticker": "AMZN",
-      "field": "Recommendation",
-      "previous": "NO TRADE",
-      "current": "SHORT"
-    },
-    {
-      "ticker": "AMZN",
-      "field": "Short score",
-      "previous": 72.0,
-      "current": 75.0
-    },
-    {
-      "ticker": "AMZN",
-      "field": "Score",
-      "previous": 72.0,
-      "current": 75.0
-    },
-    {
-      "ticker": "AMZN",
-      "field": "Directional view",
-      "previous": "NO TRADE",
-      "current": "SHORT"
-    },
-    {
-      "ticker": "AMZN",
-      "field": "Entry",
-      "previous": null,
-      "current": 235.44
-    },
-    {
-      "ticker": "AMZN",
-      "field": "Stop",
-      "previous": null,
-      "current": 254.39
-    },
-    {
-      "ticker": "AMZN",
-      "field": "Target 1",
-      "previous": null,
-      "current": 197.52
-    },
-    {
       "ticker": "V",
       "field": "Short score",
-      "previous": 47.0,
-      "current": 44.0
+      "previous": 44.0,
+      "current": 47.0
     },
     {
-      "ticker": "MSFT",
+      "ticker": "EOG",
       "field": "Long score",
-      "previous": 69.0,
-      "current": 72.0
+      "previous": 88.0,
+      "current": 91.1
     },
     {
-      "ticker": "MSFT",
+      "ticker": "EOG",
+      "field": "Short score",
+      "previous": 53.0,
+      "current": 49.0
+    },
+    {
+      "ticker": "EOG",
       "field": "Score",
-      "previous": 69.0,
-      "current": 72.0
+      "previous": 88.0,
+      "current": 91.1
+    },
+    {
+      "ticker": "AMZN",
+      "field": "Recommendation",
+      "previous": "SHORT",
+      "current": "NO TRADE"
+    },
+    {
+      "ticker": "AMZN",
+      "field": "Long score",
+      "previous": 61.0,
+      "current": 79.1
+    },
+    {
+      "ticker": "AMZN",
+      "field": "Short score",
+      "previous": 75.0,
+      "current": 66.0
+    },
+    {
+      "ticker": "AMZN",
+      "field": "Score",
+      "previous": 75.0,
+      "current": 79.1
+    },
+    {
+      "ticker": "AMZN",
+      "field": "Directional view",
+      "previous": "SHORT",
+      "current": "NO TRADE"
+    },
+    {
+      "ticker": "AMZN",
+      "field": "Entry",
+      "previous": 235.44,
+      "current": null
+    },
+    {
+      "ticker": "AMZN",
+      "field": "Stop",
+      "previous": 254.39,
+      "current": null
+    },
+    {
+      "ticker": "AMZN",
+      "field": "Target 1",
+      "previous": 197.52,
+      "current": null
+    },
+    {
+      "ticker": "GOOGL",
+      "field": "Recommendation",
+      "previous": "SHORT",
+      "current": "NO TRADE"
+    },
+    {
+      "ticker": "GOOGL",
+      "field": "Long score",
+      "previous": 55.0,
+      "current": 52.0
+    },
+    {
+      "ticker": "GOOGL",
+      "field": "Short score",
+      "previous": 77.0,
+      "current": 73.7
+    },
+    {
+      "ticker": "GOOGL",
+      "field": "Score",
+      "previous": 77.0,
+      "current": 73.7
+    },
+    {
+      "ticker": "GOOGL",
+      "field": "Directional view",
+      "previous": "SHORT",
+      "current": "NO TRADE"
+    },
+    {
+      "ticker": "GOOGL",
+      "field": "Entry",
+      "previous": 262.14,
+      "current": null
+    },
+    {
+      "ticker": "GOOGL",
+      "field": "Stop",
+      "previous": 288.97,
+      "current": null
+    },
+    {
+      "ticker": "GOOGL",
+      "field": "Target 1",
+      "previous": 208.47,
+      "current": null
+    },
+    {
+      "ticker": "RDW",
+      "field": "Short score",
+      "previous": 74.0,
+      "current": 70.7
+    },
+    {
+      "ticker": "RDW",
+      "field": "Score",
+      "previous": 74.0,
+      "current": 70.7
     },
     {
       "ticker": "NVDA",
       "field": "Long score",
-      "previous": 66.0,
-      "current": 69.0
+      "previous": 69.0,
+      "current": 62.0
+    },
+    {
+      "ticker": "NVDA",
+      "field": "Short score",
+      "previous": 62.0,
+      "current": 63.7
     },
     {
       "ticker": "NVDA",
       "field": "Score",
-      "previous": 66.0,
-      "current": 69.0
+      "previous": 69.0,
+      "current": 63.7
+    },
+    {
+      "ticker": "JPM",
+      "field": "Long score",
+      "previous": 65.0,
+      "current": 61.0
+    },
+    {
+      "ticker": "JPM",
+      "field": "Short score",
+      "previous": 67.0,
+      "current": 63.0
+    },
+    {
+      "ticker": "JPM",
+      "field": "Score",
+      "previous": 67.0,
+      "current": 63.0
     }
   ],
   "source_note": "Automated report generated from the community yfinance adapter. Prices may be delayed and headlines are screened by rules; verify primary filings, earnings dates, and the executable Robinhood quote before acting."
